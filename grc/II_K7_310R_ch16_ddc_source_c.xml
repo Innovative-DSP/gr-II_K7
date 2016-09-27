@@ -1,0 +1,168 @@
+<?xml version="1.0"?>
+<block>
+  <name>16 Channel DDC Source</name>
+  <key>II_K7_310R_ch16_ddc_source_c</key>
+  <category>II_K7_310R</category>
+  <flags>throttle</flags>
+  <import>import II_K7_310R</import>
+  <make>II_K7_310R.ch16_ddc_source_c($rf_gain, $trigger_source, $ddc_filter_path, $rf_center_freq, $ch0_offset_freq, $ch1_offset_freq, $ch2_offset_freq, $ch3_offset_freq, $ch4_offset_freq, $ch5_offset_freq, $ch6_offset_freq, $ch7_offset_freq, $ch8_offset_freq, $ch9_offset_freq, $ch10_offset_freq, $ch11_offset_freq, $ch12_offset_freq, $ch13_offset_freq, $ch14_offset_freq, $ch15_offset_freq)</make>
+  <param>
+    <name>RF Gain (db)</name>
+    <key>rf_gain</key>
+    <value>0.0</value>
+    <type>float</type>
+  </param>
+  <param>
+    <name>Trigger Source</name>
+    <key>trigger_source</key>
+    <value>II_K7_310R.Ch16Software</value>
+    <type>enum</type>
+    <option>
+        <name>Software</name>
+        <key>II_K7_310R.Ch16Software</key>
+    </option>
+    <option>
+        <name>External</name>
+        <key>II_K7_310R.Ch16External</key>
+    </option>
+  </param>
+  <param>
+    <name>DDC Bandwidth</name>
+    <key>ddc_filter_path</key>
+    <type>file_open</type>
+  </param>
+  <param>
+    <name>RF Center Freq (MHz)</name>
+    <key>rf_center_freq</key>
+    <value>2400.0</value>
+    <type>float</type>
+  </param>
+<param>
+  <name>Ch0 Offset Freq (MHz)</name>
+  <key>ch0_offset_freq</key>
+  <value>0.0</value>
+  <type>float</type>
+  <hide>part</hide>
+</param>
+<param>
+  <name>Ch1 Offset Freq (MHz)</name>
+  <key>ch1_offset_freq</key>
+  <value>0.0</value>
+  <type>float</type>
+  <hide>part</hide>
+</param>
+<param>
+  <name>Ch2 Offset Freq (MHz)</name>
+  <key>ch2_offset_freq</key>
+  <value>0.0</value>
+  <type>float</type>
+  <hide>part</hide>
+</param>
+<param>
+  <name>Ch3 Offset Freq (MHz)</name>
+  <key>ch3_offset_freq</key>
+  <value>0.0</value>
+  <type>float</type>
+  <hide>part</hide>
+</param>
+<param>
+  <name>Ch4 Offset Freq (MHz)</name>
+  <key>ch4_offset_freq</key>
+  <value>0.0</value>
+  <type>float</type>
+  <hide>part</hide>
+</param>
+<param>
+  <name>Ch5 Offset Freq (MHz)</name>
+  <key>ch5_offset_freq</key>
+  <value>0.0</value>
+  <type>float</type>
+  <hide>part</hide>
+</param>
+<param>
+  <name>Ch6 Offset Freq (MHz)</name>
+  <key>ch6_offset_freq</key>
+  <value>0.0</value>
+  <type>float</type>
+  <hide>part</hide>
+</param>
+<param>
+  <name>Ch7 Offset Freq (MHz)</name>
+  <key>ch7_offset_freq</key>
+  <value>0.0</value>
+  <type>float</type>
+  <hide>part</hide>
+</param>
+<param>
+  <name>Ch8 Offset Freq (MHz)</name>
+  <key>ch8_offset_freq</key>
+  <value>0.0</value>
+  <type>float</type>
+  <hide>part</hide>
+</param>
+<param>
+  <name>Ch9 Offset Freq (MHz)</name>
+  <key>ch9_offset_freq</key>
+  <value>0.0</value>
+  <type>float</type>
+  <hide>part</hide>
+</param>
+<param>
+  <name>Ch10 Offset Freq (MHz)</name>
+  <key>ch10_offset_freq</key>
+  <value>0.0</value>
+  <type>float</type>
+  <hide>part</hide>
+</param>
+<param>
+  <name>Ch11 Offset Freq (MHz)</name>
+  <key>ch11_offset_freq</key>
+  <value>0.0</value>
+  <type>float</type>
+  <hide>part</hide>
+</param>
+<param>
+  <name>Ch12 Offset Freq (MHz)</name>
+  <key>ch12_offset_freq</key>
+  <value>0.0</value>
+  <type>float</type>
+  <hide>part</hide>
+</param>
+<param>
+  <name>Ch13 Offset Freq (MHz)</name>
+  <key>ch13_offset_freq</key>
+  <value>0.0</value>
+  <type>float</type>
+  <hide>part</hide>
+</param>
+<param>
+  <name>Ch14 Offset Freq (MHz)</name>
+  <key>ch14_offset_freq</key>
+  <value>0.0</value>
+  <type>float</type>
+  <hide>part</hide>
+</param>
+<param>
+  <name>Ch15 Offset Freq (MHz)</name>
+  <key>ch15_offset_freq</key>
+  <value>0.0</value>
+  <type>float</type>
+  <hide>part</hide>
+</param>
+
+  <!-- Make one 'source' node per output. Sub-nodes:
+       * name (an identifier for the GUI)
+       * type
+       * vlen
+       * optional (set to 1 for optional inputs) -->
+  <!-- type is e.g. int, float, complex, byte, short, xxx_vector, ...-->
+  <source>
+    <name>out</name>
+    <type>complex</type>
+    <vlen>16</vlen>
+  </source>
+
+  <doc>
+TODO: See Billy Kao's 7/14/2016 e-mail, "RE: Propose Gnu-Radio Source Block Panel".
+  </doc>
+</block>

@@ -1,0 +1,85 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.11">
+  <compounddef id="ch16__ddc__source__c_8h" kind="file" language="C++">
+    <compoundname>ch16_ddc_source_c.h</compoundname>
+    <includes refid="api_8h" local="no">II_K7_310R/api.h</includes>
+    <includes local="no">gnuradio/sync_block.h</includes>
+    <incdepgraph>
+      <node id="8">
+        <label>gnuradio/sync_block.h</label>
+      </node>
+      <node id="7">
+        <label>gnuradio/attributes.h</label>
+      </node>
+      <node id="6">
+        <label>II_K7_310R/api.h</label>
+        <link refid="api_8h"/>
+        <childnode refid="7" relation="include">
+        </childnode>
+      </node>
+      <node id="5">
+        <label>/home/user/Documents/GnuRadio/gr-II_K7_310R/include/II_K7_310R/ch16_ddc_source_c.h</label>
+        <link refid="ch16_ddc_source_c.h"/>
+        <childnode refid="6" relation="include">
+        </childnode>
+        <childnode refid="8" relation="include">
+        </childnode>
+      </node>
+    </incdepgraph>
+    <innerclass refid="classgr_1_1II__K7__310R_1_1ch16__ddc__source__c" prot="public">gr::II_K7_310R::ch16_ddc_source_c</innerclass>
+    <innernamespace refid="namespacegr">gr</innernamespace>
+    <innernamespace refid="namespacegr_1_1II__K7__310R">gr::II_K7_310R</innernamespace>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="comment">/*<sp/>-*-<sp/>c++<sp/>-*-<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight><highlight class="comment">/*<sp/></highlight></codeline>
+<codeline lineno="3"><highlight class="comment"><sp/>*<sp/>Copyright<sp/>2016<sp/>2016<sp/>Innovative<sp/>Integration,<sp/>Inc..</highlight></codeline>
+<codeline lineno="4"><highlight class="comment"><sp/>*<sp/></highlight></codeline>
+<codeline lineno="5"><highlight class="comment"><sp/>*<sp/>This<sp/>is<sp/>free<sp/>software;<sp/>you<sp/>can<sp/>redistribute<sp/>it<sp/>and/or<sp/>modify</highlight></codeline>
+<codeline lineno="6"><highlight class="comment"><sp/>*<sp/>it<sp/>under<sp/>the<sp/>terms<sp/>of<sp/>the<sp/>GNU<sp/>General<sp/>Public<sp/>License<sp/>as<sp/>published<sp/>by</highlight></codeline>
+<codeline lineno="7"><highlight class="comment"><sp/>*<sp/>the<sp/>Free<sp/>Software<sp/>Foundation;<sp/>either<sp/>version<sp/>3,<sp/>or<sp/>(at<sp/>your<sp/>option)</highlight></codeline>
+<codeline lineno="8"><highlight class="comment"><sp/>*<sp/>any<sp/>later<sp/>version.</highlight></codeline>
+<codeline lineno="9"><highlight class="comment"><sp/>*<sp/></highlight></codeline>
+<codeline lineno="10"><highlight class="comment"><sp/>*<sp/>This<sp/>software<sp/>is<sp/>distributed<sp/>in<sp/>the<sp/>hope<sp/>that<sp/>it<sp/>will<sp/>be<sp/>useful,</highlight></codeline>
+<codeline lineno="11"><highlight class="comment"><sp/>*<sp/>but<sp/>WITHOUT<sp/>ANY<sp/>WARRANTY;<sp/>without<sp/>even<sp/>the<sp/>implied<sp/>warranty<sp/>of</highlight></codeline>
+<codeline lineno="12"><highlight class="comment"><sp/>*<sp/>MERCHANTABILITY<sp/>or<sp/>FITNESS<sp/>FOR<sp/>A<sp/>PARTICULAR<sp/>PURPOSE.<sp/><sp/>See<sp/>the</highlight></codeline>
+<codeline lineno="13"><highlight class="comment"><sp/>*<sp/>GNU<sp/>General<sp/>Public<sp/>License<sp/>for<sp/>more<sp/>details.</highlight></codeline>
+<codeline lineno="14"><highlight class="comment"><sp/>*<sp/></highlight></codeline>
+<codeline lineno="15"><highlight class="comment"><sp/>*<sp/>You<sp/>should<sp/>have<sp/>received<sp/>a<sp/>copy<sp/>of<sp/>the<sp/>GNU<sp/>General<sp/>Public<sp/>License</highlight></codeline>
+<codeline lineno="16"><highlight class="comment"><sp/>*<sp/>along<sp/>with<sp/>this<sp/>software;<sp/>see<sp/>the<sp/>file<sp/>COPYING.<sp/><sp/>If<sp/>not,<sp/>write<sp/>to</highlight></codeline>
+<codeline lineno="17"><highlight class="comment"><sp/>*<sp/>the<sp/>Free<sp/>Software<sp/>Foundation,<sp/>Inc.,<sp/>51<sp/>Franklin<sp/>Street,</highlight></codeline>
+<codeline lineno="18"><highlight class="comment"><sp/>*<sp/>Boston,<sp/>MA<sp/>02110-1301,<sp/>USA.</highlight></codeline>
+<codeline lineno="19"><highlight class="comment"><sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="20"><highlight class="normal"></highlight></codeline>
+<codeline lineno="21"><highlight class="normal"></highlight></codeline>
+<codeline lineno="22"><highlight class="normal"></highlight><highlight class="preprocessor">#ifndef<sp/>INCLUDED_II_K7_310R_CH16_DDC_SOURCE_C_H</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="23"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>INCLUDED_II_K7_310R_CH16_DDC_SOURCE_C_H</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="24"><highlight class="normal"></highlight></codeline>
+<codeline lineno="25"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;<ref refid="api_8h" kindref="compound">II_K7_310R/api.h</ref>&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="26"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;gnuradio/sync_block.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="27"><highlight class="normal"></highlight></codeline>
+<codeline lineno="28" refid="namespacegr" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">namespace<sp/></highlight><highlight class="normal"><ref refid="namespacegr" kindref="compound">gr</ref><sp/>{</highlight></codeline>
+<codeline lineno="29" refid="namespacegr_1_1II__K7__310R" refkind="compound"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">namespace<sp/></highlight><highlight class="normal">II_K7_310R<sp/>{</highlight></codeline>
+<codeline lineno="30"><highlight class="normal"></highlight></codeline>
+<codeline lineno="31" refid="namespacegr_1_1II__K7__310R_1a1c1292d8181e46a2985782e82e3d9727" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">enum</highlight><highlight class="normal"><sp/><ref refid="namespacegr_1_1II__K7__310R_1a1c1292d8181e46a2985782e82e3d9727" kindref="member">Ch16TriggerSource</ref><sp/>{<ref refid="namespacegr_1_1II__K7__310R_1a1c1292d8181e46a2985782e82e3d9727a813e6a67049d88b632a28b4eacec5cb5" kindref="member">Ch16Software</ref>,<sp/><ref refid="namespacegr_1_1II__K7__310R_1a1c1292d8181e46a2985782e82e3d9727a822716651d2c77ab56918c782bc368d3" kindref="member">Ch16External</ref>};</highlight></codeline>
+<codeline lineno="32"><highlight class="normal"></highlight></codeline>
+<codeline lineno="38" refid="classgr_1_1II__K7__310R_1_1ch16__ddc__source__c" refkind="compound"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="api_8h_1ade5a214f13081b712f059ebd85927dfa" kindref="member">II_K7_310R_API</ref><sp/><ref refid="classgr_1_1II__K7__310R_1_1ch16__ddc__source__c" kindref="compound">ch16_ddc_source_c</ref><sp/>:<sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal"><sp/>gr::sync_block</highlight></codeline>
+<codeline lineno="39"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="40"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="41" refid="classgr_1_1II__K7__310R_1_1ch16__ddc__source__c_1ad026bb94ebadc43c8a030ce0fbcea56e" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/>boost::shared_ptr&lt;ch16_ddc_source_c&gt;<sp/><ref refid="classgr_1_1II__K7__310R_1_1ch16__ddc__source__c_1ad026bb94ebadc43c8a030ce0fbcea56e" kindref="member">sptr</ref>;</highlight></codeline>
+<codeline lineno="42"><highlight class="normal"></highlight></codeline>
+<codeline lineno="51"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/>sptr<sp/>make(</highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>rf_gain,<sp/><ref refid="namespacegr_1_1II__K7__310R_1a1c1292d8181e46a2985782e82e3d9727" kindref="member">II_K7_310R::Ch16TriggerSource</ref><sp/>trigger_source,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal">*<sp/><sp/>ddc_filter_path,<sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>rf_center_freq,<sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>ch0_offset_freq,<sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>ch1_offset_freq,<sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>ch2_offset_freq,<sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>ch3_offset_freq,<sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>ch4_offset_freq,<sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>ch5_offset_freq,<sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>ch6_offset_freq,<sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>ch7_offset_freq,<sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>ch8_offset_freq,<sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>ch9_offset_freq,<sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>ch10_offset_freq,<sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>ch11_offset_freq,<sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>ch12_offset_freq,<sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>ch13_offset_freq,<sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>ch14_offset_freq,<sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>ch15_offset_freq);</highlight></codeline>
+<codeline lineno="52"><highlight class="normal"><sp/><sp/><sp/><sp/>};</highlight></codeline>
+<codeline lineno="53"><highlight class="normal"></highlight></codeline>
+<codeline lineno="54"><highlight class="normal"><sp/><sp/>}<sp/></highlight><highlight class="comment">//<sp/>namespace<sp/>II_K7_310R</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="55"><highlight class="normal">}<sp/></highlight><highlight class="comment">//<sp/>namespace<sp/>gr</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="56"><highlight class="normal"></highlight></codeline>
+<codeline lineno="57"><highlight class="normal"></highlight><highlight class="preprocessor">#endif<sp/></highlight><highlight class="comment">/*<sp/>INCLUDED_II_K7_310R_CH16_DDC_SOURCE_C_H<sp/>*/</highlight><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="58"><highlight class="normal"></highlight></codeline>
+    </programlisting>
+    <location file="/home/user/Documents/GnuRadio/gr-II_K7_310R/include/II_K7_310R/ch16_ddc_source_c.h"/>
+  </compounddef>
+</doxygen>

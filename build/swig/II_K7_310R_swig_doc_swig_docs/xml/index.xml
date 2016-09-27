@@ -1,0 +1,34 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygenindex xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="index.xsd" version="1.8.11">
+  <compound refid="classgr_1_1II__K7__310R_1_1ch16__ddc__source__c" kind="class"><name>gr::II_K7_310R::ch16_ddc_source_c</name>
+    <member refid="classgr_1_1II__K7__310R_1_1ch16__ddc__source__c_1ad026bb94ebadc43c8a030ce0fbcea56e" kind="typedef"><name>sptr</name></member>
+    <member refid="classgr_1_1II__K7__310R_1_1ch16__ddc__source__c_1a1f55842f7de4ee76ead223886d7eaff1" kind="function"><name>make</name></member>
+  </compound>
+  <compound refid="classgr_1_1II__K7__310R_1_1ch1__ddc__source__c" kind="class"><name>gr::II_K7_310R::ch1_ddc_source_c</name>
+    <member refid="classgr_1_1II__K7__310R_1_1ch1__ddc__source__c_1aa115e9ce2b97fbf3ae5fde1f0a8d1ff6" kind="typedef"><name>sptr</name></member>
+    <member refid="classgr_1_1II__K7__310R_1_1ch1__ddc__source__c_1a9f51e97c653c4fb23f9a6b49bf683662" kind="function"><name>make</name></member>
+  </compound>
+  <compound refid="namespacegr" kind="namespace"><name>gr</name>
+  </compound>
+  <compound refid="namespacegr_1_1II__K7__310R" kind="namespace"><name>gr::II_K7_310R</name>
+    <member refid="namespacegr_1_1II__K7__310R_1a1c1292d8181e46a2985782e82e3d9727" kind="enum"><name>Ch16TriggerSource</name></member>
+    <member refid="namespacegr_1_1II__K7__310R_1a1c1292d8181e46a2985782e82e3d9727a813e6a67049d88b632a28b4eacec5cb5" kind="enumvalue"><name>Ch16Software</name></member>
+    <member refid="namespacegr_1_1II__K7__310R_1a1c1292d8181e46a2985782e82e3d9727a822716651d2c77ab56918c782bc368d3" kind="enumvalue"><name>Ch16External</name></member>
+    <member refid="namespacegr_1_1II__K7__310R_1ade8ee334a2f0ef778ef57e7491005420" kind="enum"><name>Ch1TriggerSource</name></member>
+    <member refid="namespacegr_1_1II__K7__310R_1ade8ee334a2f0ef778ef57e7491005420a8b5aba2c8aa4fdc8e5bbb9b812b56e91" kind="enumvalue"><name>Ch1Software</name></member>
+    <member refid="namespacegr_1_1II__K7__310R_1ade8ee334a2f0ef778ef57e7491005420aa60a78347281a01032190066413a874d" kind="enumvalue"><name>Ch1External</name></member>
+  </compound>
+  <compound refid="namespacestd" kind="namespace"><name>std</name>
+  </compound>
+  <compound refid="api_8h" kind="file"><name>api.h</name>
+    <member refid="api_8h_1ade5a214f13081b712f059ebd85927dfa" kind="define"><name>II_K7_310R_API</name></member>
+  </compound>
+  <compound refid="ch16__ddc__source__c_8h" kind="file"><name>ch16_ddc_source_c.h</name>
+  </compound>
+  <compound refid="ch1__ddc__source__c_8h" kind="file"><name>ch1_ddc_source_c.h</name>
+  </compound>
+  <compound refid="dir_ec13782fa70f70fde9c55482cd3490a0" kind="dir"><name>/home/user/Documents/GnuRadio/gr-II_K7_310R/include/II_K7_310R</name>
+  </compound>
+  <compound refid="dir_d44c64559bbebec7f509842c48db8b23" kind="dir"><name>/home/user/Documents/GnuRadio/gr-II_K7_310R/include</name>
+  </compound>
+</doxygenindex>

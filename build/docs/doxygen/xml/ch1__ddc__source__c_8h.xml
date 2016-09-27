@@ -1,0 +1,51 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.11">
+  <compounddef id="ch1__ddc__source__c_8h" kind="file" language="C++">
+    <compoundname>ch1_ddc_source_c.h</compoundname>
+    <includes refid="api_8h" local="no">II_K7_310R/api.h</includes>
+    <includes local="no">gnuradio/sync_block.h</includes>
+    <includedby refid="ch1__ddc__source__c__impl_8h" local="no">ch1_ddc_source_c_impl.h</includedby>
+    <incdepgraph>
+      <node id="27">
+        <label>gnuradio/sync_block.h</label>
+      </node>
+      <node id="24">
+        <label>ch1_ddc_source_c.h</label>
+        <link refid="ch1_ddc_source_c.h"/>
+        <childnode refid="25" relation="include">
+        </childnode>
+        <childnode refid="27" relation="include">
+        </childnode>
+      </node>
+      <node id="26">
+        <label>gnuradio/attributes.h</label>
+      </node>
+      <node id="25">
+        <label>II_K7_310R/api.h</label>
+        <link refid="api_8h"/>
+        <childnode refid="26" relation="include">
+        </childnode>
+      </node>
+    </incdepgraph>
+    <invincdepgraph>
+      <node id="28">
+        <label>ch1_ddc_source_c.h</label>
+        <link refid="ch1_ddc_source_c.h"/>
+        <childnode refid="29" relation="include">
+        </childnode>
+      </node>
+      <node id="29">
+        <label>ch1_ddc_source_c_impl.h</label>
+        <link refid="ch1__ddc__source__c__impl_8h"/>
+      </node>
+    </invincdepgraph>
+    <innerclass refid="classgr_1_1II__K7__310R_1_1ch1__ddc__source__c" prot="public">gr::II_K7_310R::ch1_ddc_source_c</innerclass>
+    <innernamespace refid="namespacegr">gr</innernamespace>
+    <innernamespace refid="namespacegr_1_1II__K7__310R">gr::II_K7_310R</innernamespace>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/home/user/Documents/GnuRadio/gr-II_K7_310R/include/II_K7_310R/ch1_ddc_source_c.h"/>
+  </compounddef>
+</doxygen>

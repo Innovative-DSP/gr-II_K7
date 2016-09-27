@@ -1,0 +1,7 @@
+/*!
+ * \defgroup block GNU Radio II_K7_310R C++ Signal Processing Blocks
+ * \brief All C++ blocks that can be used from the II_K7_310R GNU Radio
+ *        module are listed here or in the subcategories below.
+ *
+ */
+

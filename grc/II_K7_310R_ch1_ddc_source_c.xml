@@ -1,0 +1,61 @@
+<?xml version="1.0"?>
+<block>
+  <name>1 Channel DDC Source</name>
+  <key>II_K7_310R_ch1_ddc_source_c</key>
+  <category>II_K7_310R</category>
+  <flags>throttle</flags>
+  <import>import II_K7_310R</import>
+  <make>II_K7_310R.ch1_ddc_source_c($rf_gain, $trigger_source, $ddc_filter_path, $rf_center_freq, $ch0_offset_freq)</make>
+  <param>
+    <name>RF Gain (db)</name>
+    <key>rf_gain</key>
+    <value>0.0</value>
+    <type>float</type>
+  </param>
+  <param>
+    <name>Trigger Source</name>
+    <key>trigger_source</key>
+    <value>II_K7_310R.Ch1Software</value>
+    <type>enum</type>
+    <option>
+        <name>Software</name>
+        <key>II_K7_310R.Ch1Software</key>
+    </option>
+    <option>
+        <name>External</name>
+        <key>II_K7_310R.Ch1External</key>
+    </option>
+  </param>
+  <param>
+    <name>DDC Bandwidth</name>
+    <key>ddc_filter_path</key>
+    <type>file_open</type>
+  </param>
+  <param>
+    <name>RF Center Freq (MHz)</name>
+    <key>rf_center_freq</key>
+    <value>2400.0</value>
+    <type>float</type>
+  </param>
+  <param>
+    <name>Ch0 Offset Freq (MHz)</name>
+    <key>ch0_offset_freq</key>
+    <value>0.0</value>
+    <type>float</type>
+    <hide>part</hide>
+  </param>
+
+  <!-- Make one 'source' node per output. Sub-nodes:
+       * name (an identifier for the GUI)
+       * type
+       * vlen
+       * optional (set to 1 for optional inputs) -->
+       <source>
+         <name>out</name>
+         <type>complex</type>
+       </source>
+
+       <doc>
+     TODO: See Billy Kao's 7/14/2016 e-mail, "RE: Propose Gnu-Radio Source Block Panel".
+       </doc>
+</block>

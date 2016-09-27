@@ -1,0 +1,60 @@
+Start testing: Sep 27 13:46 PDT
+----------------------------------------------------------
+1/3 Testing: test_II_K7_310R
+1/3 Test: test_II_K7_310R
+Command: "/bin/sh" "/home/user/Documents/GnuRadio/gr-II_K7_310R/build/lib/test_II_K7_310R_test.sh"
+Directory: /home/user/Documents/GnuRadio/gr-II_K7_310R/build/lib
+"test_II_K7_310R" start time: Sep 27 13:46 PDT
+Output:
+----------------------------------------------------------
+.
+
+<end of output>
+Test time =   0.01 sec
+----------------------------------------------------------
+Test Passed.
+"test_II_K7_310R" end time: Sep 27 13:46 PDT
+"test_II_K7_310R" time elapsed: 00:00:00
+----------------------------------------------------------
+
+2/3 Testing: qa_ch16_ddc_source_c
+2/3 Test: qa_ch16_ddc_source_c
+Command: "/bin/sh" "/home/user/Documents/GnuRadio/gr-II_K7_310R/build/python/qa_ch16_ddc_source_c_test.sh"
+Directory: /home/user/Documents/GnuRadio/gr-II_K7_310R/build/python
+"qa_ch16_ddc_source_c" start time: Sep 27 13:46 PDT
+Output:
+----------------------------------------------------------
+.
+----------------------------------------------------------------------
+Ran 1 test in 0.002s
+
+OK
+<end of output>
+Test time =   0.64 sec
+----------------------------------------------------------
+Test Passed.
+"qa_ch16_ddc_source_c" end time: Sep 27 13:46 PDT
+"qa_ch16_ddc_source_c" time elapsed: 00:00:00
+----------------------------------------------------------
+
+3/3 Testing: qa_ch1_ddc_source_c
+3/3 Test: qa_ch1_ddc_source_c
+Command: "/bin/sh" "/home/user/Documents/GnuRadio/gr-II_K7_310R/build/python/qa_ch1_ddc_source_c_test.sh"
+Directory: /home/user/Documents/GnuRadio/gr-II_K7_310R/build/python
+"qa_ch1_ddc_source_c" start time: Sep 27 13:46 PDT
+Output:
+----------------------------------------------------------
+.
+----------------------------------------------------------------------
+Ran 1 test in 0.001s
+
+OK
+<end of output>
+Test time =   0.62 sec
+----------------------------------------------------------
+Test Passed.
+"qa_ch1_ddc_source_c" end time: Sep 27 13:46 PDT
+"qa_ch1_ddc_source_c" time elapsed: 00:00:00
+----------------------------------------------------------
+
+End testing: Sep 27 13:46 PDT

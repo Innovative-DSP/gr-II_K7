@@ -1,0 +1,30 @@
+INCLUDE(FindPkgConfig)
+PKG_CHECK_MODULES(PC_II_K7_310R II_K7_310R)
+
+FIND_PATH(
+    II_K7_310R_INCLUDE_DIRS
+    NAMES II_K7_310R/api.h
+    HINTS $ENV{II_K7_310R_DIR}/include
+        ${PC_II_K7_310R_INCLUDEDIR}
+    PATHS ${CMAKE_INSTALL_PREFIX}/include
+          /usr/local/include
+          /usr/include
+)
+
+FIND_LIBRARY(
+    II_K7_310R_LIBRARIES
+    NAMES gnuradio-II_K7_310R
+    HINTS $ENV{II_K7_310R_DIR}/lib
+        ${PC_II_K7_310R_LIBDIR}
+    PATHS ${CMAKE_INSTALL_PREFIX}/lib
+          ${CMAKE_INSTALL_PREFIX}/lib64
+          /usr/local/lib
+          /usr/local/lib64
+          /usr/lib
+          /usr/lib64
+)
+
+INCLUDE(FindPackageHandleStandardArgs)
+FIND_PACKAGE_HANDLE_STANDARD_ARGS(II_K7_310R DEFAULT_MSG II_K7_310R_LIBRARIES II_K7_310R_INCLUDE_DIRS)
+MARK_AS_ADVANCED(II_K7_310R_LIBRARIES II_K7_310R_INCLUDE_DIRS)
+
