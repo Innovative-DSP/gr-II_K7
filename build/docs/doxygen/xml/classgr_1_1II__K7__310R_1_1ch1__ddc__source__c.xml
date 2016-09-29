@@ -1,0 +1,104 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.11">
+  <compounddef id="classgr_1_1II__K7__310R_1_1ch1__ddc__source__c" kind="class" language="C++" prot="public">
+    <compoundname>gr::II_K7_310R::ch1_ddc_source_c</compoundname>
+    <basecompoundref prot="public" virt="virtual">sync_block</basecompoundref>
+    <derivedcompoundref refid="classgr_1_1II__K7__310R_1_1ch1__ddc__source__c__impl" prot="public" virt="non-virtual">gr::II_K7_310R::ch1_ddc_source_c_impl</derivedcompoundref>
+    <includes refid="ch1__ddc__source__c_8h" local="no">ch1_ddc_source_c.h</includes>
+      <sectiondef kind="public-type">
+      <memberdef kind="typedef" id="classgr_1_1II__K7__310R_1_1ch1__ddc__source__c_1aa115e9ce2b97fbf3ae5fde1f0a8d1ff6" prot="public" static="no">
+        <type>boost::shared_ptr&lt; <ref refid="classgr_1_1II__K7__310R_1_1ch1__ddc__source__c" kindref="compound">ch1_ddc_source_c</ref> &gt;</type>
+        <definition>typedef boost::shared_ptr&lt;ch1_ddc_source_c&gt; gr::II_K7_310R::ch1_ddc_source_c::sptr</definition>
+        <argsstring></argsstring>
+        <name>sptr</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/user/Documents/GnuRadio/gr-II_K7_310R/include/II_K7_310R/ch1_ddc_source_c.h" line="41" column="1" bodyfile="/home/user/Documents/GnuRadio/gr-II_K7_310R/include/II_K7_310R/ch1_ddc_source_c.h" bodystart="41" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-static-func">
+      <memberdef kind="function" id="classgr_1_1II__K7__310R_1_1ch1__ddc__source__c_1aeb4b555497d3b9b3707eb481a9cb388c" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classgr_1_1II__K7__310R_1_1ch1__ddc__source__c_1aa115e9ce2b97fbf3ae5fde1f0a8d1ff6" kindref="member">sptr</ref></type>
+        <definition>static sptr gr::II_K7_310R::ch1_ddc_source_c::make</definition>
+        <argsstring>(float rf_gain, II_K7_310R::Ch1TriggerSource trigger_source, const char *ddc_filter_path, bool is_rf_tuner, float rf_center_freq, float ch0_offset_freq, float ch0_tune_freq)</argsstring>
+        <name>make</name>
+        <param>
+          <type>float</type>
+          <declname>rf_gain</declname>
+        </param>
+        <param>
+          <type><ref refid="namespacegr_1_1II__K7__310R_1ade8ee334a2f0ef778ef57e7491005420" kindref="member">II_K7_310R::Ch1TriggerSource</ref></type>
+          <declname>trigger_source</declname>
+        </param>
+        <param>
+          <type>const char *</type>
+          <declname>ddc_filter_path</declname>
+        </param>
+        <param>
+          <type>bool</type>
+          <declname>is_rf_tuner</declname>
+        </param>
+        <param>
+          <type>float</type>
+          <declname>rf_center_freq</declname>
+        </param>
+        <param>
+          <type>float</type>
+          <declname>ch0_offset_freq</declname>
+        </param>
+        <param>
+          <type>float</type>
+          <declname>ch0_tune_freq</declname>
+        </param>
+        <briefdescription>
+<para>Return a shared_ptr to a new instance of <ref refid="classgr_1_1II__K7__310R_1_1ch1__ddc__source__c" kindref="compound">II_K7_310R::ch1_ddc_source_c</ref>. </para>        </briefdescription>
+        <detaileddescription>
+<para>To avoid accidental use of raw pointers, <ref refid="classgr_1_1II__K7__310R_1_1ch1__ddc__source__c" kindref="compound">II_K7_310R::ch1_ddc_source_c</ref>&apos;s constructor is in a private implementation class. <ref refid="classgr_1_1II__K7__310R_1_1ch1__ddc__source__c_1aeb4b555497d3b9b3707eb481a9cb388c" kindref="member">II_K7_310R::ch1_ddc_source_c::make</ref> is the public interface for creating new instances. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/user/Documents/GnuRadio/gr-II_K7_310R/include/II_K7_310R/ch1_ddc_source_c.h" line="51" column="1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>source of DDC data </para>    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="14">
+        <label>gr::sync_block</label>
+      </node>
+      <node id="13">
+        <label>gr::II_K7_310R::ch1_ddc_source_c</label>
+        <link refid="classgr_1_1II__K7__310R_1_1ch1__ddc__source__c"/>
+        <childnode refid="14" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="15">
+        <label>gr::II_K7_310R::ch1_ddc_source_c_impl</label>
+        <link refid="classgr_1_1II__K7__310R_1_1ch1__ddc__source__c__impl"/>
+        <childnode refid="13" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="17">
+        <label>gr::sync_block</label>
+      </node>
+      <node id="16">
+        <label>gr::II_K7_310R::ch1_ddc_source_c</label>
+        <link refid="classgr_1_1II__K7__310R_1_1ch1__ddc__source__c"/>
+        <childnode refid="17" relation="public-inheritance">
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="/home/user/Documents/GnuRadio/gr-II_K7_310R/include/II_K7_310R/ch1_ddc_source_c.h" line="39" column="1" bodyfile="/home/user/Documents/GnuRadio/gr-II_K7_310R/include/II_K7_310R/ch1_ddc_source_c.h" bodystart="38" bodyend="54"/>
+    <listofallmembers>
+      <member refid="classgr_1_1II__K7__310R_1_1ch1__ddc__source__c_1aeb4b555497d3b9b3707eb481a9cb388c" prot="public" virt="non-virtual"><scope>gr::II_K7_310R::ch1_ddc_source_c</scope><name>make</name></member>
+      <member refid="classgr_1_1II__K7__310R_1_1ch1__ddc__source__c_1aa115e9ce2b97fbf3ae5fde1f0a8d1ff6" prot="public" virt="non-virtual"><scope>gr::II_K7_310R::ch1_ddc_source_c</scope><name>sptr</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

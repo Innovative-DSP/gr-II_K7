@@ -27,10 +27,10 @@ find_package(Innovative)
 include_directories(${Boost_INCLUDE_DIR})
 link_directories(${Boost_LIBRARY_DIRS})
 
-list(APPEND II_K7_310R_sources
-    ch16_ddc_source_c_impl.cc
-    ch1_ddc_source_c_impl.cc
-)
+# list(APPEND II_K7_310R_sources
+#     ch16_ddc_source_c_impl.cc
+#     ch1_ddc_source_c_impl.cc
+# )
 
 set(II_K7_310R_sources "${II_K7_310R_sources}" PARENT_SCOPE)
 if(NOT II_K7_310R_sources)

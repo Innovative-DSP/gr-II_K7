@@ -1,0 +1,701 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.11">
+  <compounddef id="classgr_1_1II__K7__310R_1_1ch16__ddc__source__c__impl" kind="class" language="C++" prot="public">
+    <compoundname>gr::II_K7_310R::ch16_ddc_source_c_impl</compoundname>
+    <basecompoundref refid="classgr_1_1II__K7__310R_1_1ch16__ddc__source__c" prot="public" virt="non-virtual">gr::II_K7_310R::ch16_ddc_source_c</basecompoundref>
+    <basecompoundref prot="private" virt="non-virtual">IManager_GUIInterface</basecompoundref>
+    <includes refid="ch16__ddc__source__c__impl_8h" local="no">ch16_ddc_source_c_impl.h</includes>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classgr_1_1II__K7__310R_1_1ch16__ddc__source__c__impl_1ad301387ce49ecac87d2080ca1a180868" prot="private" static="no" mutable="no">
+        <type>LibraryIo::GpDspSettings</type>
+        <definition>LibraryIo::GpDspSettings gr::II_K7_310R::ch16_ddc_source_c_impl::Settings</definition>
+        <argsstring></argsstring>
+        <name>Settings</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/user/Documents/GnuRadio/gr-II_K7_310R/lib/ch16_ddc_source_c_impl.h" line="38" column="1" bodyfile="/home/user/Documents/GnuRadio/gr-II_K7_310R/lib/ch16_ddc_source_c_impl.h" bodystart="38" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classgr_1_1II__K7__310R_1_1ch16__ddc__source__c__impl_1a66b84e9014d5550012a3a9dcb189ceee" prot="private" static="no" mutable="no">
+        <type>LibraryIo *</type>
+        <definition>LibraryIo* gr::II_K7_310R::ch16_ddc_source_c_impl::Io</definition>
+        <argsstring></argsstring>
+        <name>Io</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/user/Documents/GnuRadio/gr-II_K7_310R/lib/ch16_ddc_source_c_impl.h" line="39" column="1" bodyfile="/home/user/Documents/GnuRadio/gr-II_K7_310R/lib/ch16_ddc_source_c_impl.h" bodystart="39" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classgr_1_1II__K7__310R_1_1ch16__ddc__source__c__impl_1ab32a6a2db1438c2e412e26c1f550fc5a" prot="private" static="no" mutable="no">
+        <type>unsigned</type>
+        <definition>unsigned gr::II_K7_310R::ch16_ddc_source_c_impl::BlockId</definition>
+        <argsstring></argsstring>
+        <name>BlockId</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/user/Documents/GnuRadio/gr-II_K7_310R/lib/ch16_ddc_source_c_impl.h" line="41" column="1" bodyfile="/home/user/Documents/GnuRadio/gr-II_K7_310R/lib/ch16_ddc_source_c_impl.h" bodystart="41" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classgr_1_1II__K7__310R_1_1ch16__ddc__source__c__impl_1a4a0d68e8dcd7f7ffd29dfa0390f71873" prot="private" static="no" mutable="no">
+        <type>ThreadSafeQueue&lt; VeloBuffer &gt;</type>
+        <definition>ThreadSafeQueue&lt;VeloBuffer&gt; gr::II_K7_310R::ch16_ddc_source_c_impl::PacketQ</definition>
+        <argsstring></argsstring>
+        <name>PacketQ</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/user/Documents/GnuRadio/gr-II_K7_310R/lib/ch16_ddc_source_c_impl.h" line="42" column="1" bodyfile="/home/user/Documents/GnuRadio/gr-II_K7_310R/lib/ch16_ddc_source_c_impl.h" bodystart="42" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classgr_1_1II__K7__310R_1_1ch16__ddc__source__c__impl_1a3d8b312116b249d315b0789922a4c353" prot="private" static="no" mutable="no">
+        <type>size_t</type>
+        <definition>size_t gr::II_K7_310R::ch16_ddc_source_c_impl::SampleIndex</definition>
+        <argsstring></argsstring>
+        <name>SampleIndex</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/user/Documents/GnuRadio/gr-II_K7_310R/lib/ch16_ddc_source_c_impl.h" line="44" column="1" bodyfile="/home/user/Documents/GnuRadio/gr-II_K7_310R/lib/ch16_ddc_source_c_impl.h" bodystart="44" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classgr_1_1II__K7__310R_1_1ch16__ddc__source__c__impl_1acb00cf79166d238b0404b7f703499f40" prot="private" static="no" mutable="no">
+        <type>VeloBuffer</type>
+        <definition>VeloBuffer gr::II_K7_310R::ch16_ddc_source_c_impl::CurrentPacket</definition>
+        <argsstring></argsstring>
+        <name>CurrentPacket</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/user/Documents/GnuRadio/gr-II_K7_310R/lib/ch16_ddc_source_c_impl.h" line="45" column="1" bodyfile="/home/user/Documents/GnuRadio/gr-II_K7_310R/lib/ch16_ddc_source_c_impl.h" bodystart="45" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classgr_1_1II__K7__310R_1_1ch16__ddc__source__c__impl_1a50afdef086cb1bf18eaea0a227e8c699" prot="private" static="no" mutable="no">
+        <type>Event</type>
+        <definition>Event gr::II_K7_310R::ch16_ddc_source_c_impl::IsNotFull</definition>
+        <argsstring></argsstring>
+        <name>IsNotFull</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/user/Documents/GnuRadio/gr-II_K7_310R/lib/ch16_ddc_source_c_impl.h" line="47" column="1" bodyfile="/home/user/Documents/GnuRadio/gr-II_K7_310R/lib/ch16_ddc_source_c_impl.h" bodystart="47" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classgr_1_1II__K7__310R_1_1ch16__ddc__source__c__impl_1aa87619024d974ac83922886beaa901c8" prot="private" static="no" mutable="no">
+        <type>Event</type>
+        <definition>Event gr::II_K7_310R::ch16_ddc_source_c_impl::IsNotEmpty</definition>
+        <argsstring></argsstring>
+        <name>IsNotEmpty</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/user/Documents/GnuRadio/gr-II_K7_310R/lib/ch16_ddc_source_c_impl.h" line="48" column="1" bodyfile="/home/user/Documents/GnuRadio/gr-II_K7_310R/lib/ch16_ddc_source_c_impl.h" bodystart="48" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classgr_1_1II__K7__310R_1_1ch16__ddc__source__c__impl_1a6ef5f6c432be6211fe9962dde219c454" prot="private" static="no" mutable="no">
+        <type>size_t</type>
+        <definition>size_t gr::II_K7_310R::ch16_ddc_source_c_impl::RxByteCountMin</definition>
+        <argsstring></argsstring>
+        <name>RxByteCountMin</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/user/Documents/GnuRadio/gr-II_K7_310R/lib/ch16_ddc_source_c_impl.h" line="51" column="1" bodyfile="/home/user/Documents/GnuRadio/gr-II_K7_310R/lib/ch16_ddc_source_c_impl.h" bodystart="51" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classgr_1_1II__K7__310R_1_1ch16__ddc__source__c__impl_1af7eeb1183c5dbc99b8a59d81f0dedab6" prot="private" static="no" mutable="no">
+        <type>size_t</type>
+        <definition>size_t gr::II_K7_310R::ch16_ddc_source_c_impl::RxByteCountMax</definition>
+        <argsstring></argsstring>
+        <name>RxByteCountMax</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/user/Documents/GnuRadio/gr-II_K7_310R/lib/ch16_ddc_source_c_impl.h" line="51" column="1" bodyfile="/home/user/Documents/GnuRadio/gr-II_K7_310R/lib/ch16_ddc_source_c_impl.h" bodystart="51" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classgr_1_1II__K7__310R_1_1ch16__ddc__source__c__impl_1a25dd5b011548376bf5bc01b5800639a4" prot="private" static="no" mutable="no">
+        <type>int</type>
+        <definition>int gr::II_K7_310R::ch16_ddc_source_c_impl::TxByteCountMin</definition>
+        <argsstring></argsstring>
+        <name>TxByteCountMin</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/user/Documents/GnuRadio/gr-II_K7_310R/lib/ch16_ddc_source_c_impl.h" line="52" column="1" bodyfile="/home/user/Documents/GnuRadio/gr-II_K7_310R/lib/ch16_ddc_source_c_impl.h" bodystart="52" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classgr_1_1II__K7__310R_1_1ch16__ddc__source__c__impl_1a47741099bc27ed27594df31a2291895c" prot="private" static="no" mutable="no">
+        <type>int</type>
+        <definition>int gr::II_K7_310R::ch16_ddc_source_c_impl::TxByteCountMax</definition>
+        <argsstring></argsstring>
+        <name>TxByteCountMax</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/user/Documents/GnuRadio/gr-II_K7_310R/lib/ch16_ddc_source_c_impl.h" line="52" column="1" bodyfile="/home/user/Documents/GnuRadio/gr-II_K7_310R/lib/ch16_ddc_source_c_impl.h" bodystart="52" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-static-attrib">
+      <memberdef kind="variable" id="classgr_1_1II__K7__310R_1_1ch16__ddc__source__c__impl_1a26cee6f96d78cb9292ba2bb9ba908874" prot="private" static="yes" mutable="no">
+        <type>unsigned</type>
+        <definition>unsigned gr::II_K7_310R::ch16_ddc_source_c_impl::BlockCount</definition>
+        <argsstring></argsstring>
+        <name>BlockCount</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/user/Documents/GnuRadio/gr-II_K7_310R/lib/ch16_ddc_source_c_impl.h" line="40" column="1" bodyfile="/home/user/Documents/GnuRadio/gr-II_K7_310R/lib/ch16_ddc_source_c_impl.h" bodystart="40" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classgr_1_1II__K7__310R_1_1ch16__ddc__source__c__impl_1ac684de054993e43cc7fa1faa447c30ea" prot="private" static="yes" mutable="no">
+        <type>const queue&lt; VeloBuffer &gt;::size_type</type>
+        <definition>const queue&lt;VeloBuffer&gt;::size_type gr::II_K7_310R::ch16_ddc_source_c_impl::MaxPackets</definition>
+        <argsstring></argsstring>
+        <name>MaxPackets</name>
+        <initializer>= 128</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/user/Documents/GnuRadio/gr-II_K7_310R/lib/ch16_ddc_source_c_impl.h" line="43" column="1" bodyfile="/home/user/Documents/GnuRadio/gr-II_K7_310R/lib/ch16_ddc_source_c_impl.h" bodystart="43" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classgr_1_1II__K7__310R_1_1ch16__ddc__source__c__impl_1a028aa010a180bb476f9503e147f473c5" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>gr::II_K7_310R::ch16_ddc_source_c_impl::ch16_ddc_source_c_impl</definition>
+        <argsstring>(float rf_gain, Ch16TriggerSource trigger_source, const char *ddc_filter_path, bool is_rf_tuner, float rf_center_freq, float ch0_offset_freq, float ch1_offset_freq, float ch2_offset_freq, float ch3_offset_freq, float ch4_offset_freq, float ch5_offset_freq, float ch6_offset_freq, float ch7_offset_freq, float ch8_offset_freq, float ch9_offset_freq, float ch10_offset_freq, float ch11_offset_freq, float ch12_offset_freq, float ch13_offset_freq, float ch14_offset_freq, float ch15_offset_freq)</argsstring>
+        <name>ch16_ddc_source_c_impl</name>
+        <param>
+          <type>float</type>
+          <declname>rf_gain</declname>
+        </param>
+        <param>
+          <type><ref refid="namespacegr_1_1II__K7__310R_1a1c1292d8181e46a2985782e82e3d9727" kindref="member">Ch16TriggerSource</ref></type>
+          <declname>trigger_source</declname>
+        </param>
+        <param>
+          <type>const char *</type>
+          <declname>ddc_filter_path</declname>
+        </param>
+        <param>
+          <type>bool</type>
+          <declname>is_rf_tuner</declname>
+        </param>
+        <param>
+          <type>float</type>
+          <declname>rf_center_freq</declname>
+        </param>
+        <param>
+          <type>float</type>
+          <declname>ch0_offset_freq</declname>
+        </param>
+        <param>
+          <type>float</type>
+          <declname>ch1_offset_freq</declname>
+        </param>
+        <param>
+          <type>float</type>
+          <declname>ch2_offset_freq</declname>
+        </param>
+        <param>
+          <type>float</type>
+          <declname>ch3_offset_freq</declname>
+        </param>
+        <param>
+          <type>float</type>
+          <declname>ch4_offset_freq</declname>
+        </param>
+        <param>
+          <type>float</type>
+          <declname>ch5_offset_freq</declname>
+        </param>
+        <param>
+          <type>float</type>
+          <declname>ch6_offset_freq</declname>
+        </param>
+        <param>
+          <type>float</type>
+          <declname>ch7_offset_freq</declname>
+        </param>
+        <param>
+          <type>float</type>
+          <declname>ch8_offset_freq</declname>
+        </param>
+        <param>
+          <type>float</type>
+          <declname>ch9_offset_freq</declname>
+        </param>
+        <param>
+          <type>float</type>
+          <declname>ch10_offset_freq</declname>
+        </param>
+        <param>
+          <type>float</type>
+          <declname>ch11_offset_freq</declname>
+        </param>
+        <param>
+          <type>float</type>
+          <declname>ch12_offset_freq</declname>
+        </param>
+        <param>
+          <type>float</type>
+          <declname>ch13_offset_freq</declname>
+        </param>
+        <param>
+          <type>float</type>
+          <declname>ch14_offset_freq</declname>
+        </param>
+        <param>
+          <type>float</type>
+          <declname>ch15_offset_freq</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/user/Documents/GnuRadio/gr-II_K7_310R/lib/ch16_ddc_source_c_impl.h" line="55" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classgr_1_1II__K7__310R_1_1ch16__ddc__source__c__impl_1aa0bbcaae60a555cb61ee2bb6a5b395d3" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>gr::II_K7_310R::ch16_ddc_source_c_impl::~ch16_ddc_source_c_impl</definition>
+        <argsstring>()</argsstring>
+        <name>~ch16_ddc_source_c_impl</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/user/Documents/GnuRadio/gr-II_K7_310R/lib/ch16_ddc_source_c_impl.h" line="63" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classgr_1_1II__K7__310R_1_1ch16__ddc__source__c__impl_1a38ad137ed1f88fa6fdcca54a98af1952" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int gr::II_K7_310R::ch16_ddc_source_c_impl::work</definition>
+        <argsstring>(int noutput_items, gr_vector_const_void_star &amp;input_items, gr_vector_void_star &amp;output_items)</argsstring>
+        <name>work</name>
+        <param>
+          <type>int</type>
+          <declname>noutput_items</declname>
+        </param>
+        <param>
+          <type>gr_vector_const_void_star &amp;</type>
+          <declname>input_items</declname>
+        </param>
+        <param>
+          <type>gr_vector_void_star &amp;</type>
+          <declname>output_items</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/user/Documents/GnuRadio/gr-II_K7_310R/lib/ch16_ddc_source_c_impl.h" line="66" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classgr_1_1II__K7__310R_1_1ch16__ddc__source__c__impl_1a43087faf21fb0e4b4377e625d705e090" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>bool</type>
+        <definition>virtual bool gr::II_K7_310R::ch16_ddc_source_c_impl::start</definition>
+        <argsstring>()</argsstring>
+        <name>start</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/user/Documents/GnuRadio/gr-II_K7_310R/lib/ch16_ddc_source_c_impl.h" line="69" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classgr_1_1II__K7__310R_1_1ch16__ddc__source__c__impl_1a15414660b44892e05e877a18963f9a6d" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>bool</type>
+        <definition>virtual bool gr::II_K7_310R::ch16_ddc_source_c_impl::stop</definition>
+        <argsstring>()</argsstring>
+        <name>stop</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/user/Documents/GnuRadio/gr-II_K7_310R/lib/ch16_ddc_source_c_impl.h" line="70" column="1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-func">
+      <memberdef kind="function" id="classgr_1_1II__K7__310R_1_1ch16__ddc__source__c__impl_1aa884c09c3125c5a4710296c98e0ea665" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool gr::II_K7_310R::ch16_ddc_source_c_impl::CheckForData</definition>
+        <argsstring>(int &amp;Samples)</argsstring>
+        <name>CheckForData</name>
+        <param>
+          <type>int &amp;</type>
+          <declname>Samples</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/user/Documents/GnuRadio/gr-II_K7_310R/lib/ch16_ddc_source_c_impl.h" line="73" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classgr_1_1II__K7__310R_1_1ch16__ddc__source__c__impl_1aaba5386d5aef4c69214ee2298291be25" prot="private" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type>void</type>
+        <definition>virtual void gr::II_K7_310R::ch16_ddc_source_c_impl::Log</definition>
+        <argsstring>(const std::string &amp;a_string)</argsstring>
+        <name>Log</name>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>a_string</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/user/Documents/GnuRadio/gr-II_K7_310R/lib/ch16_ddc_source_c_impl.h" line="75" column="1" bodyfile="/home/user/Documents/GnuRadio/gr-II_K7_310R/lib/ch16_ddc_source_c_impl.h" bodystart="75" bodyend="76"/>
+      </memberdef>
+      <memberdef kind="function" id="classgr_1_1II__K7__310R_1_1ch16__ddc__source__c__impl_1a38ce0180b2cbc48ef69b7a5ceb408302" prot="private" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>virtual void gr::II_K7_310R::ch16_ddc_source_c_impl::DataPacketAvailable</definition>
+        <argsstring>(unsigned int ordinal, VeloBuffer &amp;buffer)</argsstring>
+        <name>DataPacketAvailable</name>
+        <param>
+          <type>unsigned int</type>
+          <declname>ordinal</declname>
+        </param>
+        <param>
+          <type>VeloBuffer &amp;</type>
+          <declname>buffer</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/user/Documents/GnuRadio/gr-II_K7_310R/lib/ch16_ddc_source_c_impl.h" line="77" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classgr_1_1II__K7__310R_1_1ch16__ddc__source__c__impl_1a7b5b08668c2cd8b80817627d740c2cc0" prot="private" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type>void</type>
+        <definition>virtual void gr::II_K7_310R::ch16_ddc_source_c_impl::PeriodicStatus</definition>
+        <argsstring>(unsigned int ordinal)</argsstring>
+        <name>PeriodicStatus</name>
+        <param>
+          <type>unsigned int</type>
+          <declname>ordinal</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/user/Documents/GnuRadio/gr-II_K7_310R/lib/ch16_ddc_source_c_impl.h" line="79" column="1" bodyfile="/home/user/Documents/GnuRadio/gr-II_K7_310R/lib/ch16_ddc_source_c_impl.h" bodystart="79" bodyend="79"/>
+      </memberdef>
+      <memberdef kind="function" id="classgr_1_1II__K7__310R_1_1ch16__ddc__source__c__impl_1a639af3a6f4954cee629a495b6e0cbcb1" prot="private" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type>void</type>
+        <definition>virtual void gr::II_K7_310R::ch16_ddc_source_c_impl::BeforeStreamStart</definition>
+        <argsstring>(unsigned int ordinal)</argsstring>
+        <name>BeforeStreamStart</name>
+        <param>
+          <type>unsigned int</type>
+          <declname>ordinal</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/user/Documents/GnuRadio/gr-II_K7_310R/lib/ch16_ddc_source_c_impl.h" line="80" column="1" bodyfile="/home/user/Documents/GnuRadio/gr-II_K7_310R/lib/ch16_ddc_source_c_impl.h" bodystart="80" bodyend="80"/>
+      </memberdef>
+      <memberdef kind="function" id="classgr_1_1II__K7__310R_1_1ch16__ddc__source__c__impl_1a8aa35b722f141b7b4a492f8d347d96e7" prot="private" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type>void</type>
+        <definition>virtual void gr::II_K7_310R::ch16_ddc_source_c_impl::AfterStreamStart</definition>
+        <argsstring>(unsigned int ordinal)</argsstring>
+        <name>AfterStreamStart</name>
+        <param>
+          <type>unsigned int</type>
+          <declname>ordinal</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/user/Documents/GnuRadio/gr-II_K7_310R/lib/ch16_ddc_source_c_impl.h" line="81" column="1" bodyfile="/home/user/Documents/GnuRadio/gr-II_K7_310R/lib/ch16_ddc_source_c_impl.h" bodystart="81" bodyend="81"/>
+      </memberdef>
+      <memberdef kind="function" id="classgr_1_1II__K7__310R_1_1ch16__ddc__source__c__impl_1ac5d00de07e39fded02ee4d9a5abe64c0" prot="private" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type>void</type>
+        <definition>virtual void gr::II_K7_310R::ch16_ddc_source_c_impl::AfterStreamAutoStop</definition>
+        <argsstring>(unsigned int ordinal)</argsstring>
+        <name>AfterStreamAutoStop</name>
+        <param>
+          <type>unsigned int</type>
+          <declname>ordinal</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/user/Documents/GnuRadio/gr-II_K7_310R/lib/ch16_ddc_source_c_impl.h" line="82" column="1" bodyfile="/home/user/Documents/GnuRadio/gr-II_K7_310R/lib/ch16_ddc_source_c_impl.h" bodystart="82" bodyend="82"/>
+      </memberdef>
+      <memberdef kind="function" id="classgr_1_1II__K7__310R_1_1ch16__ddc__source__c__impl_1a33dc2342b6af4e2d6ba306cf8393236d" prot="private" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type>void</type>
+        <definition>virtual void gr::II_K7_310R::ch16_ddc_source_c_impl::Plot</definition>
+        <argsstring>(unsigned int ordinal, VeloBuffer &amp;buffer, int type)</argsstring>
+        <name>Plot</name>
+        <param>
+          <type>unsigned int</type>
+          <declname>ordinal</declname>
+        </param>
+        <param>
+          <type>VeloBuffer &amp;</type>
+          <declname>buffer</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>type</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/user/Documents/GnuRadio/gr-II_K7_310R/lib/ch16_ddc_source_c_impl.h" line="83" column="1" bodyfile="/home/user/Documents/GnuRadio/gr-II_K7_310R/lib/ch16_ddc_source_c_impl.h" bodystart="83" bodyend="83"/>
+      </memberdef>
+      <memberdef kind="function" id="classgr_1_1II__K7__310R_1_1ch16__ddc__source__c__impl_1a609f91ed6e7eea706d88be853034b806" prot="private" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type>void</type>
+        <definition>virtual void gr::II_K7_310R::ch16_ddc_source_c_impl::BeforeDrcOpen</definition>
+        <argsstring>()</argsstring>
+        <name>BeforeDrcOpen</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/user/Documents/GnuRadio/gr-II_K7_310R/lib/ch16_ddc_source_c_impl.h" line="84" column="1" bodyfile="/home/user/Documents/GnuRadio/gr-II_K7_310R/lib/ch16_ddc_source_c_impl.h" bodystart="84" bodyend="84"/>
+      </memberdef>
+      <memberdef kind="function" id="classgr_1_1II__K7__310R_1_1ch16__ddc__source__c__impl_1a20a02e842008a521a54590666e019176" prot="private" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type>void</type>
+        <definition>virtual void gr::II_K7_310R::ch16_ddc_source_c_impl::AfterDrcOpen</definition>
+        <argsstring>()</argsstring>
+        <name>AfterDrcOpen</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/user/Documents/GnuRadio/gr-II_K7_310R/lib/ch16_ddc_source_c_impl.h" line="85" column="1" bodyfile="/home/user/Documents/GnuRadio/gr-II_K7_310R/lib/ch16_ddc_source_c_impl.h" bodystart="85" bodyend="85"/>
+      </memberdef>
+      <memberdef kind="function" id="classgr_1_1II__K7__310R_1_1ch16__ddc__source__c__impl_1a8b725e7a9eaccabd21343fe378862dc2" prot="private" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type>void</type>
+        <definition>virtual void gr::II_K7_310R::ch16_ddc_source_c_impl::BeforeDrcClose</definition>
+        <argsstring>()</argsstring>
+        <name>BeforeDrcClose</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/user/Documents/GnuRadio/gr-II_K7_310R/lib/ch16_ddc_source_c_impl.h" line="86" column="1" bodyfile="/home/user/Documents/GnuRadio/gr-II_K7_310R/lib/ch16_ddc_source_c_impl.h" bodystart="86" bodyend="86"/>
+      </memberdef>
+      <memberdef kind="function" id="classgr_1_1II__K7__310R_1_1ch16__ddc__source__c__impl_1a6d8aa987baf79cf59e2c89a36afa0bd2" prot="private" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type>void</type>
+        <definition>virtual void gr::II_K7_310R::ch16_ddc_source_c_impl::AfterDrcClose</definition>
+        <argsstring>()</argsstring>
+        <name>AfterDrcClose</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/user/Documents/GnuRadio/gr-II_K7_310R/lib/ch16_ddc_source_c_impl.h" line="87" column="1" bodyfile="/home/user/Documents/GnuRadio/gr-II_K7_310R/lib/ch16_ddc_source_c_impl.h" bodystart="87" bodyend="87"/>
+      </memberdef>
+      <memberdef kind="function" id="classgr_1_1II__K7__310R_1_1ch16__ddc__source__c__impl_1ab1cb6d019282f1c982f23c849ba2d800" prot="private" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type>void</type>
+        <definition>virtual void gr::II_K7_310R::ch16_ddc_source_c_impl::AfterDrcStreamStart</definition>
+        <argsstring>()</argsstring>
+        <name>AfterDrcStreamStart</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/user/Documents/GnuRadio/gr-II_K7_310R/lib/ch16_ddc_source_c_impl.h" line="88" column="1" bodyfile="/home/user/Documents/GnuRadio/gr-II_K7_310R/lib/ch16_ddc_source_c_impl.h" bodystart="88" bodyend="88"/>
+      </memberdef>
+      <memberdef kind="function" id="classgr_1_1II__K7__310R_1_1ch16__ddc__source__c__impl_1a9df3a00df10fdcf3d06944e59ee771ae" prot="private" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type>void</type>
+        <definition>virtual void gr::II_K7_310R::ch16_ddc_source_c_impl::BeforeDrcStreamStart</definition>
+        <argsstring>()</argsstring>
+        <name>BeforeDrcStreamStart</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/user/Documents/GnuRadio/gr-II_K7_310R/lib/ch16_ddc_source_c_impl.h" line="89" column="1" bodyfile="/home/user/Documents/GnuRadio/gr-II_K7_310R/lib/ch16_ddc_source_c_impl.h" bodystart="89" bodyend="89"/>
+      </memberdef>
+      <memberdef kind="function" id="classgr_1_1II__K7__310R_1_1ch16__ddc__source__c__impl_1ab3a558cc653f70f2d2b11f28b48cd258" prot="private" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type>void</type>
+        <definition>virtual void gr::II_K7_310R::ch16_ddc_source_c_impl::AfterDrcStreamStop</definition>
+        <argsstring>()</argsstring>
+        <name>AfterDrcStreamStop</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/user/Documents/GnuRadio/gr-II_K7_310R/lib/ch16_ddc_source_c_impl.h" line="90" column="1" bodyfile="/home/user/Documents/GnuRadio/gr-II_K7_310R/lib/ch16_ddc_source_c_impl.h" bodystart="90" bodyend="90"/>
+      </memberdef>
+      <memberdef kind="function" id="classgr_1_1II__K7__310R_1_1ch16__ddc__source__c__impl_1a814bbb7524df1ade709035f337d291d5" prot="private" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type>void</type>
+        <definition>virtual void gr::II_K7_310R::ch16_ddc_source_c_impl::BeforeDrcStreamStop</definition>
+        <argsstring>()</argsstring>
+        <name>BeforeDrcStreamStop</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/user/Documents/GnuRadio/gr-II_K7_310R/lib/ch16_ddc_source_c_impl.h" line="91" column="1" bodyfile="/home/user/Documents/GnuRadio/gr-II_K7_310R/lib/ch16_ddc_source_c_impl.h" bodystart="91" bodyend="91"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="5">
+        <label>gr::II_K7_310R::ch16_ddc_source_c_impl</label>
+        <link refid="classgr_1_1II__K7__310R_1_1ch16__ddc__source__c__impl"/>
+        <childnode refid="6" relation="public-inheritance">
+        </childnode>
+        <childnode refid="8" relation="private-inheritance">
+        </childnode>
+      </node>
+      <node id="8">
+        <label>IManager_GUIInterface</label>
+      </node>
+      <node id="7">
+        <label>sync_block</label>
+      </node>
+      <node id="6">
+        <label>gr::II_K7_310R::ch16_ddc_source_c</label>
+        <link refid="classgr_1_1II__K7__310R_1_1ch16__ddc__source__c"/>
+        <childnode refid="7" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="9">
+        <label>gr::II_K7_310R::ch16_ddc_source_c_impl</label>
+        <link refid="classgr_1_1II__K7__310R_1_1ch16__ddc__source__c__impl"/>
+        <childnode refid="10" relation="public-inheritance">
+        </childnode>
+        <childnode refid="12" relation="private-inheritance">
+        </childnode>
+      </node>
+      <node id="12">
+        <label>IManager_GUIInterface</label>
+      </node>
+      <node id="11">
+        <label>sync_block</label>
+      </node>
+      <node id="10">
+        <label>gr::II_K7_310R::ch16_ddc_source_c</label>
+        <link refid="classgr_1_1II__K7__310R_1_1ch16__ddc__source__c"/>
+        <childnode refid="11" relation="public-inheritance">
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="/home/user/Documents/GnuRadio/gr-II_K7_310R/lib/ch16_ddc_source_c_impl.h" line="36" column="1" bodyfile="/home/user/Documents/GnuRadio/gr-II_K7_310R/lib/ch16_ddc_source_c_impl.h" bodystart="35" bodyend="92"/>
+    <listofallmembers>
+      <member refid="classgr_1_1II__K7__310R_1_1ch16__ddc__source__c__impl_1a6d8aa987baf79cf59e2c89a36afa0bd2" prot="private" virt="virtual"><scope>gr::II_K7_310R::ch16_ddc_source_c_impl</scope><name>AfterDrcClose</name></member>
+      <member refid="classgr_1_1II__K7__310R_1_1ch16__ddc__source__c__impl_1a20a02e842008a521a54590666e019176" prot="private" virt="virtual"><scope>gr::II_K7_310R::ch16_ddc_source_c_impl</scope><name>AfterDrcOpen</name></member>
+      <member refid="classgr_1_1II__K7__310R_1_1ch16__ddc__source__c__impl_1ab1cb6d019282f1c982f23c849ba2d800" prot="private" virt="virtual"><scope>gr::II_K7_310R::ch16_ddc_source_c_impl</scope><name>AfterDrcStreamStart</name></member>
+      <member refid="classgr_1_1II__K7__310R_1_1ch16__ddc__source__c__impl_1ab3a558cc653f70f2d2b11f28b48cd258" prot="private" virt="virtual"><scope>gr::II_K7_310R::ch16_ddc_source_c_impl</scope><name>AfterDrcStreamStop</name></member>
+      <member refid="classgr_1_1II__K7__310R_1_1ch16__ddc__source__c__impl_1ac5d00de07e39fded02ee4d9a5abe64c0" prot="private" virt="virtual"><scope>gr::II_K7_310R::ch16_ddc_source_c_impl</scope><name>AfterStreamAutoStop</name></member>
+      <member refid="classgr_1_1II__K7__310R_1_1ch16__ddc__source__c__impl_1a8aa35b722f141b7b4a492f8d347d96e7" prot="private" virt="virtual"><scope>gr::II_K7_310R::ch16_ddc_source_c_impl</scope><name>AfterStreamStart</name></member>
+      <member refid="classgr_1_1II__K7__310R_1_1ch16__ddc__source__c__impl_1a8b725e7a9eaccabd21343fe378862dc2" prot="private" virt="virtual"><scope>gr::II_K7_310R::ch16_ddc_source_c_impl</scope><name>BeforeDrcClose</name></member>
+      <member refid="classgr_1_1II__K7__310R_1_1ch16__ddc__source__c__impl_1a609f91ed6e7eea706d88be853034b806" prot="private" virt="virtual"><scope>gr::II_K7_310R::ch16_ddc_source_c_impl</scope><name>BeforeDrcOpen</name></member>
+      <member refid="classgr_1_1II__K7__310R_1_1ch16__ddc__source__c__impl_1a9df3a00df10fdcf3d06944e59ee771ae" prot="private" virt="virtual"><scope>gr::II_K7_310R::ch16_ddc_source_c_impl</scope><name>BeforeDrcStreamStart</name></member>
+      <member refid="classgr_1_1II__K7__310R_1_1ch16__ddc__source__c__impl_1a814bbb7524df1ade709035f337d291d5" prot="private" virt="virtual"><scope>gr::II_K7_310R::ch16_ddc_source_c_impl</scope><name>BeforeDrcStreamStop</name></member>
+      <member refid="classgr_1_1II__K7__310R_1_1ch16__ddc__source__c__impl_1a639af3a6f4954cee629a495b6e0cbcb1" prot="private" virt="virtual"><scope>gr::II_K7_310R::ch16_ddc_source_c_impl</scope><name>BeforeStreamStart</name></member>
+      <member refid="classgr_1_1II__K7__310R_1_1ch16__ddc__source__c__impl_1a26cee6f96d78cb9292ba2bb9ba908874" prot="private" virt="non-virtual"><scope>gr::II_K7_310R::ch16_ddc_source_c_impl</scope><name>BlockCount</name></member>
+      <member refid="classgr_1_1II__K7__310R_1_1ch16__ddc__source__c__impl_1ab32a6a2db1438c2e412e26c1f550fc5a" prot="private" virt="non-virtual"><scope>gr::II_K7_310R::ch16_ddc_source_c_impl</scope><name>BlockId</name></member>
+      <member refid="classgr_1_1II__K7__310R_1_1ch16__ddc__source__c__impl_1a028aa010a180bb476f9503e147f473c5" prot="public" virt="non-virtual"><scope>gr::II_K7_310R::ch16_ddc_source_c_impl</scope><name>ch16_ddc_source_c_impl</name></member>
+      <member refid="classgr_1_1II__K7__310R_1_1ch16__ddc__source__c__impl_1aa884c09c3125c5a4710296c98e0ea665" prot="private" virt="non-virtual"><scope>gr::II_K7_310R::ch16_ddc_source_c_impl</scope><name>CheckForData</name></member>
+      <member refid="classgr_1_1II__K7__310R_1_1ch16__ddc__source__c__impl_1acb00cf79166d238b0404b7f703499f40" prot="private" virt="non-virtual"><scope>gr::II_K7_310R::ch16_ddc_source_c_impl</scope><name>CurrentPacket</name></member>
+      <member refid="classgr_1_1II__K7__310R_1_1ch16__ddc__source__c__impl_1a38ce0180b2cbc48ef69b7a5ceb408302" prot="private" virt="virtual"><scope>gr::II_K7_310R::ch16_ddc_source_c_impl</scope><name>DataPacketAvailable</name></member>
+      <member refid="classgr_1_1II__K7__310R_1_1ch16__ddc__source__c__impl_1a66b84e9014d5550012a3a9dcb189ceee" prot="private" virt="non-virtual"><scope>gr::II_K7_310R::ch16_ddc_source_c_impl</scope><name>Io</name></member>
+      <member refid="classgr_1_1II__K7__310R_1_1ch16__ddc__source__c__impl_1aa87619024d974ac83922886beaa901c8" prot="private" virt="non-virtual"><scope>gr::II_K7_310R::ch16_ddc_source_c_impl</scope><name>IsNotEmpty</name></member>
+      <member refid="classgr_1_1II__K7__310R_1_1ch16__ddc__source__c__impl_1a50afdef086cb1bf18eaea0a227e8c699" prot="private" virt="non-virtual"><scope>gr::II_K7_310R::ch16_ddc_source_c_impl</scope><name>IsNotFull</name></member>
+      <member refid="classgr_1_1II__K7__310R_1_1ch16__ddc__source__c__impl_1aaba5386d5aef4c69214ee2298291be25" prot="private" virt="virtual"><scope>gr::II_K7_310R::ch16_ddc_source_c_impl</scope><name>Log</name></member>
+      <member refid="classgr_1_1II__K7__310R_1_1ch16__ddc__source__c_1a7fc8246a30ebd03cf4ea6697ae8756ee" prot="public" virt="non-virtual"><scope>gr::II_K7_310R::ch16_ddc_source_c_impl</scope><name>make</name></member>
+      <member refid="classgr_1_1II__K7__310R_1_1ch16__ddc__source__c__impl_1ac684de054993e43cc7fa1faa447c30ea" prot="private" virt="non-virtual"><scope>gr::II_K7_310R::ch16_ddc_source_c_impl</scope><name>MaxPackets</name></member>
+      <member refid="classgr_1_1II__K7__310R_1_1ch16__ddc__source__c__impl_1a4a0d68e8dcd7f7ffd29dfa0390f71873" prot="private" virt="non-virtual"><scope>gr::II_K7_310R::ch16_ddc_source_c_impl</scope><name>PacketQ</name></member>
+      <member refid="classgr_1_1II__K7__310R_1_1ch16__ddc__source__c__impl_1a7b5b08668c2cd8b80817627d740c2cc0" prot="private" virt="virtual"><scope>gr::II_K7_310R::ch16_ddc_source_c_impl</scope><name>PeriodicStatus</name></member>
+      <member refid="classgr_1_1II__K7__310R_1_1ch16__ddc__source__c__impl_1a33dc2342b6af4e2d6ba306cf8393236d" prot="private" virt="virtual"><scope>gr::II_K7_310R::ch16_ddc_source_c_impl</scope><name>Plot</name></member>
+      <member refid="classgr_1_1II__K7__310R_1_1ch16__ddc__source__c__impl_1af7eeb1183c5dbc99b8a59d81f0dedab6" prot="private" virt="non-virtual"><scope>gr::II_K7_310R::ch16_ddc_source_c_impl</scope><name>RxByteCountMax</name></member>
+      <member refid="classgr_1_1II__K7__310R_1_1ch16__ddc__source__c__impl_1a6ef5f6c432be6211fe9962dde219c454" prot="private" virt="non-virtual"><scope>gr::II_K7_310R::ch16_ddc_source_c_impl</scope><name>RxByteCountMin</name></member>
+      <member refid="classgr_1_1II__K7__310R_1_1ch16__ddc__source__c__impl_1a3d8b312116b249d315b0789922a4c353" prot="private" virt="non-virtual"><scope>gr::II_K7_310R::ch16_ddc_source_c_impl</scope><name>SampleIndex</name></member>
+      <member refid="classgr_1_1II__K7__310R_1_1ch16__ddc__source__c__impl_1ad301387ce49ecac87d2080ca1a180868" prot="private" virt="non-virtual"><scope>gr::II_K7_310R::ch16_ddc_source_c_impl</scope><name>Settings</name></member>
+      <member refid="classgr_1_1II__K7__310R_1_1ch16__ddc__source__c_1ad026bb94ebadc43c8a030ce0fbcea56e" prot="public" virt="non-virtual"><scope>gr::II_K7_310R::ch16_ddc_source_c_impl</scope><name>sptr</name></member>
+      <member refid="classgr_1_1II__K7__310R_1_1ch16__ddc__source__c__impl_1a43087faf21fb0e4b4377e625d705e090" prot="public" virt="virtual"><scope>gr::II_K7_310R::ch16_ddc_source_c_impl</scope><name>start</name></member>
+      <member refid="classgr_1_1II__K7__310R_1_1ch16__ddc__source__c__impl_1a15414660b44892e05e877a18963f9a6d" prot="public" virt="virtual"><scope>gr::II_K7_310R::ch16_ddc_source_c_impl</scope><name>stop</name></member>
+      <member refid="classgr_1_1II__K7__310R_1_1ch16__ddc__source__c__impl_1a47741099bc27ed27594df31a2291895c" prot="private" virt="non-virtual"><scope>gr::II_K7_310R::ch16_ddc_source_c_impl</scope><name>TxByteCountMax</name></member>
+      <member refid="classgr_1_1II__K7__310R_1_1ch16__ddc__source__c__impl_1a25dd5b011548376bf5bc01b5800639a4" prot="private" virt="non-virtual"><scope>gr::II_K7_310R::ch16_ddc_source_c_impl</scope><name>TxByteCountMin</name></member>
+      <member refid="classgr_1_1II__K7__310R_1_1ch16__ddc__source__c__impl_1a38ad137ed1f88fa6fdcca54a98af1952" prot="public" virt="non-virtual"><scope>gr::II_K7_310R::ch16_ddc_source_c_impl</scope><name>work</name></member>
+      <member refid="classgr_1_1II__K7__310R_1_1ch16__ddc__source__c__impl_1aa0bbcaae60a555cb61ee2bb6a5b395d3" prot="public" virt="non-virtual"><scope>gr::II_K7_310R::ch16_ddc_source_c_impl</scope><name>~ch16_ddc_source_c_impl</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>
