@@ -33,18 +33,24 @@ namespace gr {
     unsigned  ch1_ddc_source_c_impl::BlockCount = 0;
 
     ch1_ddc_source_c::sptr
-    ch1_ddc_source_c::make(float rf_gain, Ch1TriggerSource trigger_source, const char*  ddc_filter_path, float rf_center_freq, float ch0_offset_freq)
+    ch1_ddc_source_c::make(float rf_gain, Ch1TriggerSource trigger_source, const char*  ddc_filter_path,
+                           bool is_rf_tuner, float rf_center_freq, float ch0_offset_freq, float ch0_tune_freq)
     {
-      return gnuradio::get_initial_sptr
-        (new ch1_ddc_source_c_impl(rf_gain, trigger_source, ddc_filter_path, rf_center_freq, ch0_offset_freq));
+        float ch0_freq = is_rf_tuner ? ch0_offset_freq : ch0_tune_freq;
+
+        return gnuradio::get_initial_sptr
+          (new ch1_ddc_source_c_impl(rf_gain, trigger_source, ddc_filter_path, is_rf_tuner, rf_center_freq, ch0_freq));
     }
 
     /*
      * The private constructor
      */
-    ch1_ddc_source_c_impl::ch1_ddc_source_c_impl(float rf_gain, Ch1TriggerSource trigger_source, const char*  ddc_filter_path, float rf_center_freq, float ch0_offset_freq) :
+    ch1_ddc_source_c_impl::ch1_ddc_source_c_impl(float rf_gain, Ch1TriggerSource trigger_source,
+                                                 const char*  ddc_filter_path, bool is_rf_tuner,
+                                                 float rf_center_freq, float ch0_offset_freq) :
          Settings(rf_gain, static_cast<unsigned short>(trigger_source),
              ddc_filter_path,  // labeled as "DDC Bandwidth" in GR block
+             is_rf_tuner,
              rf_center_freq, 1, // MaxChannels
              ch0_offset_freq, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0
          ),

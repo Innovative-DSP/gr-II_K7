@@ -5,13 +5,7 @@
   <category>II_K7_310R</category>
   <flags>throttle</flags>
   <import>import II_K7_310R</import>
-  <make>II_K7_310R.ch16_ddc_source_c($rf_gain, $trigger_source, $ddc_filter_path, $rf_center_freq, $ch0_offset_freq, $ch1_offset_freq, $ch2_offset_freq, $ch3_offset_freq, $ch4_offset_freq, $ch5_offset_freq, $ch6_offset_freq, $ch7_offset_freq, $ch8_offset_freq, $ch9_offset_freq, $ch10_offset_freq, $ch11_offset_freq, $ch12_offset_freq, $ch13_offset_freq, $ch14_offset_freq, $ch15_offset_freq)</make>
-  <param>
-    <name>RF Gain (db)</name>
-    <key>rf_gain</key>
-    <value>0.0</value>
-    <type>float</type>
-  </param>
+  <make>II_K7_310R.ch16_ddc_source_c($rf_gain, $trigger_source, $ddc_filter_path, $is_rf_tuner, $rf_center_freq, $ch0_offset_freq, $ch1_offset_freq, $ch2_offset_freq, $ch3_offset_freq, $ch4_offset_freq, $ch5_offset_freq, $ch6_offset_freq, $ch7_offset_freq, $ch8_offset_freq, $ch9_offset_freq, $ch10_offset_freq, $ch11_offset_freq, $ch12_offset_freq, $ch13_offset_freq, $ch14_offset_freq, $ch15_offset_freq, $ch0_tune_freq, $ch1_tune_freq, $ch2_tune_freq, $ch3_tune_freq, $ch4_tune_freq, $ch5_tune_freq, $ch6_tune_freq, $ch7_tune_freq, $ch8_tune_freq, $ch9_tune_freq, $ch10_tune_freq, $ch11_tune_freq, $ch12_tune_freq, $ch13_tune_freq, $ch14_tune_freq, $ch15_tune_freq)</make>
   <param>
     <name>Trigger Source</name>
     <key>trigger_source</key>
@@ -32,123 +26,257 @@
     <type>file_open</type>
   </param>
   <param>
+    <name>Enable RF Tuner</name>
+    <key>is_rf_tuner</key>
+    <value>True</value>
+    <type>bool</type>
+    <option>                                                                    
+      <name>Yes</name>                                                         
+      <key>True</key>                                                          
+    </option>                                                                  
+    <option>                                                                   
+      <name>No</name>                                                          
+      <key>False</key>                                                         
+    </option>                                                                  
+  </param>
+  <param>
+    <name>RF Gain (db)</name>
+    <key>rf_gain</key>
+    <value>0.0</value>
+    <type>float</type>
+    <hide>#if str($is_rf_tuner()) == 'True' then 'none' else 'all'#</hide>
+  </param>
+  <param>
     <name>RF Center Freq (MHz)</name>
     <key>rf_center_freq</key>
     <value>2400.0</value>
     <type>float</type>
+    <hide>#if str($is_rf_tuner()) == 'True' then 'none' else 'all'#</hide>
   </param>
-<param>
-  <name>Ch0 Offset Freq (MHz)</name>
-  <key>ch0_offset_freq</key>
-  <value>0.0</value>
-  <type>float</type>
-  <hide>part</hide>
-</param>
-<param>
-  <name>Ch1 Offset Freq (MHz)</name>
-  <key>ch1_offset_freq</key>
-  <value>0.0</value>
-  <type>float</type>
-  <hide>part</hide>
-</param>
-<param>
-  <name>Ch2 Offset Freq (MHz)</name>
-  <key>ch2_offset_freq</key>
-  <value>0.0</value>
-  <type>float</type>
-  <hide>part</hide>
-</param>
-<param>
-  <name>Ch3 Offset Freq (MHz)</name>
-  <key>ch3_offset_freq</key>
-  <value>0.0</value>
-  <type>float</type>
-  <hide>part</hide>
-</param>
-<param>
-  <name>Ch4 Offset Freq (MHz)</name>
-  <key>ch4_offset_freq</key>
-  <value>0.0</value>
-  <type>float</type>
-  <hide>part</hide>
-</param>
-<param>
-  <name>Ch5 Offset Freq (MHz)</name>
-  <key>ch5_offset_freq</key>
-  <value>0.0</value>
-  <type>float</type>
-  <hide>part</hide>
-</param>
-<param>
-  <name>Ch6 Offset Freq (MHz)</name>
-  <key>ch6_offset_freq</key>
-  <value>0.0</value>
-  <type>float</type>
-  <hide>part</hide>
-</param>
-<param>
-  <name>Ch7 Offset Freq (MHz)</name>
-  <key>ch7_offset_freq</key>
-  <value>0.0</value>
-  <type>float</type>
-  <hide>part</hide>
-</param>
-<param>
-  <name>Ch8 Offset Freq (MHz)</name>
-  <key>ch8_offset_freq</key>
-  <value>0.0</value>
-  <type>float</type>
-  <hide>part</hide>
-</param>
-<param>
-  <name>Ch9 Offset Freq (MHz)</name>
-  <key>ch9_offset_freq</key>
-  <value>0.0</value>
-  <type>float</type>
-  <hide>part</hide>
-</param>
-<param>
-  <name>Ch10 Offset Freq (MHz)</name>
-  <key>ch10_offset_freq</key>
-  <value>0.0</value>
-  <type>float</type>
-  <hide>part</hide>
-</param>
-<param>
-  <name>Ch11 Offset Freq (MHz)</name>
-  <key>ch11_offset_freq</key>
-  <value>0.0</value>
-  <type>float</type>
-  <hide>part</hide>
-</param>
-<param>
-  <name>Ch12 Offset Freq (MHz)</name>
-  <key>ch12_offset_freq</key>
-  <value>0.0</value>
-  <type>float</type>
-  <hide>part</hide>
-</param>
-<param>
-  <name>Ch13 Offset Freq (MHz)</name>
-  <key>ch13_offset_freq</key>
-  <value>0.0</value>
-  <type>float</type>
-  <hide>part</hide>
-</param>
-<param>
-  <name>Ch14 Offset Freq (MHz)</name>
-  <key>ch14_offset_freq</key>
-  <value>0.0</value>
-  <type>float</type>
-  <hide>part</hide>
-</param>
-<param>
-  <name>Ch15 Offset Freq (MHz)</name>
-  <key>ch15_offset_freq</key>
-  <value>0.0</value>
-  <type>float</type>
-  <hide>part</hide>
-</param>
+  <param>
+    <name>Ch0 Offset Freq (MHz)</name>
+    <key>ch0_offset_freq</key>
+    <value>0.0</value>
+    <type>float</type>
+    <hide>#if str($is_rf_tuner()) == 'True' then 'part' else 'all'#</hide>
+  </param>
+  <param>
+    <name>Ch1 Offset Freq (MHz)</name>
+    <key>ch1_offset_freq</key>
+    <value>0.0</value>
+    <type>float</type>
+    <hide>#if str($is_rf_tuner()) == 'True' then 'part' else 'all'#</hide>
+  </param>
+  <param>
+    <name>Ch2 Offset Freq (MHz)</name>
+    <key>ch2_offset_freq</key>
+    <value>0.0</value>
+    <type>float</type>
+    <hide>#if str($is_rf_tuner()) == 'True' then 'part' else 'all'#</hide>
+  </param>
+  <param>
+    <name>Ch3 Offset Freq (MHz)</name>
+    <key>ch3_offset_freq</key>
+    <value>0.0</value>
+    <type>float</type>
+    <hide>#if str($is_rf_tuner()) == 'True' then 'part' else 'all'#</hide>
+  </param>
+  <param>
+    <name>Ch4 Offset Freq (MHz)</name>
+    <key>ch4_offset_freq</key>
+    <value>0.0</value>
+    <type>float</type>
+    <hide>#if str($is_rf_tuner()) == 'True' then 'part' else 'all'#</hide>
+  </param>
+  <param>
+    <name>Ch5 Offset Freq (MHz)</name>
+    <key>ch5_offset_freq</key>
+    <value>0.0</value>
+    <type>float</type>
+    <hide>#if str($is_rf_tuner()) == 'True' then 'part' else 'all'#</hide>
+  </param>
+  <param>
+    <name>Ch6 Offset Freq (MHz)</name>
+    <key>ch6_offset_freq</key>
+    <value>0.0</value>
+    <type>float</type>
+    <hide>#if str($is_rf_tuner()) == 'True' then 'part' else 'all'#</hide>
+  </param>
+  <param>
+    <name>Ch7 Offset Freq (MHz)</name>
+    <key>ch7_offset_freq</key>
+    <value>0.0</value>
+    <type>float</type>
+    <hide>#if str($is_rf_tuner()) == 'True' then 'part' else 'all'#</hide>
+  </param>
+  <param>
+    <name>Ch8 Offset Freq (MHz)</name>
+    <key>ch8_offset_freq</key>
+    <value>0.0</value>
+    <type>float</type>
+    <hide>#if str($is_rf_tuner()) == 'True' then 'part' else 'all'#</hide>
+  </param>
+  <param>
+    <name>Ch9 Offset Freq (MHz)</name>
+    <key>ch9_offset_freq</key>
+    <value>0.0</value>
+    <type>float</type>
+    <hide>#if str($is_rf_tuner()) == 'True' then 'part' else 'all'#</hide>
+  </param>
+  <param>
+    <name>Ch10 Offset Freq (MHz)</name>
+    <key>ch10_offset_freq</key>
+    <value>0.0</value>
+    <type>float</type>
+    <hide>#if str($is_rf_tuner()) == 'True' then 'part' else 'all'#</hide>
+  </param>
+  <param>
+    <name>Ch11 Offset Freq (MHz)</name>
+    <key>ch11_offset_freq</key>
+    <value>0.0</value>
+    <type>float</type>
+    <hide>#if str($is_rf_tuner()) == 'True' then 'part' else 'all'#</hide>
+  </param>
+  <param>
+    <name>Ch12 Offset Freq (MHz)</name>
+    <key>ch12_offset_freq</key>
+    <value>0.0</value>
+    <type>float</type>
+    <hide>#if str($is_rf_tuner()) == 'True' then 'part' else 'all'#</hide>
+  </param>
+  <param>
+    <name>Ch13 Offset Freq (MHz)</name>
+    <key>ch13_offset_freq</key>
+    <value>0.0</value>
+    <type>float</type>
+    <hide>#if str($is_rf_tuner()) == 'True' then 'part' else 'all'#</hide>
+  </param>
+  <param>
+    <name>Ch14 Offset Freq (MHz)</name>
+    <key>ch14_offset_freq</key>
+    <value>0.0</value>
+    <type>float</type>
+    <hide>#if str($is_rf_tuner()) == 'True' then 'part' else 'all'#</hide>
+  </param>
+  <param>
+    <name>Ch15 Offset Freq (MHz)</name>
+    <key>ch15_offset_freq</key>
+    <value>0.0</value>
+    <type>float</type>
+    <hide>#if str($is_rf_tuner()) == 'True' then 'part' else 'all'#</hide>
+  </param>
+  <param>
+    <name>Ch0 Tune Freq (MHz)</name>
+    <key>ch0_tune_freq</key>
+    <value>0.0</value>
+    <type>float</type>
+    <hide>#if str($is_rf_tuner()) != 'True' then 'part' else 'all'#</hide>
+  </param>
+  <param>
+    <name>Ch1 Tune Freq (MHz)</name>
+    <key>ch1_tune_freq</key>
+    <value>0.0</value>
+    <type>float</type>
+    <hide>#if str($is_rf_tuner()) != 'True' then 'part' else 'all'#</hide>
+  </param>
+  <param>
+    <name>Ch2 Tune Freq (MHz)</name>
+    <key>ch2_tune_freq</key>
+    <value>0.0</value>
+    <type>float</type>
+    <hide>#if str($is_rf_tuner()) != 'True' then 'part' else 'all'#</hide>
+  </param>
+  <param>
+    <name>Ch3 Tune Freq (MHz)</name>
+    <key>ch3_tune_freq</key>
+    <value>0.0</value>
+    <type>float</type>
+    <hide>#if str($is_rf_tuner()) != 'True' then 'part' else 'all'#</hide>
+  </param>
+  <param>
+    <name>Ch4 Tune Freq (MHz)</name>
+    <key>ch4_tune_freq</key>
+    <value>0.0</value>
+    <type>float</type>
+    <hide>#if str($is_rf_tuner()) != 'True' then 'part' else 'all'#</hide>
+  </param>
+  <param>
+    <name>Ch5 Tune Freq (MHz)</name>
+    <key>ch5_tune_freq</key>
+    <value>0.0</value>
+    <type>float</type>
+    <hide>#if str($is_rf_tuner()) != 'True' then 'part' else 'all'#</hide>
+  </param>
+  <param>
+    <name>Ch6 Tune Freq (MHz)</name>
+    <key>ch6_tune_freq</key>
+    <value>0.0</value>
+    <type>float</type>
+    <hide>#if str($is_rf_tuner()) != 'True' then 'part' else 'all'#</hide>
+  </param>
+  <param>
+    <name>Ch7 Tune Freq (MHz)</name>
+    <key>ch7_tune_freq</key>
+    <value>0.0</value>
+    <type>float</type>
+    <hide>#if str($is_rf_tuner()) != 'True' then 'part' else 'all'#</hide>
+  </param>
+  <param>
+    <name>Ch8 Tune Freq (MHz)</name>
+    <key>ch8_tune_freq</key>
+    <value>0.0</value>
+    <type>float</type>
+    <hide>#if str($is_rf_tuner()) != 'True' then 'part' else 'all'#</hide>
+  </param>
+  <param>
+    <name>Ch9 Tune Freq (MHz)</name>
+    <key>ch9_tune_freq</key>
+    <value>0.0</value>
+    <type>float</type>
+    <hide>#if str($is_rf_tuner()) != 'True' then 'part' else 'all'#</hide>
+  </param>
+  <param>
+    <name>Ch10 Tune Freq (MHz)</name>
+    <key>ch10_tune_freq</key>
+    <value>0.0</value>
+    <type>float</type>
+    <hide>#if str($is_rf_tuner()) != 'True' then 'part' else 'all'#</hide>
+  </param>
+  <param>
+    <name>Ch11 Tune Freq (MHz)</name>
+    <key>ch11_tune_freq</key>
+    <value>0.0</value>
+    <type>float</type>
+    <hide>#if str($is_rf_tuner()) != 'True' then 'part' else 'all'#</hide>
+  </param>
+  <param>
+    <name>Ch12 Tune Freq (MHz)</name>
+    <key>ch12_tune_freq</key>
+    <value>0.0</value>
+    <type>float</type>
+    <hide>#if str($is_rf_tuner()) != 'True' then 'part' else 'all'#</hide>
+  </param>
+  <param>
+    <name>Ch13 Tune Freq (MHz)</name>
+    <key>ch13_tune_freq</key>
+    <value>0.0</value>
+    <type>float</type>
+    <hide>#if str($is_rf_tuner()) != 'True' then 'part' else 'all'#</hide>
+  </param>
+  <param>
+    <name>Ch14 Tune Freq (MHz)</name>
+    <key>ch14_tune_freq</key>
+    <value>0.0</value>
+    <type>float</type>
+    <hide>#if str($is_rf_tuner()) != 'True' then 'part' else 'all'#</hide>
+  </param>
+  <param>
+    <name>Ch15 Tune Freq (MHz)</name>
+    <key>ch15_tune_freq</key>
+    <value>0.0</value>
+    <type>float</type>
+    <hide>#if str($is_rf_tuner()) != 'True' then 'part' else 'all'#</hide>
+  </param>
 
   <!-- Make one 'source' node per output. Sub-nodes:
        * name (an identifier for the GUI)

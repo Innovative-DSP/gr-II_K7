@@ -31,7 +31,7 @@ namespace gr {
     enum Ch1TriggerSource {Ch1Software, Ch1External};
 
     /*!
-     * \brief <+description of block+>
+     * \brief source of DDC data
      * \ingroup II_K7_310R
      *
      */
@@ -48,7 +48,9 @@ namespace gr {
        * class. II_K7_310R::ch1_ddc_source_c::make is the public interface for
        * creating new instances.
        */
-      static sptr make(float rf_gain, II_K7_310R::Ch1TriggerSource trigger_source, const char*  ddc_filter_path, float rf_center_freq, float ch0_offset_freq);
+      static sptr make(float rf_gain, II_K7_310R::Ch1TriggerSource trigger_source,
+                       const char*  ddc_filter_path, bool is_rf_tuner, float rf_center_freq,
+                       float ch0_offset_freq, float ch0_tune_freq);
     };
 
   } // namespace II_K7_310R

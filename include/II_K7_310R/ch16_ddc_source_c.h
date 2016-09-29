@@ -1,6 +1,6 @@
 /* -*- c++ -*- */
 /* 
- * Copyright 2016 2016 Innovative Integration, Inc..
+ * Copyright 2016 Innovative Integration, Inc.
  * 
  * This is free software; you can redistribute it and/or modify
  * it under the terms of the GNU General Public License as published by
@@ -48,7 +48,20 @@ namespace gr {
        * class. II_K7_310R::ch16_ddc_source_c::make is the public interface for
        * creating new instances.
        */
-        static sptr make(float rf_gain, II_K7_310R::Ch16TriggerSource trigger_source, const char*  ddc_filter_path, float rf_center_freq, float ch0_offset_freq, float ch1_offset_freq, float ch2_offset_freq, float ch3_offset_freq, float ch4_offset_freq, float ch5_offset_freq, float ch6_offset_freq, float ch7_offset_freq, float ch8_offset_freq, float ch9_offset_freq, float ch10_offset_freq, float ch11_offset_freq, float ch12_offset_freq, float ch13_offset_freq, float ch14_offset_freq, float ch15_offset_freq);
+        static sptr make(float rf_gain, II_K7_310R::Ch16TriggerSource trigger_source,
+                         const char*  ddc_filter_path, bool is_rf_tuner, float rf_center_freq,
+                         float ch0_offset_freq, float ch1_offset_freq, float ch2_offset_freq,
+                         float ch3_offset_freq, float ch4_offset_freq, float ch5_offset_freq,
+                         float ch6_offset_freq, float ch7_offset_freq, float ch8_offset_freq,
+                         float ch9_offset_freq, float ch10_offset_freq, float ch11_offset_freq,
+                         float ch12_offset_freq, float ch13_offset_freq, float ch14_offset_freq,
+                         float ch15_offset_freq,
+                         float ch0_tune_freq, float ch1_tune_freq, float ch2_tune_freq,
+                         float ch3_tune_freq, float ch4_tune_freq, float ch5_tune_freq,
+                         float ch6_tune_freq, float ch7_tune_freq, float ch8_tune_freq,
+                         float ch9_tune_freq, float ch10_tune_freq, float ch11_tune_freq,
+                         float ch12_tune_freq, float ch13_tune_freq, float ch14_tune_freq,
+                         float ch15_tune_freq);
     };
 
   } // namespace II_K7_310R

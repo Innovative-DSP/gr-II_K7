@@ -53,7 +53,7 @@ namespace gr {
 
     public:
         ch16_ddc_source_c_impl(float rf_gain, Ch16TriggerSource trigger_source,
-                               const char* ddc_filter_path, float rf_center_freq,
+                               const char* ddc_filter_path, bool is_rf_tuner, float rf_center_freq,
                                float ch0_offset_freq, float ch1_offset_freq, float ch2_offset_freq,
                                float ch3_offset_freq, float ch4_offset_freq, float ch5_offset_freq,
                                float ch6_offset_freq, float ch7_offset_freq, float ch8_offset_freq,

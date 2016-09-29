@@ -5,13 +5,7 @@
   <category>II_K7_310R</category>
   <flags>throttle</flags>
   <import>import II_K7_310R</import>
-  <make>II_K7_310R.ch1_ddc_source_c($rf_gain, $trigger_source, $ddc_filter_path, $rf_center_freq, $ch0_offset_freq)</make>
-  <param>
-    <name>RF Gain (db)</name>
-    <key>rf_gain</key>
-    <value>0.0</value>
-    <type>float</type>
-  </param>
+  <make>II_K7_310R.ch1_ddc_source_c($rf_gain, $trigger_source, $ddc_filter_path, $is_rf_tuner, $rf_center_freq, $ch0_offset_freq, $ch0_tune_freq)</make>
   <param>
     <name>Trigger Source</name>
     <key>trigger_source</key>
@@ -32,17 +26,46 @@
     <type>file_open</type>
   </param>
   <param>
+    <name>Enable RF Tuner</name>
+    <key>is_rf_tuner</key>
+    <value>True</value>
+    <type>bool</type>
+    <option>                                                                    
+      <name>Yes</name>                                                         
+      <key>True</key>                                                          
+    </option>                                                                  
+    <option>                                                                   
+      <name>No</name>                                                          
+      <key>False</key>                                                         
+    </option>                                                                  
+  </param>
+  <param>
+    <name>RF Gain (db)</name>
+    <key>rf_gain</key>
+    <value>0.0</value>
+    <type>float</type>
+    <hide>#if str($is_rf_tuner()) == 'True' then 'none' else 'all'#</hide>
+  </param>
+  <param>
     <name>RF Center Freq (MHz)</name>
     <key>rf_center_freq</key>
     <value>2400.0</value>
     <type>float</type>
+    <hide>#if str($is_rf_tuner()) == 'True' then 'none' else 'all'#</hide>
   </param>
   <param>
     <name>Ch0 Offset Freq (MHz)</name>
     <key>ch0_offset_freq</key>
     <value>0.0</value>
     <type>float</type>
-    <hide>part</hide>
+    <hide>#if str($is_rf_tuner()) == 'True' then 'part' else 'all'#</hide>
+  </param>
+  <param>
+    <name>Ch0 Tune Freq (MHz)</name>
+    <key>ch0_tune_freq</key>
+    <value>0.0</value>
+    <type>float</type>
+    <hide>#if str($is_rf_tuner()) != 'True' then 'part' else 'all'#</hide>
   </param>
 
   <!-- Make one 'source' node per output. Sub-nodes:

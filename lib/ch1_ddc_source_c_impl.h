@@ -47,7 +47,8 @@ namespace gr {
 
      public:
       ch1_ddc_source_c_impl(float rf_gain, Ch1TriggerSource trigger_source,
-                            const char*  ddc_filter_path, float rf_center_freq, float ch0_offset_freq);
+                            const char*  ddc_filter_path, bool is_rf_tuner, float rf_center_freq,
+                            float ch0_offset_freq);
       ~ch1_ddc_source_c_impl();
 
       // Where all the action really happens
