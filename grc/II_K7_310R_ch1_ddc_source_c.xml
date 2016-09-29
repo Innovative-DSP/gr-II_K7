@@ -2,7 +2,7 @@
 <block>
   <name>1 Channel DDC Source</name>
   <key>II_K7_310R_ch1_ddc_source_c</key>
-  <category>II_K7_310R</category>
+  <category>II K7 310R</category>
   <flags>throttle</flags>
   <import>import II_K7_310R</import>
   <make>II_K7_310R.ch1_ddc_source_c($rf_gain, $trigger_source, $ddc_filter_path, $is_rf_tuner, $rf_center_freq, $ch0_offset_freq, $ch0_tune_freq)</make>
