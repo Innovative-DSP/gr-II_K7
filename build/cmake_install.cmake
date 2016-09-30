@@ -1,4 +1,4 @@
-# Install script for directory: /home/user/Documents/GnuRadio/gr-II_K7_310R
+# Install script for directory: ${CMAKE_SOURCE_DIR}/..
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
@@ -33,18 +33,18 @@ if(NOT DEFINED CMAKE_INSTALL_SO_NO_EXE)
 endif()
 
 if(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "Unspecified")
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/cmake/II_K7_310R" TYPE FILE FILES "/home/user/Documents/GnuRadio/gr-II_K7_310R/cmake/Modules/II_K7_310RConfig.cmake")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/cmake/II_K7_310R" TYPE FILE FILES "${CMAKE_SOURCE_DIR}/../cmake/Modules/II_K7_310RConfig.cmake")
 endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for each subdirectory.
-  include("/home/user/Documents/GnuRadio/gr-II_K7_310R/build/include/II_K7_310R/cmake_install.cmake")
-  include("/home/user/Documents/GnuRadio/gr-II_K7_310R/build/lib/cmake_install.cmake")
-  include("/home/user/Documents/GnuRadio/gr-II_K7_310R/build/swig/cmake_install.cmake")
-  include("/home/user/Documents/GnuRadio/gr-II_K7_310R/build/python/cmake_install.cmake")
-  include("/home/user/Documents/GnuRadio/gr-II_K7_310R/build/grc/cmake_install.cmake")
-  include("/home/user/Documents/GnuRadio/gr-II_K7_310R/build/apps/cmake_install.cmake")
-  include("/home/user/Documents/GnuRadio/gr-II_K7_310R/build/docs/cmake_install.cmake")
+  include("${CMAKE_BINARY_DIR}/include/II_K7_310R/cmake_install.cmake")
+  include("${CMAKE_BINARY_DIR}/lib/cmake_install.cmake")
+  include("${CMAKE_BINARY_DIR}/swig/cmake_install.cmake")
+  include("${CMAKE_BINARY_DIR}/python/cmake_install.cmake")
+  include("${CMAKE_BINARY_DIR}/grc/cmake_install.cmake")
+  include("${CMAKE_BINARY_DIR}/apps/cmake_install.cmake")
+  include("${CMAKE_BINARY_DIR}/docs/cmake_install.cmake")
 
 endif()
 
@@ -56,5 +56,5 @@ endif()
 
 string(REPLACE ";" "\n" CMAKE_INSTALL_MANIFEST_CONTENT
        "${CMAKE_INSTALL_MANIFEST_FILES}")
-file(WRITE "/home/user/Documents/GnuRadio/gr-II_K7_310R/build/${CMAKE_INSTALL_MANIFEST}"
+file(WRITE "${CMAKE_BINARY_DIR}/${CMAKE_INSTALL_MANIFEST}"
      "${CMAKE_INSTALL_MANIFEST_CONTENT}")

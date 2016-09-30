@@ -1,4 +1,4 @@
-# Install script for directory: /home/user/Documents/GnuRadio/gr-II_K7_310R/lib
+# Install script for directory: ${CMAKE_SOURCE_DIR}/../lib
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
@@ -39,7 +39,7 @@ if(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "Unspeci
          FILE "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/libgnuradio-II_K7_310R.so"
          RPATH "")
   endif()
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib" TYPE SHARED_LIBRARY FILES "/home/user/Documents/GnuRadio/gr-II_K7_310R/build/lib/libgnuradio-II_K7_310R.so")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib" TYPE SHARED_LIBRARY FILES "${CMAKE_BINARY_DIR}/lib/libgnuradio-II_K7_310R.so")
   if(EXISTS "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/libgnuradio-II_K7_310R.so" AND
      NOT IS_SYMLINK "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/libgnuradio-II_K7_310R.so")
     if(CMAKE_INSTALL_DO_STRIP)
