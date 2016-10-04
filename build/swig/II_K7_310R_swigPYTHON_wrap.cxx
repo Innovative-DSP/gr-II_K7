@@ -4380,33 +4380,6 @@ SWIGINTERNINLINE PyObject*
 }
 
 
-#include <float.h>
-
-
-#include <math.h>
-
-
-/* Getting isfinite working pre C99 across multiple platforms is non-trivial. Users can provide SWIG_isfinite on older platforms. */
-#ifndef SWIG_isfinite
-# if defined(isfinite)
-#  define SWIG_isfinite(X) (isfinite(X))
-# elif defined(_MSC_VER)
-#  define SWIG_isfinite(X) (_finite(X))
-# elif defined(__sun) && defined(__SVR4)
-#  include <ieeefp.h>
-#  define SWIG_isfinite(X) (finite(X))
-# endif
-#endif
-
-
-/* Accept infinite as a valid float value unless we are unable to check if a value is finite */
-#ifdef SWIG_isfinite
-# define SWIG_Float_Overflow_Check(X) ((X < -FLT_MAX || X > FLT_MAX) && SWIG_isfinite(X))
-#else
-# define SWIG_Float_Overflow_Check(X) ((X < -FLT_MAX || X > FLT_MAX))
-#endif
-
-
 SWIGINTERN int
 SWIG_AsVal_double (PyObject *obj, double *val)
 {
@@ -4453,20 +4426,10 @@ SWIG_AsVal_double (PyObject *obj, double *val)
 }
 
 
-SWIGINTERN int
-SWIG_AsVal_float (PyObject * obj, float *val)
-{
-  double v;
-  int res = SWIG_AsVal_double (obj, &v);
-  if (SWIG_IsOK(res)) {
-    if (SWIG_Float_Overflow_Check(v)) {
-      return SWIG_OverflowError;
-    } else {
-      if (val) *val = static_cast< float >(v);
-    }
-  }  
-  return res;
-}
+#include <float.h>
+
+
+#include <math.h>
 
 
 SWIGINTERNINLINE int
@@ -4539,6 +4502,59 @@ SWIG_AsVal_long (PyObject *obj, long* val)
   }
 #endif
   return SWIG_TypeError;
+}
+
+
+SWIGINTERN int
+SWIG_AsVal_short (PyObject * obj, short *val)
+{
+  long v;
+  int res = SWIG_AsVal_long (obj, &v);
+  if (SWIG_IsOK(res)) {
+    if ((v < SHRT_MIN || v > SHRT_MAX)) {
+      return SWIG_OverflowError;
+    } else {
+      if (val) *val = static_cast< short >(v);
+    }
+  }  
+  return res;
+}
+
+
+/* Getting isfinite working pre C99 across multiple platforms is non-trivial. Users can provide SWIG_isfinite on older platforms. */
+#ifndef SWIG_isfinite
+# if defined(isfinite)
+#  define SWIG_isfinite(X) (isfinite(X))
+# elif defined(_MSC_VER)
+#  define SWIG_isfinite(X) (_finite(X))
+# elif defined(__sun) && defined(__SVR4)
+#  include <ieeefp.h>
+#  define SWIG_isfinite(X) (finite(X))
+# endif
+#endif
+
+
+/* Accept infinite as a valid float value unless we are unable to check if a value is finite */
+#ifdef SWIG_isfinite
+# define SWIG_Float_Overflow_Check(X) ((X < -FLT_MAX || X > FLT_MAX) && SWIG_isfinite(X))
+#else
+# define SWIG_Float_Overflow_Check(X) ((X < -FLT_MAX || X > FLT_MAX))
+#endif
+
+
+SWIGINTERN int
+SWIG_AsVal_float (PyObject * obj, float *val)
+{
+  double v;
+  int res = SWIG_AsVal_double (obj, &v);
+  if (SWIG_IsOK(res)) {
+    if (SWIG_Float_Overflow_Check(v)) {
+      return SWIG_OverflowError;
+    } else {
+      if (val) *val = static_cast< float >(v);
+    }
+  }  
+  return res;
 }
 
 
@@ -5125,11 +5141,11 @@ SWIGINTERN PyObject *Ch16External_swigconstant(PyObject *SWIGUNUSEDPARM(self), P
 
 SWIGINTERN PyObject *_wrap_ch16_ddc_source_c_make(PyObject *SWIGUNUSEDPARM(self), PyObject *args, PyObject *kwargs) {
   PyObject *resultobj = 0;
-  float arg1 ;
-  gr::II_K7_310R::Ch16TriggerSource arg2 ;
-  char *arg3 = (char *) 0 ;
-  bool arg4 ;
-  float arg5 ;
+  short arg1 ;
+  float arg2 ;
+  gr::II_K7_310R::Ch16TriggerSource arg3 ;
+  char *arg4 = (char *) 0 ;
+  bool arg5 ;
   float arg6 ;
   float arg7 ;
   float arg8 ;
@@ -5162,16 +5178,17 @@ SWIGINTERN PyObject *_wrap_ch16_ddc_source_c_make(PyObject *SWIGUNUSEDPARM(self)
   float arg35 ;
   float arg36 ;
   float arg37 ;
-  float val1 ;
+  float arg38 ;
+  short val1 ;
   int ecode1 = 0 ;
-  int val2 ;
+  float val2 ;
   int ecode2 = 0 ;
-  int res3 ;
-  char *buf3 = 0 ;
-  int alloc3 = 0 ;
-  bool val4 ;
-  int ecode4 = 0 ;
-  float val5 ;
+  int val3 ;
+  int ecode3 = 0 ;
+  int res4 ;
+  char *buf4 = 0 ;
+  int alloc4 = 0 ;
+  bool val5 ;
   int ecode5 = 0 ;
   float val6 ;
   int ecode6 = 0 ;
@@ -5237,6 +5254,8 @@ SWIGINTERN PyObject *_wrap_ch16_ddc_source_c_make(PyObject *SWIGUNUSEDPARM(self)
   int ecode36 = 0 ;
   float val37 ;
   int ecode37 = 0 ;
+  float val38 ;
+  int ecode38 = 0 ;
   PyObject * obj0 = 0 ;
   PyObject * obj1 = 0 ;
   PyObject * obj2 = 0 ;
@@ -5274,37 +5293,38 @@ SWIGINTERN PyObject *_wrap_ch16_ddc_source_c_make(PyObject *SWIGUNUSEDPARM(self)
   PyObject * obj34 = 0 ;
   PyObject * obj35 = 0 ;
   PyObject * obj36 = 0 ;
+  PyObject * obj37 = 0 ;
   char *  kwnames[] = {
-    (char *) "rf_gain",(char *) "trigger_source",(char *) "ddc_filter_path",(char *) "is_rf_tuner",(char *) "rf_center_freq",(char *) "ch0_offset_freq",(char *) "ch1_offset_freq",(char *) "ch2_offset_freq",(char *) "ch3_offset_freq",(char *) "ch4_offset_freq",(char *) "ch5_offset_freq",(char *) "ch6_offset_freq",(char *) "ch7_offset_freq",(char *) "ch8_offset_freq",(char *) "ch9_offset_freq",(char *) "ch10_offset_freq",(char *) "ch11_offset_freq",(char *) "ch12_offset_freq",(char *) "ch13_offset_freq",(char *) "ch14_offset_freq",(char *) "ch15_offset_freq",(char *) "ch0_tune_freq",(char *) "ch1_tune_freq",(char *) "ch2_tune_freq",(char *) "ch3_tune_freq",(char *) "ch4_tune_freq",(char *) "ch5_tune_freq",(char *) "ch6_tune_freq",(char *) "ch7_tune_freq",(char *) "ch8_tune_freq",(char *) "ch9_tune_freq",(char *) "ch10_tune_freq",(char *) "ch11_tune_freq",(char *) "ch12_tune_freq",(char *) "ch13_tune_freq",(char *) "ch14_tune_freq",(char *) "ch15_tune_freq", NULL 
+    (char *) "max_ch",(char *) "rf_gain",(char *) "trigger_source",(char *) "ddc_filter_path",(char *) "is_rf_tuner",(char *) "rf_center_freq",(char *) "ch0_offset_freq",(char *) "ch1_offset_freq",(char *) "ch2_offset_freq",(char *) "ch3_offset_freq",(char *) "ch4_offset_freq",(char *) "ch5_offset_freq",(char *) "ch6_offset_freq",(char *) "ch7_offset_freq",(char *) "ch8_offset_freq",(char *) "ch9_offset_freq",(char *) "ch10_offset_freq",(char *) "ch11_offset_freq",(char *) "ch12_offset_freq",(char *) "ch13_offset_freq",(char *) "ch14_offset_freq",(char *) "ch15_offset_freq",(char *) "ch0_tune_freq",(char *) "ch1_tune_freq",(char *) "ch2_tune_freq",(char *) "ch3_tune_freq",(char *) "ch4_tune_freq",(char *) "ch5_tune_freq",(char *) "ch6_tune_freq",(char *) "ch7_tune_freq",(char *) "ch8_tune_freq",(char *) "ch9_tune_freq",(char *) "ch10_tune_freq",(char *) "ch11_tune_freq",(char *) "ch12_tune_freq",(char *) "ch13_tune_freq",(char *) "ch14_tune_freq",(char *) "ch15_tune_freq", NULL 
   };
   gr::II_K7_310R::ch16_ddc_source_c::sptr result;
   
-  if (!PyArg_ParseTupleAndKeywords(args,kwargs,(char *)"OOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOO:ch16_ddc_source_c_make",kwnames,&obj0,&obj1,&obj2,&obj3,&obj4,&obj5,&obj6,&obj7,&obj8,&obj9,&obj10,&obj11,&obj12,&obj13,&obj14,&obj15,&obj16,&obj17,&obj18,&obj19,&obj20,&obj21,&obj22,&obj23,&obj24,&obj25,&obj26,&obj27,&obj28,&obj29,&obj30,&obj31,&obj32,&obj33,&obj34,&obj35,&obj36)) SWIG_fail;
-  ecode1 = SWIG_AsVal_float(obj0, &val1);
+  if (!PyArg_ParseTupleAndKeywords(args,kwargs,(char *)"OOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOO:ch16_ddc_source_c_make",kwnames,&obj0,&obj1,&obj2,&obj3,&obj4,&obj5,&obj6,&obj7,&obj8,&obj9,&obj10,&obj11,&obj12,&obj13,&obj14,&obj15,&obj16,&obj17,&obj18,&obj19,&obj20,&obj21,&obj22,&obj23,&obj24,&obj25,&obj26,&obj27,&obj28,&obj29,&obj30,&obj31,&obj32,&obj33,&obj34,&obj35,&obj36,&obj37)) SWIG_fail;
+  ecode1 = SWIG_AsVal_short(obj0, &val1);
   if (!SWIG_IsOK(ecode1)) {
-    SWIG_exception_fail(SWIG_ArgError(ecode1), "in method '" "ch16_ddc_source_c_make" "', argument " "1"" of type '" "float""'");
+    SWIG_exception_fail(SWIG_ArgError(ecode1), "in method '" "ch16_ddc_source_c_make" "', argument " "1"" of type '" "short""'");
   } 
-  arg1 = static_cast< float >(val1);
-  ecode2 = SWIG_AsVal_int(obj1, &val2);
+  arg1 = static_cast< short >(val1);
+  ecode2 = SWIG_AsVal_float(obj1, &val2);
   if (!SWIG_IsOK(ecode2)) {
-    SWIG_exception_fail(SWIG_ArgError(ecode2), "in method '" "ch16_ddc_source_c_make" "', argument " "2"" of type '" "gr::II_K7_310R::Ch16TriggerSource""'");
+    SWIG_exception_fail(SWIG_ArgError(ecode2), "in method '" "ch16_ddc_source_c_make" "', argument " "2"" of type '" "float""'");
   } 
-  arg2 = static_cast< gr::II_K7_310R::Ch16TriggerSource >(val2);
-  res3 = SWIG_AsCharPtrAndSize(obj2, &buf3, NULL, &alloc3);
-  if (!SWIG_IsOK(res3)) {
-    SWIG_exception_fail(SWIG_ArgError(res3), "in method '" "ch16_ddc_source_c_make" "', argument " "3"" of type '" "char const *""'");
+  arg2 = static_cast< float >(val2);
+  ecode3 = SWIG_AsVal_int(obj2, &val3);
+  if (!SWIG_IsOK(ecode3)) {
+    SWIG_exception_fail(SWIG_ArgError(ecode3), "in method '" "ch16_ddc_source_c_make" "', argument " "3"" of type '" "gr::II_K7_310R::Ch16TriggerSource""'");
+  } 
+  arg3 = static_cast< gr::II_K7_310R::Ch16TriggerSource >(val3);
+  res4 = SWIG_AsCharPtrAndSize(obj3, &buf4, NULL, &alloc4);
+  if (!SWIG_IsOK(res4)) {
+    SWIG_exception_fail(SWIG_ArgError(res4), "in method '" "ch16_ddc_source_c_make" "', argument " "4"" of type '" "char const *""'");
   }
-  arg3 = reinterpret_cast< char * >(buf3);
-  ecode4 = SWIG_AsVal_bool(obj3, &val4);
-  if (!SWIG_IsOK(ecode4)) {
-    SWIG_exception_fail(SWIG_ArgError(ecode4), "in method '" "ch16_ddc_source_c_make" "', argument " "4"" of type '" "bool""'");
-  } 
-  arg4 = static_cast< bool >(val4);
-  ecode5 = SWIG_AsVal_float(obj4, &val5);
+  arg4 = reinterpret_cast< char * >(buf4);
+  ecode5 = SWIG_AsVal_bool(obj4, &val5);
   if (!SWIG_IsOK(ecode5)) {
-    SWIG_exception_fail(SWIG_ArgError(ecode5), "in method '" "ch16_ddc_source_c_make" "', argument " "5"" of type '" "float""'");
+    SWIG_exception_fail(SWIG_ArgError(ecode5), "in method '" "ch16_ddc_source_c_make" "', argument " "5"" of type '" "bool""'");
   } 
-  arg5 = static_cast< float >(val5);
+  arg5 = static_cast< bool >(val5);
   ecode6 = SWIG_AsVal_float(obj5, &val6);
   if (!SWIG_IsOK(ecode6)) {
     SWIG_exception_fail(SWIG_ArgError(ecode6), "in method '" "ch16_ddc_source_c_make" "', argument " "6"" of type '" "float""'");
@@ -5465,9 +5485,14 @@ SWIGINTERN PyObject *_wrap_ch16_ddc_source_c_make(PyObject *SWIGUNUSEDPARM(self)
     SWIG_exception_fail(SWIG_ArgError(ecode37), "in method '" "ch16_ddc_source_c_make" "', argument " "37"" of type '" "float""'");
   } 
   arg37 = static_cast< float >(val37);
+  ecode38 = SWIG_AsVal_float(obj37, &val38);
+  if (!SWIG_IsOK(ecode38)) {
+    SWIG_exception_fail(SWIG_ArgError(ecode38), "in method '" "ch16_ddc_source_c_make" "', argument " "38"" of type '" "float""'");
+  } 
+  arg38 = static_cast< float >(val38);
   {
     try {
-      result = gr::II_K7_310R::ch16_ddc_source_c::make(arg1,arg2,(char const *)arg3,arg4,arg5,arg6,arg7,arg8,arg9,arg10,arg11,arg12,arg13,arg14,arg15,arg16,arg17,arg18,arg19,arg20,arg21,arg22,arg23,arg24,arg25,arg26,arg27,arg28,arg29,arg30,arg31,arg32,arg33,arg34,arg35,arg36,arg37);
+      result = gr::II_K7_310R::ch16_ddc_source_c::make(arg1,arg2,arg3,(char const *)arg4,arg5,arg6,arg7,arg8,arg9,arg10,arg11,arg12,arg13,arg14,arg15,arg16,arg17,arg18,arg19,arg20,arg21,arg22,arg23,arg24,arg25,arg26,arg27,arg28,arg29,arg30,arg31,arg32,arg33,arg34,arg35,arg36,arg37,arg38);
     }
     catch(std::exception &e) {
       SWIG_exception(SWIG_RuntimeError, e.what());
@@ -5478,10 +5503,10 @@ SWIGINTERN PyObject *_wrap_ch16_ddc_source_c_make(PyObject *SWIGUNUSEDPARM(self)
     
   }
   resultobj = SWIG_NewPointerObj((new gr::II_K7_310R::ch16_ddc_source_c::sptr(static_cast< const gr::II_K7_310R::ch16_ddc_source_c::sptr& >(result))), SWIGTYPE_p_boost__shared_ptrT_gr__II_K7_310R__ch16_ddc_source_c_t, SWIG_POINTER_OWN |  0 );
-  if (alloc3 == SWIG_NEWOBJ) delete[] buf3;
+  if (alloc4 == SWIG_NEWOBJ) delete[] buf4;
   return resultobj;
 fail:
-  if (alloc3 == SWIG_NEWOBJ) delete[] buf3;
+  if (alloc4 == SWIG_NEWOBJ) delete[] buf4;
   return NULL;
 }
 
@@ -5684,11 +5709,11 @@ fail:
 SWIGINTERN PyObject *_wrap_ch16_ddc_source_c_sptr_make(PyObject *SWIGUNUSEDPARM(self), PyObject *args, PyObject *kwargs) {
   PyObject *resultobj = 0;
   boost::shared_ptr< gr::II_K7_310R::ch16_ddc_source_c > *arg1 = (boost::shared_ptr< gr::II_K7_310R::ch16_ddc_source_c > *) 0 ;
-  float arg2 ;
-  gr::II_K7_310R::Ch16TriggerSource arg3 ;
-  char *arg4 = (char *) 0 ;
-  bool arg5 ;
-  float arg6 ;
+  short arg2 ;
+  float arg3 ;
+  gr::II_K7_310R::Ch16TriggerSource arg4 ;
+  char *arg5 = (char *) 0 ;
+  bool arg6 ;
   float arg7 ;
   float arg8 ;
   float arg9 ;
@@ -5721,18 +5746,19 @@ SWIGINTERN PyObject *_wrap_ch16_ddc_source_c_sptr_make(PyObject *SWIGUNUSEDPARM(
   float arg36 ;
   float arg37 ;
   float arg38 ;
+  float arg39 ;
   void *argp1 = 0 ;
   int res1 = 0 ;
-  float val2 ;
+  short val2 ;
   int ecode2 = 0 ;
-  int val3 ;
+  float val3 ;
   int ecode3 = 0 ;
-  int res4 ;
-  char *buf4 = 0 ;
-  int alloc4 = 0 ;
-  bool val5 ;
-  int ecode5 = 0 ;
-  float val6 ;
+  int val4 ;
+  int ecode4 = 0 ;
+  int res5 ;
+  char *buf5 = 0 ;
+  int alloc5 = 0 ;
+  bool val6 ;
   int ecode6 = 0 ;
   float val7 ;
   int ecode7 = 0 ;
@@ -5798,6 +5824,8 @@ SWIGINTERN PyObject *_wrap_ch16_ddc_source_c_sptr_make(PyObject *SWIGUNUSEDPARM(
   int ecode37 = 0 ;
   float val38 ;
   int ecode38 = 0 ;
+  float val39 ;
+  int ecode39 = 0 ;
   PyObject * obj0 = 0 ;
   PyObject * obj1 = 0 ;
   PyObject * obj2 = 0 ;
@@ -5836,42 +5864,43 @@ SWIGINTERN PyObject *_wrap_ch16_ddc_source_c_sptr_make(PyObject *SWIGUNUSEDPARM(
   PyObject * obj35 = 0 ;
   PyObject * obj36 = 0 ;
   PyObject * obj37 = 0 ;
+  PyObject * obj38 = 0 ;
   char *  kwnames[] = {
-    (char *) "self",(char *) "rf_gain",(char *) "trigger_source",(char *) "ddc_filter_path",(char *) "is_rf_tuner",(char *) "rf_center_freq",(char *) "ch0_offset_freq",(char *) "ch1_offset_freq",(char *) "ch2_offset_freq",(char *) "ch3_offset_freq",(char *) "ch4_offset_freq",(char *) "ch5_offset_freq",(char *) "ch6_offset_freq",(char *) "ch7_offset_freq",(char *) "ch8_offset_freq",(char *) "ch9_offset_freq",(char *) "ch10_offset_freq",(char *) "ch11_offset_freq",(char *) "ch12_offset_freq",(char *) "ch13_offset_freq",(char *) "ch14_offset_freq",(char *) "ch15_offset_freq",(char *) "ch0_tune_freq",(char *) "ch1_tune_freq",(char *) "ch2_tune_freq",(char *) "ch3_tune_freq",(char *) "ch4_tune_freq",(char *) "ch5_tune_freq",(char *) "ch6_tune_freq",(char *) "ch7_tune_freq",(char *) "ch8_tune_freq",(char *) "ch9_tune_freq",(char *) "ch10_tune_freq",(char *) "ch11_tune_freq",(char *) "ch12_tune_freq",(char *) "ch13_tune_freq",(char *) "ch14_tune_freq",(char *) "ch15_tune_freq", NULL 
+    (char *) "self",(char *) "max_ch",(char *) "rf_gain",(char *) "trigger_source",(char *) "ddc_filter_path",(char *) "is_rf_tuner",(char *) "rf_center_freq",(char *) "ch0_offset_freq",(char *) "ch1_offset_freq",(char *) "ch2_offset_freq",(char *) "ch3_offset_freq",(char *) "ch4_offset_freq",(char *) "ch5_offset_freq",(char *) "ch6_offset_freq",(char *) "ch7_offset_freq",(char *) "ch8_offset_freq",(char *) "ch9_offset_freq",(char *) "ch10_offset_freq",(char *) "ch11_offset_freq",(char *) "ch12_offset_freq",(char *) "ch13_offset_freq",(char *) "ch14_offset_freq",(char *) "ch15_offset_freq",(char *) "ch0_tune_freq",(char *) "ch1_tune_freq",(char *) "ch2_tune_freq",(char *) "ch3_tune_freq",(char *) "ch4_tune_freq",(char *) "ch5_tune_freq",(char *) "ch6_tune_freq",(char *) "ch7_tune_freq",(char *) "ch8_tune_freq",(char *) "ch9_tune_freq",(char *) "ch10_tune_freq",(char *) "ch11_tune_freq",(char *) "ch12_tune_freq",(char *) "ch13_tune_freq",(char *) "ch14_tune_freq",(char *) "ch15_tune_freq", NULL 
   };
   gr::II_K7_310R::ch16_ddc_source_c::sptr result;
   
-  if (!PyArg_ParseTupleAndKeywords(args,kwargs,(char *)"OOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOO:ch16_ddc_source_c_sptr_make",kwnames,&obj0,&obj1,&obj2,&obj3,&obj4,&obj5,&obj6,&obj7,&obj8,&obj9,&obj10,&obj11,&obj12,&obj13,&obj14,&obj15,&obj16,&obj17,&obj18,&obj19,&obj20,&obj21,&obj22,&obj23,&obj24,&obj25,&obj26,&obj27,&obj28,&obj29,&obj30,&obj31,&obj32,&obj33,&obj34,&obj35,&obj36,&obj37)) SWIG_fail;
+  if (!PyArg_ParseTupleAndKeywords(args,kwargs,(char *)"OOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOO:ch16_ddc_source_c_sptr_make",kwnames,&obj0,&obj1,&obj2,&obj3,&obj4,&obj5,&obj6,&obj7,&obj8,&obj9,&obj10,&obj11,&obj12,&obj13,&obj14,&obj15,&obj16,&obj17,&obj18,&obj19,&obj20,&obj21,&obj22,&obj23,&obj24,&obj25,&obj26,&obj27,&obj28,&obj29,&obj30,&obj31,&obj32,&obj33,&obj34,&obj35,&obj36,&obj37,&obj38)) SWIG_fail;
   res1 = SWIG_ConvertPtr(obj0, &argp1,SWIGTYPE_p_boost__shared_ptrT_gr__II_K7_310R__ch16_ddc_source_c_t, 0 |  0 );
   if (!SWIG_IsOK(res1)) {
     SWIG_exception_fail(SWIG_ArgError(res1), "in method '" "ch16_ddc_source_c_sptr_make" "', argument " "1"" of type '" "boost::shared_ptr< gr::II_K7_310R::ch16_ddc_source_c > *""'"); 
   }
   arg1 = reinterpret_cast< boost::shared_ptr< gr::II_K7_310R::ch16_ddc_source_c > * >(argp1);
-  ecode2 = SWIG_AsVal_float(obj1, &val2);
+  ecode2 = SWIG_AsVal_short(obj1, &val2);
   if (!SWIG_IsOK(ecode2)) {
-    SWIG_exception_fail(SWIG_ArgError(ecode2), "in method '" "ch16_ddc_source_c_sptr_make" "', argument " "2"" of type '" "float""'");
+    SWIG_exception_fail(SWIG_ArgError(ecode2), "in method '" "ch16_ddc_source_c_sptr_make" "', argument " "2"" of type '" "short""'");
   } 
-  arg2 = static_cast< float >(val2);
-  ecode3 = SWIG_AsVal_int(obj2, &val3);
+  arg2 = static_cast< short >(val2);
+  ecode3 = SWIG_AsVal_float(obj2, &val3);
   if (!SWIG_IsOK(ecode3)) {
-    SWIG_exception_fail(SWIG_ArgError(ecode3), "in method '" "ch16_ddc_source_c_sptr_make" "', argument " "3"" of type '" "gr::II_K7_310R::Ch16TriggerSource""'");
+    SWIG_exception_fail(SWIG_ArgError(ecode3), "in method '" "ch16_ddc_source_c_sptr_make" "', argument " "3"" of type '" "float""'");
   } 
-  arg3 = static_cast< gr::II_K7_310R::Ch16TriggerSource >(val3);
-  res4 = SWIG_AsCharPtrAndSize(obj3, &buf4, NULL, &alloc4);
-  if (!SWIG_IsOK(res4)) {
-    SWIG_exception_fail(SWIG_ArgError(res4), "in method '" "ch16_ddc_source_c_sptr_make" "', argument " "4"" of type '" "char const *""'");
+  arg3 = static_cast< float >(val3);
+  ecode4 = SWIG_AsVal_int(obj3, &val4);
+  if (!SWIG_IsOK(ecode4)) {
+    SWIG_exception_fail(SWIG_ArgError(ecode4), "in method '" "ch16_ddc_source_c_sptr_make" "', argument " "4"" of type '" "gr::II_K7_310R::Ch16TriggerSource""'");
+  } 
+  arg4 = static_cast< gr::II_K7_310R::Ch16TriggerSource >(val4);
+  res5 = SWIG_AsCharPtrAndSize(obj4, &buf5, NULL, &alloc5);
+  if (!SWIG_IsOK(res5)) {
+    SWIG_exception_fail(SWIG_ArgError(res5), "in method '" "ch16_ddc_source_c_sptr_make" "', argument " "5"" of type '" "char const *""'");
   }
-  arg4 = reinterpret_cast< char * >(buf4);
-  ecode5 = SWIG_AsVal_bool(obj4, &val5);
-  if (!SWIG_IsOK(ecode5)) {
-    SWIG_exception_fail(SWIG_ArgError(ecode5), "in method '" "ch16_ddc_source_c_sptr_make" "', argument " "5"" of type '" "bool""'");
-  } 
-  arg5 = static_cast< bool >(val5);
-  ecode6 = SWIG_AsVal_float(obj5, &val6);
+  arg5 = reinterpret_cast< char * >(buf5);
+  ecode6 = SWIG_AsVal_bool(obj5, &val6);
   if (!SWIG_IsOK(ecode6)) {
-    SWIG_exception_fail(SWIG_ArgError(ecode6), "in method '" "ch16_ddc_source_c_sptr_make" "', argument " "6"" of type '" "float""'");
+    SWIG_exception_fail(SWIG_ArgError(ecode6), "in method '" "ch16_ddc_source_c_sptr_make" "', argument " "6"" of type '" "bool""'");
   } 
-  arg6 = static_cast< float >(val6);
+  arg6 = static_cast< bool >(val6);
   ecode7 = SWIG_AsVal_float(obj6, &val7);
   if (!SWIG_IsOK(ecode7)) {
     SWIG_exception_fail(SWIG_ArgError(ecode7), "in method '" "ch16_ddc_source_c_sptr_make" "', argument " "7"" of type '" "float""'");
@@ -6032,9 +6061,14 @@ SWIGINTERN PyObject *_wrap_ch16_ddc_source_c_sptr_make(PyObject *SWIGUNUSEDPARM(
     SWIG_exception_fail(SWIG_ArgError(ecode38), "in method '" "ch16_ddc_source_c_sptr_make" "', argument " "38"" of type '" "float""'");
   } 
   arg38 = static_cast< float >(val38);
+  ecode39 = SWIG_AsVal_float(obj38, &val39);
+  if (!SWIG_IsOK(ecode39)) {
+    SWIG_exception_fail(SWIG_ArgError(ecode39), "in method '" "ch16_ddc_source_c_sptr_make" "', argument " "39"" of type '" "float""'");
+  } 
+  arg39 = static_cast< float >(val39);
   {
     try {
-      result = (*arg1)->make(arg2,arg3,(char const *)arg4,arg5,arg6,arg7,arg8,arg9,arg10,arg11,arg12,arg13,arg14,arg15,arg16,arg17,arg18,arg19,arg20,arg21,arg22,arg23,arg24,arg25,arg26,arg27,arg28,arg29,arg30,arg31,arg32,arg33,arg34,arg35,arg36,arg37,arg38);
+      result = (*arg1)->make(arg2,arg3,arg4,(char const *)arg5,arg6,arg7,arg8,arg9,arg10,arg11,arg12,arg13,arg14,arg15,arg16,arg17,arg18,arg19,arg20,arg21,arg22,arg23,arg24,arg25,arg26,arg27,arg28,arg29,arg30,arg31,arg32,arg33,arg34,arg35,arg36,arg37,arg38,arg39);
     }
     catch(std::exception &e) {
       SWIG_exception(SWIG_RuntimeError, e.what());
@@ -6045,10 +6079,10 @@ SWIGINTERN PyObject *_wrap_ch16_ddc_source_c_sptr_make(PyObject *SWIGUNUSEDPARM(
     
   }
   resultobj = SWIG_NewPointerObj((new gr::II_K7_310R::ch16_ddc_source_c::sptr(static_cast< const gr::II_K7_310R::ch16_ddc_source_c::sptr& >(result))), SWIGTYPE_p_boost__shared_ptrT_gr__II_K7_310R__ch16_ddc_source_c_t, SWIG_POINTER_OWN |  0 );
-  if (alloc4 == SWIG_NEWOBJ) delete[] buf4;
+  if (alloc5 == SWIG_NEWOBJ) delete[] buf5;
   return resultobj;
 fail:
-  if (alloc4 == SWIG_NEWOBJ) delete[] buf4;
+  if (alloc5 == SWIG_NEWOBJ) delete[] buf5;
   return NULL;
 }
 
@@ -12270,13 +12304,13 @@ static PyMethodDef SwigMethods[] = {
 	 { (char *)"Ch16Software_swigconstant", Ch16Software_swigconstant, METH_VARARGS, NULL},
 	 { (char *)"Ch16External_swigconstant", Ch16External_swigconstant, METH_VARARGS, NULL},
 	 { (char *)"ch16_ddc_source_c_make", (PyCFunction) _wrap_ch16_ddc_source_c_make, METH_VARARGS | METH_KEYWORDS, (char *)"\n"
-		"ch16_ddc_source_c_make(float rf_gain, gr::II_K7_310R::Ch16TriggerSource trigger_source, char const * ddc_filter_path, bool is_rf_tuner, float rf_center_freq, float ch0_offset_freq, float ch1_offset_freq, float ch2_offset_freq, float ch3_offset_freq, float ch4_offset_freq, float ch5_offset_freq, float ch6_offset_freq, float ch7_offset_freq, float ch8_offset_freq, float ch9_offset_freq, float ch10_offset_freq, float ch11_offset_freq, float ch12_offset_freq, float ch13_offset_freq, float ch14_offset_freq, float ch15_offset_freq, float ch0_tune_freq, float ch1_tune_freq, float ch2_tune_freq, float ch3_tune_freq, float ch4_tune_freq, float ch5_tune_freq, float ch6_tune_freq, float ch7_tune_freq, float ch8_tune_freq, float ch9_tune_freq, float ch10_tune_freq, float ch11_tune_freq, float ch12_tune_freq, float ch13_tune_freq, float ch14_tune_freq, float ch15_tune_freq) -> ch16_ddc_source_c_sptr\n"
+		"ch16_ddc_source_c_make(short max_ch, float rf_gain, gr::II_K7_310R::Ch16TriggerSource trigger_source, char const * ddc_filter_path, bool is_rf_tuner, float rf_center_freq, float ch0_offset_freq, float ch1_offset_freq, float ch2_offset_freq, float ch3_offset_freq, float ch4_offset_freq, float ch5_offset_freq, float ch6_offset_freq, float ch7_offset_freq, float ch8_offset_freq, float ch9_offset_freq, float ch10_offset_freq, float ch11_offset_freq, float ch12_offset_freq, float ch13_offset_freq, float ch14_offset_freq, float ch15_offset_freq, float ch0_tune_freq, float ch1_tune_freq, float ch2_tune_freq, float ch3_tune_freq, float ch4_tune_freq, float ch5_tune_freq, float ch6_tune_freq, float ch7_tune_freq, float ch8_tune_freq, float ch9_tune_freq, float ch10_tune_freq, float ch11_tune_freq, float ch12_tune_freq, float ch13_tune_freq, float ch14_tune_freq, float ch15_tune_freq) -> ch16_ddc_source_c_sptr\n"
 		"\n"
 		"Return a shared_ptr to a new instance of II_K7_310R::ch16_ddc_source_c.\n"
 		"\n"
 		"To avoid accidental use of raw pointers, II_K7_310R::ch16_ddc_source_c's constructor is in a private implementation class. II_K7_310R::ch16_ddc_source_c::make is the public interface for creating new instances.\n"
 		"\n"
-		"Params: (rf_gain, trigger_source, ddc_filter_path, is_rf_tuner, rf_center_freq, ch0_offset_freq, ch1_offset_freq, ch2_offset_freq, ch3_offset_freq, ch4_offset_freq, ch5_offset_freq, ch6_offset_freq, ch7_offset_freq, ch8_offset_freq, ch9_offset_freq, ch10_offset_freq, ch11_offset_freq, ch12_offset_freq, ch13_offset_freq, ch14_offset_freq, ch15_offset_freq, ch0_tune_freq, ch1_tune_freq, ch2_tune_freq, ch3_tune_freq, ch4_tune_freq, ch5_tune_freq, ch6_tune_freq, ch7_tune_freq, ch8_tune_freq, ch9_tune_freq, ch10_tune_freq, ch11_tune_freq, ch12_tune_freq, ch13_tune_freq, ch14_tune_freq, ch15_tune_freq)\n"
+		"Params: (max_ch, rf_gain, trigger_source, ddc_filter_path, is_rf_tuner, rf_center_freq, ch0_offset_freq, ch1_offset_freq, ch2_offset_freq, ch3_offset_freq, ch4_offset_freq, ch5_offset_freq, ch6_offset_freq, ch7_offset_freq, ch8_offset_freq, ch9_offset_freq, ch10_offset_freq, ch11_offset_freq, ch12_offset_freq, ch13_offset_freq, ch14_offset_freq, ch15_offset_freq, ch0_tune_freq, ch1_tune_freq, ch2_tune_freq, ch3_tune_freq, ch4_tune_freq, ch5_tune_freq, ch6_tune_freq, ch7_tune_freq, ch8_tune_freq, ch9_tune_freq, ch10_tune_freq, ch11_tune_freq, ch12_tune_freq, ch13_tune_freq, ch14_tune_freq, ch15_tune_freq)\n"
 		""},
 	 { (char *)"delete_ch16_ddc_source_c", _wrap_delete_ch16_ddc_source_c, METH_VARARGS, (char *)"delete_ch16_ddc_source_c(ch16_ddc_source_c self)"},
 	 { (char *)"ch16_ddc_source_c_swigregister", ch16_ddc_source_c_swigregister, METH_VARARGS, NULL},
@@ -12287,13 +12321,13 @@ static PyMethodDef SwigMethods[] = {
 	 { (char *)"ch16_ddc_source_c_sptr___deref__", _wrap_ch16_ddc_source_c_sptr___deref__, METH_VARARGS, (char *)"ch16_ddc_source_c_sptr___deref__(ch16_ddc_source_c_sptr self) -> ch16_ddc_source_c"},
 	 { (char *)"delete_ch16_ddc_source_c_sptr", _wrap_delete_ch16_ddc_source_c_sptr, METH_VARARGS, (char *)"delete_ch16_ddc_source_c_sptr(ch16_ddc_source_c_sptr self)"},
 	 { (char *)"ch16_ddc_source_c_sptr_make", (PyCFunction) _wrap_ch16_ddc_source_c_sptr_make, METH_VARARGS | METH_KEYWORDS, (char *)"\n"
-		"ch16_ddc_source_c_sptr_make(ch16_ddc_source_c_sptr self, float rf_gain, gr::II_K7_310R::Ch16TriggerSource trigger_source, char const * ddc_filter_path, bool is_rf_tuner, float rf_center_freq, float ch0_offset_freq, float ch1_offset_freq, float ch2_offset_freq, float ch3_offset_freq, float ch4_offset_freq, float ch5_offset_freq, float ch6_offset_freq, float ch7_offset_freq, float ch8_offset_freq, float ch9_offset_freq, float ch10_offset_freq, float ch11_offset_freq, float ch12_offset_freq, float ch13_offset_freq, float ch14_offset_freq, float ch15_offset_freq, float ch0_tune_freq, float ch1_tune_freq, float ch2_tune_freq, float ch3_tune_freq, float ch4_tune_freq, float ch5_tune_freq, float ch6_tune_freq, float ch7_tune_freq, float ch8_tune_freq, float ch9_tune_freq, float ch10_tune_freq, float ch11_tune_freq, float ch12_tune_freq, float ch13_tune_freq, float ch14_tune_freq, float ch15_tune_freq) -> ch16_ddc_source_c_sptr\n"
+		"ch16_ddc_source_c_sptr_make(ch16_ddc_source_c_sptr self, short max_ch, float rf_gain, gr::II_K7_310R::Ch16TriggerSource trigger_source, char const * ddc_filter_path, bool is_rf_tuner, float rf_center_freq, float ch0_offset_freq, float ch1_offset_freq, float ch2_offset_freq, float ch3_offset_freq, float ch4_offset_freq, float ch5_offset_freq, float ch6_offset_freq, float ch7_offset_freq, float ch8_offset_freq, float ch9_offset_freq, float ch10_offset_freq, float ch11_offset_freq, float ch12_offset_freq, float ch13_offset_freq, float ch14_offset_freq, float ch15_offset_freq, float ch0_tune_freq, float ch1_tune_freq, float ch2_tune_freq, float ch3_tune_freq, float ch4_tune_freq, float ch5_tune_freq, float ch6_tune_freq, float ch7_tune_freq, float ch8_tune_freq, float ch9_tune_freq, float ch10_tune_freq, float ch11_tune_freq, float ch12_tune_freq, float ch13_tune_freq, float ch14_tune_freq, float ch15_tune_freq) -> ch16_ddc_source_c_sptr\n"
 		"\n"
 		"Return a shared_ptr to a new instance of II_K7_310R::ch16_ddc_source_c.\n"
 		"\n"
 		"To avoid accidental use of raw pointers, II_K7_310R::ch16_ddc_source_c's constructor is in a private implementation class. II_K7_310R::ch16_ddc_source_c::make is the public interface for creating new instances.\n"
 		"\n"
-		"Params: (rf_gain, trigger_source, ddc_filter_path, is_rf_tuner, rf_center_freq, ch0_offset_freq, ch1_offset_freq, ch2_offset_freq, ch3_offset_freq, ch4_offset_freq, ch5_offset_freq, ch6_offset_freq, ch7_offset_freq, ch8_offset_freq, ch9_offset_freq, ch10_offset_freq, ch11_offset_freq, ch12_offset_freq, ch13_offset_freq, ch14_offset_freq, ch15_offset_freq, ch0_tune_freq, ch1_tune_freq, ch2_tune_freq, ch3_tune_freq, ch4_tune_freq, ch5_tune_freq, ch6_tune_freq, ch7_tune_freq, ch8_tune_freq, ch9_tune_freq, ch10_tune_freq, ch11_tune_freq, ch12_tune_freq, ch13_tune_freq, ch14_tune_freq, ch15_tune_freq)\n"
+		"Params: (max_ch, rf_gain, trigger_source, ddc_filter_path, is_rf_tuner, rf_center_freq, ch0_offset_freq, ch1_offset_freq, ch2_offset_freq, ch3_offset_freq, ch4_offset_freq, ch5_offset_freq, ch6_offset_freq, ch7_offset_freq, ch8_offset_freq, ch9_offset_freq, ch10_offset_freq, ch11_offset_freq, ch12_offset_freq, ch13_offset_freq, ch14_offset_freq, ch15_offset_freq, ch0_tune_freq, ch1_tune_freq, ch2_tune_freq, ch3_tune_freq, ch4_tune_freq, ch5_tune_freq, ch6_tune_freq, ch7_tune_freq, ch8_tune_freq, ch9_tune_freq, ch10_tune_freq, ch11_tune_freq, ch12_tune_freq, ch13_tune_freq, ch14_tune_freq, ch15_tune_freq)\n"
 		""},
 	 { (char *)"ch16_ddc_source_c_sptr_history", _wrap_ch16_ddc_source_c_sptr_history, METH_VARARGS, (char *)"ch16_ddc_source_c_sptr_history(ch16_ddc_source_c_sptr self) -> unsigned int"},
 	 { (char *)"ch16_ddc_source_c_sptr_declare_sample_delay", _wrap_ch16_ddc_source_c_sptr_declare_sample_delay, METH_VARARGS, (char *)"\n"

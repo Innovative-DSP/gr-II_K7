@@ -193,11 +193,15 @@
       </memberdef>
       </sectiondef>
       <sectiondef kind="public-func">
-      <memberdef kind="function" id="classgr_1_1II__K7__310R_1_1ch16__ddc__source__c__impl_1a028aa010a180bb476f9503e147f473c5" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+      <memberdef kind="function" id="classgr_1_1II__K7__310R_1_1ch16__ddc__source__c__impl_1a0170cb9d2bdd6e7f6a83f646ee4360a3" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type></type>
         <definition>gr::II_K7_310R::ch16_ddc_source_c_impl::ch16_ddc_source_c_impl</definition>
-        <argsstring>(float rf_gain, Ch16TriggerSource trigger_source, const char *ddc_filter_path, bool is_rf_tuner, float rf_center_freq, float ch0_offset_freq, float ch1_offset_freq, float ch2_offset_freq, float ch3_offset_freq, float ch4_offset_freq, float ch5_offset_freq, float ch6_offset_freq, float ch7_offset_freq, float ch8_offset_freq, float ch9_offset_freq, float ch10_offset_freq, float ch11_offset_freq, float ch12_offset_freq, float ch13_offset_freq, float ch14_offset_freq, float ch15_offset_freq)</argsstring>
+        <argsstring>(short max_ch, float rf_gain, Ch16TriggerSource trigger_source, const char *ddc_filter_path, bool is_rf_tuner, float rf_center_freq, float ch0_offset_freq, float ch1_offset_freq, float ch2_offset_freq, float ch3_offset_freq, float ch4_offset_freq, float ch5_offset_freq, float ch6_offset_freq, float ch7_offset_freq, float ch8_offset_freq, float ch9_offset_freq, float ch10_offset_freq, float ch11_offset_freq, float ch12_offset_freq, float ch13_offset_freq, float ch14_offset_freq, float ch15_offset_freq)</argsstring>
         <name>ch16_ddc_source_c_impl</name>
+        <param>
+          <type>short</type>
+          <declname>max_ch</declname>
+        </param>
         <param>
           <type>float</type>
           <declname>rf_gain</declname>
@@ -672,7 +676,7 @@
       <member refid="classgr_1_1II__K7__310R_1_1ch16__ddc__source__c__impl_1a639af3a6f4954cee629a495b6e0cbcb1" prot="private" virt="virtual"><scope>gr::II_K7_310R::ch16_ddc_source_c_impl</scope><name>BeforeStreamStart</name></member>
       <member refid="classgr_1_1II__K7__310R_1_1ch16__ddc__source__c__impl_1a26cee6f96d78cb9292ba2bb9ba908874" prot="private" virt="non-virtual"><scope>gr::II_K7_310R::ch16_ddc_source_c_impl</scope><name>BlockCount</name></member>
       <member refid="classgr_1_1II__K7__310R_1_1ch16__ddc__source__c__impl_1ab32a6a2db1438c2e412e26c1f550fc5a" prot="private" virt="non-virtual"><scope>gr::II_K7_310R::ch16_ddc_source_c_impl</scope><name>BlockId</name></member>
-      <member refid="classgr_1_1II__K7__310R_1_1ch16__ddc__source__c__impl_1a028aa010a180bb476f9503e147f473c5" prot="public" virt="non-virtual"><scope>gr::II_K7_310R::ch16_ddc_source_c_impl</scope><name>ch16_ddc_source_c_impl</name></member>
+      <member refid="classgr_1_1II__K7__310R_1_1ch16__ddc__source__c__impl_1a0170cb9d2bdd6e7f6a83f646ee4360a3" prot="public" virt="non-virtual"><scope>gr::II_K7_310R::ch16_ddc_source_c_impl</scope><name>ch16_ddc_source_c_impl</name></member>
       <member refid="classgr_1_1II__K7__310R_1_1ch16__ddc__source__c__impl_1aa884c09c3125c5a4710296c98e0ea665" prot="private" virt="non-virtual"><scope>gr::II_K7_310R::ch16_ddc_source_c_impl</scope><name>CheckForData</name></member>
       <member refid="classgr_1_1II__K7__310R_1_1ch16__ddc__source__c__impl_1acb00cf79166d238b0404b7f703499f40" prot="private" virt="non-virtual"><scope>gr::II_K7_310R::ch16_ddc_source_c_impl</scope><name>CurrentPacket</name></member>
       <member refid="classgr_1_1II__K7__310R_1_1ch16__ddc__source__c__impl_1a38ce0180b2cbc48ef69b7a5ceb408302" prot="private" virt="virtual"><scope>gr::II_K7_310R::ch16_ddc_source_c_impl</scope><name>DataPacketAvailable</name></member>
@@ -680,7 +684,7 @@
       <member refid="classgr_1_1II__K7__310R_1_1ch16__ddc__source__c__impl_1aa87619024d974ac83922886beaa901c8" prot="private" virt="non-virtual"><scope>gr::II_K7_310R::ch16_ddc_source_c_impl</scope><name>IsNotEmpty</name></member>
       <member refid="classgr_1_1II__K7__310R_1_1ch16__ddc__source__c__impl_1a50afdef086cb1bf18eaea0a227e8c699" prot="private" virt="non-virtual"><scope>gr::II_K7_310R::ch16_ddc_source_c_impl</scope><name>IsNotFull</name></member>
       <member refid="classgr_1_1II__K7__310R_1_1ch16__ddc__source__c__impl_1aaba5386d5aef4c69214ee2298291be25" prot="private" virt="virtual"><scope>gr::II_K7_310R::ch16_ddc_source_c_impl</scope><name>Log</name></member>
-      <member refid="classgr_1_1II__K7__310R_1_1ch16__ddc__source__c_1a7fc8246a30ebd03cf4ea6697ae8756ee" prot="public" virt="non-virtual"><scope>gr::II_K7_310R::ch16_ddc_source_c_impl</scope><name>make</name></member>
+      <member refid="classgr_1_1II__K7__310R_1_1ch16__ddc__source__c_1a0e463bf877635ab6872f1d9d4b467618" prot="public" virt="non-virtual"><scope>gr::II_K7_310R::ch16_ddc_source_c_impl</scope><name>make</name></member>
       <member refid="classgr_1_1II__K7__310R_1_1ch16__ddc__source__c__impl_1ac684de054993e43cc7fa1faa447c30ea" prot="private" virt="non-virtual"><scope>gr::II_K7_310R::ch16_ddc_source_c_impl</scope><name>MaxPackets</name></member>
       <member refid="classgr_1_1II__K7__310R_1_1ch16__ddc__source__c__impl_1a4a0d68e8dcd7f7ffd29dfa0390f71873" prot="private" virt="non-virtual"><scope>gr::II_K7_310R::ch16_ddc_source_c_impl</scope><name>PacketQ</name></member>
       <member refid="classgr_1_1II__K7__310R_1_1ch16__ddc__source__c__impl_1a7b5b08668c2cd8b80817627d740c2cc0" prot="private" virt="virtual"><scope>gr::II_K7_310R::ch16_ddc_source_c_impl</scope><name>PeriodicStatus</name></member>

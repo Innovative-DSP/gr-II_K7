@@ -2,7 +2,7 @@
 <doxygenindex xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="index.xsd" version="1.8.11">
   <compound refid="classgr_1_1II__K7__310R_1_1ch16__ddc__source__c" kind="class"><name>gr::II_K7_310R::ch16_ddc_source_c</name>
     <member refid="classgr_1_1II__K7__310R_1_1ch16__ddc__source__c_1ad026bb94ebadc43c8a030ce0fbcea56e" kind="typedef"><name>sptr</name></member>
-    <member refid="classgr_1_1II__K7__310R_1_1ch16__ddc__source__c_1a7fc8246a30ebd03cf4ea6697ae8756ee" kind="function"><name>make</name></member>
+    <member refid="classgr_1_1II__K7__310R_1_1ch16__ddc__source__c_1a0e463bf877635ab6872f1d9d4b467618" kind="function"><name>make</name></member>
   </compound>
   <compound refid="classgr_1_1II__K7__310R_1_1ch16__ddc__source__c__impl" kind="class"><name>gr::II_K7_310R::ch16_ddc_source_c_impl</name>
     <member refid="classgr_1_1II__K7__310R_1_1ch16__ddc__source__c__impl_1ad301387ce49ecac87d2080ca1a180868" kind="variable"><name>Settings</name></member>
@@ -19,7 +19,7 @@
     <member refid="classgr_1_1II__K7__310R_1_1ch16__ddc__source__c__impl_1a47741099bc27ed27594df31a2291895c" kind="variable"><name>TxByteCountMax</name></member>
     <member refid="classgr_1_1II__K7__310R_1_1ch16__ddc__source__c__impl_1a26cee6f96d78cb9292ba2bb9ba908874" kind="variable"><name>BlockCount</name></member>
     <member refid="classgr_1_1II__K7__310R_1_1ch16__ddc__source__c__impl_1ac684de054993e43cc7fa1faa447c30ea" kind="variable"><name>MaxPackets</name></member>
-    <member refid="classgr_1_1II__K7__310R_1_1ch16__ddc__source__c__impl_1a028aa010a180bb476f9503e147f473c5" kind="function"><name>ch16_ddc_source_c_impl</name></member>
+    <member refid="classgr_1_1II__K7__310R_1_1ch16__ddc__source__c__impl_1a0170cb9d2bdd6e7f6a83f646ee4360a3" kind="function"><name>ch16_ddc_source_c_impl</name></member>
     <member refid="classgr_1_1II__K7__310R_1_1ch16__ddc__source__c__impl_1aa0bbcaae60a555cb61ee2bb6a5b395d3" kind="function"><name>~ch16_ddc_source_c_impl</name></member>
     <member refid="classgr_1_1II__K7__310R_1_1ch16__ddc__source__c__impl_1a38ad137ed1f88fa6fdcca54a98af1952" kind="function"><name>work</name></member>
     <member refid="classgr_1_1II__K7__310R_1_1ch16__ddc__source__c__impl_1a43087faf21fb0e4b4377e625d705e090" kind="function"><name>start</name></member>

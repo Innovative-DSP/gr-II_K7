@@ -1,4 +1,4 @@
-# Install script for directory: ${CMAKE_SOURCE_DIR}/../apps
+# Install script for directory: /home/user/Documents/GnuRadio/gr-II_K7_310R/apps
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)

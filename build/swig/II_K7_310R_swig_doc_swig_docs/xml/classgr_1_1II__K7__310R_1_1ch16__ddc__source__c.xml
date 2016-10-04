@@ -20,11 +20,15 @@
       </memberdef>
       </sectiondef>
       <sectiondef kind="public-static-func">
-      <memberdef kind="function" id="classgr_1_1II__K7__310R_1_1ch16__ddc__source__c_1a7fc8246a30ebd03cf4ea6697ae8756ee" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+      <memberdef kind="function" id="classgr_1_1II__K7__310R_1_1ch16__ddc__source__c_1a0e463bf877635ab6872f1d9d4b467618" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
         <type><ref refid="classgr_1_1II__K7__310R_1_1ch16__ddc__source__c_1ad026bb94ebadc43c8a030ce0fbcea56e" kindref="member">sptr</ref></type>
         <definition>static sptr gr::II_K7_310R::ch16_ddc_source_c::make</definition>
-        <argsstring>(float rf_gain, II_K7_310R::Ch16TriggerSource trigger_source, const char *ddc_filter_path, bool is_rf_tuner, float rf_center_freq, float ch0_offset_freq, float ch1_offset_freq, float ch2_offset_freq, float ch3_offset_freq, float ch4_offset_freq, float ch5_offset_freq, float ch6_offset_freq, float ch7_offset_freq, float ch8_offset_freq, float ch9_offset_freq, float ch10_offset_freq, float ch11_offset_freq, float ch12_offset_freq, float ch13_offset_freq, float ch14_offset_freq, float ch15_offset_freq, float ch0_tune_freq, float ch1_tune_freq, float ch2_tune_freq, float ch3_tune_freq, float ch4_tune_freq, float ch5_tune_freq, float ch6_tune_freq, float ch7_tune_freq, float ch8_tune_freq, float ch9_tune_freq, float ch10_tune_freq, float ch11_tune_freq, float ch12_tune_freq, float ch13_tune_freq, float ch14_tune_freq, float ch15_tune_freq)</argsstring>
+        <argsstring>(short max_ch, float rf_gain, II_K7_310R::Ch16TriggerSource trigger_source, const char *ddc_filter_path, bool is_rf_tuner, float rf_center_freq, float ch0_offset_freq, float ch1_offset_freq, float ch2_offset_freq, float ch3_offset_freq, float ch4_offset_freq, float ch5_offset_freq, float ch6_offset_freq, float ch7_offset_freq, float ch8_offset_freq, float ch9_offset_freq, float ch10_offset_freq, float ch11_offset_freq, float ch12_offset_freq, float ch13_offset_freq, float ch14_offset_freq, float ch15_offset_freq, float ch0_tune_freq, float ch1_tune_freq, float ch2_tune_freq, float ch3_tune_freq, float ch4_tune_freq, float ch5_tune_freq, float ch6_tune_freq, float ch7_tune_freq, float ch8_tune_freq, float ch9_tune_freq, float ch10_tune_freq, float ch11_tune_freq, float ch12_tune_freq, float ch13_tune_freq, float ch14_tune_freq, float ch15_tune_freq)</argsstring>
         <name>make</name>
+        <param>
+          <type>short</type>
+          <declname>max_ch</declname>
+        </param>
         <param>
           <type>float</type>
           <declname>rf_gain</declname>
@@ -176,7 +180,7 @@
         <briefdescription>
 <para>Return a shared_ptr to a new instance of <ref refid="classgr_1_1II__K7__310R_1_1ch16__ddc__source__c" kindref="compound">II_K7_310R::ch16_ddc_source_c</ref>. </para>        </briefdescription>
         <detaileddescription>
-<para>To avoid accidental use of raw pointers, <ref refid="classgr_1_1II__K7__310R_1_1ch16__ddc__source__c" kindref="compound">II_K7_310R::ch16_ddc_source_c</ref>&apos;s constructor is in a private implementation class. <ref refid="classgr_1_1II__K7__310R_1_1ch16__ddc__source__c_1a7fc8246a30ebd03cf4ea6697ae8756ee" kindref="member">II_K7_310R::ch16_ddc_source_c::make</ref> is the public interface for creating new instances. </para>        </detaileddescription>
+<para>To avoid accidental use of raw pointers, <ref refid="classgr_1_1II__K7__310R_1_1ch16__ddc__source__c" kindref="compound">II_K7_310R::ch16_ddc_source_c</ref>&apos;s constructor is in a private implementation class. <ref refid="classgr_1_1II__K7__310R_1_1ch16__ddc__source__c_1a0e463bf877635ab6872f1d9d4b467618" kindref="member">II_K7_310R::ch16_ddc_source_c::make</ref> is the public interface for creating new instances. </para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
         <location file="/home/user/Documents/GnuRadio/gr-II_K7_310R/include/II_K7_310R/ch16_ddc_source_c.h" line="51" column="1"/>
@@ -210,7 +214,7 @@
     </collaborationgraph>
     <location file="/home/user/Documents/GnuRadio/gr-II_K7_310R/include/II_K7_310R/ch16_ddc_source_c.h" line="39" column="1" bodyfile="/home/user/Documents/GnuRadio/gr-II_K7_310R/include/II_K7_310R/ch16_ddc_source_c.h" bodystart="38" bodyend="65"/>
     <listofallmembers>
-      <member refid="classgr_1_1II__K7__310R_1_1ch16__ddc__source__c_1a7fc8246a30ebd03cf4ea6697ae8756ee" prot="public" virt="non-virtual"><scope>gr::II_K7_310R::ch16_ddc_source_c</scope><name>make</name></member>
+      <member refid="classgr_1_1II__K7__310R_1_1ch16__ddc__source__c_1a0e463bf877635ab6872f1d9d4b467618" prot="public" virt="non-virtual"><scope>gr::II_K7_310R::ch16_ddc_source_c</scope><name>make</name></member>
       <member refid="classgr_1_1II__K7__310R_1_1ch16__ddc__source__c_1ad026bb94ebadc43c8a030ce0fbcea56e" prot="public" virt="non-virtual"><scope>gr::II_K7_310R::ch16_ddc_source_c</scope><name>sptr</name></member>
     </listofallmembers>
   </compounddef>

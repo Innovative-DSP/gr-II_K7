@@ -79,8 +79,6 @@ lib/CMakeFiles/gnuradio-II_K7_310R.dir/ch16_ddc_source_c_impl.cc.o: /usr/Innovat
 lib/CMakeFiles/gnuradio-II_K7_310R.dir/ch16_ddc_source_c_impl.cc.o: /usr/Innovative/Malibu/IPciBusDiagnostics_Mb.h
 lib/CMakeFiles/gnuradio-II_K7_310R.dir/ch16_ddc_source_c_impl.cc.o: /usr/Innovative/Malibu/IdromDatagram_Mb.h
 lib/CMakeFiles/gnuradio-II_K7_310R.dir/ch16_ddc_source_c_impl.cc.o: /usr/Innovative/Malibu/IniFile_Mb.h
-lib/CMakeFiles/gnuradio-II_K7_310R.dir/ch16_ddc_source_c_impl.cc.o: /usr/Innovative/Malibu/Ipp/ippdefs.h
-lib/CMakeFiles/gnuradio-II_K7_310R.dir/ch16_ddc_source_c_impl.cc.o: /usr/Innovative/Malibu/Ipp/ipps.h
 lib/CMakeFiles/gnuradio-II_K7_310R.dir/ch16_ddc_source_c_impl.cc.o: /usr/Innovative/Malibu/KernelPci_Mb.h
 lib/CMakeFiles/gnuradio-II_K7_310R.dir/ch16_ddc_source_c_impl.cc.o: /usr/Innovative/Malibu/KernelTypes_Mb.h
 lib/CMakeFiles/gnuradio-II_K7_310R.dir/ch16_ddc_source_c_impl.cc.o: /usr/Innovative/Malibu/LockQueue_Mb.h

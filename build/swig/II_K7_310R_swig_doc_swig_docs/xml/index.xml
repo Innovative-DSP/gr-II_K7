@@ -2,7 +2,7 @@
 <doxygenindex xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="index.xsd" version="1.8.11">
   <compound refid="classgr_1_1II__K7__310R_1_1ch16__ddc__source__c" kind="class"><name>gr::II_K7_310R::ch16_ddc_source_c</name>
     <member refid="classgr_1_1II__K7__310R_1_1ch16__ddc__source__c_1ad026bb94ebadc43c8a030ce0fbcea56e" kind="typedef"><name>sptr</name></member>
-    <member refid="classgr_1_1II__K7__310R_1_1ch16__ddc__source__c_1a7fc8246a30ebd03cf4ea6697ae8756ee" kind="function"><name>make</name></member>
+    <member refid="classgr_1_1II__K7__310R_1_1ch16__ddc__source__c_1a0e463bf877635ab6872f1d9d4b467618" kind="function"><name>make</name></member>
   </compound>
   <compound refid="classgr_1_1II__K7__310R_1_1ch1__ddc__source__c" kind="class"><name>gr::II_K7_310R::ch1_ddc_source_c</name>
     <member refid="classgr_1_1II__K7__310R_1_1ch1__ddc__source__c_1aa115e9ce2b97fbf3ae5fde1f0a8d1ff6" kind="typedef"><name>sptr</name></member>

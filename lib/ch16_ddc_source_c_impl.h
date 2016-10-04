@@ -21,7 +21,7 @@
 #ifndef INCLUDED_II_K7_310R_CH16_DDC_SOURCE_C_IMPL_H
 #define INCLUDED_II_K7_310R_CH16_DDC_SOURCE_C_IMPL_H
 
-#include <queue>
+// #include <queue>
 
 #include <II_K7_310R/ch16_ddc_source_c.h>
 #include <LibraryIo.h>
@@ -52,7 +52,7 @@ namespace gr {
         int  TxByteCountMin, TxByteCountMax;
 
     public:
-        ch16_ddc_source_c_impl(float rf_gain, Ch16TriggerSource trigger_source,
+        ch16_ddc_source_c_impl(short max_ch, float rf_gain, Ch16TriggerSource trigger_source,
                                const char* ddc_filter_path, bool is_rf_tuner, float rf_center_freq,
                                float ch0_offset_freq, float ch1_offset_freq, float ch2_offset_freq,
                                float ch3_offset_freq, float ch4_offset_freq, float ch5_offset_freq,
@@ -71,6 +71,20 @@ namespace gr {
 
     private:
         bool  CheckForData(int  &Samples);
+        // Deinterleave channels and convert sample type while advancing output pointers:
+        void  SplitVector2Streams(short int *In, gr_complex **OutV, int CopyLen)
+            {
+            for (int i = 0; i < CopyLen/2; ++i)
+                {
+                for (int j = 0; j < Settings.MaxChannels; ++j)
+                    {
+                    OutV[j]->real(static_cast<float>(*In++));
+                    OutV[j]->imag(static_cast<float>(*In++));
+                    OutV[j]++;
+                    }
+                }
+            }
+
         //  IManager_GUIInterface members:
         virtual void  Log(const std::string & a_string)
             {  GR_LOG_NOTICE(d_logger, a_string);  } // Other logging levels are possible.

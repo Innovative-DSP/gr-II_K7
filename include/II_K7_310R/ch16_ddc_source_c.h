@@ -48,7 +48,7 @@ namespace gr {
        * class. II_K7_310R::ch16_ddc_source_c::make is the public interface for
        * creating new instances.
        */
-        static sptr make(float rf_gain, II_K7_310R::Ch16TriggerSource trigger_source,
+        static sptr make(short max_ch, float rf_gain, II_K7_310R::Ch16TriggerSource trigger_source,
                          const char*  ddc_filter_path, bool is_rf_tuner, float rf_center_freq,
                          float ch0_offset_freq, float ch1_offset_freq, float ch2_offset_freq,
                          float ch3_offset_freq, float ch4_offset_freq, float ch5_offset_freq,

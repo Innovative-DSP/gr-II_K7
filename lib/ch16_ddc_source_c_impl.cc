@@ -25,7 +25,7 @@
 #include <gnuradio/io_signature.h>
 #include "ch16_ddc_source_c_impl.h"
 
-#include <Ipp/ipps.h>
+// #include <Ipp/ipps.h>
 // #include <boost/thread/thread.hpp>
 
 namespace gr {
@@ -34,7 +34,7 @@ namespace gr {
     unsigned  ch16_ddc_source_c_impl::BlockCount = 0;
 
     ch16_ddc_source_c::sptr
-    ch16_ddc_source_c::make(float rf_gain, Ch16TriggerSource trigger_source,
+    ch16_ddc_source_c::make(short max_ch, float rf_gain, Ch16TriggerSource trigger_source,
                             const char*  ddc_filter_path, bool is_rf_tuner, float rf_center_freq,
                             float ch0_offset_freq, float ch1_offset_freq, float ch2_offset_freq,
                             float ch3_offset_freq, float ch4_offset_freq, float ch5_offset_freq,
@@ -67,7 +67,7 @@ namespace gr {
         float ch15_freq = is_rf_tuner ? ch15_offset_freq : ch15_tune_freq;
 
         return gnuradio::get_initial_sptr
-          (new ch16_ddc_source_c_impl(rf_gain, trigger_source, ddc_filter_path, is_rf_tuner,
+          (new ch16_ddc_source_c_impl(max_ch, rf_gain, trigger_source, ddc_filter_path, is_rf_tuner,
                                     rf_center_freq, ch0_freq, ch1_freq, ch2_freq,
                                     ch3_freq, ch4_freq, ch5_freq, ch6_freq,
                                     ch7_freq, ch8_freq, ch9_freq, ch10_freq,
@@ -78,7 +78,7 @@ namespace gr {
     /*
      * The private constructor
      */
-    ch16_ddc_source_c_impl::ch16_ddc_source_c_impl(float rf_gain, Ch16TriggerSource trigger_source,
+    ch16_ddc_source_c_impl::ch16_ddc_source_c_impl(short max_ch, float rf_gain, Ch16TriggerSource trigger_source,
                                                    const char* ddc_filter_path, bool is_rf_tuner, float rf_center_freq,
                                                    float ch0_freq, float ch1_freq, float ch2_freq,
                                                    float ch3_freq, float ch4_freq, float ch5_freq,
@@ -89,7 +89,7 @@ namespace gr {
         Settings(rf_gain, static_cast<unsigned short>(trigger_source),
             ddc_filter_path,  // labeled as "DDC Bandwidth" in GR block
             is_rf_tuner,
-            rf_center_freq, 16, // MaxChannels
+            rf_center_freq, max_ch,
             ch0_freq, ch1_freq, ch2_freq, ch3_freq,
             ch4_freq, ch5_freq, ch6_freq, ch7_freq,
             ch8_freq, ch9_freq, ch10_freq, ch11_freq,
@@ -97,7 +97,7 @@ namespace gr {
         ),
         gr::sync_block("ch16_ddc_source_c",
               gr::io_signature::make(0, 0, 0),
-              gr::io_signature::make(1, 1, 16*sizeof(gr_complex))), // Settings.MaxChannels
+              gr::io_signature::make(1, gr::io_signature::IO_INFINITE, sizeof(gr_complex))),
         BlockId(BlockCount++),
         SampleIndex(0)
         // , RxByteCountMin(INT_MAX), TxByteCountMin(INT_MAX), RxByteCountMax(0), TxByteCountMax(0)
@@ -110,6 +110,7 @@ namespace gr {
             Io = new LibraryIo(this);
             GR_LOG_DEBUG(d_debug_logger, "Constructor called.");
             Io->SetSettings(Settings);
+            GR_LOG_DEBUG(d_debug_logger, "Max channels: "+IntToString(Settings.MaxChannels));
             // Requires hardware:
             Io->OpenDriver();
         }
@@ -167,10 +168,10 @@ namespace gr {
         gr_vector_const_void_star &input_items,
         gr_vector_void_star &output_items)
     {
-        gr_complex *out = (gr_complex *) output_items[0];
+        gr_complex **OutV = (gr_complex **)&output_items[0];
         int  Samples;
 
-        for(int i = 0; i < noutput_items*Settings.MaxChannels;)
+        for(int i = 0; i < noutput_items;)
             {
             if (!CheckForData(Samples))
                 {
@@ -178,13 +179,15 @@ namespace gr {
 
                 // boost::this_thread::sleep(boost::posix_time::microseconds(16000)); // 1/(250/DF*MaxChannels*2*sizeof(short)/0x4000)-200
 
-                return i/Settings.MaxChannels;
+                return i;
                 }
 
             ShortDG  Sample(CurrentPacket);
-            int CopyLen = min(Samples, 2*(noutput_items*Settings.MaxChannels-i));
-            ippsConvert_16s32f(&Sample[SampleIndex], reinterpret_cast<Ipp32f *>(out+i), CopyLen);
-            SampleIndex += CopyLen;
+            int SamplesPerCh = Samples/Settings.MaxChannels;
+            int CopyLen = min(SamplesPerCh, 2*(noutput_items-i)); // number of samples to convert/copy per channel
+            // ippsSplitScaled_16s32f_D2L(&Sample[SampleIndex], reinterpret_cast<Ipp32f *>(outv[i]), Settings.MaxChannels, CopyLen);
+            SplitVector2Streams(&Sample[SampleIndex], OutV, CopyLen);
+            SampleIndex += CopyLen*Settings.MaxChannels;
             i += CopyLen/2;
 //            int CopyLim = min(i+Samples/2, noutput_items*Settings.MaxChannels);
 //            for (;i < CopyLim; ++i)

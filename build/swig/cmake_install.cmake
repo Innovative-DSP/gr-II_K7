@@ -1,4 +1,4 @@
-# Install script for directory: ${CMAKE_SOURCE_DIR}/../swig
+# Install script for directory: /home/user/Documents/GnuRadio/gr-II_K7_310R/swig
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
@@ -39,12 +39,12 @@ if(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "Unspeci
          FILE "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/python2.7/dist-packages/II_K7_310R/_II_K7_310R_swig.so"
          RPATH "")
   endif()
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/python2.7/dist-packages/II_K7_310R" TYPE MODULE FILES "${CMAKE_BINARY_DIR}/swig/_II_K7_310R_swig.so")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/python2.7/dist-packages/II_K7_310R" TYPE MODULE FILES "/home/user/Documents/GnuRadio/gr-II_K7_310R/build/swig/_II_K7_310R_swig.so")
   if(EXISTS "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/python2.7/dist-packages/II_K7_310R/_II_K7_310R_swig.so" AND
      NOT IS_SYMLINK "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/python2.7/dist-packages/II_K7_310R/_II_K7_310R_swig.so")
     file(RPATH_CHANGE
          FILE "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/python2.7/dist-packages/II_K7_310R/_II_K7_310R_swig.so"
-         OLD_RPATH "${CMAKE_BINARY_DIR}/lib:"
+         OLD_RPATH "/home/user/Documents/GnuRadio/gr-II_K7_310R/build/lib:"
          NEW_RPATH "")
     if(CMAKE_INSTALL_DO_STRIP)
       execute_process(COMMAND "/usr/bin/strip" "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/python2.7/dist-packages/II_K7_310R/_II_K7_310R_swig.so")
@@ -53,20 +53,20 @@ if(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "Unspeci
 endif()
 
 if(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "Unspecified")
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/python2.7/dist-packages/II_K7_310R" TYPE FILE FILES "${CMAKE_BINARY_DIR}/swig/II_K7_310R_swig.py")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/python2.7/dist-packages/II_K7_310R" TYPE FILE FILES "/home/user/Documents/GnuRadio/gr-II_K7_310R/build/swig/II_K7_310R_swig.py")
 endif()
 
 if(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "Unspecified")
   file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/python2.7/dist-packages/II_K7_310R" TYPE FILE FILES
-    "${CMAKE_BINARY_DIR}/swig/II_K7_310R_swig.pyc"
-    "${CMAKE_BINARY_DIR}/swig/II_K7_310R_swig.pyo"
+    "/home/user/Documents/GnuRadio/gr-II_K7_310R/build/swig/II_K7_310R_swig.pyc"
+    "/home/user/Documents/GnuRadio/gr-II_K7_310R/build/swig/II_K7_310R_swig.pyo"
     )
 endif()
 
 if(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "Unspecified")
   file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/include/II_K7_310R/II_K7_310R/swig" TYPE FILE FILES
-    "${CMAKE_SOURCE_DIR}/../swig/II_K7_310R_swig.i"
-    "${CMAKE_BINARY_DIR}/swig/II_K7_310R_swig_doc.i"
+    "/home/user/Documents/GnuRadio/gr-II_K7_310R/swig/II_K7_310R_swig.i"
+    "/home/user/Documents/GnuRadio/gr-II_K7_310R/build/swig/II_K7_310R_swig_doc.i"
     )
 endif()
 

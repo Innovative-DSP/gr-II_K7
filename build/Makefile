@@ -48,10 +48,10 @@ RM = /usr/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = $(shell pwd)/..
+CMAKE_SOURCE_DIR = /home/user/Documents/GnuRadio/gr-II_K7_310R
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = $(shell pwd)
+CMAKE_BINARY_DIR = /home/user/Documents/GnuRadio/gr-II_K7_310R/build
 
 #=============================================================================
 # Targets provided globally by CMake.
