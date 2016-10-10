@@ -1,8 +1,8 @@
-# Install script for directory: /home/user/Documents/GnuRadio/gr-II_K7_310R/apps
+# Install script for directory: ${CMAKE_SOURCE_DIR}/../apps
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
-  set(CMAKE_INSTALL_PREFIX "/usr/local")
+  set(CMAKE_INSTALL_PREFIX "${CMAKE_SOURCE_DIR}/../../..")
 endif()
 string(REGEX REPLACE "/$" "" CMAKE_INSTALL_PREFIX "${CMAKE_INSTALL_PREFIX}")
 
