@@ -71,20 +71,6 @@ namespace gr {
 
     private:
         bool  CheckForData(int  &Samples);
-        // Deinterleave channels and convert sample type while advancing output pointers:
-        void  SplitVector2Streams(short int *In, gr_complex **OutV, int CopyLen)
-            {
-            for (int i = 0; i < CopyLen/2; ++i)
-                {
-                for (int j = 0; j < Settings.MaxChannels; ++j)
-                    {
-                    OutV[j]->real(static_cast<float>(*In++));
-                    OutV[j]->imag(static_cast<float>(*In++));
-                    OutV[j]++;
-                    }
-                }
-            }
-
         //  IManager_GUIInterface members:
         virtual void  Log(const std::string & a_string)
             {  GR_LOG_NOTICE(d_logger, a_string);  } // Other logging levels are possible.

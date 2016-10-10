@@ -27,6 +27,8 @@ config.h
 /home/user/Documents/GnuRadio/gr-II_K7_310R/lib/config.h
 gnuradio/io_signature.h
 -
+volk/volk.h
+-
 ch16_ddc_source_c_impl.h
 /home/user/Documents/GnuRadio/gr-II_K7_310R/lib/ch16_ddc_source_c_impl.h
 

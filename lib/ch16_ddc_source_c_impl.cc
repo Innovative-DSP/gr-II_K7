@@ -23,6 +23,7 @@
 #endif
 
 #include <gnuradio/io_signature.h>
+#include <volk/volk.h>
 #include "ch16_ddc_source_c_impl.h"
 
 // #include <Ipp/ipps.h>
@@ -104,6 +105,10 @@ namespace gr {
     {
         IsNotEmpty.Clear();             // We are empty (not not empty).
         IsNotFull.Set();                // We are not full.
+
+        const int alignment_multiple = volk_get_alignment() / sizeof(float);
+        set_alignment(std::max(1, alignment_multiple));
+
         // Ensure that LibraryIo is a singleton:
         if(!BlockId)
         {
@@ -163,6 +168,25 @@ namespace gr {
             }
     }
 
+    namespace
+        {
+        // Deinterleave channels and convert sample type while advancing output pointers:
+        inline void  SplitVector2Streams(short int *In, gr_complex **OutV, short  MaxStreams, int CopyLen)
+            {
+            for (int i = 0; i < CopyLen/2; ++i)
+                {
+                for (int j = 0; j < MaxStreams; ++j)
+                    {
+                    // OutV[j]->real(static_cast<float>(*In++));
+                    // OutV[j]->imag(static_cast<float>(*In++));
+                    volk_16i_s32f_convert_32f(reinterpret_cast<float *>(OutV[j]), In, 1.0, 2); // scalar = 1.0, num_points = 2
+                    In += 2;
+                    OutV[j]++;
+                    }
+                }
+            }
+        }
+
     int
     ch16_ddc_source_c_impl::work(int noutput_items,
         gr_vector_const_void_star &input_items,
@@ -185,10 +209,27 @@ namespace gr {
             ShortDG  Sample(CurrentPacket);
             int SamplesPerCh = Samples/Settings.MaxChannels;
             int CopyLen = min(SamplesPerCh, 2*(noutput_items-i)); // number of samples to convert/copy per channel
-            // ippsSplitScaled_16s32f_D2L(&Sample[SampleIndex], reinterpret_cast<Ipp32f *>(outv[i]), Settings.MaxChannels, CopyLen);
-            SplitVector2Streams(&Sample[SampleIndex], OutV, CopyLen);
+
+// This works, but no performance improvement, output is scaled to [-1, 1], and the function has been removed from IPP v9.
+//            ippsSplitScaled_16s32f_D2L(&Sample[SampleIndex], reinterpret_cast<Ipp32f **>(OutV), Settings.MaxChannels, CopyLen);
+//            for (int j = 0; j < Settings.MaxChannels; ++j)
+//                {
+//                OutV[j] += CopyLen/2;
+//                }
+
+// This works, but no performance improvement:
+//            if (Settings.MaxChannels == 1)
+//                {
+//                volk_16i_s32f_convert_32f(reinterpret_cast<float *>(OutV[0]), &Sample[SampleIndex], 1.0, CopyLen); // scalar = 1.0, num_points = CopyLen
+//                OutV[0] += CopyLen/2;
+//                }
+//            else
+
+            SplitVector2Streams(&Sample[SampleIndex], OutV, Settings.MaxChannels, CopyLen);
             SampleIndex += CopyLen*Settings.MaxChannels;
             i += CopyLen/2;
+
+// Only tested for vector output:
 //            int CopyLim = min(i+Samples/2, noutput_items*Settings.MaxChannels);
 //            for (;i < CopyLim; ++i)
 //                {
