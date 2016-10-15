@@ -1,6 +1,6 @@
 <?xml version="1.0"?>
 <block>
-  <name>16 Channel DDC Source</name>
+  <name>II DDC Source</name>
   <key>II_K7_310R_ch16_ddc_source_c</key>
   <category>II K7 310R</category>
   <flags>throttle</flags>
