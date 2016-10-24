@@ -99,23 +99,19 @@ namespace gr {
         gr::sync_block("ch16_ddc_source_c",
               gr::io_signature::make(0, 0, 0),
               gr::io_signature::make(1, gr::io_signature::IO_INFINITE, sizeof(gr_complex))),
-        BlockId(BlockCount++),
-        SampleIndex(0)
-        // , RxByteCountMin(INT_MAX), TxByteCountMin(INT_MAX), RxByteCountMax(0), TxByteCountMax(0)
-    {
-        IsNotEmpty.Clear();             // We are empty (not not empty).
-        IsNotFull.Set();                // We are not full.
-
-        const int alignment_multiple = volk_get_alignment() / sizeof(float);
-        set_alignment(std::max(1, alignment_multiple));
-
+        BlockId(BlockCount++)
+   {
         // Ensure that LibraryIo is a singleton:
         if(!BlockId)
         {
-            Io = new LibraryIo(this);
+            Io = new GRGpK7Fmc310(this);
+
             GR_LOG_DEBUG(d_debug_logger, "Constructor called.");
+            const int alignment_multiple = volk_get_alignment() / sizeof(float);
+            set_alignment(std::max(1, alignment_multiple));
+
             Io->SetSettings(Settings);
-            GR_LOG_DEBUG(d_debug_logger, "Max channels: "+IntToString(Settings.MaxChannels));
+            // TODO:GR_LOG_DEBUG(d_debug_logger, "Max channels: "+IntToString(Settings.MaxChannels));
             // Requires hardware:
             Io->OpenDriver();
         }
@@ -137,165 +133,31 @@ namespace gr {
     {
         GR_LOG_DEBUG(d_debug_logger, "start() called.");
         // std::cout << "Start #" << BlockId << std::endl;
+
         // Start only once:
         if(!BlockId)
             {
             // Requires hardware:
-            Io->StreamStart();
+            Io->Start();
             }
         // TODO: return value?
     }
-
-    // static size_t MaxDepth = 0;
-    void  ch16_ddc_source_c_impl::DataPacketAvailable(unsigned int /* ordinal */,
-                                                      VeloBuffer &buffer)
-    {
-        //  Wait for space:
-        IsNotFull.WaitFor();
-
-        PacketQ.push(buffer);
-
-        // MaxDepth = max(MaxDepth, PacketQ.depth());
-
-        // We are no longer empty, if someone is waiting:
-        IsNotEmpty.Set();
-        //  We may be full now:
-        if (!(PacketQ.depth() < MaxPackets))
-            {
-            // Now full:
-            GR_LOG_DEBUG(d_debug_logger, "II DDC packet queue full!");
-            IsNotFull.Clear();
-            }
-    }
-
-    namespace
-        {
-        // Deinterleave channels and convert sample type while advancing output pointers:
-        inline void  SplitVector2Streams(short int *In, gr_complex **OutV, short  MaxStreams, int CopyLen)
-            {
-            for (int i = 0; i < CopyLen/2; ++i)
-                {
-                for (int j = 0; j < MaxStreams; ++j)
-                    {
-                    // OutV[j]->real(static_cast<float>(*In++));
-                    // OutV[j]->imag(static_cast<float>(*In++));
-                    volk_16i_s32f_convert_32f(reinterpret_cast<float *>(OutV[j]), In, 1.0, 2); // scalar = 1.0, num_points = 2
-                    In += 2;
-                    OutV[j]++;
-                    }
-                }
-            }
-        }
 
     int
     ch16_ddc_source_c_impl::work(int noutput_items,
         gr_vector_const_void_star &input_items,
         gr_vector_void_star &output_items)
     {
-        gr_complex **OutV = (gr_complex **)&output_items[0];
-        int  Samples;
-
-        for(int i = 0; i < noutput_items;)
-            {
-            if (!CheckForData(Samples))
-                {
-                // TxByteCount += 2*sizeof(gr_complex)*i;
-
-                // boost::this_thread::sleep(boost::posix_time::microseconds(16000)); // 1/(250/DF*MaxChannels*2*sizeof(short)/0x4000)-200
-
-                return i;
-                }
-
-            ShortDG  Sample(CurrentPacket);
-            int SamplesPerCh = Samples/Settings.MaxChannels;
-            int CopyLen = min(SamplesPerCh, 2*(noutput_items-i)); // number of samples to convert/copy per channel
-
-// This works, but no performance improvement, output is scaled to [-1, 1], and the function has been removed from IPP v9.
-//            ippsSplitScaled_16s32f_D2L(&Sample[SampleIndex], reinterpret_cast<Ipp32f **>(OutV), Settings.MaxChannels, CopyLen);
-//            for (int j = 0; j < Settings.MaxChannels; ++j)
-//                {
-//                OutV[j] += CopyLen/2;
-//                }
-
-// This works, but no performance improvement:
-//            if (Settings.MaxChannels == 1)
-//                {
-//                volk_16i_s32f_convert_32f(reinterpret_cast<float *>(OutV[0]), &Sample[SampleIndex], 1.0, CopyLen); // scalar = 1.0, num_points = CopyLen
-//                OutV[0] += CopyLen/2;
-//                }
-//            else
-
-            SplitVector2Streams(&Sample[SampleIndex], OutV, Settings.MaxChannels, CopyLen);
-            SampleIndex += CopyLen*Settings.MaxChannels;
-            i += CopyLen/2;
-
-// Only tested for vector output:
-//            int CopyLim = min(i+Samples/2, noutput_items*Settings.MaxChannels);
-//            for (;i < CopyLim; ++i)
-//                {
-//                out[i].real(static_cast<float>(Sample[SampleIndex++]));
-//                out[i].imag(static_cast<float>(Sample[SampleIndex++]));
-//                }
-            }
-
-        // TxByteCountMin = min(TxByteCountMin, noutput_items); // *sizeof(gr_complex)*Settings.MaxChannels
-        // TxByteCountMax = max(TxByteCountMax, noutput_items); // *sizeof(gr_complex)*Settings.MaxChannels
-
-        // Tell runtime system how many output items we produced.
-        return noutput_items;
+        return Io->Work(noutput_items, input_items, output_items);
     }
 
     bool ch16_ddc_source_c_impl::stop()
     {
+        // Stop only once:
         if(!BlockId)
             {
-            IsNotEmpty.Set();           // Release the work thread.
-            // GR_LOG_DEBUG(d_debug_logger, "Max depth of packet queue: "+IntToString(MaxDepth));
-            GR_LOG_DEBUG(d_debug_logger, "stop() called.");
-            // std::cout << "Rx byte count (min, max):" << sizeof(short)*RxByteCountMin
-            //           << ", " << sizeof(short)*RxByteCountMax << std::endl;
-            // std::cout << "Tx byte count (min, max):" << TxByteCountMin*sizeof(gr_complex)*Settings.MaxChannels
-            //           << ", " << TxByteCountMax*sizeof(gr_complex)*Settings.MaxChannels << std::endl;
-            // Stop only once:
-            Io->StreamStop();
-            GR_LOG_DEBUG(d_debug_logger, "Depth of packet queue: "+IntToString(PacketQ.depth()));
-            IsNotFull.Set();            // Release the receive thread.
+            return Io->Stop();
             }
-        return true;
-    }
-
-    // SampleIndex, CurrentPacket, and PacketQ may be changed:
-    bool  ch16_ddc_source_c_impl::CheckForData(int &Samples)
-    {
-        ShortDG  Buffer(CurrentPacket);
-
-        Samples = Buffer.size()-SampleIndex;
-        if (!Samples)
-            {
-            if (!PacketQ.depth())
-                {
-                IsNotEmpty.Clear();     // We are empty (not not empty).
-                IsNotEmpty.WaitFor();
-                if (!PacketQ.depth())
-                    {
-                    return false;       // Abort since stopping
-                    }
-                }
-            CurrentPacket = PacketQ.front();
-            PacketQ.pop();
-            //  We are no longer full, if someone is waiting
-            IsNotFull.Set();
-            SampleIndex = 0;
-
-            ShortDG  NewBuffer(CurrentPacket);
-            Samples = NewBuffer.size();
-            // for debug
-            // ShortDG  Buffer(buffer);
-            // RxByteCountMin = min(RxByteCountMin, NewBuffer.size()); // CurrentPacket.SizeInBytes());
-            // RxByteCountMax = max(RxByteCountMax, NewBuffer.size()); // CurrentPacket.SizeInBytes());
-
-            }
-
         return true;
     }
 

@@ -21,35 +21,19 @@
 #ifndef INCLUDED_II_K7_310R_CH16_DDC_SOURCE_C_IMPL_H
 #define INCLUDED_II_K7_310R_CH16_DDC_SOURCE_C_IMPL_H
 
-// #include <queue>
-
 #include <II_K7_310R/ch16_ddc_source_c.h>
-#include <LibraryIo.h>
-#include <BufferDatagrams_Mb.h>
-#include <ThreadSafeQueue_Mb.h>
-#include <Event_Mb.h>
+#include <GRGpK7Fmc310.h>
 
 namespace gr {
   namespace II_K7_310R {
 
-    class ch16_ddc_source_c_impl : public ch16_ddc_source_c, IManager_GUIInterface
+    class ch16_ddc_source_c_impl : public ch16_ddc_source_c, ILoggerInterface
     {
     private:
-        LibraryIo::GpDspSettings  Settings;
-        LibraryIo*  Io;
+        GRGpK7Fmc310::GpDspSettings  Settings;
+        GRGpK7Fmc310*  Io;
         static unsigned  BlockCount;
         unsigned  BlockId;
-        ThreadSafeQueue<VeloBuffer>  PacketQ;
-        static const queue<VeloBuffer>::size_type  MaxPackets = 128;
-        size_t  SampleIndex;
-        VeloBuffer CurrentPacket;
-        // Status of PacketQ and CurrentPacket:
-        Event  IsNotFull;
-        Event  IsNotEmpty;
-
-        //TODO: for debug
-        size_t  RxByteCountMin, RxByteCountMax;
-        int  TxByteCountMin, TxByteCountMax;
 
     public:
         ch16_ddc_source_c_impl(short max_ch, float rf_gain, Ch16TriggerSource trigger_source,
@@ -70,25 +54,10 @@ namespace gr {
         virtual bool stop();
 
     private:
-        bool  CheckForData(int  &Samples);
-        //  IManager_GUIInterface members:
         virtual void  Log(const std::string & a_string)
-            {  GR_LOG_NOTICE(d_logger, a_string);  } // Other logging levels are possible.
-        virtual void  DataPacketAvailable(unsigned int ordinal, VeloBuffer &buffer);
-
-        virtual void  PeriodicStatus(unsigned int ordinal) {}
-        virtual void  BeforeStreamStart(unsigned int ordinal) {}
-        virtual void  AfterStreamStart(unsigned int ordinal) {}
-        virtual void  AfterStreamAutoStop(unsigned int ordinal) {}
-        virtual void  Plot(unsigned int ordinal, VeloBuffer &buffer, int type) {}
-        virtual void  BeforeDrcOpen() {}
-        virtual void  AfterDrcOpen() {}
-        virtual void  BeforeDrcClose() {}
-        virtual void  AfterDrcClose() {}
-        virtual void  AfterDrcStreamStart() {}
-        virtual void  BeforeDrcStreamStart() {}
-        virtual void  AfterDrcStreamStop() {}
-        virtual void  BeforeDrcStreamStop() {}
+        { GR_LOG_NOTICE(d_logger, a_string); }  // Other logging levels are possible.
+        virtual void  DebugLog(const std::string & a_string)
+        { GR_LOG_NOTICE(d_debug_logger, a_string); }  // Other logging levels are possible.
      };
 
   } // namespace II_K7_310R
