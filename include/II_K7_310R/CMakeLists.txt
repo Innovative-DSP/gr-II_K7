@@ -22,6 +22,6 @@
 ########################################################################
 install(FILES
     api.h
-    ch16_ddc_source_c.h
-    ch1_ddc_source_c.h DESTINATION include/II_K7_310R
+    #ch1_ddc_source_c.h 
+    ch16_ddc_source_c.h DESTINATION include/II_K7_310R
 )

@@ -29,7 +29,7 @@ link_directories(${Boost_LIBRARY_DIRS})
 
 list(APPEND II_K7_310R_sources
     ch16_ddc_source_c_impl.cc
-    ch1_ddc_source_c_impl.cc
+    #ch1_ddc_source_c_impl.cc
 )
 
 set(II_K7_310R_sources "${II_K7_310R_sources}" PARENT_SCOPE)
@@ -63,7 +63,7 @@ set(IPP_LIBRARIES
 target_link_libraries(gnuradio-II_K7_310R PRIVATE ${Boost_LIBRARIES} ${GNURADIO_ALL_LIBRARIES} -Wl,--whole-archive -Wl,--start-group  ${INNOVATIVE_LIBRARIES} -Wl,--end-group -Wl,--no-whole-archive PUBLIC ${IPP_LIBRARIES} /usr/lib/x86_64-linux-gnu/libdl.so /usr/lib/libwdapi.so)
 set_target_properties(gnuradio-II_K7_310R PROPERTIES DEFINE_SYMBOL "gnuradio_II_K7_310R_EXPORTS")
 target_compile_definitions(gnuradio-II_K7_310R PUBLIC Foundation_EXPORTS DRC GCC LINUX _MT)
-set_target_properties(gnuradio-II_K7_310R PROPERTIES LINK_INTERFACE_MULTIPLICITY 15)
+# set_target_properties(gnuradio-II_K7_310R PROPERTIES LINK_INTERFACE_MULTIPLICITY 15)
 # set_target_properties(gnuradio-II_K7_310R PROPERTIES LINK_FLAGS "-Wl,-ldl")
 
 if(APPLE)
