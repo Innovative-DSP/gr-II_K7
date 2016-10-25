@@ -25,6 +25,7 @@ set(CMAKE_CXX_TARGET_INCLUDE_PATH
   "../include"
   "lib"
   "include"
+  "/usr/local/include"
   "/usr/Innovative/Digital_Receiver_K707-1.0/Digital_Receiver_K707/GP-K7-LIB/Common"
   "/usr/Innovative/Digital_Receiver_K707-1.0/Digital_Receiver_K707/GP-LIB/GpDsp"
   "/usr/Innovative/Digital_Receiver_K707-1.0/Digital_Receiver_K707/GP-LIB/Common"

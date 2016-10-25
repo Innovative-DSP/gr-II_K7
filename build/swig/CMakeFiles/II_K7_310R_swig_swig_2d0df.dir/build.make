@@ -58,37 +58,37 @@ include swig/CMakeFiles/II_K7_310R_swig_swig_2d0df.dir/progress.make
 include swig/CMakeFiles/II_K7_310R_swig_swig_2d0df.dir/flags.make
 
 swig/II_K7_310R_swig_swig_2d0df.cpp: ../swig/II_K7_310R_swig.i
+swig/II_K7_310R_swig_swig_2d0df.cpp: /usr/local/include/gnuradio/swig/tagged_stream_block.i
 swig/II_K7_310R_swig_swig_2d0df.cpp: swig/II_K7_310R_swig_doc.i
-swig/II_K7_310R_swig_swig_2d0df.cpp: /usr/include/gnuradio/swig/gr_swig_block_magic.i
-swig/II_K7_310R_swig_swig_2d0df.cpp: /usr/include/gnuradio/swig/gr_logger.i
-swig/II_K7_310R_swig_swig_2d0df.cpp: /usr/include/gnuradio/swig/block_gateway.i
-swig/II_K7_310R_swig_swig_2d0df.cpp: /usr/include/gnuradio/swig/tags.i
-swig/II_K7_310R_swig_swig_2d0df.cpp: /usr/include/gnuradio/swig/top_block.i
-swig/II_K7_310R_swig_swig_2d0df.cpp: /usr/include/gnuradio/swig/sync_block.i
+swig/II_K7_310R_swig_swig_2d0df.cpp: /usr/local/include/gnuradio/swig/gnuradio.i
+swig/II_K7_310R_swig_swig_2d0df.cpp: /usr/local/include/gnuradio/swig/realtime.i
+swig/II_K7_310R_swig_swig_2d0df.cpp: /usr/local/include/gnuradio/swig/block.i
+swig/II_K7_310R_swig_swig_2d0df.cpp: /usr/local/include/gnuradio/swig/block_detail.i
+swig/II_K7_310R_swig_swig_2d0df.cpp: /usr/local/include/gnuradio/swig/constants.i
+swig/II_K7_310R_swig_swig_2d0df.cpp: /usr/local/include/gnuradio/swig/sync_block.i
+swig/II_K7_310R_swig_swig_2d0df.cpp: /usr/local/include/gnuradio/swig/gr_shared_ptr.i
+swig/II_K7_310R_swig_swig_2d0df.cpp: /usr/local/include/gnuradio/swig/io_signature.i
+swig/II_K7_310R_swig_swig_2d0df.cpp: /usr/local/include/gnuradio/swig/sync_interpolator.i
+swig/II_K7_310R_swig_swig_2d0df.cpp: /usr/local/include/gnuradio/swig/gr_types.i
+swig/II_K7_310R_swig_swig_2d0df.cpp: /usr/local/include/gnuradio/swig/basic_block.i
+swig/II_K7_310R_swig_swig_2d0df.cpp: /usr/local/include/gnuradio/swig/gr_ctrlport.i
+swig/II_K7_310R_swig_swig_2d0df.cpp: /usr/local/include/gnuradio/swig/block_gateway.i
 swig/II_K7_310R_swig_swig_2d0df.cpp: ../swig/II_K7_310R_swig.i
-swig/II_K7_310R_swig_swig_2d0df.cpp: /usr/include/gnuradio/swig/msg_queue.i
-swig/II_K7_310R_swig_swig_2d0df.cpp: /usr/include/gnuradio/swig/io_signature.i
-swig/II_K7_310R_swig_swig_2d0df.cpp: /usr/include/gnuradio/swig/gnuradio.i
-swig/II_K7_310R_swig_swig_2d0df.cpp: /usr/include/gnuradio/swig/buffer.i
-swig/II_K7_310R_swig_swig_2d0df.cpp: /usr/include/gnuradio/swig/sync_decimator.i
-swig/II_K7_310R_swig_swig_2d0df.cpp: /usr/include/gnuradio/swig/gr_types.i
-swig/II_K7_310R_swig_swig_2d0df.cpp: /usr/include/gnuradio/swig/message.i
-swig/II_K7_310R_swig_swig_2d0df.cpp: /usr/include/gnuradio/swig/hier_block2.i
-swig/II_K7_310R_swig_swig_2d0df.cpp: /usr/include/gnuradio/swig/block.i
-swig/II_K7_310R_swig_swig_2d0df.cpp: /usr/include/gnuradio/swig/basic_block.i
-swig/II_K7_310R_swig_swig_2d0df.cpp: /usr/include/gnuradio/swig/runtime_swig_doc.i
-swig/II_K7_310R_swig_swig_2d0df.cpp: /usr/include/gnuradio/swig/sync_interpolator.i
-swig/II_K7_310R_swig_swig_2d0df.cpp: /usr/include/gnuradio/swig/gr_ctrlport.i
-swig/II_K7_310R_swig_swig_2d0df.cpp: /usr/include/gnuradio/swig/feval.i
-swig/II_K7_310R_swig_swig_2d0df.cpp: /usr/include/gnuradio/swig/gr_shared_ptr.i
-swig/II_K7_310R_swig_swig_2d0df.cpp: /usr/include/gnuradio/swig/prefs.i
-swig/II_K7_310R_swig_swig_2d0df.cpp: /usr/include/gnuradio/swig/msg_handler.i
-swig/II_K7_310R_swig_swig_2d0df.cpp: /usr/include/gnuradio/swig/constants.i
-swig/II_K7_310R_swig_swig_2d0df.cpp: /usr/include/gnuradio/swig/gr_extras.i
-swig/II_K7_310R_swig_swig_2d0df.cpp: /usr/include/gnuradio/swig/runtime_swig.i
-swig/II_K7_310R_swig_swig_2d0df.cpp: /usr/include/gnuradio/swig/tagged_stream_block.i
-swig/II_K7_310R_swig_swig_2d0df.cpp: /usr/include/gnuradio/swig/realtime.i
-swig/II_K7_310R_swig_swig_2d0df.cpp: /usr/include/gnuradio/swig/block_detail.i
+swig/II_K7_310R_swig_swig_2d0df.cpp: /usr/local/include/gnuradio/swig/top_block.i
+swig/II_K7_310R_swig_swig_2d0df.cpp: /usr/local/include/gnuradio/swig/gr_extras.i
+swig/II_K7_310R_swig_swig_2d0df.cpp: /usr/local/include/gnuradio/swig/message.i
+swig/II_K7_310R_swig_swig_2d0df.cpp: /usr/local/include/gnuradio/swig/tags.i
+swig/II_K7_310R_swig_swig_2d0df.cpp: /usr/local/include/gnuradio/swig/msg_handler.i
+swig/II_K7_310R_swig_swig_2d0df.cpp: /usr/local/include/gnuradio/swig/runtime_swig.i
+swig/II_K7_310R_swig_swig_2d0df.cpp: /usr/local/include/gnuradio/swig/msg_queue.i
+swig/II_K7_310R_swig_swig_2d0df.cpp: /usr/local/include/gnuradio/swig/buffer.i
+swig/II_K7_310R_swig_swig_2d0df.cpp: /usr/local/include/gnuradio/swig/gr_swig_block_magic.i
+swig/II_K7_310R_swig_swig_2d0df.cpp: /usr/local/include/gnuradio/swig/hier_block2.i
+swig/II_K7_310R_swig_swig_2d0df.cpp: /usr/local/include/gnuradio/swig/runtime_swig_doc.i
+swig/II_K7_310R_swig_swig_2d0df.cpp: /usr/local/include/gnuradio/swig/feval.i
+swig/II_K7_310R_swig_swig_2d0df.cpp: /usr/local/include/gnuradio/swig/sync_decimator.i
+swig/II_K7_310R_swig_swig_2d0df.cpp: /usr/local/include/gnuradio/swig/gr_logger.i
+swig/II_K7_310R_swig_swig_2d0df.cpp: /usr/local/include/gnuradio/swig/prefs.i
 swig/II_K7_310R_swig_swig_2d0df.cpp: swig/II_K7_310R_swig.tag
 	cd /home/user/Documents/GnuRadio/gr-II_K7_310R/build/swig && /usr/bin/cmake -E copy /home/user/Documents/GnuRadio/gr-II_K7_310R/build/swig/II_K7_310R_swig_swig_2d0df.cpp.in /home/user/Documents/GnuRadio/gr-II_K7_310R/build/swig/II_K7_310R_swig_swig_2d0df.cpp
 
@@ -144,7 +144,7 @@ swig/II_K7_310R_swig_swig_2d0df: swig/CMakeFiles/II_K7_310R_swig_swig_2d0df.dir/
 	cd /home/user/Documents/GnuRadio/gr-II_K7_310R/build/swig && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/II_K7_310R_swig_swig_2d0df.dir/link.txt --verbose=$(VERBOSE)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold "Swig source"
 	cd /home/user/Documents/GnuRadio/gr-II_K7_310R/build/swig && /usr/bin/cmake -E make_directory /home/user/Documents/GnuRadio/gr-II_K7_310R/build/swig
-	cd /home/user/Documents/GnuRadio/gr-II_K7_310R/build/swig && /usr/bin/swig3.0 -python -fvirtual -modern -keyword -w511 -module II_K7_310R_swig -I/home/user/Documents/GnuRadio/gr-II_K7_310R/build/swig -I/home/user/Documents/GnuRadio/gr-II_K7_310R/swig -I/usr/include/gnuradio/swig -I/usr/include/python2.7 -I/usr/include/python2.7 -outdir /home/user/Documents/GnuRadio/gr-II_K7_310R/build/swig -c++ -I/home/user/Documents/GnuRadio/gr-II_K7_310R/lib -I/home/user/Documents/GnuRadio/gr-II_K7_310R/include -I/home/user/Documents/GnuRadio/gr-II_K7_310R/build/lib -I/home/user/Documents/GnuRadio/gr-II_K7_310R/build/include -I/usr/include -I/usr/include -I/usr/include -I/home/user/Documents/GnuRadio/gr-II_K7_310R/build/swig -I/home/user/Documents/GnuRadio/gr-II_K7_310R/swig -I/usr/include/gnuradio/swig -I/usr/include/python2.7 -I/usr/include/python2.7 -o /home/user/Documents/GnuRadio/gr-II_K7_310R/build/swig/II_K7_310R_swigPYTHON_wrap.cxx /home/user/Documents/GnuRadio/gr-II_K7_310R/swig/II_K7_310R_swig.i
+	cd /home/user/Documents/GnuRadio/gr-II_K7_310R/build/swig && /usr/bin/swig3.0 -python -fvirtual -modern -keyword -w511 -module II_K7_310R_swig -I/home/user/Documents/GnuRadio/gr-II_K7_310R/build/swig -I/home/user/Documents/GnuRadio/gr-II_K7_310R/swig -I/usr/local/include/gnuradio/swig -I/usr/include/python2.7 -I/usr/include/python2.7 -outdir /home/user/Documents/GnuRadio/gr-II_K7_310R/build/swig -c++ -I/home/user/Documents/GnuRadio/gr-II_K7_310R/lib -I/home/user/Documents/GnuRadio/gr-II_K7_310R/include -I/home/user/Documents/GnuRadio/gr-II_K7_310R/build/lib -I/home/user/Documents/GnuRadio/gr-II_K7_310R/build/include -I/usr/include -I/usr/include -I/usr/local/include -I/home/user/Documents/GnuRadio/gr-II_K7_310R/build/swig -I/home/user/Documents/GnuRadio/gr-II_K7_310R/swig -I/usr/local/include/gnuradio/swig -I/usr/include/python2.7 -I/usr/include/python2.7 -o /home/user/Documents/GnuRadio/gr-II_K7_310R/build/swig/II_K7_310R_swigPYTHON_wrap.cxx /home/user/Documents/GnuRadio/gr-II_K7_310R/swig/II_K7_310R_swig.i
 
 # Rule to build all files generated by this target.
 swig/CMakeFiles/II_K7_310R_swig_swig_2d0df.dir/build: swig/II_K7_310R_swig_swig_2d0df

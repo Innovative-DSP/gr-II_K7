@@ -14,9 +14,10 @@ set(CMAKE_CXX_TARGET_INCLUDE_PATH
   "../include"
   "lib"
   "include"
+  "/usr/local/include"
   "swig"
   "../swig"
-  "/usr/include/gnuradio/swig"
+  "/usr/local/include/gnuradio/swig"
   "/usr/include/python2.7"
   )
 

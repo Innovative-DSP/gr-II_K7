@@ -1,0 +1,40 @@
+Start testing: Oct 25 10:22 PDT
+----------------------------------------------------------
+1/2 Testing: test_II_K7_310R
+1/2 Test: test_II_K7_310R
+Command: "/bin/sh" "/home/user/Documents/GnuRadio/gr-II_K7_310R/build/lib/test_II_K7_310R_test.sh"
+Directory: /home/user/Documents/GnuRadio/gr-II_K7_310R/build/lib
+"test_II_K7_310R" start time: Oct 25 10:22 PDT
+Output:
+----------------------------------------------------------
+.
+
+<end of output>
+Test time =   0.02 sec
+----------------------------------------------------------
+Test Passed.
+"test_II_K7_310R" end time: Oct 25 10:22 PDT
+"test_II_K7_310R" time elapsed: 00:00:00
+----------------------------------------------------------
+
+2/2 Testing: qa_ch16_ddc_source_c
+2/2 Test: qa_ch16_ddc_source_c
+Command: "/bin/sh" "/home/user/Documents/GnuRadio/gr-II_K7_310R/build/python/qa_ch16_ddc_source_c_test.sh"
+Directory: /home/user/Documents/GnuRadio/gr-II_K7_310R/build/python
+"qa_ch16_ddc_source_c" start time: Oct 25 10:22 PDT
+Output:
+----------------------------------------------------------
+.
+----------------------------------------------------------------------
+Ran 1 test in 0.003s
+
+OK
+<end of output>
+Test time =   0.91 sec
+----------------------------------------------------------
+Test Passed.
+"qa_ch16_ddc_source_c" end time: Oct 25 10:22 PDT
+"qa_ch16_ddc_source_c" time elapsed: 00:00:00
+----------------------------------------------------------
+
+End testing: Oct 25 10:22 PDT

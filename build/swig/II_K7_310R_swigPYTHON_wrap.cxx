@@ -3012,49 +3012,47 @@ SWIG_Python_NonDynamicSetAttr(PyObject *obj, PyObject *name, PyObject *value) {
 #define SWIGTYPE_p_allocator_type swig_types[0]
 #define SWIGTYPE_p_boost__intrusive_ptrT_pmt__pmt_base_t swig_types[1]
 #define SWIGTYPE_p_boost__shared_ptrT_gr__II_K7_310R__ch16_ddc_source_c_t swig_types[2]
-#define SWIGTYPE_p_boost__shared_ptrT_gr__II_K7_310R__ch1_ddc_source_c_t swig_types[3]
-#define SWIGTYPE_p_boost__shared_ptrT_gr__basic_block_t swig_types[4]
-#define SWIGTYPE_p_boost__shared_ptrT_gr__block_detail_t swig_types[5]
-#define SWIGTYPE_p_boost__shared_ptrT_gr__block_t swig_types[6]
-#define SWIGTYPE_p_boost__shared_ptrT_gr__buffer_reader_t swig_types[7]
-#define SWIGTYPE_p_boost__shared_ptrT_gr__buffer_t swig_types[8]
-#define SWIGTYPE_p_boost__shared_ptrT_gr__flat_flowgraph_t swig_types[9]
-#define SWIGTYPE_p_boost__shared_ptrT_gr__flowgraph_t swig_types[10]
-#define SWIGTYPE_p_boost__shared_ptrT_gr__hier_block2_t swig_types[11]
-#define SWIGTYPE_p_boost__shared_ptrT_gr__io_signature_t swig_types[12]
-#define SWIGTYPE_p_boost__shared_ptrT_gr__top_block_t swig_types[13]
-#define SWIGTYPE_p_char swig_types[14]
-#define SWIGTYPE_p_const_reference swig_types[15]
-#define SWIGTYPE_p_difference_type swig_types[16]
-#define SWIGTYPE_p_gr__II_K7_310R__ch16_ddc_source_c swig_types[17]
-#define SWIGTYPE_p_gr__II_K7_310R__ch1_ddc_source_c swig_types[18]
-#define SWIGTYPE_p_gr__basic_block swig_types[19]
-#define SWIGTYPE_p_gr__block swig_types[20]
-#define SWIGTYPE_p_gr__block_gateway swig_types[21]
-#define SWIGTYPE_p_gr__endianness_t swig_types[22]
-#define SWIGTYPE_p_gr__hier_block2 swig_types[23]
-#define SWIGTYPE_p_gr__rt_status_t swig_types[24]
-#define SWIGTYPE_p_gr__sync_block swig_types[25]
-#define SWIGTYPE_p_gr__sync_decimator swig_types[26]
-#define SWIGTYPE_p_gr__sync_interpolator swig_types[27]
-#define SWIGTYPE_p_gr__tagged_stream_block swig_types[28]
-#define SWIGTYPE_p_gr__top_block swig_types[29]
-#define SWIGTYPE_p_int swig_types[30]
-#define SWIGTYPE_p_long_long swig_types[31]
-#define SWIGTYPE_p_reference swig_types[32]
-#define SWIGTYPE_p_short swig_types[33]
-#define SWIGTYPE_p_signed_char swig_types[34]
-#define SWIGTYPE_p_size_type swig_types[35]
-#define SWIGTYPE_p_sptr swig_types[36]
-#define SWIGTYPE_p_std__complexT_double_t swig_types[37]
-#define SWIGTYPE_p_std__complexT_float_t swig_types[38]
-#define SWIGTYPE_p_unsigned_char swig_types[39]
-#define SWIGTYPE_p_unsigned_int swig_types[40]
-#define SWIGTYPE_p_unsigned_long_long swig_types[41]
-#define SWIGTYPE_p_unsigned_short swig_types[42]
-#define SWIGTYPE_p_value_type swig_types[43]
-static swig_type_info *swig_types[45];
-static swig_module_info swig_module = {swig_types, 44, 0, 0, 0, 0};
+#define SWIGTYPE_p_boost__shared_ptrT_gr__basic_block_t swig_types[3]
+#define SWIGTYPE_p_boost__shared_ptrT_gr__block_detail_t swig_types[4]
+#define SWIGTYPE_p_boost__shared_ptrT_gr__block_t swig_types[5]
+#define SWIGTYPE_p_boost__shared_ptrT_gr__buffer_reader_t swig_types[6]
+#define SWIGTYPE_p_boost__shared_ptrT_gr__buffer_t swig_types[7]
+#define SWIGTYPE_p_boost__shared_ptrT_gr__flat_flowgraph_t swig_types[8]
+#define SWIGTYPE_p_boost__shared_ptrT_gr__flowgraph_t swig_types[9]
+#define SWIGTYPE_p_boost__shared_ptrT_gr__hier_block2_t swig_types[10]
+#define SWIGTYPE_p_boost__shared_ptrT_gr__io_signature_t swig_types[11]
+#define SWIGTYPE_p_boost__shared_ptrT_gr__top_block_t swig_types[12]
+#define SWIGTYPE_p_char swig_types[13]
+#define SWIGTYPE_p_const_reference swig_types[14]
+#define SWIGTYPE_p_difference_type swig_types[15]
+#define SWIGTYPE_p_gr__II_K7_310R__ch16_ddc_source_c swig_types[16]
+#define SWIGTYPE_p_gr__basic_block swig_types[17]
+#define SWIGTYPE_p_gr__block swig_types[18]
+#define SWIGTYPE_p_gr__block_gateway swig_types[19]
+#define SWIGTYPE_p_gr__endianness_t swig_types[20]
+#define SWIGTYPE_p_gr__hier_block2 swig_types[21]
+#define SWIGTYPE_p_gr__rt_status_t swig_types[22]
+#define SWIGTYPE_p_gr__sync_block swig_types[23]
+#define SWIGTYPE_p_gr__sync_decimator swig_types[24]
+#define SWIGTYPE_p_gr__sync_interpolator swig_types[25]
+#define SWIGTYPE_p_gr__tagged_stream_block swig_types[26]
+#define SWIGTYPE_p_gr__top_block swig_types[27]
+#define SWIGTYPE_p_int swig_types[28]
+#define SWIGTYPE_p_long_long swig_types[29]
+#define SWIGTYPE_p_reference swig_types[30]
+#define SWIGTYPE_p_short swig_types[31]
+#define SWIGTYPE_p_signed_char swig_types[32]
+#define SWIGTYPE_p_size_type swig_types[33]
+#define SWIGTYPE_p_sptr swig_types[34]
+#define SWIGTYPE_p_std__complexT_double_t swig_types[35]
+#define SWIGTYPE_p_std__complexT_float_t swig_types[36]
+#define SWIGTYPE_p_unsigned_char swig_types[37]
+#define SWIGTYPE_p_unsigned_int swig_types[38]
+#define SWIGTYPE_p_unsigned_long_long swig_types[39]
+#define SWIGTYPE_p_unsigned_short swig_types[40]
+#define SWIGTYPE_p_value_type swig_types[41]
+static swig_type_info *swig_types[43];
+static swig_module_info swig_module = {swig_types, 42, 0, 0, 0, 0};
 #define SWIG_TypeQuery(name) SWIG_TypeQueryModule(&swig_module, &swig_module, name)
 #define SWIG_MangledTypeQuery(name) SWIG_MangledTypeQueryModule(&swig_module, &swig_module, name)
 
@@ -4370,7 +4368,7 @@ SWIG_From_long_SS_long  (long long value)
 
 
 #include "II_K7_310R/ch16_ddc_source_c.h"
-#include "II_K7_310R/ch1_ddc_source_c.h"
+//#include "II_K7_310R/ch1_ddc_source_c.h"
 
 
 SWIGINTERNINLINE PyObject*
@@ -5139,6 +5137,61 @@ SWIGINTERN PyObject *Ch16External_swigconstant(PyObject *SWIGUNUSEDPARM(self), P
 }
 
 
+SWIGINTERN PyObject *Adc0_swigconstant(PyObject *SWIGUNUSEDPARM(self), PyObject *args) {
+  PyObject *module;
+  PyObject *d;
+  if (!PyArg_UnpackTuple(args,(char*)"swigconstant", 1, 1,&module)) return NULL;
+  d = PyModule_GetDict(module);
+  if (!d) return NULL;
+  SWIG_Python_SetConstant(d, "Adc0",SWIG_From_int(static_cast< int >(gr::II_K7_310R::Adc0)));
+  return SWIG_Py_Void();
+}
+
+
+SWIGINTERN PyObject *Adc1_swigconstant(PyObject *SWIGUNUSEDPARM(self), PyObject *args) {
+  PyObject *module;
+  PyObject *d;
+  if (!PyArg_UnpackTuple(args,(char*)"swigconstant", 1, 1,&module)) return NULL;
+  d = PyModule_GetDict(module);
+  if (!d) return NULL;
+  SWIG_Python_SetConstant(d, "Adc1",SWIG_From_int(static_cast< int >(gr::II_K7_310R::Adc1)));
+  return SWIG_Py_Void();
+}
+
+
+SWIGINTERN PyObject *Adc2_swigconstant(PyObject *SWIGUNUSEDPARM(self), PyObject *args) {
+  PyObject *module;
+  PyObject *d;
+  if (!PyArg_UnpackTuple(args,(char*)"swigconstant", 1, 1,&module)) return NULL;
+  d = PyModule_GetDict(module);
+  if (!d) return NULL;
+  SWIG_Python_SetConstant(d, "Adc2",SWIG_From_int(static_cast< int >(gr::II_K7_310R::Adc2)));
+  return SWIG_Py_Void();
+}
+
+
+SWIGINTERN PyObject *Adc3_swigconstant(PyObject *SWIGUNUSEDPARM(self), PyObject *args) {
+  PyObject *module;
+  PyObject *d;
+  if (!PyArg_UnpackTuple(args,(char*)"swigconstant", 1, 1,&module)) return NULL;
+  d = PyModule_GetDict(module);
+  if (!d) return NULL;
+  SWIG_Python_SetConstant(d, "Adc3",SWIG_From_int(static_cast< int >(gr::II_K7_310R::Adc3)));
+  return SWIG_Py_Void();
+}
+
+
+SWIGINTERN PyObject *Test_swigconstant(PyObject *SWIGUNUSEDPARM(self), PyObject *args) {
+  PyObject *module;
+  PyObject *d;
+  if (!PyArg_UnpackTuple(args,(char*)"swigconstant", 1, 1,&module)) return NULL;
+  d = PyModule_GetDict(module);
+  if (!d) return NULL;
+  SWIG_Python_SetConstant(d, "Test",SWIG_From_int(static_cast< int >(gr::II_K7_310R::Test)));
+  return SWIG_Py_Void();
+}
+
+
 SWIGINTERN PyObject *_wrap_ch16_ddc_source_c_make(PyObject *SWIGUNUSEDPARM(self), PyObject *args, PyObject *kwargs) {
   PyObject *resultobj = 0;
   short arg1 ;
@@ -5179,6 +5232,22 @@ SWIGINTERN PyObject *_wrap_ch16_ddc_source_c_make(PyObject *SWIGUNUSEDPARM(self)
   float arg36 ;
   float arg37 ;
   float arg38 ;
+  gr::II_K7_310R::Ch16Source arg39 ;
+  gr::II_K7_310R::Ch16Source arg40 ;
+  gr::II_K7_310R::Ch16Source arg41 ;
+  gr::II_K7_310R::Ch16Source arg42 ;
+  gr::II_K7_310R::Ch16Source arg43 ;
+  gr::II_K7_310R::Ch16Source arg44 ;
+  gr::II_K7_310R::Ch16Source arg45 ;
+  gr::II_K7_310R::Ch16Source arg46 ;
+  gr::II_K7_310R::Ch16Source arg47 ;
+  gr::II_K7_310R::Ch16Source arg48 ;
+  gr::II_K7_310R::Ch16Source arg49 ;
+  gr::II_K7_310R::Ch16Source arg50 ;
+  gr::II_K7_310R::Ch16Source arg51 ;
+  gr::II_K7_310R::Ch16Source arg52 ;
+  gr::II_K7_310R::Ch16Source arg53 ;
+  gr::II_K7_310R::Ch16Source arg54 ;
   short val1 ;
   int ecode1 = 0 ;
   float val2 ;
@@ -5256,6 +5325,38 @@ SWIGINTERN PyObject *_wrap_ch16_ddc_source_c_make(PyObject *SWIGUNUSEDPARM(self)
   int ecode37 = 0 ;
   float val38 ;
   int ecode38 = 0 ;
+  int val39 ;
+  int ecode39 = 0 ;
+  int val40 ;
+  int ecode40 = 0 ;
+  int val41 ;
+  int ecode41 = 0 ;
+  int val42 ;
+  int ecode42 = 0 ;
+  int val43 ;
+  int ecode43 = 0 ;
+  int val44 ;
+  int ecode44 = 0 ;
+  int val45 ;
+  int ecode45 = 0 ;
+  int val46 ;
+  int ecode46 = 0 ;
+  int val47 ;
+  int ecode47 = 0 ;
+  int val48 ;
+  int ecode48 = 0 ;
+  int val49 ;
+  int ecode49 = 0 ;
+  int val50 ;
+  int ecode50 = 0 ;
+  int val51 ;
+  int ecode51 = 0 ;
+  int val52 ;
+  int ecode52 = 0 ;
+  int val53 ;
+  int ecode53 = 0 ;
+  int val54 ;
+  int ecode54 = 0 ;
   PyObject * obj0 = 0 ;
   PyObject * obj1 = 0 ;
   PyObject * obj2 = 0 ;
@@ -5294,12 +5395,28 @@ SWIGINTERN PyObject *_wrap_ch16_ddc_source_c_make(PyObject *SWIGUNUSEDPARM(self)
   PyObject * obj35 = 0 ;
   PyObject * obj36 = 0 ;
   PyObject * obj37 = 0 ;
+  PyObject * obj38 = 0 ;
+  PyObject * obj39 = 0 ;
+  PyObject * obj40 = 0 ;
+  PyObject * obj41 = 0 ;
+  PyObject * obj42 = 0 ;
+  PyObject * obj43 = 0 ;
+  PyObject * obj44 = 0 ;
+  PyObject * obj45 = 0 ;
+  PyObject * obj46 = 0 ;
+  PyObject * obj47 = 0 ;
+  PyObject * obj48 = 0 ;
+  PyObject * obj49 = 0 ;
+  PyObject * obj50 = 0 ;
+  PyObject * obj51 = 0 ;
+  PyObject * obj52 = 0 ;
+  PyObject * obj53 = 0 ;
   char *  kwnames[] = {
-    (char *) "max_ch",(char *) "rf_gain",(char *) "trigger_source",(char *) "ddc_filter_path",(char *) "is_rf_tuner",(char *) "rf_center_freq",(char *) "ch0_offset_freq",(char *) "ch1_offset_freq",(char *) "ch2_offset_freq",(char *) "ch3_offset_freq",(char *) "ch4_offset_freq",(char *) "ch5_offset_freq",(char *) "ch6_offset_freq",(char *) "ch7_offset_freq",(char *) "ch8_offset_freq",(char *) "ch9_offset_freq",(char *) "ch10_offset_freq",(char *) "ch11_offset_freq",(char *) "ch12_offset_freq",(char *) "ch13_offset_freq",(char *) "ch14_offset_freq",(char *) "ch15_offset_freq",(char *) "ch0_tune_freq",(char *) "ch1_tune_freq",(char *) "ch2_tune_freq",(char *) "ch3_tune_freq",(char *) "ch4_tune_freq",(char *) "ch5_tune_freq",(char *) "ch6_tune_freq",(char *) "ch7_tune_freq",(char *) "ch8_tune_freq",(char *) "ch9_tune_freq",(char *) "ch10_tune_freq",(char *) "ch11_tune_freq",(char *) "ch12_tune_freq",(char *) "ch13_tune_freq",(char *) "ch14_tune_freq",(char *) "ch15_tune_freq", NULL 
+    (char *) "max_ch",(char *) "rf_gain",(char *) "trigger_source",(char *) "ddc_filter_path",(char *) "is_rf_tuner",(char *) "rf_center_freq",(char *) "ch0_offset_freq",(char *) "ch1_offset_freq",(char *) "ch2_offset_freq",(char *) "ch3_offset_freq",(char *) "ch4_offset_freq",(char *) "ch5_offset_freq",(char *) "ch6_offset_freq",(char *) "ch7_offset_freq",(char *) "ch8_offset_freq",(char *) "ch9_offset_freq",(char *) "ch10_offset_freq",(char *) "ch11_offset_freq",(char *) "ch12_offset_freq",(char *) "ch13_offset_freq",(char *) "ch14_offset_freq",(char *) "ch15_offset_freq",(char *) "ch0_tune_freq",(char *) "ch1_tune_freq",(char *) "ch2_tune_freq",(char *) "ch3_tune_freq",(char *) "ch4_tune_freq",(char *) "ch5_tune_freq",(char *) "ch6_tune_freq",(char *) "ch7_tune_freq",(char *) "ch8_tune_freq",(char *) "ch9_tune_freq",(char *) "ch10_tune_freq",(char *) "ch11_tune_freq",(char *) "ch12_tune_freq",(char *) "ch13_tune_freq",(char *) "ch14_tune_freq",(char *) "ch15_tune_freq",(char *) "ch0_source",(char *) "ch1_source",(char *) "ch2_source",(char *) "ch3_source",(char *) "ch4_source",(char *) "ch5_source",(char *) "ch6_source",(char *) "ch7_source",(char *) "ch8_source",(char *) "ch9_source",(char *) "ch10_source",(char *) "ch11_source",(char *) "ch12_source",(char *) "ch13_source",(char *) "ch14_source",(char *) "ch15_source", NULL 
   };
   gr::II_K7_310R::ch16_ddc_source_c::sptr result;
   
-  if (!PyArg_ParseTupleAndKeywords(args,kwargs,(char *)"OOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOO:ch16_ddc_source_c_make",kwnames,&obj0,&obj1,&obj2,&obj3,&obj4,&obj5,&obj6,&obj7,&obj8,&obj9,&obj10,&obj11,&obj12,&obj13,&obj14,&obj15,&obj16,&obj17,&obj18,&obj19,&obj20,&obj21,&obj22,&obj23,&obj24,&obj25,&obj26,&obj27,&obj28,&obj29,&obj30,&obj31,&obj32,&obj33,&obj34,&obj35,&obj36,&obj37)) SWIG_fail;
+  if (!PyArg_ParseTupleAndKeywords(args,kwargs,(char *)"OOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOO:ch16_ddc_source_c_make",kwnames,&obj0,&obj1,&obj2,&obj3,&obj4,&obj5,&obj6,&obj7,&obj8,&obj9,&obj10,&obj11,&obj12,&obj13,&obj14,&obj15,&obj16,&obj17,&obj18,&obj19,&obj20,&obj21,&obj22,&obj23,&obj24,&obj25,&obj26,&obj27,&obj28,&obj29,&obj30,&obj31,&obj32,&obj33,&obj34,&obj35,&obj36,&obj37,&obj38,&obj39,&obj40,&obj41,&obj42,&obj43,&obj44,&obj45,&obj46,&obj47,&obj48,&obj49,&obj50,&obj51,&obj52,&obj53)) SWIG_fail;
   ecode1 = SWIG_AsVal_short(obj0, &val1);
   if (!SWIG_IsOK(ecode1)) {
     SWIG_exception_fail(SWIG_ArgError(ecode1), "in method '" "ch16_ddc_source_c_make" "', argument " "1"" of type '" "short""'");
@@ -5490,9 +5607,89 @@ SWIGINTERN PyObject *_wrap_ch16_ddc_source_c_make(PyObject *SWIGUNUSEDPARM(self)
     SWIG_exception_fail(SWIG_ArgError(ecode38), "in method '" "ch16_ddc_source_c_make" "', argument " "38"" of type '" "float""'");
   } 
   arg38 = static_cast< float >(val38);
+  ecode39 = SWIG_AsVal_int(obj38, &val39);
+  if (!SWIG_IsOK(ecode39)) {
+    SWIG_exception_fail(SWIG_ArgError(ecode39), "in method '" "ch16_ddc_source_c_make" "', argument " "39"" of type '" "gr::II_K7_310R::Ch16Source""'");
+  } 
+  arg39 = static_cast< gr::II_K7_310R::Ch16Source >(val39);
+  ecode40 = SWIG_AsVal_int(obj39, &val40);
+  if (!SWIG_IsOK(ecode40)) {
+    SWIG_exception_fail(SWIG_ArgError(ecode40), "in method '" "ch16_ddc_source_c_make" "', argument " "40"" of type '" "gr::II_K7_310R::Ch16Source""'");
+  } 
+  arg40 = static_cast< gr::II_K7_310R::Ch16Source >(val40);
+  ecode41 = SWIG_AsVal_int(obj40, &val41);
+  if (!SWIG_IsOK(ecode41)) {
+    SWIG_exception_fail(SWIG_ArgError(ecode41), "in method '" "ch16_ddc_source_c_make" "', argument " "41"" of type '" "gr::II_K7_310R::Ch16Source""'");
+  } 
+  arg41 = static_cast< gr::II_K7_310R::Ch16Source >(val41);
+  ecode42 = SWIG_AsVal_int(obj41, &val42);
+  if (!SWIG_IsOK(ecode42)) {
+    SWIG_exception_fail(SWIG_ArgError(ecode42), "in method '" "ch16_ddc_source_c_make" "', argument " "42"" of type '" "gr::II_K7_310R::Ch16Source""'");
+  } 
+  arg42 = static_cast< gr::II_K7_310R::Ch16Source >(val42);
+  ecode43 = SWIG_AsVal_int(obj42, &val43);
+  if (!SWIG_IsOK(ecode43)) {
+    SWIG_exception_fail(SWIG_ArgError(ecode43), "in method '" "ch16_ddc_source_c_make" "', argument " "43"" of type '" "gr::II_K7_310R::Ch16Source""'");
+  } 
+  arg43 = static_cast< gr::II_K7_310R::Ch16Source >(val43);
+  ecode44 = SWIG_AsVal_int(obj43, &val44);
+  if (!SWIG_IsOK(ecode44)) {
+    SWIG_exception_fail(SWIG_ArgError(ecode44), "in method '" "ch16_ddc_source_c_make" "', argument " "44"" of type '" "gr::II_K7_310R::Ch16Source""'");
+  } 
+  arg44 = static_cast< gr::II_K7_310R::Ch16Source >(val44);
+  ecode45 = SWIG_AsVal_int(obj44, &val45);
+  if (!SWIG_IsOK(ecode45)) {
+    SWIG_exception_fail(SWIG_ArgError(ecode45), "in method '" "ch16_ddc_source_c_make" "', argument " "45"" of type '" "gr::II_K7_310R::Ch16Source""'");
+  } 
+  arg45 = static_cast< gr::II_K7_310R::Ch16Source >(val45);
+  ecode46 = SWIG_AsVal_int(obj45, &val46);
+  if (!SWIG_IsOK(ecode46)) {
+    SWIG_exception_fail(SWIG_ArgError(ecode46), "in method '" "ch16_ddc_source_c_make" "', argument " "46"" of type '" "gr::II_K7_310R::Ch16Source""'");
+  } 
+  arg46 = static_cast< gr::II_K7_310R::Ch16Source >(val46);
+  ecode47 = SWIG_AsVal_int(obj46, &val47);
+  if (!SWIG_IsOK(ecode47)) {
+    SWIG_exception_fail(SWIG_ArgError(ecode47), "in method '" "ch16_ddc_source_c_make" "', argument " "47"" of type '" "gr::II_K7_310R::Ch16Source""'");
+  } 
+  arg47 = static_cast< gr::II_K7_310R::Ch16Source >(val47);
+  ecode48 = SWIG_AsVal_int(obj47, &val48);
+  if (!SWIG_IsOK(ecode48)) {
+    SWIG_exception_fail(SWIG_ArgError(ecode48), "in method '" "ch16_ddc_source_c_make" "', argument " "48"" of type '" "gr::II_K7_310R::Ch16Source""'");
+  } 
+  arg48 = static_cast< gr::II_K7_310R::Ch16Source >(val48);
+  ecode49 = SWIG_AsVal_int(obj48, &val49);
+  if (!SWIG_IsOK(ecode49)) {
+    SWIG_exception_fail(SWIG_ArgError(ecode49), "in method '" "ch16_ddc_source_c_make" "', argument " "49"" of type '" "gr::II_K7_310R::Ch16Source""'");
+  } 
+  arg49 = static_cast< gr::II_K7_310R::Ch16Source >(val49);
+  ecode50 = SWIG_AsVal_int(obj49, &val50);
+  if (!SWIG_IsOK(ecode50)) {
+    SWIG_exception_fail(SWIG_ArgError(ecode50), "in method '" "ch16_ddc_source_c_make" "', argument " "50"" of type '" "gr::II_K7_310R::Ch16Source""'");
+  } 
+  arg50 = static_cast< gr::II_K7_310R::Ch16Source >(val50);
+  ecode51 = SWIG_AsVal_int(obj50, &val51);
+  if (!SWIG_IsOK(ecode51)) {
+    SWIG_exception_fail(SWIG_ArgError(ecode51), "in method '" "ch16_ddc_source_c_make" "', argument " "51"" of type '" "gr::II_K7_310R::Ch16Source""'");
+  } 
+  arg51 = static_cast< gr::II_K7_310R::Ch16Source >(val51);
+  ecode52 = SWIG_AsVal_int(obj51, &val52);
+  if (!SWIG_IsOK(ecode52)) {
+    SWIG_exception_fail(SWIG_ArgError(ecode52), "in method '" "ch16_ddc_source_c_make" "', argument " "52"" of type '" "gr::II_K7_310R::Ch16Source""'");
+  } 
+  arg52 = static_cast< gr::II_K7_310R::Ch16Source >(val52);
+  ecode53 = SWIG_AsVal_int(obj52, &val53);
+  if (!SWIG_IsOK(ecode53)) {
+    SWIG_exception_fail(SWIG_ArgError(ecode53), "in method '" "ch16_ddc_source_c_make" "', argument " "53"" of type '" "gr::II_K7_310R::Ch16Source""'");
+  } 
+  arg53 = static_cast< gr::II_K7_310R::Ch16Source >(val53);
+  ecode54 = SWIG_AsVal_int(obj53, &val54);
+  if (!SWIG_IsOK(ecode54)) {
+    SWIG_exception_fail(SWIG_ArgError(ecode54), "in method '" "ch16_ddc_source_c_make" "', argument " "54"" of type '" "gr::II_K7_310R::Ch16Source""'");
+  } 
+  arg54 = static_cast< gr::II_K7_310R::Ch16Source >(val54);
   {
     try {
-      result = gr::II_K7_310R::ch16_ddc_source_c::make(arg1,arg2,arg3,(char const *)arg4,arg5,arg6,arg7,arg8,arg9,arg10,arg11,arg12,arg13,arg14,arg15,arg16,arg17,arg18,arg19,arg20,arg21,arg22,arg23,arg24,arg25,arg26,arg27,arg28,arg29,arg30,arg31,arg32,arg33,arg34,arg35,arg36,arg37,arg38);
+      result = gr::II_K7_310R::ch16_ddc_source_c::make(arg1,arg2,arg3,(char const *)arg4,arg5,arg6,arg7,arg8,arg9,arg10,arg11,arg12,arg13,arg14,arg15,arg16,arg17,arg18,arg19,arg20,arg21,arg22,arg23,arg24,arg25,arg26,arg27,arg28,arg29,arg30,arg31,arg32,arg33,arg34,arg35,arg36,arg37,arg38,arg39,arg40,arg41,arg42,arg43,arg44,arg45,arg46,arg47,arg48,arg49,arg50,arg51,arg52,arg53,arg54);
     }
     catch(std::exception &e) {
       SWIG_exception(SWIG_RuntimeError, e.what());
@@ -5747,6 +5944,22 @@ SWIGINTERN PyObject *_wrap_ch16_ddc_source_c_sptr_make(PyObject *SWIGUNUSEDPARM(
   float arg37 ;
   float arg38 ;
   float arg39 ;
+  gr::II_K7_310R::Ch16Source arg40 ;
+  gr::II_K7_310R::Ch16Source arg41 ;
+  gr::II_K7_310R::Ch16Source arg42 ;
+  gr::II_K7_310R::Ch16Source arg43 ;
+  gr::II_K7_310R::Ch16Source arg44 ;
+  gr::II_K7_310R::Ch16Source arg45 ;
+  gr::II_K7_310R::Ch16Source arg46 ;
+  gr::II_K7_310R::Ch16Source arg47 ;
+  gr::II_K7_310R::Ch16Source arg48 ;
+  gr::II_K7_310R::Ch16Source arg49 ;
+  gr::II_K7_310R::Ch16Source arg50 ;
+  gr::II_K7_310R::Ch16Source arg51 ;
+  gr::II_K7_310R::Ch16Source arg52 ;
+  gr::II_K7_310R::Ch16Source arg53 ;
+  gr::II_K7_310R::Ch16Source arg54 ;
+  gr::II_K7_310R::Ch16Source arg55 ;
   void *argp1 = 0 ;
   int res1 = 0 ;
   short val2 ;
@@ -5826,6 +6039,38 @@ SWIGINTERN PyObject *_wrap_ch16_ddc_source_c_sptr_make(PyObject *SWIGUNUSEDPARM(
   int ecode38 = 0 ;
   float val39 ;
   int ecode39 = 0 ;
+  int val40 ;
+  int ecode40 = 0 ;
+  int val41 ;
+  int ecode41 = 0 ;
+  int val42 ;
+  int ecode42 = 0 ;
+  int val43 ;
+  int ecode43 = 0 ;
+  int val44 ;
+  int ecode44 = 0 ;
+  int val45 ;
+  int ecode45 = 0 ;
+  int val46 ;
+  int ecode46 = 0 ;
+  int val47 ;
+  int ecode47 = 0 ;
+  int val48 ;
+  int ecode48 = 0 ;
+  int val49 ;
+  int ecode49 = 0 ;
+  int val50 ;
+  int ecode50 = 0 ;
+  int val51 ;
+  int ecode51 = 0 ;
+  int val52 ;
+  int ecode52 = 0 ;
+  int val53 ;
+  int ecode53 = 0 ;
+  int val54 ;
+  int ecode54 = 0 ;
+  int val55 ;
+  int ecode55 = 0 ;
   PyObject * obj0 = 0 ;
   PyObject * obj1 = 0 ;
   PyObject * obj2 = 0 ;
@@ -5865,12 +6110,28 @@ SWIGINTERN PyObject *_wrap_ch16_ddc_source_c_sptr_make(PyObject *SWIGUNUSEDPARM(
   PyObject * obj36 = 0 ;
   PyObject * obj37 = 0 ;
   PyObject * obj38 = 0 ;
+  PyObject * obj39 = 0 ;
+  PyObject * obj40 = 0 ;
+  PyObject * obj41 = 0 ;
+  PyObject * obj42 = 0 ;
+  PyObject * obj43 = 0 ;
+  PyObject * obj44 = 0 ;
+  PyObject * obj45 = 0 ;
+  PyObject * obj46 = 0 ;
+  PyObject * obj47 = 0 ;
+  PyObject * obj48 = 0 ;
+  PyObject * obj49 = 0 ;
+  PyObject * obj50 = 0 ;
+  PyObject * obj51 = 0 ;
+  PyObject * obj52 = 0 ;
+  PyObject * obj53 = 0 ;
+  PyObject * obj54 = 0 ;
   char *  kwnames[] = {
-    (char *) "self",(char *) "max_ch",(char *) "rf_gain",(char *) "trigger_source",(char *) "ddc_filter_path",(char *) "is_rf_tuner",(char *) "rf_center_freq",(char *) "ch0_offset_freq",(char *) "ch1_offset_freq",(char *) "ch2_offset_freq",(char *) "ch3_offset_freq",(char *) "ch4_offset_freq",(char *) "ch5_offset_freq",(char *) "ch6_offset_freq",(char *) "ch7_offset_freq",(char *) "ch8_offset_freq",(char *) "ch9_offset_freq",(char *) "ch10_offset_freq",(char *) "ch11_offset_freq",(char *) "ch12_offset_freq",(char *) "ch13_offset_freq",(char *) "ch14_offset_freq",(char *) "ch15_offset_freq",(char *) "ch0_tune_freq",(char *) "ch1_tune_freq",(char *) "ch2_tune_freq",(char *) "ch3_tune_freq",(char *) "ch4_tune_freq",(char *) "ch5_tune_freq",(char *) "ch6_tune_freq",(char *) "ch7_tune_freq",(char *) "ch8_tune_freq",(char *) "ch9_tune_freq",(char *) "ch10_tune_freq",(char *) "ch11_tune_freq",(char *) "ch12_tune_freq",(char *) "ch13_tune_freq",(char *) "ch14_tune_freq",(char *) "ch15_tune_freq", NULL 
+    (char *) "self",(char *) "max_ch",(char *) "rf_gain",(char *) "trigger_source",(char *) "ddc_filter_path",(char *) "is_rf_tuner",(char *) "rf_center_freq",(char *) "ch0_offset_freq",(char *) "ch1_offset_freq",(char *) "ch2_offset_freq",(char *) "ch3_offset_freq",(char *) "ch4_offset_freq",(char *) "ch5_offset_freq",(char *) "ch6_offset_freq",(char *) "ch7_offset_freq",(char *) "ch8_offset_freq",(char *) "ch9_offset_freq",(char *) "ch10_offset_freq",(char *) "ch11_offset_freq",(char *) "ch12_offset_freq",(char *) "ch13_offset_freq",(char *) "ch14_offset_freq",(char *) "ch15_offset_freq",(char *) "ch0_tune_freq",(char *) "ch1_tune_freq",(char *) "ch2_tune_freq",(char *) "ch3_tune_freq",(char *) "ch4_tune_freq",(char *) "ch5_tune_freq",(char *) "ch6_tune_freq",(char *) "ch7_tune_freq",(char *) "ch8_tune_freq",(char *) "ch9_tune_freq",(char *) "ch10_tune_freq",(char *) "ch11_tune_freq",(char *) "ch12_tune_freq",(char *) "ch13_tune_freq",(char *) "ch14_tune_freq",(char *) "ch15_tune_freq",(char *) "ch0_source",(char *) "ch1_source",(char *) "ch2_source",(char *) "ch3_source",(char *) "ch4_source",(char *) "ch5_source",(char *) "ch6_source",(char *) "ch7_source",(char *) "ch8_source",(char *) "ch9_source",(char *) "ch10_source",(char *) "ch11_source",(char *) "ch12_source",(char *) "ch13_source",(char *) "ch14_source",(char *) "ch15_source", NULL 
   };
   gr::II_K7_310R::ch16_ddc_source_c::sptr result;
   
-  if (!PyArg_ParseTupleAndKeywords(args,kwargs,(char *)"OOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOO:ch16_ddc_source_c_sptr_make",kwnames,&obj0,&obj1,&obj2,&obj3,&obj4,&obj5,&obj6,&obj7,&obj8,&obj9,&obj10,&obj11,&obj12,&obj13,&obj14,&obj15,&obj16,&obj17,&obj18,&obj19,&obj20,&obj21,&obj22,&obj23,&obj24,&obj25,&obj26,&obj27,&obj28,&obj29,&obj30,&obj31,&obj32,&obj33,&obj34,&obj35,&obj36,&obj37,&obj38)) SWIG_fail;
+  if (!PyArg_ParseTupleAndKeywords(args,kwargs,(char *)"OOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOO:ch16_ddc_source_c_sptr_make",kwnames,&obj0,&obj1,&obj2,&obj3,&obj4,&obj5,&obj6,&obj7,&obj8,&obj9,&obj10,&obj11,&obj12,&obj13,&obj14,&obj15,&obj16,&obj17,&obj18,&obj19,&obj20,&obj21,&obj22,&obj23,&obj24,&obj25,&obj26,&obj27,&obj28,&obj29,&obj30,&obj31,&obj32,&obj33,&obj34,&obj35,&obj36,&obj37,&obj38,&obj39,&obj40,&obj41,&obj42,&obj43,&obj44,&obj45,&obj46,&obj47,&obj48,&obj49,&obj50,&obj51,&obj52,&obj53,&obj54)) SWIG_fail;
   res1 = SWIG_ConvertPtr(obj0, &argp1,SWIGTYPE_p_boost__shared_ptrT_gr__II_K7_310R__ch16_ddc_source_c_t, 0 |  0 );
   if (!SWIG_IsOK(res1)) {
     SWIG_exception_fail(SWIG_ArgError(res1), "in method '" "ch16_ddc_source_c_sptr_make" "', argument " "1"" of type '" "boost::shared_ptr< gr::II_K7_310R::ch16_ddc_source_c > *""'"); 
@@ -6066,9 +6327,89 @@ SWIGINTERN PyObject *_wrap_ch16_ddc_source_c_sptr_make(PyObject *SWIGUNUSEDPARM(
     SWIG_exception_fail(SWIG_ArgError(ecode39), "in method '" "ch16_ddc_source_c_sptr_make" "', argument " "39"" of type '" "float""'");
   } 
   arg39 = static_cast< float >(val39);
+  ecode40 = SWIG_AsVal_int(obj39, &val40);
+  if (!SWIG_IsOK(ecode40)) {
+    SWIG_exception_fail(SWIG_ArgError(ecode40), "in method '" "ch16_ddc_source_c_sptr_make" "', argument " "40"" of type '" "gr::II_K7_310R::Ch16Source""'");
+  } 
+  arg40 = static_cast< gr::II_K7_310R::Ch16Source >(val40);
+  ecode41 = SWIG_AsVal_int(obj40, &val41);
+  if (!SWIG_IsOK(ecode41)) {
+    SWIG_exception_fail(SWIG_ArgError(ecode41), "in method '" "ch16_ddc_source_c_sptr_make" "', argument " "41"" of type '" "gr::II_K7_310R::Ch16Source""'");
+  } 
+  arg41 = static_cast< gr::II_K7_310R::Ch16Source >(val41);
+  ecode42 = SWIG_AsVal_int(obj41, &val42);
+  if (!SWIG_IsOK(ecode42)) {
+    SWIG_exception_fail(SWIG_ArgError(ecode42), "in method '" "ch16_ddc_source_c_sptr_make" "', argument " "42"" of type '" "gr::II_K7_310R::Ch16Source""'");
+  } 
+  arg42 = static_cast< gr::II_K7_310R::Ch16Source >(val42);
+  ecode43 = SWIG_AsVal_int(obj42, &val43);
+  if (!SWIG_IsOK(ecode43)) {
+    SWIG_exception_fail(SWIG_ArgError(ecode43), "in method '" "ch16_ddc_source_c_sptr_make" "', argument " "43"" of type '" "gr::II_K7_310R::Ch16Source""'");
+  } 
+  arg43 = static_cast< gr::II_K7_310R::Ch16Source >(val43);
+  ecode44 = SWIG_AsVal_int(obj43, &val44);
+  if (!SWIG_IsOK(ecode44)) {
+    SWIG_exception_fail(SWIG_ArgError(ecode44), "in method '" "ch16_ddc_source_c_sptr_make" "', argument " "44"" of type '" "gr::II_K7_310R::Ch16Source""'");
+  } 
+  arg44 = static_cast< gr::II_K7_310R::Ch16Source >(val44);
+  ecode45 = SWIG_AsVal_int(obj44, &val45);
+  if (!SWIG_IsOK(ecode45)) {
+    SWIG_exception_fail(SWIG_ArgError(ecode45), "in method '" "ch16_ddc_source_c_sptr_make" "', argument " "45"" of type '" "gr::II_K7_310R::Ch16Source""'");
+  } 
+  arg45 = static_cast< gr::II_K7_310R::Ch16Source >(val45);
+  ecode46 = SWIG_AsVal_int(obj45, &val46);
+  if (!SWIG_IsOK(ecode46)) {
+    SWIG_exception_fail(SWIG_ArgError(ecode46), "in method '" "ch16_ddc_source_c_sptr_make" "', argument " "46"" of type '" "gr::II_K7_310R::Ch16Source""'");
+  } 
+  arg46 = static_cast< gr::II_K7_310R::Ch16Source >(val46);
+  ecode47 = SWIG_AsVal_int(obj46, &val47);
+  if (!SWIG_IsOK(ecode47)) {
+    SWIG_exception_fail(SWIG_ArgError(ecode47), "in method '" "ch16_ddc_source_c_sptr_make" "', argument " "47"" of type '" "gr::II_K7_310R::Ch16Source""'");
+  } 
+  arg47 = static_cast< gr::II_K7_310R::Ch16Source >(val47);
+  ecode48 = SWIG_AsVal_int(obj47, &val48);
+  if (!SWIG_IsOK(ecode48)) {
+    SWIG_exception_fail(SWIG_ArgError(ecode48), "in method '" "ch16_ddc_source_c_sptr_make" "', argument " "48"" of type '" "gr::II_K7_310R::Ch16Source""'");
+  } 
+  arg48 = static_cast< gr::II_K7_310R::Ch16Source >(val48);
+  ecode49 = SWIG_AsVal_int(obj48, &val49);
+  if (!SWIG_IsOK(ecode49)) {
+    SWIG_exception_fail(SWIG_ArgError(ecode49), "in method '" "ch16_ddc_source_c_sptr_make" "', argument " "49"" of type '" "gr::II_K7_310R::Ch16Source""'");
+  } 
+  arg49 = static_cast< gr::II_K7_310R::Ch16Source >(val49);
+  ecode50 = SWIG_AsVal_int(obj49, &val50);
+  if (!SWIG_IsOK(ecode50)) {
+    SWIG_exception_fail(SWIG_ArgError(ecode50), "in method '" "ch16_ddc_source_c_sptr_make" "', argument " "50"" of type '" "gr::II_K7_310R::Ch16Source""'");
+  } 
+  arg50 = static_cast< gr::II_K7_310R::Ch16Source >(val50);
+  ecode51 = SWIG_AsVal_int(obj50, &val51);
+  if (!SWIG_IsOK(ecode51)) {
+    SWIG_exception_fail(SWIG_ArgError(ecode51), "in method '" "ch16_ddc_source_c_sptr_make" "', argument " "51"" of type '" "gr::II_K7_310R::Ch16Source""'");
+  } 
+  arg51 = static_cast< gr::II_K7_310R::Ch16Source >(val51);
+  ecode52 = SWIG_AsVal_int(obj51, &val52);
+  if (!SWIG_IsOK(ecode52)) {
+    SWIG_exception_fail(SWIG_ArgError(ecode52), "in method '" "ch16_ddc_source_c_sptr_make" "', argument " "52"" of type '" "gr::II_K7_310R::Ch16Source""'");
+  } 
+  arg52 = static_cast< gr::II_K7_310R::Ch16Source >(val52);
+  ecode53 = SWIG_AsVal_int(obj52, &val53);
+  if (!SWIG_IsOK(ecode53)) {
+    SWIG_exception_fail(SWIG_ArgError(ecode53), "in method '" "ch16_ddc_source_c_sptr_make" "', argument " "53"" of type '" "gr::II_K7_310R::Ch16Source""'");
+  } 
+  arg53 = static_cast< gr::II_K7_310R::Ch16Source >(val53);
+  ecode54 = SWIG_AsVal_int(obj53, &val54);
+  if (!SWIG_IsOK(ecode54)) {
+    SWIG_exception_fail(SWIG_ArgError(ecode54), "in method '" "ch16_ddc_source_c_sptr_make" "', argument " "54"" of type '" "gr::II_K7_310R::Ch16Source""'");
+  } 
+  arg54 = static_cast< gr::II_K7_310R::Ch16Source >(val54);
+  ecode55 = SWIG_AsVal_int(obj54, &val55);
+  if (!SWIG_IsOK(ecode55)) {
+    SWIG_exception_fail(SWIG_ArgError(ecode55), "in method '" "ch16_ddc_source_c_sptr_make" "', argument " "55"" of type '" "gr::II_K7_310R::Ch16Source""'");
+  } 
+  arg55 = static_cast< gr::II_K7_310R::Ch16Source >(val55);
   {
     try {
-      result = (*arg1)->make(arg2,arg3,arg4,(char const *)arg5,arg6,arg7,arg8,arg9,arg10,arg11,arg12,arg13,arg14,arg15,arg16,arg17,arg18,arg19,arg20,arg21,arg22,arg23,arg24,arg25,arg26,arg27,arg28,arg29,arg30,arg31,arg32,arg33,arg34,arg35,arg36,arg37,arg38,arg39);
+      result = (*arg1)->make(arg2,arg3,arg4,(char const *)arg5,arg6,arg7,arg8,arg9,arg10,arg11,arg12,arg13,arg14,arg15,arg16,arg17,arg18,arg19,arg20,arg21,arg22,arg23,arg24,arg25,arg26,arg27,arg28,arg29,arg30,arg31,arg32,arg33,arg34,arg35,arg36,arg37,arg38,arg39,arg40,arg41,arg42,arg43,arg44,arg45,arg46,arg47,arg48,arg49,arg50,arg51,arg52,arg53,arg54,arg55);
     }
     catch(std::exception &e) {
       SWIG_exception(SWIG_RuntimeError, e.what());
@@ -8985,3316 +9326,6 @@ SWIGINTERN PyObject *ch16_ddc_source_c_sptr_swigregister(PyObject *SWIGUNUSEDPAR
   return SWIG_Py_Void();
 }
 
-SWIGINTERN PyObject *Ch1Software_swigconstant(PyObject *SWIGUNUSEDPARM(self), PyObject *args) {
-  PyObject *module;
-  PyObject *d;
-  if (!PyArg_UnpackTuple(args,(char*)"swigconstant", 1, 1,&module)) return NULL;
-  d = PyModule_GetDict(module);
-  if (!d) return NULL;
-  SWIG_Python_SetConstant(d, "Ch1Software",SWIG_From_int(static_cast< int >(gr::II_K7_310R::Ch1Software)));
-  return SWIG_Py_Void();
-}
-
-
-SWIGINTERN PyObject *Ch1External_swigconstant(PyObject *SWIGUNUSEDPARM(self), PyObject *args) {
-  PyObject *module;
-  PyObject *d;
-  if (!PyArg_UnpackTuple(args,(char*)"swigconstant", 1, 1,&module)) return NULL;
-  d = PyModule_GetDict(module);
-  if (!d) return NULL;
-  SWIG_Python_SetConstant(d, "Ch1External",SWIG_From_int(static_cast< int >(gr::II_K7_310R::Ch1External)));
-  return SWIG_Py_Void();
-}
-
-
-SWIGINTERN PyObject *_wrap_ch1_ddc_source_c_make(PyObject *SWIGUNUSEDPARM(self), PyObject *args, PyObject *kwargs) {
-  PyObject *resultobj = 0;
-  float arg1 ;
-  gr::II_K7_310R::Ch1TriggerSource arg2 ;
-  char *arg3 = (char *) 0 ;
-  bool arg4 ;
-  float arg5 ;
-  float arg6 ;
-  float arg7 ;
-  float val1 ;
-  int ecode1 = 0 ;
-  int val2 ;
-  int ecode2 = 0 ;
-  int res3 ;
-  char *buf3 = 0 ;
-  int alloc3 = 0 ;
-  bool val4 ;
-  int ecode4 = 0 ;
-  float val5 ;
-  int ecode5 = 0 ;
-  float val6 ;
-  int ecode6 = 0 ;
-  float val7 ;
-  int ecode7 = 0 ;
-  PyObject * obj0 = 0 ;
-  PyObject * obj1 = 0 ;
-  PyObject * obj2 = 0 ;
-  PyObject * obj3 = 0 ;
-  PyObject * obj4 = 0 ;
-  PyObject * obj5 = 0 ;
-  PyObject * obj6 = 0 ;
-  char *  kwnames[] = {
-    (char *) "rf_gain",(char *) "trigger_source",(char *) "ddc_filter_path",(char *) "is_rf_tuner",(char *) "rf_center_freq",(char *) "ch0_offset_freq",(char *) "ch0_tune_freq", NULL 
-  };
-  gr::II_K7_310R::ch1_ddc_source_c::sptr result;
-  
-  if (!PyArg_ParseTupleAndKeywords(args,kwargs,(char *)"OOOOOOO:ch1_ddc_source_c_make",kwnames,&obj0,&obj1,&obj2,&obj3,&obj4,&obj5,&obj6)) SWIG_fail;
-  ecode1 = SWIG_AsVal_float(obj0, &val1);
-  if (!SWIG_IsOK(ecode1)) {
-    SWIG_exception_fail(SWIG_ArgError(ecode1), "in method '" "ch1_ddc_source_c_make" "', argument " "1"" of type '" "float""'");
-  } 
-  arg1 = static_cast< float >(val1);
-  ecode2 = SWIG_AsVal_int(obj1, &val2);
-  if (!SWIG_IsOK(ecode2)) {
-    SWIG_exception_fail(SWIG_ArgError(ecode2), "in method '" "ch1_ddc_source_c_make" "', argument " "2"" of type '" "gr::II_K7_310R::Ch1TriggerSource""'");
-  } 
-  arg2 = static_cast< gr::II_K7_310R::Ch1TriggerSource >(val2);
-  res3 = SWIG_AsCharPtrAndSize(obj2, &buf3, NULL, &alloc3);
-  if (!SWIG_IsOK(res3)) {
-    SWIG_exception_fail(SWIG_ArgError(res3), "in method '" "ch1_ddc_source_c_make" "', argument " "3"" of type '" "char const *""'");
-  }
-  arg3 = reinterpret_cast< char * >(buf3);
-  ecode4 = SWIG_AsVal_bool(obj3, &val4);
-  if (!SWIG_IsOK(ecode4)) {
-    SWIG_exception_fail(SWIG_ArgError(ecode4), "in method '" "ch1_ddc_source_c_make" "', argument " "4"" of type '" "bool""'");
-  } 
-  arg4 = static_cast< bool >(val4);
-  ecode5 = SWIG_AsVal_float(obj4, &val5);
-  if (!SWIG_IsOK(ecode5)) {
-    SWIG_exception_fail(SWIG_ArgError(ecode5), "in method '" "ch1_ddc_source_c_make" "', argument " "5"" of type '" "float""'");
-  } 
-  arg5 = static_cast< float >(val5);
-  ecode6 = SWIG_AsVal_float(obj5, &val6);
-  if (!SWIG_IsOK(ecode6)) {
-    SWIG_exception_fail(SWIG_ArgError(ecode6), "in method '" "ch1_ddc_source_c_make" "', argument " "6"" of type '" "float""'");
-  } 
-  arg6 = static_cast< float >(val6);
-  ecode7 = SWIG_AsVal_float(obj6, &val7);
-  if (!SWIG_IsOK(ecode7)) {
-    SWIG_exception_fail(SWIG_ArgError(ecode7), "in method '" "ch1_ddc_source_c_make" "', argument " "7"" of type '" "float""'");
-  } 
-  arg7 = static_cast< float >(val7);
-  {
-    try {
-      result = gr::II_K7_310R::ch1_ddc_source_c::make(arg1,arg2,(char const *)arg3,arg4,arg5,arg6,arg7);
-    }
-    catch(std::exception &e) {
-      SWIG_exception(SWIG_RuntimeError, e.what());
-    }
-    catch(...) {
-      SWIG_exception(SWIG_RuntimeError, "Unknown exception");
-    }
-    
-  }
-  resultobj = SWIG_NewPointerObj((new gr::II_K7_310R::ch1_ddc_source_c::sptr(static_cast< const gr::II_K7_310R::ch1_ddc_source_c::sptr& >(result))), SWIGTYPE_p_boost__shared_ptrT_gr__II_K7_310R__ch1_ddc_source_c_t, SWIG_POINTER_OWN |  0 );
-  if (alloc3 == SWIG_NEWOBJ) delete[] buf3;
-  return resultobj;
-fail:
-  if (alloc3 == SWIG_NEWOBJ) delete[] buf3;
-  return NULL;
-}
-
-
-SWIGINTERN PyObject *_wrap_delete_ch1_ddc_source_c(PyObject *SWIGUNUSEDPARM(self), PyObject *args) {
-  PyObject *resultobj = 0;
-  gr::II_K7_310R::ch1_ddc_source_c *arg1 = (gr::II_K7_310R::ch1_ddc_source_c *) 0 ;
-  void *argp1 = 0 ;
-  int res1 = 0 ;
-  PyObject * obj0 = 0 ;
-  
-  if(!PyArg_UnpackTuple(args,(char *)"delete_ch1_ddc_source_c",1,1,&obj0)) SWIG_fail;
-  res1 = SWIG_ConvertPtr(obj0, &argp1,SWIGTYPE_p_gr__II_K7_310R__ch1_ddc_source_c, SWIG_POINTER_DISOWN |  0 );
-  if (!SWIG_IsOK(res1)) {
-    SWIG_exception_fail(SWIG_ArgError(res1), "in method '" "delete_ch1_ddc_source_c" "', argument " "1"" of type '" "gr::II_K7_310R::ch1_ddc_source_c *""'"); 
-  }
-  arg1 = reinterpret_cast< gr::II_K7_310R::ch1_ddc_source_c * >(argp1);
-  {
-    try {
-      delete arg1;
-    }
-    catch(std::exception &e) {
-      SWIG_exception(SWIG_RuntimeError, e.what());
-    }
-    catch(...) {
-      SWIG_exception(SWIG_RuntimeError, "Unknown exception");
-    }
-    
-  }
-  resultobj = SWIG_Py_Void();
-  return resultobj;
-fail:
-  return NULL;
-}
-
-
-SWIGINTERN PyObject *ch1_ddc_source_c_swigregister(PyObject *SWIGUNUSEDPARM(self), PyObject *args) {
-  PyObject *obj;
-  if (!PyArg_UnpackTuple(args,(char*)"swigregister", 1, 1,&obj)) return NULL;
-  SWIG_TypeNewClientData(SWIGTYPE_p_gr__II_K7_310R__ch1_ddc_source_c, SWIG_NewClientData(obj));
-  return SWIG_Py_Void();
-}
-
-SWIGINTERN PyObject *_wrap_new_ch1_ddc_source_c_sptr__SWIG_0(PyObject *SWIGUNUSEDPARM(self), PyObject *args) {
-  PyObject *resultobj = 0;
-  boost::shared_ptr< gr::II_K7_310R::ch1_ddc_source_c > *result = 0 ;
-  
-  if(!PyArg_UnpackTuple(args,(char *)"new_ch1_ddc_source_c_sptr",0,0)) SWIG_fail;
-  {
-    try {
-      result = (boost::shared_ptr< gr::II_K7_310R::ch1_ddc_source_c > *)new boost::shared_ptr< gr::II_K7_310R::ch1_ddc_source_c >();
-    }
-    catch(std::exception &e) {
-      SWIG_exception(SWIG_RuntimeError, e.what());
-    }
-    catch(...) {
-      SWIG_exception(SWIG_RuntimeError, "Unknown exception");
-    }
-    
-  }
-  resultobj = SWIG_NewPointerObj(SWIG_as_voidptr(result), SWIGTYPE_p_boost__shared_ptrT_gr__II_K7_310R__ch1_ddc_source_c_t, SWIG_POINTER_NEW |  0 );
-  return resultobj;
-fail:
-  return NULL;
-}
-
-
-SWIGINTERN PyObject *_wrap_new_ch1_ddc_source_c_sptr__SWIG_1(PyObject *SWIGUNUSEDPARM(self), PyObject *args) {
-  PyObject *resultobj = 0;
-  gr::II_K7_310R::ch1_ddc_source_c *arg1 = (gr::II_K7_310R::ch1_ddc_source_c *) 0 ;
-  void *argp1 = 0 ;
-  int res1 = 0 ;
-  PyObject * obj0 = 0 ;
-  boost::shared_ptr< gr::II_K7_310R::ch1_ddc_source_c > *result = 0 ;
-  
-  if(!PyArg_UnpackTuple(args,(char *)"new_ch1_ddc_source_c_sptr",1,1,&obj0)) SWIG_fail;
-  res1 = SWIG_ConvertPtr(obj0, &argp1,SWIGTYPE_p_gr__II_K7_310R__ch1_ddc_source_c, 0 |  0 );
-  if (!SWIG_IsOK(res1)) {
-    SWIG_exception_fail(SWIG_ArgError(res1), "in method '" "new_ch1_ddc_source_c_sptr" "', argument " "1"" of type '" "gr::II_K7_310R::ch1_ddc_source_c *""'"); 
-  }
-  arg1 = reinterpret_cast< gr::II_K7_310R::ch1_ddc_source_c * >(argp1);
-  {
-    try {
-      result = (boost::shared_ptr< gr::II_K7_310R::ch1_ddc_source_c > *)new boost::shared_ptr< gr::II_K7_310R::ch1_ddc_source_c >(arg1);
-    }
-    catch(std::exception &e) {
-      SWIG_exception(SWIG_RuntimeError, e.what());
-    }
-    catch(...) {
-      SWIG_exception(SWIG_RuntimeError, "Unknown exception");
-    }
-    
-  }
-  resultobj = SWIG_NewPointerObj(SWIG_as_voidptr(result), SWIGTYPE_p_boost__shared_ptrT_gr__II_K7_310R__ch1_ddc_source_c_t, SWIG_POINTER_NEW |  0 );
-  return resultobj;
-fail:
-  return NULL;
-}
-
-
-SWIGINTERN PyObject *_wrap_new_ch1_ddc_source_c_sptr(PyObject *self, PyObject *args) {
-  Py_ssize_t argc;
-  PyObject *argv[2] = {
-    0
-  };
-  Py_ssize_t ii;
-  
-  if (!PyTuple_Check(args)) SWIG_fail;
-  argc = args ? PyObject_Length(args) : 0;
-  for (ii = 0; (ii < 1) && (ii < argc); ii++) {
-    argv[ii] = PyTuple_GET_ITEM(args,ii);
-  }
-  if (argc == 0) {
-    return _wrap_new_ch1_ddc_source_c_sptr__SWIG_0(self, args);
-  }
-  if (argc == 1) {
-    int _v;
-    void *vptr = 0;
-    int res = SWIG_ConvertPtr(argv[0], &vptr, SWIGTYPE_p_gr__II_K7_310R__ch1_ddc_source_c, 0);
-    _v = SWIG_CheckState(res);
-    if (_v) {
-      return _wrap_new_ch1_ddc_source_c_sptr__SWIG_1(self, args);
-    }
-  }
-  
-fail:
-  SWIG_SetErrorMsg(PyExc_NotImplementedError,"Wrong number or type of arguments for overloaded function 'new_ch1_ddc_source_c_sptr'.\n"
-    "  Possible C/C++ prototypes are:\n"
-    "    boost::shared_ptr< gr::II_K7_310R::ch1_ddc_source_c >::shared_ptr()\n"
-    "    boost::shared_ptr< gr::II_K7_310R::ch1_ddc_source_c >::shared_ptr(gr::II_K7_310R::ch1_ddc_source_c *)\n");
-  return 0;
-}
-
-
-SWIGINTERN PyObject *_wrap_ch1_ddc_source_c_sptr___deref__(PyObject *SWIGUNUSEDPARM(self), PyObject *args) {
-  PyObject *resultobj = 0;
-  boost::shared_ptr< gr::II_K7_310R::ch1_ddc_source_c > *arg1 = (boost::shared_ptr< gr::II_K7_310R::ch1_ddc_source_c > *) 0 ;
-  void *argp1 = 0 ;
-  int res1 = 0 ;
-  PyObject * obj0 = 0 ;
-  gr::II_K7_310R::ch1_ddc_source_c *result = 0 ;
-  
-  if(!PyArg_UnpackTuple(args,(char *)"ch1_ddc_source_c_sptr___deref__",1,1,&obj0)) SWIG_fail;
-  res1 = SWIG_ConvertPtr(obj0, &argp1,SWIGTYPE_p_boost__shared_ptrT_gr__II_K7_310R__ch1_ddc_source_c_t, 0 |  0 );
-  if (!SWIG_IsOK(res1)) {
-    SWIG_exception_fail(SWIG_ArgError(res1), "in method '" "ch1_ddc_source_c_sptr___deref__" "', argument " "1"" of type '" "boost::shared_ptr< gr::II_K7_310R::ch1_ddc_source_c > *""'"); 
-  }
-  arg1 = reinterpret_cast< boost::shared_ptr< gr::II_K7_310R::ch1_ddc_source_c > * >(argp1);
-  {
-    try {
-      result = (gr::II_K7_310R::ch1_ddc_source_c *)(arg1)->operator ->();
-    }
-    catch(std::exception &e) {
-      SWIG_exception(SWIG_RuntimeError, e.what());
-    }
-    catch(...) {
-      SWIG_exception(SWIG_RuntimeError, "Unknown exception");
-    }
-    
-  }
-  resultobj = SWIG_NewPointerObj(SWIG_as_voidptr(result), SWIGTYPE_p_gr__II_K7_310R__ch1_ddc_source_c, 0 |  0 );
-  return resultobj;
-fail:
-  return NULL;
-}
-
-
-SWIGINTERN PyObject *_wrap_delete_ch1_ddc_source_c_sptr(PyObject *SWIGUNUSEDPARM(self), PyObject *args) {
-  PyObject *resultobj = 0;
-  boost::shared_ptr< gr::II_K7_310R::ch1_ddc_source_c > *arg1 = (boost::shared_ptr< gr::II_K7_310R::ch1_ddc_source_c > *) 0 ;
-  void *argp1 = 0 ;
-  int res1 = 0 ;
-  PyObject * obj0 = 0 ;
-  
-  if(!PyArg_UnpackTuple(args,(char *)"delete_ch1_ddc_source_c_sptr",1,1,&obj0)) SWIG_fail;
-  res1 = SWIG_ConvertPtr(obj0, &argp1,SWIGTYPE_p_boost__shared_ptrT_gr__II_K7_310R__ch1_ddc_source_c_t, SWIG_POINTER_DISOWN |  0 );
-  if (!SWIG_IsOK(res1)) {
-    SWIG_exception_fail(SWIG_ArgError(res1), "in method '" "delete_ch1_ddc_source_c_sptr" "', argument " "1"" of type '" "boost::shared_ptr< gr::II_K7_310R::ch1_ddc_source_c > *""'"); 
-  }
-  arg1 = reinterpret_cast< boost::shared_ptr< gr::II_K7_310R::ch1_ddc_source_c > * >(argp1);
-  {
-    try {
-      delete arg1;
-    }
-    catch(std::exception &e) {
-      SWIG_exception(SWIG_RuntimeError, e.what());
-    }
-    catch(...) {
-      SWIG_exception(SWIG_RuntimeError, "Unknown exception");
-    }
-    
-  }
-  resultobj = SWIG_Py_Void();
-  return resultobj;
-fail:
-  return NULL;
-}
-
-
-SWIGINTERN PyObject *_wrap_ch1_ddc_source_c_sptr_make(PyObject *SWIGUNUSEDPARM(self), PyObject *args, PyObject *kwargs) {
-  PyObject *resultobj = 0;
-  boost::shared_ptr< gr::II_K7_310R::ch1_ddc_source_c > *arg1 = (boost::shared_ptr< gr::II_K7_310R::ch1_ddc_source_c > *) 0 ;
-  float arg2 ;
-  gr::II_K7_310R::Ch1TriggerSource arg3 ;
-  char *arg4 = (char *) 0 ;
-  bool arg5 ;
-  float arg6 ;
-  float arg7 ;
-  float arg8 ;
-  void *argp1 = 0 ;
-  int res1 = 0 ;
-  float val2 ;
-  int ecode2 = 0 ;
-  int val3 ;
-  int ecode3 = 0 ;
-  int res4 ;
-  char *buf4 = 0 ;
-  int alloc4 = 0 ;
-  bool val5 ;
-  int ecode5 = 0 ;
-  float val6 ;
-  int ecode6 = 0 ;
-  float val7 ;
-  int ecode7 = 0 ;
-  float val8 ;
-  int ecode8 = 0 ;
-  PyObject * obj0 = 0 ;
-  PyObject * obj1 = 0 ;
-  PyObject * obj2 = 0 ;
-  PyObject * obj3 = 0 ;
-  PyObject * obj4 = 0 ;
-  PyObject * obj5 = 0 ;
-  PyObject * obj6 = 0 ;
-  PyObject * obj7 = 0 ;
-  char *  kwnames[] = {
-    (char *) "self",(char *) "rf_gain",(char *) "trigger_source",(char *) "ddc_filter_path",(char *) "is_rf_tuner",(char *) "rf_center_freq",(char *) "ch0_offset_freq",(char *) "ch0_tune_freq", NULL 
-  };
-  gr::II_K7_310R::ch1_ddc_source_c::sptr result;
-  
-  if (!PyArg_ParseTupleAndKeywords(args,kwargs,(char *)"OOOOOOOO:ch1_ddc_source_c_sptr_make",kwnames,&obj0,&obj1,&obj2,&obj3,&obj4,&obj5,&obj6,&obj7)) SWIG_fail;
-  res1 = SWIG_ConvertPtr(obj0, &argp1,SWIGTYPE_p_boost__shared_ptrT_gr__II_K7_310R__ch1_ddc_source_c_t, 0 |  0 );
-  if (!SWIG_IsOK(res1)) {
-    SWIG_exception_fail(SWIG_ArgError(res1), "in method '" "ch1_ddc_source_c_sptr_make" "', argument " "1"" of type '" "boost::shared_ptr< gr::II_K7_310R::ch1_ddc_source_c > *""'"); 
-  }
-  arg1 = reinterpret_cast< boost::shared_ptr< gr::II_K7_310R::ch1_ddc_source_c > * >(argp1);
-  ecode2 = SWIG_AsVal_float(obj1, &val2);
-  if (!SWIG_IsOK(ecode2)) {
-    SWIG_exception_fail(SWIG_ArgError(ecode2), "in method '" "ch1_ddc_source_c_sptr_make" "', argument " "2"" of type '" "float""'");
-  } 
-  arg2 = static_cast< float >(val2);
-  ecode3 = SWIG_AsVal_int(obj2, &val3);
-  if (!SWIG_IsOK(ecode3)) {
-    SWIG_exception_fail(SWIG_ArgError(ecode3), "in method '" "ch1_ddc_source_c_sptr_make" "', argument " "3"" of type '" "gr::II_K7_310R::Ch1TriggerSource""'");
-  } 
-  arg3 = static_cast< gr::II_K7_310R::Ch1TriggerSource >(val3);
-  res4 = SWIG_AsCharPtrAndSize(obj3, &buf4, NULL, &alloc4);
-  if (!SWIG_IsOK(res4)) {
-    SWIG_exception_fail(SWIG_ArgError(res4), "in method '" "ch1_ddc_source_c_sptr_make" "', argument " "4"" of type '" "char const *""'");
-  }
-  arg4 = reinterpret_cast< char * >(buf4);
-  ecode5 = SWIG_AsVal_bool(obj4, &val5);
-  if (!SWIG_IsOK(ecode5)) {
-    SWIG_exception_fail(SWIG_ArgError(ecode5), "in method '" "ch1_ddc_source_c_sptr_make" "', argument " "5"" of type '" "bool""'");
-  } 
-  arg5 = static_cast< bool >(val5);
-  ecode6 = SWIG_AsVal_float(obj5, &val6);
-  if (!SWIG_IsOK(ecode6)) {
-    SWIG_exception_fail(SWIG_ArgError(ecode6), "in method '" "ch1_ddc_source_c_sptr_make" "', argument " "6"" of type '" "float""'");
-  } 
-  arg6 = static_cast< float >(val6);
-  ecode7 = SWIG_AsVal_float(obj6, &val7);
-  if (!SWIG_IsOK(ecode7)) {
-    SWIG_exception_fail(SWIG_ArgError(ecode7), "in method '" "ch1_ddc_source_c_sptr_make" "', argument " "7"" of type '" "float""'");
-  } 
-  arg7 = static_cast< float >(val7);
-  ecode8 = SWIG_AsVal_float(obj7, &val8);
-  if (!SWIG_IsOK(ecode8)) {
-    SWIG_exception_fail(SWIG_ArgError(ecode8), "in method '" "ch1_ddc_source_c_sptr_make" "', argument " "8"" of type '" "float""'");
-  } 
-  arg8 = static_cast< float >(val8);
-  {
-    try {
-      result = (*arg1)->make(arg2,arg3,(char const *)arg4,arg5,arg6,arg7,arg8);
-    }
-    catch(std::exception &e) {
-      SWIG_exception(SWIG_RuntimeError, e.what());
-    }
-    catch(...) {
-      SWIG_exception(SWIG_RuntimeError, "Unknown exception");
-    }
-    
-  }
-  resultobj = SWIG_NewPointerObj((new gr::II_K7_310R::ch1_ddc_source_c::sptr(static_cast< const gr::II_K7_310R::ch1_ddc_source_c::sptr& >(result))), SWIGTYPE_p_boost__shared_ptrT_gr__II_K7_310R__ch1_ddc_source_c_t, SWIG_POINTER_OWN |  0 );
-  if (alloc4 == SWIG_NEWOBJ) delete[] buf4;
-  return resultobj;
-fail:
-  if (alloc4 == SWIG_NEWOBJ) delete[] buf4;
-  return NULL;
-}
-
-
-SWIGINTERN PyObject *_wrap_ch1_ddc_source_c_sptr_history(PyObject *SWIGUNUSEDPARM(self), PyObject *args) {
-  PyObject *resultobj = 0;
-  boost::shared_ptr< gr::II_K7_310R::ch1_ddc_source_c > *arg1 = (boost::shared_ptr< gr::II_K7_310R::ch1_ddc_source_c > *) 0 ;
-  void *argp1 = 0 ;
-  int res1 = 0 ;
-  PyObject * obj0 = 0 ;
-  unsigned int result;
-  
-  if(!PyArg_UnpackTuple(args,(char *)"ch1_ddc_source_c_sptr_history",1,1,&obj0)) SWIG_fail;
-  res1 = SWIG_ConvertPtr(obj0, &argp1,SWIGTYPE_p_boost__shared_ptrT_gr__II_K7_310R__ch1_ddc_source_c_t, 0 |  0 );
-  if (!SWIG_IsOK(res1)) {
-    SWIG_exception_fail(SWIG_ArgError(res1), "in method '" "ch1_ddc_source_c_sptr_history" "', argument " "1"" of type '" "boost::shared_ptr< gr::II_K7_310R::ch1_ddc_source_c > const *""'"); 
-  }
-  arg1 = reinterpret_cast< boost::shared_ptr< gr::II_K7_310R::ch1_ddc_source_c > * >(argp1);
-  {
-    try {
-      result = (unsigned int)(*arg1)->history();
-    }
-    catch(std::exception &e) {
-      SWIG_exception(SWIG_RuntimeError, e.what());
-    }
-    catch(...) {
-      SWIG_exception(SWIG_RuntimeError, "Unknown exception");
-    }
-    
-  }
-  resultobj = SWIG_From_unsigned_SS_int(static_cast< unsigned int >(result));
-  return resultobj;
-fail:
-  return NULL;
-}
-
-
-SWIGINTERN PyObject *_wrap_ch1_ddc_source_c_sptr_declare_sample_delay__SWIG_0(PyObject *SWIGUNUSEDPARM(self), PyObject *args) {
-  PyObject *resultobj = 0;
-  boost::shared_ptr< gr::II_K7_310R::ch1_ddc_source_c > *arg1 = (boost::shared_ptr< gr::II_K7_310R::ch1_ddc_source_c > *) 0 ;
-  int arg2 ;
-  int arg3 ;
-  void *argp1 = 0 ;
-  int res1 = 0 ;
-  int val2 ;
-  int ecode2 = 0 ;
-  int val3 ;
-  int ecode3 = 0 ;
-  PyObject * obj0 = 0 ;
-  PyObject * obj1 = 0 ;
-  PyObject * obj2 = 0 ;
-  
-  if(!PyArg_UnpackTuple(args,(char *)"ch1_ddc_source_c_sptr_declare_sample_delay",3,3,&obj0,&obj1,&obj2)) SWIG_fail;
-  res1 = SWIG_ConvertPtr(obj0, &argp1,SWIGTYPE_p_boost__shared_ptrT_gr__II_K7_310R__ch1_ddc_source_c_t, 0 |  0 );
-  if (!SWIG_IsOK(res1)) {
-    SWIG_exception_fail(SWIG_ArgError(res1), "in method '" "ch1_ddc_source_c_sptr_declare_sample_delay" "', argument " "1"" of type '" "boost::shared_ptr< gr::II_K7_310R::ch1_ddc_source_c > *""'"); 
-  }
-  arg1 = reinterpret_cast< boost::shared_ptr< gr::II_K7_310R::ch1_ddc_source_c > * >(argp1);
-  ecode2 = SWIG_AsVal_int(obj1, &val2);
-  if (!SWIG_IsOK(ecode2)) {
-    SWIG_exception_fail(SWIG_ArgError(ecode2), "in method '" "ch1_ddc_source_c_sptr_declare_sample_delay" "', argument " "2"" of type '" "int""'");
-  } 
-  arg2 = static_cast< int >(val2);
-  ecode3 = SWIG_AsVal_int(obj2, &val3);
-  if (!SWIG_IsOK(ecode3)) {
-    SWIG_exception_fail(SWIG_ArgError(ecode3), "in method '" "ch1_ddc_source_c_sptr_declare_sample_delay" "', argument " "3"" of type '" "int""'");
-  } 
-  arg3 = static_cast< int >(val3);
-  {
-    try {
-      (*arg1)->declare_sample_delay(arg2,arg3);
-    }
-    catch(std::exception &e) {
-      SWIG_exception(SWIG_RuntimeError, e.what());
-    }
-    catch(...) {
-      SWIG_exception(SWIG_RuntimeError, "Unknown exception");
-    }
-    
-  }
-  resultobj = SWIG_Py_Void();
-  return resultobj;
-fail:
-  return NULL;
-}
-
-
-SWIGINTERN PyObject *_wrap_ch1_ddc_source_c_sptr_declare_sample_delay__SWIG_1(PyObject *SWIGUNUSEDPARM(self), PyObject *args) {
-  PyObject *resultobj = 0;
-  boost::shared_ptr< gr::II_K7_310R::ch1_ddc_source_c > *arg1 = (boost::shared_ptr< gr::II_K7_310R::ch1_ddc_source_c > *) 0 ;
-  unsigned int arg2 ;
-  void *argp1 = 0 ;
-  int res1 = 0 ;
-  unsigned int val2 ;
-  int ecode2 = 0 ;
-  PyObject * obj0 = 0 ;
-  PyObject * obj1 = 0 ;
-  
-  if(!PyArg_UnpackTuple(args,(char *)"ch1_ddc_source_c_sptr_declare_sample_delay",2,2,&obj0,&obj1)) SWIG_fail;
-  res1 = SWIG_ConvertPtr(obj0, &argp1,SWIGTYPE_p_boost__shared_ptrT_gr__II_K7_310R__ch1_ddc_source_c_t, 0 |  0 );
-  if (!SWIG_IsOK(res1)) {
-    SWIG_exception_fail(SWIG_ArgError(res1), "in method '" "ch1_ddc_source_c_sptr_declare_sample_delay" "', argument " "1"" of type '" "boost::shared_ptr< gr::II_K7_310R::ch1_ddc_source_c > *""'"); 
-  }
-  arg1 = reinterpret_cast< boost::shared_ptr< gr::II_K7_310R::ch1_ddc_source_c > * >(argp1);
-  ecode2 = SWIG_AsVal_unsigned_SS_int(obj1, &val2);
-  if (!SWIG_IsOK(ecode2)) {
-    SWIG_exception_fail(SWIG_ArgError(ecode2), "in method '" "ch1_ddc_source_c_sptr_declare_sample_delay" "', argument " "2"" of type '" "unsigned int""'");
-  } 
-  arg2 = static_cast< unsigned int >(val2);
-  {
-    try {
-      (*arg1)->declare_sample_delay(arg2);
-    }
-    catch(std::exception &e) {
-      SWIG_exception(SWIG_RuntimeError, e.what());
-    }
-    catch(...) {
-      SWIG_exception(SWIG_RuntimeError, "Unknown exception");
-    }
-    
-  }
-  resultobj = SWIG_Py_Void();
-  return resultobj;
-fail:
-  return NULL;
-}
-
-
-SWIGINTERN PyObject *_wrap_ch1_ddc_source_c_sptr_declare_sample_delay(PyObject *self, PyObject *args) {
-  Py_ssize_t argc;
-  PyObject *argv[4] = {
-    0
-  };
-  Py_ssize_t ii;
-  
-  if (!PyTuple_Check(args)) SWIG_fail;
-  argc = args ? PyObject_Length(args) : 0;
-  for (ii = 0; (ii < 3) && (ii < argc); ii++) {
-    argv[ii] = PyTuple_GET_ITEM(args,ii);
-  }
-  if (argc == 2) {
-    int _v;
-    void *vptr = 0;
-    int res = SWIG_ConvertPtr(argv[0], &vptr, SWIGTYPE_p_boost__shared_ptrT_gr__II_K7_310R__ch1_ddc_source_c_t, 0);
-    _v = SWIG_CheckState(res);
-    if (_v) {
-      {
-        int res = SWIG_AsVal_unsigned_SS_int(argv[1], NULL);
-        _v = SWIG_CheckState(res);
-      }
-      if (_v) {
-        return _wrap_ch1_ddc_source_c_sptr_declare_sample_delay__SWIG_1(self, args);
-      }
-    }
-  }
-  if (argc == 3) {
-    int _v;
-    void *vptr = 0;
-    int res = SWIG_ConvertPtr(argv[0], &vptr, SWIGTYPE_p_boost__shared_ptrT_gr__II_K7_310R__ch1_ddc_source_c_t, 0);
-    _v = SWIG_CheckState(res);
-    if (_v) {
-      {
-        int res = SWIG_AsVal_int(argv[1], NULL);
-        _v = SWIG_CheckState(res);
-      }
-      if (_v) {
-        {
-          int res = SWIG_AsVal_int(argv[2], NULL);
-          _v = SWIG_CheckState(res);
-        }
-        if (_v) {
-          return _wrap_ch1_ddc_source_c_sptr_declare_sample_delay__SWIG_0(self, args);
-        }
-      }
-    }
-  }
-  
-fail:
-  SWIG_SetErrorMsg(PyExc_NotImplementedError,"Wrong number or type of arguments for overloaded function 'ch1_ddc_source_c_sptr_declare_sample_delay'.\n"
-    "  Possible C/C++ prototypes are:\n"
-    "    gr::block::declare_sample_delay(int,int)\n"
-    "    gr::block::declare_sample_delay(unsigned int)\n");
-  return 0;
-}
-
-
-SWIGINTERN PyObject *_wrap_ch1_ddc_source_c_sptr_sample_delay(PyObject *SWIGUNUSEDPARM(self), PyObject *args, PyObject *kwargs) {
-  PyObject *resultobj = 0;
-  boost::shared_ptr< gr::II_K7_310R::ch1_ddc_source_c > *arg1 = (boost::shared_ptr< gr::II_K7_310R::ch1_ddc_source_c > *) 0 ;
-  int arg2 ;
-  void *argp1 = 0 ;
-  int res1 = 0 ;
-  int val2 ;
-  int ecode2 = 0 ;
-  PyObject * obj0 = 0 ;
-  PyObject * obj1 = 0 ;
-  char *  kwnames[] = {
-    (char *) "self",(char *) "which", NULL 
-  };
-  unsigned int result;
-  
-  if (!PyArg_ParseTupleAndKeywords(args,kwargs,(char *)"OO:ch1_ddc_source_c_sptr_sample_delay",kwnames,&obj0,&obj1)) SWIG_fail;
-  res1 = SWIG_ConvertPtr(obj0, &argp1,SWIGTYPE_p_boost__shared_ptrT_gr__II_K7_310R__ch1_ddc_source_c_t, 0 |  0 );
-  if (!SWIG_IsOK(res1)) {
-    SWIG_exception_fail(SWIG_ArgError(res1), "in method '" "ch1_ddc_source_c_sptr_sample_delay" "', argument " "1"" of type '" "boost::shared_ptr< gr::II_K7_310R::ch1_ddc_source_c > const *""'"); 
-  }
-  arg1 = reinterpret_cast< boost::shared_ptr< gr::II_K7_310R::ch1_ddc_source_c > * >(argp1);
-  ecode2 = SWIG_AsVal_int(obj1, &val2);
-  if (!SWIG_IsOK(ecode2)) {
-    SWIG_exception_fail(SWIG_ArgError(ecode2), "in method '" "ch1_ddc_source_c_sptr_sample_delay" "', argument " "2"" of type '" "int""'");
-  } 
-  arg2 = static_cast< int >(val2);
-  {
-    try {
-      result = (unsigned int)(*arg1)->sample_delay(arg2);
-    }
-    catch(std::exception &e) {
-      SWIG_exception(SWIG_RuntimeError, e.what());
-    }
-    catch(...) {
-      SWIG_exception(SWIG_RuntimeError, "Unknown exception");
-    }
-    
-  }
-  resultobj = SWIG_From_unsigned_SS_int(static_cast< unsigned int >(result));
-  return resultobj;
-fail:
-  return NULL;
-}
-
-
-SWIGINTERN PyObject *_wrap_ch1_ddc_source_c_sptr_output_multiple(PyObject *SWIGUNUSEDPARM(self), PyObject *args) {
-  PyObject *resultobj = 0;
-  boost::shared_ptr< gr::II_K7_310R::ch1_ddc_source_c > *arg1 = (boost::shared_ptr< gr::II_K7_310R::ch1_ddc_source_c > *) 0 ;
-  void *argp1 = 0 ;
-  int res1 = 0 ;
-  PyObject * obj0 = 0 ;
-  int result;
-  
-  if(!PyArg_UnpackTuple(args,(char *)"ch1_ddc_source_c_sptr_output_multiple",1,1,&obj0)) SWIG_fail;
-  res1 = SWIG_ConvertPtr(obj0, &argp1,SWIGTYPE_p_boost__shared_ptrT_gr__II_K7_310R__ch1_ddc_source_c_t, 0 |  0 );
-  if (!SWIG_IsOK(res1)) {
-    SWIG_exception_fail(SWIG_ArgError(res1), "in method '" "ch1_ddc_source_c_sptr_output_multiple" "', argument " "1"" of type '" "boost::shared_ptr< gr::II_K7_310R::ch1_ddc_source_c > const *""'"); 
-  }
-  arg1 = reinterpret_cast< boost::shared_ptr< gr::II_K7_310R::ch1_ddc_source_c > * >(argp1);
-  {
-    try {
-      result = (int)(*arg1)->output_multiple();
-    }
-    catch(std::exception &e) {
-      SWIG_exception(SWIG_RuntimeError, e.what());
-    }
-    catch(...) {
-      SWIG_exception(SWIG_RuntimeError, "Unknown exception");
-    }
-    
-  }
-  resultobj = SWIG_From_int(static_cast< int >(result));
-  return resultobj;
-fail:
-  return NULL;
-}
-
-
-SWIGINTERN PyObject *_wrap_ch1_ddc_source_c_sptr_relative_rate(PyObject *SWIGUNUSEDPARM(self), PyObject *args) {
-  PyObject *resultobj = 0;
-  boost::shared_ptr< gr::II_K7_310R::ch1_ddc_source_c > *arg1 = (boost::shared_ptr< gr::II_K7_310R::ch1_ddc_source_c > *) 0 ;
-  void *argp1 = 0 ;
-  int res1 = 0 ;
-  PyObject * obj0 = 0 ;
-  double result;
-  
-  if(!PyArg_UnpackTuple(args,(char *)"ch1_ddc_source_c_sptr_relative_rate",1,1,&obj0)) SWIG_fail;
-  res1 = SWIG_ConvertPtr(obj0, &argp1,SWIGTYPE_p_boost__shared_ptrT_gr__II_K7_310R__ch1_ddc_source_c_t, 0 |  0 );
-  if (!SWIG_IsOK(res1)) {
-    SWIG_exception_fail(SWIG_ArgError(res1), "in method '" "ch1_ddc_source_c_sptr_relative_rate" "', argument " "1"" of type '" "boost::shared_ptr< gr::II_K7_310R::ch1_ddc_source_c > const *""'"); 
-  }
-  arg1 = reinterpret_cast< boost::shared_ptr< gr::II_K7_310R::ch1_ddc_source_c > * >(argp1);
-  {
-    try {
-      result = (double)(*arg1)->relative_rate();
-    }
-    catch(std::exception &e) {
-      SWIG_exception(SWIG_RuntimeError, e.what());
-    }
-    catch(...) {
-      SWIG_exception(SWIG_RuntimeError, "Unknown exception");
-    }
-    
-  }
-  resultobj = SWIG_From_double(static_cast< double >(result));
-  return resultobj;
-fail:
-  return NULL;
-}
-
-
-SWIGINTERN PyObject *_wrap_ch1_ddc_source_c_sptr_start(PyObject *SWIGUNUSEDPARM(self), PyObject *args) {
-  PyObject *resultobj = 0;
-  boost::shared_ptr< gr::II_K7_310R::ch1_ddc_source_c > *arg1 = (boost::shared_ptr< gr::II_K7_310R::ch1_ddc_source_c > *) 0 ;
-  void *argp1 = 0 ;
-  int res1 = 0 ;
-  PyObject * obj0 = 0 ;
-  bool result;
-  
-  if(!PyArg_UnpackTuple(args,(char *)"ch1_ddc_source_c_sptr_start",1,1,&obj0)) SWIG_fail;
-  res1 = SWIG_ConvertPtr(obj0, &argp1,SWIGTYPE_p_boost__shared_ptrT_gr__II_K7_310R__ch1_ddc_source_c_t, 0 |  0 );
-  if (!SWIG_IsOK(res1)) {
-    SWIG_exception_fail(SWIG_ArgError(res1), "in method '" "ch1_ddc_source_c_sptr_start" "', argument " "1"" of type '" "boost::shared_ptr< gr::II_K7_310R::ch1_ddc_source_c > *""'"); 
-  }
-  arg1 = reinterpret_cast< boost::shared_ptr< gr::II_K7_310R::ch1_ddc_source_c > * >(argp1);
-  {
-    try {
-      result = (bool)(*arg1)->start();
-    }
-    catch(std::exception &e) {
-      SWIG_exception(SWIG_RuntimeError, e.what());
-    }
-    catch(...) {
-      SWIG_exception(SWIG_RuntimeError, "Unknown exception");
-    }
-    
-  }
-  resultobj = SWIG_From_bool(static_cast< bool >(result));
-  return resultobj;
-fail:
-  return NULL;
-}
-
-
-SWIGINTERN PyObject *_wrap_ch1_ddc_source_c_sptr_stop(PyObject *SWIGUNUSEDPARM(self), PyObject *args) {
-  PyObject *resultobj = 0;
-  boost::shared_ptr< gr::II_K7_310R::ch1_ddc_source_c > *arg1 = (boost::shared_ptr< gr::II_K7_310R::ch1_ddc_source_c > *) 0 ;
-  void *argp1 = 0 ;
-  int res1 = 0 ;
-  PyObject * obj0 = 0 ;
-  bool result;
-  
-  if(!PyArg_UnpackTuple(args,(char *)"ch1_ddc_source_c_sptr_stop",1,1,&obj0)) SWIG_fail;
-  res1 = SWIG_ConvertPtr(obj0, &argp1,SWIGTYPE_p_boost__shared_ptrT_gr__II_K7_310R__ch1_ddc_source_c_t, 0 |  0 );
-  if (!SWIG_IsOK(res1)) {
-    SWIG_exception_fail(SWIG_ArgError(res1), "in method '" "ch1_ddc_source_c_sptr_stop" "', argument " "1"" of type '" "boost::shared_ptr< gr::II_K7_310R::ch1_ddc_source_c > *""'"); 
-  }
-  arg1 = reinterpret_cast< boost::shared_ptr< gr::II_K7_310R::ch1_ddc_source_c > * >(argp1);
-  {
-    try {
-      result = (bool)(*arg1)->stop();
-    }
-    catch(std::exception &e) {
-      SWIG_exception(SWIG_RuntimeError, e.what());
-    }
-    catch(...) {
-      SWIG_exception(SWIG_RuntimeError, "Unknown exception");
-    }
-    
-  }
-  resultobj = SWIG_From_bool(static_cast< bool >(result));
-  return resultobj;
-fail:
-  return NULL;
-}
-
-
-SWIGINTERN PyObject *_wrap_ch1_ddc_source_c_sptr_nitems_read(PyObject *SWIGUNUSEDPARM(self), PyObject *args, PyObject *kwargs) {
-  PyObject *resultobj = 0;
-  boost::shared_ptr< gr::II_K7_310R::ch1_ddc_source_c > *arg1 = (boost::shared_ptr< gr::II_K7_310R::ch1_ddc_source_c > *) 0 ;
-  unsigned int arg2 ;
-  void *argp1 = 0 ;
-  int res1 = 0 ;
-  unsigned int val2 ;
-  int ecode2 = 0 ;
-  PyObject * obj0 = 0 ;
-  PyObject * obj1 = 0 ;
-  char *  kwnames[] = {
-    (char *) "self",(char *) "which_input", NULL 
-  };
-  uint64_t result;
-  
-  if (!PyArg_ParseTupleAndKeywords(args,kwargs,(char *)"OO:ch1_ddc_source_c_sptr_nitems_read",kwnames,&obj0,&obj1)) SWIG_fail;
-  res1 = SWIG_ConvertPtr(obj0, &argp1,SWIGTYPE_p_boost__shared_ptrT_gr__II_K7_310R__ch1_ddc_source_c_t, 0 |  0 );
-  if (!SWIG_IsOK(res1)) {
-    SWIG_exception_fail(SWIG_ArgError(res1), "in method '" "ch1_ddc_source_c_sptr_nitems_read" "', argument " "1"" of type '" "boost::shared_ptr< gr::II_K7_310R::ch1_ddc_source_c > *""'"); 
-  }
-  arg1 = reinterpret_cast< boost::shared_ptr< gr::II_K7_310R::ch1_ddc_source_c > * >(argp1);
-  ecode2 = SWIG_AsVal_unsigned_SS_int(obj1, &val2);
-  if (!SWIG_IsOK(ecode2)) {
-    SWIG_exception_fail(SWIG_ArgError(ecode2), "in method '" "ch1_ddc_source_c_sptr_nitems_read" "', argument " "2"" of type '" "unsigned int""'");
-  } 
-  arg2 = static_cast< unsigned int >(val2);
-  {
-    try {
-      result = (uint64_t)(*arg1)->nitems_read(arg2);
-    }
-    catch(std::exception &e) {
-      SWIG_exception(SWIG_RuntimeError, e.what());
-    }
-    catch(...) {
-      SWIG_exception(SWIG_RuntimeError, "Unknown exception");
-    }
-    
-  }
-  resultobj = SWIG_From_unsigned_SS_long_SS_long(static_cast< unsigned long long >(result));
-  return resultobj;
-fail:
-  return NULL;
-}
-
-
-SWIGINTERN PyObject *_wrap_ch1_ddc_source_c_sptr_nitems_written(PyObject *SWIGUNUSEDPARM(self), PyObject *args, PyObject *kwargs) {
-  PyObject *resultobj = 0;
-  boost::shared_ptr< gr::II_K7_310R::ch1_ddc_source_c > *arg1 = (boost::shared_ptr< gr::II_K7_310R::ch1_ddc_source_c > *) 0 ;
-  unsigned int arg2 ;
-  void *argp1 = 0 ;
-  int res1 = 0 ;
-  unsigned int val2 ;
-  int ecode2 = 0 ;
-  PyObject * obj0 = 0 ;
-  PyObject * obj1 = 0 ;
-  char *  kwnames[] = {
-    (char *) "self",(char *) "which_output", NULL 
-  };
-  uint64_t result;
-  
-  if (!PyArg_ParseTupleAndKeywords(args,kwargs,(char *)"OO:ch1_ddc_source_c_sptr_nitems_written",kwnames,&obj0,&obj1)) SWIG_fail;
-  res1 = SWIG_ConvertPtr(obj0, &argp1,SWIGTYPE_p_boost__shared_ptrT_gr__II_K7_310R__ch1_ddc_source_c_t, 0 |  0 );
-  if (!SWIG_IsOK(res1)) {
-    SWIG_exception_fail(SWIG_ArgError(res1), "in method '" "ch1_ddc_source_c_sptr_nitems_written" "', argument " "1"" of type '" "boost::shared_ptr< gr::II_K7_310R::ch1_ddc_source_c > *""'"); 
-  }
-  arg1 = reinterpret_cast< boost::shared_ptr< gr::II_K7_310R::ch1_ddc_source_c > * >(argp1);
-  ecode2 = SWIG_AsVal_unsigned_SS_int(obj1, &val2);
-  if (!SWIG_IsOK(ecode2)) {
-    SWIG_exception_fail(SWIG_ArgError(ecode2), "in method '" "ch1_ddc_source_c_sptr_nitems_written" "', argument " "2"" of type '" "unsigned int""'");
-  } 
-  arg2 = static_cast< unsigned int >(val2);
-  {
-    try {
-      result = (uint64_t)(*arg1)->nitems_written(arg2);
-    }
-    catch(std::exception &e) {
-      SWIG_exception(SWIG_RuntimeError, e.what());
-    }
-    catch(...) {
-      SWIG_exception(SWIG_RuntimeError, "Unknown exception");
-    }
-    
-  }
-  resultobj = SWIG_From_unsigned_SS_long_SS_long(static_cast< unsigned long long >(result));
-  return resultobj;
-fail:
-  return NULL;
-}
-
-
-SWIGINTERN PyObject *_wrap_ch1_ddc_source_c_sptr_max_noutput_items(PyObject *SWIGUNUSEDPARM(self), PyObject *args) {
-  PyObject *resultobj = 0;
-  boost::shared_ptr< gr::II_K7_310R::ch1_ddc_source_c > *arg1 = (boost::shared_ptr< gr::II_K7_310R::ch1_ddc_source_c > *) 0 ;
-  void *argp1 = 0 ;
-  int res1 = 0 ;
-  PyObject * obj0 = 0 ;
-  int result;
-  
-  if(!PyArg_UnpackTuple(args,(char *)"ch1_ddc_source_c_sptr_max_noutput_items",1,1,&obj0)) SWIG_fail;
-  res1 = SWIG_ConvertPtr(obj0, &argp1,SWIGTYPE_p_boost__shared_ptrT_gr__II_K7_310R__ch1_ddc_source_c_t, 0 |  0 );
-  if (!SWIG_IsOK(res1)) {
-    SWIG_exception_fail(SWIG_ArgError(res1), "in method '" "ch1_ddc_source_c_sptr_max_noutput_items" "', argument " "1"" of type '" "boost::shared_ptr< gr::II_K7_310R::ch1_ddc_source_c > *""'"); 
-  }
-  arg1 = reinterpret_cast< boost::shared_ptr< gr::II_K7_310R::ch1_ddc_source_c > * >(argp1);
-  {
-    try {
-      result = (int)(*arg1)->max_noutput_items();
-    }
-    catch(std::exception &e) {
-      SWIG_exception(SWIG_RuntimeError, e.what());
-    }
-    catch(...) {
-      SWIG_exception(SWIG_RuntimeError, "Unknown exception");
-    }
-    
-  }
-  resultobj = SWIG_From_int(static_cast< int >(result));
-  return resultobj;
-fail:
-  return NULL;
-}
-
-
-SWIGINTERN PyObject *_wrap_ch1_ddc_source_c_sptr_set_max_noutput_items(PyObject *SWIGUNUSEDPARM(self), PyObject *args, PyObject *kwargs) {
-  PyObject *resultobj = 0;
-  boost::shared_ptr< gr::II_K7_310R::ch1_ddc_source_c > *arg1 = (boost::shared_ptr< gr::II_K7_310R::ch1_ddc_source_c > *) 0 ;
-  int arg2 ;
-  void *argp1 = 0 ;
-  int res1 = 0 ;
-  int val2 ;
-  int ecode2 = 0 ;
-  PyObject * obj0 = 0 ;
-  PyObject * obj1 = 0 ;
-  char *  kwnames[] = {
-    (char *) "self",(char *) "m", NULL 
-  };
-  
-  if (!PyArg_ParseTupleAndKeywords(args,kwargs,(char *)"OO:ch1_ddc_source_c_sptr_set_max_noutput_items",kwnames,&obj0,&obj1)) SWIG_fail;
-  res1 = SWIG_ConvertPtr(obj0, &argp1,SWIGTYPE_p_boost__shared_ptrT_gr__II_K7_310R__ch1_ddc_source_c_t, 0 |  0 );
-  if (!SWIG_IsOK(res1)) {
-    SWIG_exception_fail(SWIG_ArgError(res1), "in method '" "ch1_ddc_source_c_sptr_set_max_noutput_items" "', argument " "1"" of type '" "boost::shared_ptr< gr::II_K7_310R::ch1_ddc_source_c > *""'"); 
-  }
-  arg1 = reinterpret_cast< boost::shared_ptr< gr::II_K7_310R::ch1_ddc_source_c > * >(argp1);
-  ecode2 = SWIG_AsVal_int(obj1, &val2);
-  if (!SWIG_IsOK(ecode2)) {
-    SWIG_exception_fail(SWIG_ArgError(ecode2), "in method '" "ch1_ddc_source_c_sptr_set_max_noutput_items" "', argument " "2"" of type '" "int""'");
-  } 
-  arg2 = static_cast< int >(val2);
-  {
-    try {
-      (*arg1)->set_max_noutput_items(arg2);
-    }
-    catch(std::exception &e) {
-      SWIG_exception(SWIG_RuntimeError, e.what());
-    }
-    catch(...) {
-      SWIG_exception(SWIG_RuntimeError, "Unknown exception");
-    }
-    
-  }
-  resultobj = SWIG_Py_Void();
-  return resultobj;
-fail:
-  return NULL;
-}
-
-
-SWIGINTERN PyObject *_wrap_ch1_ddc_source_c_sptr_unset_max_noutput_items(PyObject *SWIGUNUSEDPARM(self), PyObject *args) {
-  PyObject *resultobj = 0;
-  boost::shared_ptr< gr::II_K7_310R::ch1_ddc_source_c > *arg1 = (boost::shared_ptr< gr::II_K7_310R::ch1_ddc_source_c > *) 0 ;
-  void *argp1 = 0 ;
-  int res1 = 0 ;
-  PyObject * obj0 = 0 ;
-  
-  if(!PyArg_UnpackTuple(args,(char *)"ch1_ddc_source_c_sptr_unset_max_noutput_items",1,1,&obj0)) SWIG_fail;
-  res1 = SWIG_ConvertPtr(obj0, &argp1,SWIGTYPE_p_boost__shared_ptrT_gr__II_K7_310R__ch1_ddc_source_c_t, 0 |  0 );
-  if (!SWIG_IsOK(res1)) {
-    SWIG_exception_fail(SWIG_ArgError(res1), "in method '" "ch1_ddc_source_c_sptr_unset_max_noutput_items" "', argument " "1"" of type '" "boost::shared_ptr< gr::II_K7_310R::ch1_ddc_source_c > *""'"); 
-  }
-  arg1 = reinterpret_cast< boost::shared_ptr< gr::II_K7_310R::ch1_ddc_source_c > * >(argp1);
-  {
-    try {
-      (*arg1)->unset_max_noutput_items();
-    }
-    catch(std::exception &e) {
-      SWIG_exception(SWIG_RuntimeError, e.what());
-    }
-    catch(...) {
-      SWIG_exception(SWIG_RuntimeError, "Unknown exception");
-    }
-    
-  }
-  resultobj = SWIG_Py_Void();
-  return resultobj;
-fail:
-  return NULL;
-}
-
-
-SWIGINTERN PyObject *_wrap_ch1_ddc_source_c_sptr_is_set_max_noutput_items(PyObject *SWIGUNUSEDPARM(self), PyObject *args) {
-  PyObject *resultobj = 0;
-  boost::shared_ptr< gr::II_K7_310R::ch1_ddc_source_c > *arg1 = (boost::shared_ptr< gr::II_K7_310R::ch1_ddc_source_c > *) 0 ;
-  void *argp1 = 0 ;
-  int res1 = 0 ;
-  PyObject * obj0 = 0 ;
-  bool result;
-  
-  if(!PyArg_UnpackTuple(args,(char *)"ch1_ddc_source_c_sptr_is_set_max_noutput_items",1,1,&obj0)) SWIG_fail;
-  res1 = SWIG_ConvertPtr(obj0, &argp1,SWIGTYPE_p_boost__shared_ptrT_gr__II_K7_310R__ch1_ddc_source_c_t, 0 |  0 );
-  if (!SWIG_IsOK(res1)) {
-    SWIG_exception_fail(SWIG_ArgError(res1), "in method '" "ch1_ddc_source_c_sptr_is_set_max_noutput_items" "', argument " "1"" of type '" "boost::shared_ptr< gr::II_K7_310R::ch1_ddc_source_c > *""'"); 
-  }
-  arg1 = reinterpret_cast< boost::shared_ptr< gr::II_K7_310R::ch1_ddc_source_c > * >(argp1);
-  {
-    try {
-      result = (bool)(*arg1)->is_set_max_noutput_items();
-    }
-    catch(std::exception &e) {
-      SWIG_exception(SWIG_RuntimeError, e.what());
-    }
-    catch(...) {
-      SWIG_exception(SWIG_RuntimeError, "Unknown exception");
-    }
-    
-  }
-  resultobj = SWIG_From_bool(static_cast< bool >(result));
-  return resultobj;
-fail:
-  return NULL;
-}
-
-
-SWIGINTERN PyObject *_wrap_ch1_ddc_source_c_sptr_set_min_noutput_items(PyObject *SWIGUNUSEDPARM(self), PyObject *args, PyObject *kwargs) {
-  PyObject *resultobj = 0;
-  boost::shared_ptr< gr::II_K7_310R::ch1_ddc_source_c > *arg1 = (boost::shared_ptr< gr::II_K7_310R::ch1_ddc_source_c > *) 0 ;
-  int arg2 ;
-  void *argp1 = 0 ;
-  int res1 = 0 ;
-  int val2 ;
-  int ecode2 = 0 ;
-  PyObject * obj0 = 0 ;
-  PyObject * obj1 = 0 ;
-  char *  kwnames[] = {
-    (char *) "self",(char *) "m", NULL 
-  };
-  
-  if (!PyArg_ParseTupleAndKeywords(args,kwargs,(char *)"OO:ch1_ddc_source_c_sptr_set_min_noutput_items",kwnames,&obj0,&obj1)) SWIG_fail;
-  res1 = SWIG_ConvertPtr(obj0, &argp1,SWIGTYPE_p_boost__shared_ptrT_gr__II_K7_310R__ch1_ddc_source_c_t, 0 |  0 );
-  if (!SWIG_IsOK(res1)) {
-    SWIG_exception_fail(SWIG_ArgError(res1), "in method '" "ch1_ddc_source_c_sptr_set_min_noutput_items" "', argument " "1"" of type '" "boost::shared_ptr< gr::II_K7_310R::ch1_ddc_source_c > *""'"); 
-  }
-  arg1 = reinterpret_cast< boost::shared_ptr< gr::II_K7_310R::ch1_ddc_source_c > * >(argp1);
-  ecode2 = SWIG_AsVal_int(obj1, &val2);
-  if (!SWIG_IsOK(ecode2)) {
-    SWIG_exception_fail(SWIG_ArgError(ecode2), "in method '" "ch1_ddc_source_c_sptr_set_min_noutput_items" "', argument " "2"" of type '" "int""'");
-  } 
-  arg2 = static_cast< int >(val2);
-  {
-    try {
-      (*arg1)->set_min_noutput_items(arg2);
-    }
-    catch(std::exception &e) {
-      SWIG_exception(SWIG_RuntimeError, e.what());
-    }
-    catch(...) {
-      SWIG_exception(SWIG_RuntimeError, "Unknown exception");
-    }
-    
-  }
-  resultobj = SWIG_Py_Void();
-  return resultobj;
-fail:
-  return NULL;
-}
-
-
-SWIGINTERN PyObject *_wrap_ch1_ddc_source_c_sptr_min_noutput_items(PyObject *SWIGUNUSEDPARM(self), PyObject *args) {
-  PyObject *resultobj = 0;
-  boost::shared_ptr< gr::II_K7_310R::ch1_ddc_source_c > *arg1 = (boost::shared_ptr< gr::II_K7_310R::ch1_ddc_source_c > *) 0 ;
-  void *argp1 = 0 ;
-  int res1 = 0 ;
-  PyObject * obj0 = 0 ;
-  int result;
-  
-  if(!PyArg_UnpackTuple(args,(char *)"ch1_ddc_source_c_sptr_min_noutput_items",1,1,&obj0)) SWIG_fail;
-  res1 = SWIG_ConvertPtr(obj0, &argp1,SWIGTYPE_p_boost__shared_ptrT_gr__II_K7_310R__ch1_ddc_source_c_t, 0 |  0 );
-  if (!SWIG_IsOK(res1)) {
-    SWIG_exception_fail(SWIG_ArgError(res1), "in method '" "ch1_ddc_source_c_sptr_min_noutput_items" "', argument " "1"" of type '" "boost::shared_ptr< gr::II_K7_310R::ch1_ddc_source_c > const *""'"); 
-  }
-  arg1 = reinterpret_cast< boost::shared_ptr< gr::II_K7_310R::ch1_ddc_source_c > * >(argp1);
-  {
-    try {
-      result = (int)(*arg1)->min_noutput_items();
-    }
-    catch(std::exception &e) {
-      SWIG_exception(SWIG_RuntimeError, e.what());
-    }
-    catch(...) {
-      SWIG_exception(SWIG_RuntimeError, "Unknown exception");
-    }
-    
-  }
-  resultobj = SWIG_From_int(static_cast< int >(result));
-  return resultobj;
-fail:
-  return NULL;
-}
-
-
-SWIGINTERN PyObject *_wrap_ch1_ddc_source_c_sptr_max_output_buffer(PyObject *SWIGUNUSEDPARM(self), PyObject *args, PyObject *kwargs) {
-  PyObject *resultobj = 0;
-  boost::shared_ptr< gr::II_K7_310R::ch1_ddc_source_c > *arg1 = (boost::shared_ptr< gr::II_K7_310R::ch1_ddc_source_c > *) 0 ;
-  int arg2 ;
-  void *argp1 = 0 ;
-  int res1 = 0 ;
-  int val2 ;
-  int ecode2 = 0 ;
-  PyObject * obj0 = 0 ;
-  PyObject * obj1 = 0 ;
-  char *  kwnames[] = {
-    (char *) "self",(char *) "i", NULL 
-  };
-  long result;
-  
-  if (!PyArg_ParseTupleAndKeywords(args,kwargs,(char *)"OO:ch1_ddc_source_c_sptr_max_output_buffer",kwnames,&obj0,&obj1)) SWIG_fail;
-  res1 = SWIG_ConvertPtr(obj0, &argp1,SWIGTYPE_p_boost__shared_ptrT_gr__II_K7_310R__ch1_ddc_source_c_t, 0 |  0 );
-  if (!SWIG_IsOK(res1)) {
-    SWIG_exception_fail(SWIG_ArgError(res1), "in method '" "ch1_ddc_source_c_sptr_max_output_buffer" "', argument " "1"" of type '" "boost::shared_ptr< gr::II_K7_310R::ch1_ddc_source_c > *""'"); 
-  }
-  arg1 = reinterpret_cast< boost::shared_ptr< gr::II_K7_310R::ch1_ddc_source_c > * >(argp1);
-  ecode2 = SWIG_AsVal_int(obj1, &val2);
-  if (!SWIG_IsOK(ecode2)) {
-    SWIG_exception_fail(SWIG_ArgError(ecode2), "in method '" "ch1_ddc_source_c_sptr_max_output_buffer" "', argument " "2"" of type '" "int""'");
-  } 
-  arg2 = static_cast< int >(val2);
-  {
-    try {
-      result = (long)(*arg1)->max_output_buffer(arg2);
-    }
-    catch(std::exception &e) {
-      SWIG_exception(SWIG_RuntimeError, e.what());
-    }
-    catch(...) {
-      SWIG_exception(SWIG_RuntimeError, "Unknown exception");
-    }
-    
-  }
-  resultobj = SWIG_From_long(static_cast< long >(result));
-  return resultobj;
-fail:
-  return NULL;
-}
-
-
-SWIGINTERN PyObject *_wrap_ch1_ddc_source_c_sptr_set_max_output_buffer__SWIG_0(PyObject *SWIGUNUSEDPARM(self), PyObject *args) {
-  PyObject *resultobj = 0;
-  boost::shared_ptr< gr::II_K7_310R::ch1_ddc_source_c > *arg1 = (boost::shared_ptr< gr::II_K7_310R::ch1_ddc_source_c > *) 0 ;
-  long arg2 ;
-  void *argp1 = 0 ;
-  int res1 = 0 ;
-  long val2 ;
-  int ecode2 = 0 ;
-  PyObject * obj0 = 0 ;
-  PyObject * obj1 = 0 ;
-  
-  if(!PyArg_UnpackTuple(args,(char *)"ch1_ddc_source_c_sptr_set_max_output_buffer",2,2,&obj0,&obj1)) SWIG_fail;
-  res1 = SWIG_ConvertPtr(obj0, &argp1,SWIGTYPE_p_boost__shared_ptrT_gr__II_K7_310R__ch1_ddc_source_c_t, 0 |  0 );
-  if (!SWIG_IsOK(res1)) {
-    SWIG_exception_fail(SWIG_ArgError(res1), "in method '" "ch1_ddc_source_c_sptr_set_max_output_buffer" "', argument " "1"" of type '" "boost::shared_ptr< gr::II_K7_310R::ch1_ddc_source_c > *""'"); 
-  }
-  arg1 = reinterpret_cast< boost::shared_ptr< gr::II_K7_310R::ch1_ddc_source_c > * >(argp1);
-  ecode2 = SWIG_AsVal_long(obj1, &val2);
-  if (!SWIG_IsOK(ecode2)) {
-    SWIG_exception_fail(SWIG_ArgError(ecode2), "in method '" "ch1_ddc_source_c_sptr_set_max_output_buffer" "', argument " "2"" of type '" "long""'");
-  } 
-  arg2 = static_cast< long >(val2);
-  {
-    try {
-      (*arg1)->set_max_output_buffer(arg2);
-    }
-    catch(std::exception &e) {
-      SWIG_exception(SWIG_RuntimeError, e.what());
-    }
-    catch(...) {
-      SWIG_exception(SWIG_RuntimeError, "Unknown exception");
-    }
-    
-  }
-  resultobj = SWIG_Py_Void();
-  return resultobj;
-fail:
-  return NULL;
-}
-
-
-SWIGINTERN PyObject *_wrap_ch1_ddc_source_c_sptr_set_max_output_buffer__SWIG_1(PyObject *SWIGUNUSEDPARM(self), PyObject *args) {
-  PyObject *resultobj = 0;
-  boost::shared_ptr< gr::II_K7_310R::ch1_ddc_source_c > *arg1 = (boost::shared_ptr< gr::II_K7_310R::ch1_ddc_source_c > *) 0 ;
-  int arg2 ;
-  long arg3 ;
-  void *argp1 = 0 ;
-  int res1 = 0 ;
-  int val2 ;
-  int ecode2 = 0 ;
-  long val3 ;
-  int ecode3 = 0 ;
-  PyObject * obj0 = 0 ;
-  PyObject * obj1 = 0 ;
-  PyObject * obj2 = 0 ;
-  
-  if(!PyArg_UnpackTuple(args,(char *)"ch1_ddc_source_c_sptr_set_max_output_buffer",3,3,&obj0,&obj1,&obj2)) SWIG_fail;
-  res1 = SWIG_ConvertPtr(obj0, &argp1,SWIGTYPE_p_boost__shared_ptrT_gr__II_K7_310R__ch1_ddc_source_c_t, 0 |  0 );
-  if (!SWIG_IsOK(res1)) {
-    SWIG_exception_fail(SWIG_ArgError(res1), "in method '" "ch1_ddc_source_c_sptr_set_max_output_buffer" "', argument " "1"" of type '" "boost::shared_ptr< gr::II_K7_310R::ch1_ddc_source_c > *""'"); 
-  }
-  arg1 = reinterpret_cast< boost::shared_ptr< gr::II_K7_310R::ch1_ddc_source_c > * >(argp1);
-  ecode2 = SWIG_AsVal_int(obj1, &val2);
-  if (!SWIG_IsOK(ecode2)) {
-    SWIG_exception_fail(SWIG_ArgError(ecode2), "in method '" "ch1_ddc_source_c_sptr_set_max_output_buffer" "', argument " "2"" of type '" "int""'");
-  } 
-  arg2 = static_cast< int >(val2);
-  ecode3 = SWIG_AsVal_long(obj2, &val3);
-  if (!SWIG_IsOK(ecode3)) {
-    SWIG_exception_fail(SWIG_ArgError(ecode3), "in method '" "ch1_ddc_source_c_sptr_set_max_output_buffer" "', argument " "3"" of type '" "long""'");
-  } 
-  arg3 = static_cast< long >(val3);
-  {
-    try {
-      (*arg1)->set_max_output_buffer(arg2,arg3);
-    }
-    catch(std::exception &e) {
-      SWIG_exception(SWIG_RuntimeError, e.what());
-    }
-    catch(...) {
-      SWIG_exception(SWIG_RuntimeError, "Unknown exception");
-    }
-    
-  }
-  resultobj = SWIG_Py_Void();
-  return resultobj;
-fail:
-  return NULL;
-}
-
-
-SWIGINTERN PyObject *_wrap_ch1_ddc_source_c_sptr_set_max_output_buffer(PyObject *self, PyObject *args) {
-  Py_ssize_t argc;
-  PyObject *argv[4] = {
-    0
-  };
-  Py_ssize_t ii;
-  
-  if (!PyTuple_Check(args)) SWIG_fail;
-  argc = args ? PyObject_Length(args) : 0;
-  for (ii = 0; (ii < 3) && (ii < argc); ii++) {
-    argv[ii] = PyTuple_GET_ITEM(args,ii);
-  }
-  if (argc == 2) {
-    int _v;
-    void *vptr = 0;
-    int res = SWIG_ConvertPtr(argv[0], &vptr, SWIGTYPE_p_boost__shared_ptrT_gr__II_K7_310R__ch1_ddc_source_c_t, 0);
-    _v = SWIG_CheckState(res);
-    if (_v) {
-      {
-        int res = SWIG_AsVal_long(argv[1], NULL);
-        _v = SWIG_CheckState(res);
-      }
-      if (_v) {
-        return _wrap_ch1_ddc_source_c_sptr_set_max_output_buffer__SWIG_0(self, args);
-      }
-    }
-  }
-  if (argc == 3) {
-    int _v;
-    void *vptr = 0;
-    int res = SWIG_ConvertPtr(argv[0], &vptr, SWIGTYPE_p_boost__shared_ptrT_gr__II_K7_310R__ch1_ddc_source_c_t, 0);
-    _v = SWIG_CheckState(res);
-    if (_v) {
-      {
-        int res = SWIG_AsVal_int(argv[1], NULL);
-        _v = SWIG_CheckState(res);
-      }
-      if (_v) {
-        {
-          int res = SWIG_AsVal_long(argv[2], NULL);
-          _v = SWIG_CheckState(res);
-        }
-        if (_v) {
-          return _wrap_ch1_ddc_source_c_sptr_set_max_output_buffer__SWIG_1(self, args);
-        }
-      }
-    }
-  }
-  
-fail:
-  SWIG_SetErrorMsg(PyExc_NotImplementedError,"Wrong number or type of arguments for overloaded function 'ch1_ddc_source_c_sptr_set_max_output_buffer'.\n"
-    "  Possible C/C++ prototypes are:\n"
-    "    gr::block::set_max_output_buffer(long)\n"
-    "    gr::block::set_max_output_buffer(int,long)\n");
-  return 0;
-}
-
-
-SWIGINTERN PyObject *_wrap_ch1_ddc_source_c_sptr_min_output_buffer(PyObject *SWIGUNUSEDPARM(self), PyObject *args, PyObject *kwargs) {
-  PyObject *resultobj = 0;
-  boost::shared_ptr< gr::II_K7_310R::ch1_ddc_source_c > *arg1 = (boost::shared_ptr< gr::II_K7_310R::ch1_ddc_source_c > *) 0 ;
-  int arg2 ;
-  void *argp1 = 0 ;
-  int res1 = 0 ;
-  int val2 ;
-  int ecode2 = 0 ;
-  PyObject * obj0 = 0 ;
-  PyObject * obj1 = 0 ;
-  char *  kwnames[] = {
-    (char *) "self",(char *) "i", NULL 
-  };
-  long result;
-  
-  if (!PyArg_ParseTupleAndKeywords(args,kwargs,(char *)"OO:ch1_ddc_source_c_sptr_min_output_buffer",kwnames,&obj0,&obj1)) SWIG_fail;
-  res1 = SWIG_ConvertPtr(obj0, &argp1,SWIGTYPE_p_boost__shared_ptrT_gr__II_K7_310R__ch1_ddc_source_c_t, 0 |  0 );
-  if (!SWIG_IsOK(res1)) {
-    SWIG_exception_fail(SWIG_ArgError(res1), "in method '" "ch1_ddc_source_c_sptr_min_output_buffer" "', argument " "1"" of type '" "boost::shared_ptr< gr::II_K7_310R::ch1_ddc_source_c > *""'"); 
-  }
-  arg1 = reinterpret_cast< boost::shared_ptr< gr::II_K7_310R::ch1_ddc_source_c > * >(argp1);
-  ecode2 = SWIG_AsVal_int(obj1, &val2);
-  if (!SWIG_IsOK(ecode2)) {
-    SWIG_exception_fail(SWIG_ArgError(ecode2), "in method '" "ch1_ddc_source_c_sptr_min_output_buffer" "', argument " "2"" of type '" "int""'");
-  } 
-  arg2 = static_cast< int >(val2);
-  {
-    try {
-      result = (long)(*arg1)->min_output_buffer(arg2);
-    }
-    catch(std::exception &e) {
-      SWIG_exception(SWIG_RuntimeError, e.what());
-    }
-    catch(...) {
-      SWIG_exception(SWIG_RuntimeError, "Unknown exception");
-    }
-    
-  }
-  resultobj = SWIG_From_long(static_cast< long >(result));
-  return resultobj;
-fail:
-  return NULL;
-}
-
-
-SWIGINTERN PyObject *_wrap_ch1_ddc_source_c_sptr_set_min_output_buffer__SWIG_0(PyObject *SWIGUNUSEDPARM(self), PyObject *args) {
-  PyObject *resultobj = 0;
-  boost::shared_ptr< gr::II_K7_310R::ch1_ddc_source_c > *arg1 = (boost::shared_ptr< gr::II_K7_310R::ch1_ddc_source_c > *) 0 ;
-  long arg2 ;
-  void *argp1 = 0 ;
-  int res1 = 0 ;
-  long val2 ;
-  int ecode2 = 0 ;
-  PyObject * obj0 = 0 ;
-  PyObject * obj1 = 0 ;
-  
-  if(!PyArg_UnpackTuple(args,(char *)"ch1_ddc_source_c_sptr_set_min_output_buffer",2,2,&obj0,&obj1)) SWIG_fail;
-  res1 = SWIG_ConvertPtr(obj0, &argp1,SWIGTYPE_p_boost__shared_ptrT_gr__II_K7_310R__ch1_ddc_source_c_t, 0 |  0 );
-  if (!SWIG_IsOK(res1)) {
-    SWIG_exception_fail(SWIG_ArgError(res1), "in method '" "ch1_ddc_source_c_sptr_set_min_output_buffer" "', argument " "1"" of type '" "boost::shared_ptr< gr::II_K7_310R::ch1_ddc_source_c > *""'"); 
-  }
-  arg1 = reinterpret_cast< boost::shared_ptr< gr::II_K7_310R::ch1_ddc_source_c > * >(argp1);
-  ecode2 = SWIG_AsVal_long(obj1, &val2);
-  if (!SWIG_IsOK(ecode2)) {
-    SWIG_exception_fail(SWIG_ArgError(ecode2), "in method '" "ch1_ddc_source_c_sptr_set_min_output_buffer" "', argument " "2"" of type '" "long""'");
-  } 
-  arg2 = static_cast< long >(val2);
-  {
-    try {
-      (*arg1)->set_min_output_buffer(arg2);
-    }
-    catch(std::exception &e) {
-      SWIG_exception(SWIG_RuntimeError, e.what());
-    }
-    catch(...) {
-      SWIG_exception(SWIG_RuntimeError, "Unknown exception");
-    }
-    
-  }
-  resultobj = SWIG_Py_Void();
-  return resultobj;
-fail:
-  return NULL;
-}
-
-
-SWIGINTERN PyObject *_wrap_ch1_ddc_source_c_sptr_set_min_output_buffer__SWIG_1(PyObject *SWIGUNUSEDPARM(self), PyObject *args) {
-  PyObject *resultobj = 0;
-  boost::shared_ptr< gr::II_K7_310R::ch1_ddc_source_c > *arg1 = (boost::shared_ptr< gr::II_K7_310R::ch1_ddc_source_c > *) 0 ;
-  int arg2 ;
-  long arg3 ;
-  void *argp1 = 0 ;
-  int res1 = 0 ;
-  int val2 ;
-  int ecode2 = 0 ;
-  long val3 ;
-  int ecode3 = 0 ;
-  PyObject * obj0 = 0 ;
-  PyObject * obj1 = 0 ;
-  PyObject * obj2 = 0 ;
-  
-  if(!PyArg_UnpackTuple(args,(char *)"ch1_ddc_source_c_sptr_set_min_output_buffer",3,3,&obj0,&obj1,&obj2)) SWIG_fail;
-  res1 = SWIG_ConvertPtr(obj0, &argp1,SWIGTYPE_p_boost__shared_ptrT_gr__II_K7_310R__ch1_ddc_source_c_t, 0 |  0 );
-  if (!SWIG_IsOK(res1)) {
-    SWIG_exception_fail(SWIG_ArgError(res1), "in method '" "ch1_ddc_source_c_sptr_set_min_output_buffer" "', argument " "1"" of type '" "boost::shared_ptr< gr::II_K7_310R::ch1_ddc_source_c > *""'"); 
-  }
-  arg1 = reinterpret_cast< boost::shared_ptr< gr::II_K7_310R::ch1_ddc_source_c > * >(argp1);
-  ecode2 = SWIG_AsVal_int(obj1, &val2);
-  if (!SWIG_IsOK(ecode2)) {
-    SWIG_exception_fail(SWIG_ArgError(ecode2), "in method '" "ch1_ddc_source_c_sptr_set_min_output_buffer" "', argument " "2"" of type '" "int""'");
-  } 
-  arg2 = static_cast< int >(val2);
-  ecode3 = SWIG_AsVal_long(obj2, &val3);
-  if (!SWIG_IsOK(ecode3)) {
-    SWIG_exception_fail(SWIG_ArgError(ecode3), "in method '" "ch1_ddc_source_c_sptr_set_min_output_buffer" "', argument " "3"" of type '" "long""'");
-  } 
-  arg3 = static_cast< long >(val3);
-  {
-    try {
-      (*arg1)->set_min_output_buffer(arg2,arg3);
-    }
-    catch(std::exception &e) {
-      SWIG_exception(SWIG_RuntimeError, e.what());
-    }
-    catch(...) {
-      SWIG_exception(SWIG_RuntimeError, "Unknown exception");
-    }
-    
-  }
-  resultobj = SWIG_Py_Void();
-  return resultobj;
-fail:
-  return NULL;
-}
-
-
-SWIGINTERN PyObject *_wrap_ch1_ddc_source_c_sptr_set_min_output_buffer(PyObject *self, PyObject *args) {
-  Py_ssize_t argc;
-  PyObject *argv[4] = {
-    0
-  };
-  Py_ssize_t ii;
-  
-  if (!PyTuple_Check(args)) SWIG_fail;
-  argc = args ? PyObject_Length(args) : 0;
-  for (ii = 0; (ii < 3) && (ii < argc); ii++) {
-    argv[ii] = PyTuple_GET_ITEM(args,ii);
-  }
-  if (argc == 2) {
-    int _v;
-    void *vptr = 0;
-    int res = SWIG_ConvertPtr(argv[0], &vptr, SWIGTYPE_p_boost__shared_ptrT_gr__II_K7_310R__ch1_ddc_source_c_t, 0);
-    _v = SWIG_CheckState(res);
-    if (_v) {
-      {
-        int res = SWIG_AsVal_long(argv[1], NULL);
-        _v = SWIG_CheckState(res);
-      }
-      if (_v) {
-        return _wrap_ch1_ddc_source_c_sptr_set_min_output_buffer__SWIG_0(self, args);
-      }
-    }
-  }
-  if (argc == 3) {
-    int _v;
-    void *vptr = 0;
-    int res = SWIG_ConvertPtr(argv[0], &vptr, SWIGTYPE_p_boost__shared_ptrT_gr__II_K7_310R__ch1_ddc_source_c_t, 0);
-    _v = SWIG_CheckState(res);
-    if (_v) {
-      {
-        int res = SWIG_AsVal_int(argv[1], NULL);
-        _v = SWIG_CheckState(res);
-      }
-      if (_v) {
-        {
-          int res = SWIG_AsVal_long(argv[2], NULL);
-          _v = SWIG_CheckState(res);
-        }
-        if (_v) {
-          return _wrap_ch1_ddc_source_c_sptr_set_min_output_buffer__SWIG_1(self, args);
-        }
-      }
-    }
-  }
-  
-fail:
-  SWIG_SetErrorMsg(PyExc_NotImplementedError,"Wrong number or type of arguments for overloaded function 'ch1_ddc_source_c_sptr_set_min_output_buffer'.\n"
-    "  Possible C/C++ prototypes are:\n"
-    "    gr::block::set_min_output_buffer(long)\n"
-    "    gr::block::set_min_output_buffer(int,long)\n");
-  return 0;
-}
-
-
-SWIGINTERN PyObject *_wrap_ch1_ddc_source_c_sptr_pc_noutput_items(PyObject *SWIGUNUSEDPARM(self), PyObject *args) {
-  PyObject *resultobj = 0;
-  boost::shared_ptr< gr::II_K7_310R::ch1_ddc_source_c > *arg1 = (boost::shared_ptr< gr::II_K7_310R::ch1_ddc_source_c > *) 0 ;
-  void *argp1 = 0 ;
-  int res1 = 0 ;
-  PyObject * obj0 = 0 ;
-  float result;
-  
-  if(!PyArg_UnpackTuple(args,(char *)"ch1_ddc_source_c_sptr_pc_noutput_items",1,1,&obj0)) SWIG_fail;
-  res1 = SWIG_ConvertPtr(obj0, &argp1,SWIGTYPE_p_boost__shared_ptrT_gr__II_K7_310R__ch1_ddc_source_c_t, 0 |  0 );
-  if (!SWIG_IsOK(res1)) {
-    SWIG_exception_fail(SWIG_ArgError(res1), "in method '" "ch1_ddc_source_c_sptr_pc_noutput_items" "', argument " "1"" of type '" "boost::shared_ptr< gr::II_K7_310R::ch1_ddc_source_c > *""'"); 
-  }
-  arg1 = reinterpret_cast< boost::shared_ptr< gr::II_K7_310R::ch1_ddc_source_c > * >(argp1);
-  {
-    try {
-      result = (float)(*arg1)->pc_noutput_items();
-    }
-    catch(std::exception &e) {
-      SWIG_exception(SWIG_RuntimeError, e.what());
-    }
-    catch(...) {
-      SWIG_exception(SWIG_RuntimeError, "Unknown exception");
-    }
-    
-  }
-  resultobj = SWIG_From_float(static_cast< float >(result));
-  return resultobj;
-fail:
-  return NULL;
-}
-
-
-SWIGINTERN PyObject *_wrap_ch1_ddc_source_c_sptr_pc_noutput_items_avg(PyObject *SWIGUNUSEDPARM(self), PyObject *args) {
-  PyObject *resultobj = 0;
-  boost::shared_ptr< gr::II_K7_310R::ch1_ddc_source_c > *arg1 = (boost::shared_ptr< gr::II_K7_310R::ch1_ddc_source_c > *) 0 ;
-  void *argp1 = 0 ;
-  int res1 = 0 ;
-  PyObject * obj0 = 0 ;
-  float result;
-  
-  if(!PyArg_UnpackTuple(args,(char *)"ch1_ddc_source_c_sptr_pc_noutput_items_avg",1,1,&obj0)) SWIG_fail;
-  res1 = SWIG_ConvertPtr(obj0, &argp1,SWIGTYPE_p_boost__shared_ptrT_gr__II_K7_310R__ch1_ddc_source_c_t, 0 |  0 );
-  if (!SWIG_IsOK(res1)) {
-    SWIG_exception_fail(SWIG_ArgError(res1), "in method '" "ch1_ddc_source_c_sptr_pc_noutput_items_avg" "', argument " "1"" of type '" "boost::shared_ptr< gr::II_K7_310R::ch1_ddc_source_c > *""'"); 
-  }
-  arg1 = reinterpret_cast< boost::shared_ptr< gr::II_K7_310R::ch1_ddc_source_c > * >(argp1);
-  {
-    try {
-      result = (float)(*arg1)->pc_noutput_items_avg();
-    }
-    catch(std::exception &e) {
-      SWIG_exception(SWIG_RuntimeError, e.what());
-    }
-    catch(...) {
-      SWIG_exception(SWIG_RuntimeError, "Unknown exception");
-    }
-    
-  }
-  resultobj = SWIG_From_float(static_cast< float >(result));
-  return resultobj;
-fail:
-  return NULL;
-}
-
-
-SWIGINTERN PyObject *_wrap_ch1_ddc_source_c_sptr_pc_noutput_items_var(PyObject *SWIGUNUSEDPARM(self), PyObject *args) {
-  PyObject *resultobj = 0;
-  boost::shared_ptr< gr::II_K7_310R::ch1_ddc_source_c > *arg1 = (boost::shared_ptr< gr::II_K7_310R::ch1_ddc_source_c > *) 0 ;
-  void *argp1 = 0 ;
-  int res1 = 0 ;
-  PyObject * obj0 = 0 ;
-  float result;
-  
-  if(!PyArg_UnpackTuple(args,(char *)"ch1_ddc_source_c_sptr_pc_noutput_items_var",1,1,&obj0)) SWIG_fail;
-  res1 = SWIG_ConvertPtr(obj0, &argp1,SWIGTYPE_p_boost__shared_ptrT_gr__II_K7_310R__ch1_ddc_source_c_t, 0 |  0 );
-  if (!SWIG_IsOK(res1)) {
-    SWIG_exception_fail(SWIG_ArgError(res1), "in method '" "ch1_ddc_source_c_sptr_pc_noutput_items_var" "', argument " "1"" of type '" "boost::shared_ptr< gr::II_K7_310R::ch1_ddc_source_c > *""'"); 
-  }
-  arg1 = reinterpret_cast< boost::shared_ptr< gr::II_K7_310R::ch1_ddc_source_c > * >(argp1);
-  {
-    try {
-      result = (float)(*arg1)->pc_noutput_items_var();
-    }
-    catch(std::exception &e) {
-      SWIG_exception(SWIG_RuntimeError, e.what());
-    }
-    catch(...) {
-      SWIG_exception(SWIG_RuntimeError, "Unknown exception");
-    }
-    
-  }
-  resultobj = SWIG_From_float(static_cast< float >(result));
-  return resultobj;
-fail:
-  return NULL;
-}
-
-
-SWIGINTERN PyObject *_wrap_ch1_ddc_source_c_sptr_pc_nproduced(PyObject *SWIGUNUSEDPARM(self), PyObject *args) {
-  PyObject *resultobj = 0;
-  boost::shared_ptr< gr::II_K7_310R::ch1_ddc_source_c > *arg1 = (boost::shared_ptr< gr::II_K7_310R::ch1_ddc_source_c > *) 0 ;
-  void *argp1 = 0 ;
-  int res1 = 0 ;
-  PyObject * obj0 = 0 ;
-  float result;
-  
-  if(!PyArg_UnpackTuple(args,(char *)"ch1_ddc_source_c_sptr_pc_nproduced",1,1,&obj0)) SWIG_fail;
-  res1 = SWIG_ConvertPtr(obj0, &argp1,SWIGTYPE_p_boost__shared_ptrT_gr__II_K7_310R__ch1_ddc_source_c_t, 0 |  0 );
-  if (!SWIG_IsOK(res1)) {
-    SWIG_exception_fail(SWIG_ArgError(res1), "in method '" "ch1_ddc_source_c_sptr_pc_nproduced" "', argument " "1"" of type '" "boost::shared_ptr< gr::II_K7_310R::ch1_ddc_source_c > *""'"); 
-  }
-  arg1 = reinterpret_cast< boost::shared_ptr< gr::II_K7_310R::ch1_ddc_source_c > * >(argp1);
-  {
-    try {
-      result = (float)(*arg1)->pc_nproduced();
-    }
-    catch(std::exception &e) {
-      SWIG_exception(SWIG_RuntimeError, e.what());
-    }
-    catch(...) {
-      SWIG_exception(SWIG_RuntimeError, "Unknown exception");
-    }
-    
-  }
-  resultobj = SWIG_From_float(static_cast< float >(result));
-  return resultobj;
-fail:
-  return NULL;
-}
-
-
-SWIGINTERN PyObject *_wrap_ch1_ddc_source_c_sptr_pc_nproduced_avg(PyObject *SWIGUNUSEDPARM(self), PyObject *args) {
-  PyObject *resultobj = 0;
-  boost::shared_ptr< gr::II_K7_310R::ch1_ddc_source_c > *arg1 = (boost::shared_ptr< gr::II_K7_310R::ch1_ddc_source_c > *) 0 ;
-  void *argp1 = 0 ;
-  int res1 = 0 ;
-  PyObject * obj0 = 0 ;
-  float result;
-  
-  if(!PyArg_UnpackTuple(args,(char *)"ch1_ddc_source_c_sptr_pc_nproduced_avg",1,1,&obj0)) SWIG_fail;
-  res1 = SWIG_ConvertPtr(obj0, &argp1,SWIGTYPE_p_boost__shared_ptrT_gr__II_K7_310R__ch1_ddc_source_c_t, 0 |  0 );
-  if (!SWIG_IsOK(res1)) {
-    SWIG_exception_fail(SWIG_ArgError(res1), "in method '" "ch1_ddc_source_c_sptr_pc_nproduced_avg" "', argument " "1"" of type '" "boost::shared_ptr< gr::II_K7_310R::ch1_ddc_source_c > *""'"); 
-  }
-  arg1 = reinterpret_cast< boost::shared_ptr< gr::II_K7_310R::ch1_ddc_source_c > * >(argp1);
-  {
-    try {
-      result = (float)(*arg1)->pc_nproduced_avg();
-    }
-    catch(std::exception &e) {
-      SWIG_exception(SWIG_RuntimeError, e.what());
-    }
-    catch(...) {
-      SWIG_exception(SWIG_RuntimeError, "Unknown exception");
-    }
-    
-  }
-  resultobj = SWIG_From_float(static_cast< float >(result));
-  return resultobj;
-fail:
-  return NULL;
-}
-
-
-SWIGINTERN PyObject *_wrap_ch1_ddc_source_c_sptr_pc_nproduced_var(PyObject *SWIGUNUSEDPARM(self), PyObject *args) {
-  PyObject *resultobj = 0;
-  boost::shared_ptr< gr::II_K7_310R::ch1_ddc_source_c > *arg1 = (boost::shared_ptr< gr::II_K7_310R::ch1_ddc_source_c > *) 0 ;
-  void *argp1 = 0 ;
-  int res1 = 0 ;
-  PyObject * obj0 = 0 ;
-  float result;
-  
-  if(!PyArg_UnpackTuple(args,(char *)"ch1_ddc_source_c_sptr_pc_nproduced_var",1,1,&obj0)) SWIG_fail;
-  res1 = SWIG_ConvertPtr(obj0, &argp1,SWIGTYPE_p_boost__shared_ptrT_gr__II_K7_310R__ch1_ddc_source_c_t, 0 |  0 );
-  if (!SWIG_IsOK(res1)) {
-    SWIG_exception_fail(SWIG_ArgError(res1), "in method '" "ch1_ddc_source_c_sptr_pc_nproduced_var" "', argument " "1"" of type '" "boost::shared_ptr< gr::II_K7_310R::ch1_ddc_source_c > *""'"); 
-  }
-  arg1 = reinterpret_cast< boost::shared_ptr< gr::II_K7_310R::ch1_ddc_source_c > * >(argp1);
-  {
-    try {
-      result = (float)(*arg1)->pc_nproduced_var();
-    }
-    catch(std::exception &e) {
-      SWIG_exception(SWIG_RuntimeError, e.what());
-    }
-    catch(...) {
-      SWIG_exception(SWIG_RuntimeError, "Unknown exception");
-    }
-    
-  }
-  resultobj = SWIG_From_float(static_cast< float >(result));
-  return resultobj;
-fail:
-  return NULL;
-}
-
-
-SWIGINTERN PyObject *_wrap_ch1_ddc_source_c_sptr_pc_input_buffers_full__SWIG_0(PyObject *SWIGUNUSEDPARM(self), PyObject *args) {
-  PyObject *resultobj = 0;
-  boost::shared_ptr< gr::II_K7_310R::ch1_ddc_source_c > *arg1 = (boost::shared_ptr< gr::II_K7_310R::ch1_ddc_source_c > *) 0 ;
-  int arg2 ;
-  void *argp1 = 0 ;
-  int res1 = 0 ;
-  int val2 ;
-  int ecode2 = 0 ;
-  PyObject * obj0 = 0 ;
-  PyObject * obj1 = 0 ;
-  float result;
-  
-  if(!PyArg_UnpackTuple(args,(char *)"ch1_ddc_source_c_sptr_pc_input_buffers_full",2,2,&obj0,&obj1)) SWIG_fail;
-  res1 = SWIG_ConvertPtr(obj0, &argp1,SWIGTYPE_p_boost__shared_ptrT_gr__II_K7_310R__ch1_ddc_source_c_t, 0 |  0 );
-  if (!SWIG_IsOK(res1)) {
-    SWIG_exception_fail(SWIG_ArgError(res1), "in method '" "ch1_ddc_source_c_sptr_pc_input_buffers_full" "', argument " "1"" of type '" "boost::shared_ptr< gr::II_K7_310R::ch1_ddc_source_c > *""'"); 
-  }
-  arg1 = reinterpret_cast< boost::shared_ptr< gr::II_K7_310R::ch1_ddc_source_c > * >(argp1);
-  ecode2 = SWIG_AsVal_int(obj1, &val2);
-  if (!SWIG_IsOK(ecode2)) {
-    SWIG_exception_fail(SWIG_ArgError(ecode2), "in method '" "ch1_ddc_source_c_sptr_pc_input_buffers_full" "', argument " "2"" of type '" "int""'");
-  } 
-  arg2 = static_cast< int >(val2);
-  {
-    try {
-      result = (float)(*arg1)->pc_input_buffers_full(arg2);
-    }
-    catch(std::exception &e) {
-      SWIG_exception(SWIG_RuntimeError, e.what());
-    }
-    catch(...) {
-      SWIG_exception(SWIG_RuntimeError, "Unknown exception");
-    }
-    
-  }
-  resultobj = SWIG_From_float(static_cast< float >(result));
-  return resultobj;
-fail:
-  return NULL;
-}
-
-
-SWIGINTERN PyObject *_wrap_ch1_ddc_source_c_sptr_pc_input_buffers_full__SWIG_1(PyObject *SWIGUNUSEDPARM(self), PyObject *args) {
-  PyObject *resultobj = 0;
-  boost::shared_ptr< gr::II_K7_310R::ch1_ddc_source_c > *arg1 = (boost::shared_ptr< gr::II_K7_310R::ch1_ddc_source_c > *) 0 ;
-  void *argp1 = 0 ;
-  int res1 = 0 ;
-  PyObject * obj0 = 0 ;
-  std::vector< float,std::allocator< float > > result;
-  
-  if(!PyArg_UnpackTuple(args,(char *)"ch1_ddc_source_c_sptr_pc_input_buffers_full",1,1,&obj0)) SWIG_fail;
-  res1 = SWIG_ConvertPtr(obj0, &argp1,SWIGTYPE_p_boost__shared_ptrT_gr__II_K7_310R__ch1_ddc_source_c_t, 0 |  0 );
-  if (!SWIG_IsOK(res1)) {
-    SWIG_exception_fail(SWIG_ArgError(res1), "in method '" "ch1_ddc_source_c_sptr_pc_input_buffers_full" "', argument " "1"" of type '" "boost::shared_ptr< gr::II_K7_310R::ch1_ddc_source_c > *""'"); 
-  }
-  arg1 = reinterpret_cast< boost::shared_ptr< gr::II_K7_310R::ch1_ddc_source_c > * >(argp1);
-  {
-    try {
-      result = (*arg1)->pc_input_buffers_full();
-    }
-    catch(std::exception &e) {
-      SWIG_exception(SWIG_RuntimeError, e.what());
-    }
-    catch(...) {
-      SWIG_exception(SWIG_RuntimeError, "Unknown exception");
-    }
-    
-  }
-  resultobj = swig::from(static_cast< std::vector< float,std::allocator< float > > >(result));
-  return resultobj;
-fail:
-  return NULL;
-}
-
-
-SWIGINTERN PyObject *_wrap_ch1_ddc_source_c_sptr_pc_input_buffers_full(PyObject *self, PyObject *args) {
-  Py_ssize_t argc;
-  PyObject *argv[3] = {
-    0
-  };
-  Py_ssize_t ii;
-  
-  if (!PyTuple_Check(args)) SWIG_fail;
-  argc = args ? PyObject_Length(args) : 0;
-  for (ii = 0; (ii < 2) && (ii < argc); ii++) {
-    argv[ii] = PyTuple_GET_ITEM(args,ii);
-  }
-  if (argc == 1) {
-    int _v;
-    void *vptr = 0;
-    int res = SWIG_ConvertPtr(argv[0], &vptr, SWIGTYPE_p_boost__shared_ptrT_gr__II_K7_310R__ch1_ddc_source_c_t, 0);
-    _v = SWIG_CheckState(res);
-    if (_v) {
-      return _wrap_ch1_ddc_source_c_sptr_pc_input_buffers_full__SWIG_1(self, args);
-    }
-  }
-  if (argc == 2) {
-    int _v;
-    void *vptr = 0;
-    int res = SWIG_ConvertPtr(argv[0], &vptr, SWIGTYPE_p_boost__shared_ptrT_gr__II_K7_310R__ch1_ddc_source_c_t, 0);
-    _v = SWIG_CheckState(res);
-    if (_v) {
-      {
-        int res = SWIG_AsVal_int(argv[1], NULL);
-        _v = SWIG_CheckState(res);
-      }
-      if (_v) {
-        return _wrap_ch1_ddc_source_c_sptr_pc_input_buffers_full__SWIG_0(self, args);
-      }
-    }
-  }
-  
-fail:
-  SWIG_SetErrorMsg(PyExc_NotImplementedError,"Wrong number or type of arguments for overloaded function 'ch1_ddc_source_c_sptr_pc_input_buffers_full'.\n"
-    "  Possible C/C++ prototypes are:\n"
-    "    gr::block::pc_input_buffers_full(int)\n"
-    "    gr::block::pc_input_buffers_full()\n");
-  return 0;
-}
-
-
-SWIGINTERN PyObject *_wrap_ch1_ddc_source_c_sptr_pc_input_buffers_full_avg__SWIG_0(PyObject *SWIGUNUSEDPARM(self), PyObject *args) {
-  PyObject *resultobj = 0;
-  boost::shared_ptr< gr::II_K7_310R::ch1_ddc_source_c > *arg1 = (boost::shared_ptr< gr::II_K7_310R::ch1_ddc_source_c > *) 0 ;
-  int arg2 ;
-  void *argp1 = 0 ;
-  int res1 = 0 ;
-  int val2 ;
-  int ecode2 = 0 ;
-  PyObject * obj0 = 0 ;
-  PyObject * obj1 = 0 ;
-  float result;
-  
-  if(!PyArg_UnpackTuple(args,(char *)"ch1_ddc_source_c_sptr_pc_input_buffers_full_avg",2,2,&obj0,&obj1)) SWIG_fail;
-  res1 = SWIG_ConvertPtr(obj0, &argp1,SWIGTYPE_p_boost__shared_ptrT_gr__II_K7_310R__ch1_ddc_source_c_t, 0 |  0 );
-  if (!SWIG_IsOK(res1)) {
-    SWIG_exception_fail(SWIG_ArgError(res1), "in method '" "ch1_ddc_source_c_sptr_pc_input_buffers_full_avg" "', argument " "1"" of type '" "boost::shared_ptr< gr::II_K7_310R::ch1_ddc_source_c > *""'"); 
-  }
-  arg1 = reinterpret_cast< boost::shared_ptr< gr::II_K7_310R::ch1_ddc_source_c > * >(argp1);
-  ecode2 = SWIG_AsVal_int(obj1, &val2);
-  if (!SWIG_IsOK(ecode2)) {
-    SWIG_exception_fail(SWIG_ArgError(ecode2), "in method '" "ch1_ddc_source_c_sptr_pc_input_buffers_full_avg" "', argument " "2"" of type '" "int""'");
-  } 
-  arg2 = static_cast< int >(val2);
-  {
-    try {
-      result = (float)(*arg1)->pc_input_buffers_full_avg(arg2);
-    }
-    catch(std::exception &e) {
-      SWIG_exception(SWIG_RuntimeError, e.what());
-    }
-    catch(...) {
-      SWIG_exception(SWIG_RuntimeError, "Unknown exception");
-    }
-    
-  }
-  resultobj = SWIG_From_float(static_cast< float >(result));
-  return resultobj;
-fail:
-  return NULL;
-}
-
-
-SWIGINTERN PyObject *_wrap_ch1_ddc_source_c_sptr_pc_input_buffers_full_avg__SWIG_1(PyObject *SWIGUNUSEDPARM(self), PyObject *args) {
-  PyObject *resultobj = 0;
-  boost::shared_ptr< gr::II_K7_310R::ch1_ddc_source_c > *arg1 = (boost::shared_ptr< gr::II_K7_310R::ch1_ddc_source_c > *) 0 ;
-  void *argp1 = 0 ;
-  int res1 = 0 ;
-  PyObject * obj0 = 0 ;
-  std::vector< float,std::allocator< float > > result;
-  
-  if(!PyArg_UnpackTuple(args,(char *)"ch1_ddc_source_c_sptr_pc_input_buffers_full_avg",1,1,&obj0)) SWIG_fail;
-  res1 = SWIG_ConvertPtr(obj0, &argp1,SWIGTYPE_p_boost__shared_ptrT_gr__II_K7_310R__ch1_ddc_source_c_t, 0 |  0 );
-  if (!SWIG_IsOK(res1)) {
-    SWIG_exception_fail(SWIG_ArgError(res1), "in method '" "ch1_ddc_source_c_sptr_pc_input_buffers_full_avg" "', argument " "1"" of type '" "boost::shared_ptr< gr::II_K7_310R::ch1_ddc_source_c > *""'"); 
-  }
-  arg1 = reinterpret_cast< boost::shared_ptr< gr::II_K7_310R::ch1_ddc_source_c > * >(argp1);
-  {
-    try {
-      result = (*arg1)->pc_input_buffers_full_avg();
-    }
-    catch(std::exception &e) {
-      SWIG_exception(SWIG_RuntimeError, e.what());
-    }
-    catch(...) {
-      SWIG_exception(SWIG_RuntimeError, "Unknown exception");
-    }
-    
-  }
-  resultobj = swig::from(static_cast< std::vector< float,std::allocator< float > > >(result));
-  return resultobj;
-fail:
-  return NULL;
-}
-
-
-SWIGINTERN PyObject *_wrap_ch1_ddc_source_c_sptr_pc_input_buffers_full_avg(PyObject *self, PyObject *args) {
-  Py_ssize_t argc;
-  PyObject *argv[3] = {
-    0
-  };
-  Py_ssize_t ii;
-  
-  if (!PyTuple_Check(args)) SWIG_fail;
-  argc = args ? PyObject_Length(args) : 0;
-  for (ii = 0; (ii < 2) && (ii < argc); ii++) {
-    argv[ii] = PyTuple_GET_ITEM(args,ii);
-  }
-  if (argc == 1) {
-    int _v;
-    void *vptr = 0;
-    int res = SWIG_ConvertPtr(argv[0], &vptr, SWIGTYPE_p_boost__shared_ptrT_gr__II_K7_310R__ch1_ddc_source_c_t, 0);
-    _v = SWIG_CheckState(res);
-    if (_v) {
-      return _wrap_ch1_ddc_source_c_sptr_pc_input_buffers_full_avg__SWIG_1(self, args);
-    }
-  }
-  if (argc == 2) {
-    int _v;
-    void *vptr = 0;
-    int res = SWIG_ConvertPtr(argv[0], &vptr, SWIGTYPE_p_boost__shared_ptrT_gr__II_K7_310R__ch1_ddc_source_c_t, 0);
-    _v = SWIG_CheckState(res);
-    if (_v) {
-      {
-        int res = SWIG_AsVal_int(argv[1], NULL);
-        _v = SWIG_CheckState(res);
-      }
-      if (_v) {
-        return _wrap_ch1_ddc_source_c_sptr_pc_input_buffers_full_avg__SWIG_0(self, args);
-      }
-    }
-  }
-  
-fail:
-  SWIG_SetErrorMsg(PyExc_NotImplementedError,"Wrong number or type of arguments for overloaded function 'ch1_ddc_source_c_sptr_pc_input_buffers_full_avg'.\n"
-    "  Possible C/C++ prototypes are:\n"
-    "    gr::block::pc_input_buffers_full_avg(int)\n"
-    "    gr::block::pc_input_buffers_full_avg()\n");
-  return 0;
-}
-
-
-SWIGINTERN PyObject *_wrap_ch1_ddc_source_c_sptr_pc_input_buffers_full_var__SWIG_0(PyObject *SWIGUNUSEDPARM(self), PyObject *args) {
-  PyObject *resultobj = 0;
-  boost::shared_ptr< gr::II_K7_310R::ch1_ddc_source_c > *arg1 = (boost::shared_ptr< gr::II_K7_310R::ch1_ddc_source_c > *) 0 ;
-  int arg2 ;
-  void *argp1 = 0 ;
-  int res1 = 0 ;
-  int val2 ;
-  int ecode2 = 0 ;
-  PyObject * obj0 = 0 ;
-  PyObject * obj1 = 0 ;
-  float result;
-  
-  if(!PyArg_UnpackTuple(args,(char *)"ch1_ddc_source_c_sptr_pc_input_buffers_full_var",2,2,&obj0,&obj1)) SWIG_fail;
-  res1 = SWIG_ConvertPtr(obj0, &argp1,SWIGTYPE_p_boost__shared_ptrT_gr__II_K7_310R__ch1_ddc_source_c_t, 0 |  0 );
-  if (!SWIG_IsOK(res1)) {
-    SWIG_exception_fail(SWIG_ArgError(res1), "in method '" "ch1_ddc_source_c_sptr_pc_input_buffers_full_var" "', argument " "1"" of type '" "boost::shared_ptr< gr::II_K7_310R::ch1_ddc_source_c > *""'"); 
-  }
-  arg1 = reinterpret_cast< boost::shared_ptr< gr::II_K7_310R::ch1_ddc_source_c > * >(argp1);
-  ecode2 = SWIG_AsVal_int(obj1, &val2);
-  if (!SWIG_IsOK(ecode2)) {
-    SWIG_exception_fail(SWIG_ArgError(ecode2), "in method '" "ch1_ddc_source_c_sptr_pc_input_buffers_full_var" "', argument " "2"" of type '" "int""'");
-  } 
-  arg2 = static_cast< int >(val2);
-  {
-    try {
-      result = (float)(*arg1)->pc_input_buffers_full_var(arg2);
-    }
-    catch(std::exception &e) {
-      SWIG_exception(SWIG_RuntimeError, e.what());
-    }
-    catch(...) {
-      SWIG_exception(SWIG_RuntimeError, "Unknown exception");
-    }
-    
-  }
-  resultobj = SWIG_From_float(static_cast< float >(result));
-  return resultobj;
-fail:
-  return NULL;
-}
-
-
-SWIGINTERN PyObject *_wrap_ch1_ddc_source_c_sptr_pc_input_buffers_full_var__SWIG_1(PyObject *SWIGUNUSEDPARM(self), PyObject *args) {
-  PyObject *resultobj = 0;
-  boost::shared_ptr< gr::II_K7_310R::ch1_ddc_source_c > *arg1 = (boost::shared_ptr< gr::II_K7_310R::ch1_ddc_source_c > *) 0 ;
-  void *argp1 = 0 ;
-  int res1 = 0 ;
-  PyObject * obj0 = 0 ;
-  std::vector< float,std::allocator< float > > result;
-  
-  if(!PyArg_UnpackTuple(args,(char *)"ch1_ddc_source_c_sptr_pc_input_buffers_full_var",1,1,&obj0)) SWIG_fail;
-  res1 = SWIG_ConvertPtr(obj0, &argp1,SWIGTYPE_p_boost__shared_ptrT_gr__II_K7_310R__ch1_ddc_source_c_t, 0 |  0 );
-  if (!SWIG_IsOK(res1)) {
-    SWIG_exception_fail(SWIG_ArgError(res1), "in method '" "ch1_ddc_source_c_sptr_pc_input_buffers_full_var" "', argument " "1"" of type '" "boost::shared_ptr< gr::II_K7_310R::ch1_ddc_source_c > *""'"); 
-  }
-  arg1 = reinterpret_cast< boost::shared_ptr< gr::II_K7_310R::ch1_ddc_source_c > * >(argp1);
-  {
-    try {
-      result = (*arg1)->pc_input_buffers_full_var();
-    }
-    catch(std::exception &e) {
-      SWIG_exception(SWIG_RuntimeError, e.what());
-    }
-    catch(...) {
-      SWIG_exception(SWIG_RuntimeError, "Unknown exception");
-    }
-    
-  }
-  resultobj = swig::from(static_cast< std::vector< float,std::allocator< float > > >(result));
-  return resultobj;
-fail:
-  return NULL;
-}
-
-
-SWIGINTERN PyObject *_wrap_ch1_ddc_source_c_sptr_pc_input_buffers_full_var(PyObject *self, PyObject *args) {
-  Py_ssize_t argc;
-  PyObject *argv[3] = {
-    0
-  };
-  Py_ssize_t ii;
-  
-  if (!PyTuple_Check(args)) SWIG_fail;
-  argc = args ? PyObject_Length(args) : 0;
-  for (ii = 0; (ii < 2) && (ii < argc); ii++) {
-    argv[ii] = PyTuple_GET_ITEM(args,ii);
-  }
-  if (argc == 1) {
-    int _v;
-    void *vptr = 0;
-    int res = SWIG_ConvertPtr(argv[0], &vptr, SWIGTYPE_p_boost__shared_ptrT_gr__II_K7_310R__ch1_ddc_source_c_t, 0);
-    _v = SWIG_CheckState(res);
-    if (_v) {
-      return _wrap_ch1_ddc_source_c_sptr_pc_input_buffers_full_var__SWIG_1(self, args);
-    }
-  }
-  if (argc == 2) {
-    int _v;
-    void *vptr = 0;
-    int res = SWIG_ConvertPtr(argv[0], &vptr, SWIGTYPE_p_boost__shared_ptrT_gr__II_K7_310R__ch1_ddc_source_c_t, 0);
-    _v = SWIG_CheckState(res);
-    if (_v) {
-      {
-        int res = SWIG_AsVal_int(argv[1], NULL);
-        _v = SWIG_CheckState(res);
-      }
-      if (_v) {
-        return _wrap_ch1_ddc_source_c_sptr_pc_input_buffers_full_var__SWIG_0(self, args);
-      }
-    }
-  }
-  
-fail:
-  SWIG_SetErrorMsg(PyExc_NotImplementedError,"Wrong number or type of arguments for overloaded function 'ch1_ddc_source_c_sptr_pc_input_buffers_full_var'.\n"
-    "  Possible C/C++ prototypes are:\n"
-    "    gr::block::pc_input_buffers_full_var(int)\n"
-    "    gr::block::pc_input_buffers_full_var()\n");
-  return 0;
-}
-
-
-SWIGINTERN PyObject *_wrap_ch1_ddc_source_c_sptr_pc_output_buffers_full__SWIG_0(PyObject *SWIGUNUSEDPARM(self), PyObject *args) {
-  PyObject *resultobj = 0;
-  boost::shared_ptr< gr::II_K7_310R::ch1_ddc_source_c > *arg1 = (boost::shared_ptr< gr::II_K7_310R::ch1_ddc_source_c > *) 0 ;
-  int arg2 ;
-  void *argp1 = 0 ;
-  int res1 = 0 ;
-  int val2 ;
-  int ecode2 = 0 ;
-  PyObject * obj0 = 0 ;
-  PyObject * obj1 = 0 ;
-  float result;
-  
-  if(!PyArg_UnpackTuple(args,(char *)"ch1_ddc_source_c_sptr_pc_output_buffers_full",2,2,&obj0,&obj1)) SWIG_fail;
-  res1 = SWIG_ConvertPtr(obj0, &argp1,SWIGTYPE_p_boost__shared_ptrT_gr__II_K7_310R__ch1_ddc_source_c_t, 0 |  0 );
-  if (!SWIG_IsOK(res1)) {
-    SWIG_exception_fail(SWIG_ArgError(res1), "in method '" "ch1_ddc_source_c_sptr_pc_output_buffers_full" "', argument " "1"" of type '" "boost::shared_ptr< gr::II_K7_310R::ch1_ddc_source_c > *""'"); 
-  }
-  arg1 = reinterpret_cast< boost::shared_ptr< gr::II_K7_310R::ch1_ddc_source_c > * >(argp1);
-  ecode2 = SWIG_AsVal_int(obj1, &val2);
-  if (!SWIG_IsOK(ecode2)) {
-    SWIG_exception_fail(SWIG_ArgError(ecode2), "in method '" "ch1_ddc_source_c_sptr_pc_output_buffers_full" "', argument " "2"" of type '" "int""'");
-  } 
-  arg2 = static_cast< int >(val2);
-  {
-    try {
-      result = (float)(*arg1)->pc_output_buffers_full(arg2);
-    }
-    catch(std::exception &e) {
-      SWIG_exception(SWIG_RuntimeError, e.what());
-    }
-    catch(...) {
-      SWIG_exception(SWIG_RuntimeError, "Unknown exception");
-    }
-    
-  }
-  resultobj = SWIG_From_float(static_cast< float >(result));
-  return resultobj;
-fail:
-  return NULL;
-}
-
-
-SWIGINTERN PyObject *_wrap_ch1_ddc_source_c_sptr_pc_output_buffers_full__SWIG_1(PyObject *SWIGUNUSEDPARM(self), PyObject *args) {
-  PyObject *resultobj = 0;
-  boost::shared_ptr< gr::II_K7_310R::ch1_ddc_source_c > *arg1 = (boost::shared_ptr< gr::II_K7_310R::ch1_ddc_source_c > *) 0 ;
-  void *argp1 = 0 ;
-  int res1 = 0 ;
-  PyObject * obj0 = 0 ;
-  std::vector< float,std::allocator< float > > result;
-  
-  if(!PyArg_UnpackTuple(args,(char *)"ch1_ddc_source_c_sptr_pc_output_buffers_full",1,1,&obj0)) SWIG_fail;
-  res1 = SWIG_ConvertPtr(obj0, &argp1,SWIGTYPE_p_boost__shared_ptrT_gr__II_K7_310R__ch1_ddc_source_c_t, 0 |  0 );
-  if (!SWIG_IsOK(res1)) {
-    SWIG_exception_fail(SWIG_ArgError(res1), "in method '" "ch1_ddc_source_c_sptr_pc_output_buffers_full" "', argument " "1"" of type '" "boost::shared_ptr< gr::II_K7_310R::ch1_ddc_source_c > *""'"); 
-  }
-  arg1 = reinterpret_cast< boost::shared_ptr< gr::II_K7_310R::ch1_ddc_source_c > * >(argp1);
-  {
-    try {
-      result = (*arg1)->pc_output_buffers_full();
-    }
-    catch(std::exception &e) {
-      SWIG_exception(SWIG_RuntimeError, e.what());
-    }
-    catch(...) {
-      SWIG_exception(SWIG_RuntimeError, "Unknown exception");
-    }
-    
-  }
-  resultobj = swig::from(static_cast< std::vector< float,std::allocator< float > > >(result));
-  return resultobj;
-fail:
-  return NULL;
-}
-
-
-SWIGINTERN PyObject *_wrap_ch1_ddc_source_c_sptr_pc_output_buffers_full(PyObject *self, PyObject *args) {
-  Py_ssize_t argc;
-  PyObject *argv[3] = {
-    0
-  };
-  Py_ssize_t ii;
-  
-  if (!PyTuple_Check(args)) SWIG_fail;
-  argc = args ? PyObject_Length(args) : 0;
-  for (ii = 0; (ii < 2) && (ii < argc); ii++) {
-    argv[ii] = PyTuple_GET_ITEM(args,ii);
-  }
-  if (argc == 1) {
-    int _v;
-    void *vptr = 0;
-    int res = SWIG_ConvertPtr(argv[0], &vptr, SWIGTYPE_p_boost__shared_ptrT_gr__II_K7_310R__ch1_ddc_source_c_t, 0);
-    _v = SWIG_CheckState(res);
-    if (_v) {
-      return _wrap_ch1_ddc_source_c_sptr_pc_output_buffers_full__SWIG_1(self, args);
-    }
-  }
-  if (argc == 2) {
-    int _v;
-    void *vptr = 0;
-    int res = SWIG_ConvertPtr(argv[0], &vptr, SWIGTYPE_p_boost__shared_ptrT_gr__II_K7_310R__ch1_ddc_source_c_t, 0);
-    _v = SWIG_CheckState(res);
-    if (_v) {
-      {
-        int res = SWIG_AsVal_int(argv[1], NULL);
-        _v = SWIG_CheckState(res);
-      }
-      if (_v) {
-        return _wrap_ch1_ddc_source_c_sptr_pc_output_buffers_full__SWIG_0(self, args);
-      }
-    }
-  }
-  
-fail:
-  SWIG_SetErrorMsg(PyExc_NotImplementedError,"Wrong number or type of arguments for overloaded function 'ch1_ddc_source_c_sptr_pc_output_buffers_full'.\n"
-    "  Possible C/C++ prototypes are:\n"
-    "    gr::block::pc_output_buffers_full(int)\n"
-    "    gr::block::pc_output_buffers_full()\n");
-  return 0;
-}
-
-
-SWIGINTERN PyObject *_wrap_ch1_ddc_source_c_sptr_pc_output_buffers_full_avg__SWIG_0(PyObject *SWIGUNUSEDPARM(self), PyObject *args) {
-  PyObject *resultobj = 0;
-  boost::shared_ptr< gr::II_K7_310R::ch1_ddc_source_c > *arg1 = (boost::shared_ptr< gr::II_K7_310R::ch1_ddc_source_c > *) 0 ;
-  int arg2 ;
-  void *argp1 = 0 ;
-  int res1 = 0 ;
-  int val2 ;
-  int ecode2 = 0 ;
-  PyObject * obj0 = 0 ;
-  PyObject * obj1 = 0 ;
-  float result;
-  
-  if(!PyArg_UnpackTuple(args,(char *)"ch1_ddc_source_c_sptr_pc_output_buffers_full_avg",2,2,&obj0,&obj1)) SWIG_fail;
-  res1 = SWIG_ConvertPtr(obj0, &argp1,SWIGTYPE_p_boost__shared_ptrT_gr__II_K7_310R__ch1_ddc_source_c_t, 0 |  0 );
-  if (!SWIG_IsOK(res1)) {
-    SWIG_exception_fail(SWIG_ArgError(res1), "in method '" "ch1_ddc_source_c_sptr_pc_output_buffers_full_avg" "', argument " "1"" of type '" "boost::shared_ptr< gr::II_K7_310R::ch1_ddc_source_c > *""'"); 
-  }
-  arg1 = reinterpret_cast< boost::shared_ptr< gr::II_K7_310R::ch1_ddc_source_c > * >(argp1);
-  ecode2 = SWIG_AsVal_int(obj1, &val2);
-  if (!SWIG_IsOK(ecode2)) {
-    SWIG_exception_fail(SWIG_ArgError(ecode2), "in method '" "ch1_ddc_source_c_sptr_pc_output_buffers_full_avg" "', argument " "2"" of type '" "int""'");
-  } 
-  arg2 = static_cast< int >(val2);
-  {
-    try {
-      result = (float)(*arg1)->pc_output_buffers_full_avg(arg2);
-    }
-    catch(std::exception &e) {
-      SWIG_exception(SWIG_RuntimeError, e.what());
-    }
-    catch(...) {
-      SWIG_exception(SWIG_RuntimeError, "Unknown exception");
-    }
-    
-  }
-  resultobj = SWIG_From_float(static_cast< float >(result));
-  return resultobj;
-fail:
-  return NULL;
-}
-
-
-SWIGINTERN PyObject *_wrap_ch1_ddc_source_c_sptr_pc_output_buffers_full_avg__SWIG_1(PyObject *SWIGUNUSEDPARM(self), PyObject *args) {
-  PyObject *resultobj = 0;
-  boost::shared_ptr< gr::II_K7_310R::ch1_ddc_source_c > *arg1 = (boost::shared_ptr< gr::II_K7_310R::ch1_ddc_source_c > *) 0 ;
-  void *argp1 = 0 ;
-  int res1 = 0 ;
-  PyObject * obj0 = 0 ;
-  std::vector< float,std::allocator< float > > result;
-  
-  if(!PyArg_UnpackTuple(args,(char *)"ch1_ddc_source_c_sptr_pc_output_buffers_full_avg",1,1,&obj0)) SWIG_fail;
-  res1 = SWIG_ConvertPtr(obj0, &argp1,SWIGTYPE_p_boost__shared_ptrT_gr__II_K7_310R__ch1_ddc_source_c_t, 0 |  0 );
-  if (!SWIG_IsOK(res1)) {
-    SWIG_exception_fail(SWIG_ArgError(res1), "in method '" "ch1_ddc_source_c_sptr_pc_output_buffers_full_avg" "', argument " "1"" of type '" "boost::shared_ptr< gr::II_K7_310R::ch1_ddc_source_c > *""'"); 
-  }
-  arg1 = reinterpret_cast< boost::shared_ptr< gr::II_K7_310R::ch1_ddc_source_c > * >(argp1);
-  {
-    try {
-      result = (*arg1)->pc_output_buffers_full_avg();
-    }
-    catch(std::exception &e) {
-      SWIG_exception(SWIG_RuntimeError, e.what());
-    }
-    catch(...) {
-      SWIG_exception(SWIG_RuntimeError, "Unknown exception");
-    }
-    
-  }
-  resultobj = swig::from(static_cast< std::vector< float,std::allocator< float > > >(result));
-  return resultobj;
-fail:
-  return NULL;
-}
-
-
-SWIGINTERN PyObject *_wrap_ch1_ddc_source_c_sptr_pc_output_buffers_full_avg(PyObject *self, PyObject *args) {
-  Py_ssize_t argc;
-  PyObject *argv[3] = {
-    0
-  };
-  Py_ssize_t ii;
-  
-  if (!PyTuple_Check(args)) SWIG_fail;
-  argc = args ? PyObject_Length(args) : 0;
-  for (ii = 0; (ii < 2) && (ii < argc); ii++) {
-    argv[ii] = PyTuple_GET_ITEM(args,ii);
-  }
-  if (argc == 1) {
-    int _v;
-    void *vptr = 0;
-    int res = SWIG_ConvertPtr(argv[0], &vptr, SWIGTYPE_p_boost__shared_ptrT_gr__II_K7_310R__ch1_ddc_source_c_t, 0);
-    _v = SWIG_CheckState(res);
-    if (_v) {
-      return _wrap_ch1_ddc_source_c_sptr_pc_output_buffers_full_avg__SWIG_1(self, args);
-    }
-  }
-  if (argc == 2) {
-    int _v;
-    void *vptr = 0;
-    int res = SWIG_ConvertPtr(argv[0], &vptr, SWIGTYPE_p_boost__shared_ptrT_gr__II_K7_310R__ch1_ddc_source_c_t, 0);
-    _v = SWIG_CheckState(res);
-    if (_v) {
-      {
-        int res = SWIG_AsVal_int(argv[1], NULL);
-        _v = SWIG_CheckState(res);
-      }
-      if (_v) {
-        return _wrap_ch1_ddc_source_c_sptr_pc_output_buffers_full_avg__SWIG_0(self, args);
-      }
-    }
-  }
-  
-fail:
-  SWIG_SetErrorMsg(PyExc_NotImplementedError,"Wrong number or type of arguments for overloaded function 'ch1_ddc_source_c_sptr_pc_output_buffers_full_avg'.\n"
-    "  Possible C/C++ prototypes are:\n"
-    "    gr::block::pc_output_buffers_full_avg(int)\n"
-    "    gr::block::pc_output_buffers_full_avg()\n");
-  return 0;
-}
-
-
-SWIGINTERN PyObject *_wrap_ch1_ddc_source_c_sptr_pc_output_buffers_full_var__SWIG_0(PyObject *SWIGUNUSEDPARM(self), PyObject *args) {
-  PyObject *resultobj = 0;
-  boost::shared_ptr< gr::II_K7_310R::ch1_ddc_source_c > *arg1 = (boost::shared_ptr< gr::II_K7_310R::ch1_ddc_source_c > *) 0 ;
-  int arg2 ;
-  void *argp1 = 0 ;
-  int res1 = 0 ;
-  int val2 ;
-  int ecode2 = 0 ;
-  PyObject * obj0 = 0 ;
-  PyObject * obj1 = 0 ;
-  float result;
-  
-  if(!PyArg_UnpackTuple(args,(char *)"ch1_ddc_source_c_sptr_pc_output_buffers_full_var",2,2,&obj0,&obj1)) SWIG_fail;
-  res1 = SWIG_ConvertPtr(obj0, &argp1,SWIGTYPE_p_boost__shared_ptrT_gr__II_K7_310R__ch1_ddc_source_c_t, 0 |  0 );
-  if (!SWIG_IsOK(res1)) {
-    SWIG_exception_fail(SWIG_ArgError(res1), "in method '" "ch1_ddc_source_c_sptr_pc_output_buffers_full_var" "', argument " "1"" of type '" "boost::shared_ptr< gr::II_K7_310R::ch1_ddc_source_c > *""'"); 
-  }
-  arg1 = reinterpret_cast< boost::shared_ptr< gr::II_K7_310R::ch1_ddc_source_c > * >(argp1);
-  ecode2 = SWIG_AsVal_int(obj1, &val2);
-  if (!SWIG_IsOK(ecode2)) {
-    SWIG_exception_fail(SWIG_ArgError(ecode2), "in method '" "ch1_ddc_source_c_sptr_pc_output_buffers_full_var" "', argument " "2"" of type '" "int""'");
-  } 
-  arg2 = static_cast< int >(val2);
-  {
-    try {
-      result = (float)(*arg1)->pc_output_buffers_full_var(arg2);
-    }
-    catch(std::exception &e) {
-      SWIG_exception(SWIG_RuntimeError, e.what());
-    }
-    catch(...) {
-      SWIG_exception(SWIG_RuntimeError, "Unknown exception");
-    }
-    
-  }
-  resultobj = SWIG_From_float(static_cast< float >(result));
-  return resultobj;
-fail:
-  return NULL;
-}
-
-
-SWIGINTERN PyObject *_wrap_ch1_ddc_source_c_sptr_pc_output_buffers_full_var__SWIG_1(PyObject *SWIGUNUSEDPARM(self), PyObject *args) {
-  PyObject *resultobj = 0;
-  boost::shared_ptr< gr::II_K7_310R::ch1_ddc_source_c > *arg1 = (boost::shared_ptr< gr::II_K7_310R::ch1_ddc_source_c > *) 0 ;
-  void *argp1 = 0 ;
-  int res1 = 0 ;
-  PyObject * obj0 = 0 ;
-  std::vector< float,std::allocator< float > > result;
-  
-  if(!PyArg_UnpackTuple(args,(char *)"ch1_ddc_source_c_sptr_pc_output_buffers_full_var",1,1,&obj0)) SWIG_fail;
-  res1 = SWIG_ConvertPtr(obj0, &argp1,SWIGTYPE_p_boost__shared_ptrT_gr__II_K7_310R__ch1_ddc_source_c_t, 0 |  0 );
-  if (!SWIG_IsOK(res1)) {
-    SWIG_exception_fail(SWIG_ArgError(res1), "in method '" "ch1_ddc_source_c_sptr_pc_output_buffers_full_var" "', argument " "1"" of type '" "boost::shared_ptr< gr::II_K7_310R::ch1_ddc_source_c > *""'"); 
-  }
-  arg1 = reinterpret_cast< boost::shared_ptr< gr::II_K7_310R::ch1_ddc_source_c > * >(argp1);
-  {
-    try {
-      result = (*arg1)->pc_output_buffers_full_var();
-    }
-    catch(std::exception &e) {
-      SWIG_exception(SWIG_RuntimeError, e.what());
-    }
-    catch(...) {
-      SWIG_exception(SWIG_RuntimeError, "Unknown exception");
-    }
-    
-  }
-  resultobj = swig::from(static_cast< std::vector< float,std::allocator< float > > >(result));
-  return resultobj;
-fail:
-  return NULL;
-}
-
-
-SWIGINTERN PyObject *_wrap_ch1_ddc_source_c_sptr_pc_output_buffers_full_var(PyObject *self, PyObject *args) {
-  Py_ssize_t argc;
-  PyObject *argv[3] = {
-    0
-  };
-  Py_ssize_t ii;
-  
-  if (!PyTuple_Check(args)) SWIG_fail;
-  argc = args ? PyObject_Length(args) : 0;
-  for (ii = 0; (ii < 2) && (ii < argc); ii++) {
-    argv[ii] = PyTuple_GET_ITEM(args,ii);
-  }
-  if (argc == 1) {
-    int _v;
-    void *vptr = 0;
-    int res = SWIG_ConvertPtr(argv[0], &vptr, SWIGTYPE_p_boost__shared_ptrT_gr__II_K7_310R__ch1_ddc_source_c_t, 0);
-    _v = SWIG_CheckState(res);
-    if (_v) {
-      return _wrap_ch1_ddc_source_c_sptr_pc_output_buffers_full_var__SWIG_1(self, args);
-    }
-  }
-  if (argc == 2) {
-    int _v;
-    void *vptr = 0;
-    int res = SWIG_ConvertPtr(argv[0], &vptr, SWIGTYPE_p_boost__shared_ptrT_gr__II_K7_310R__ch1_ddc_source_c_t, 0);
-    _v = SWIG_CheckState(res);
-    if (_v) {
-      {
-        int res = SWIG_AsVal_int(argv[1], NULL);
-        _v = SWIG_CheckState(res);
-      }
-      if (_v) {
-        return _wrap_ch1_ddc_source_c_sptr_pc_output_buffers_full_var__SWIG_0(self, args);
-      }
-    }
-  }
-  
-fail:
-  SWIG_SetErrorMsg(PyExc_NotImplementedError,"Wrong number or type of arguments for overloaded function 'ch1_ddc_source_c_sptr_pc_output_buffers_full_var'.\n"
-    "  Possible C/C++ prototypes are:\n"
-    "    gr::block::pc_output_buffers_full_var(int)\n"
-    "    gr::block::pc_output_buffers_full_var()\n");
-  return 0;
-}
-
-
-SWIGINTERN PyObject *_wrap_ch1_ddc_source_c_sptr_pc_work_time(PyObject *SWIGUNUSEDPARM(self), PyObject *args) {
-  PyObject *resultobj = 0;
-  boost::shared_ptr< gr::II_K7_310R::ch1_ddc_source_c > *arg1 = (boost::shared_ptr< gr::II_K7_310R::ch1_ddc_source_c > *) 0 ;
-  void *argp1 = 0 ;
-  int res1 = 0 ;
-  PyObject * obj0 = 0 ;
-  float result;
-  
-  if(!PyArg_UnpackTuple(args,(char *)"ch1_ddc_source_c_sptr_pc_work_time",1,1,&obj0)) SWIG_fail;
-  res1 = SWIG_ConvertPtr(obj0, &argp1,SWIGTYPE_p_boost__shared_ptrT_gr__II_K7_310R__ch1_ddc_source_c_t, 0 |  0 );
-  if (!SWIG_IsOK(res1)) {
-    SWIG_exception_fail(SWIG_ArgError(res1), "in method '" "ch1_ddc_source_c_sptr_pc_work_time" "', argument " "1"" of type '" "boost::shared_ptr< gr::II_K7_310R::ch1_ddc_source_c > *""'"); 
-  }
-  arg1 = reinterpret_cast< boost::shared_ptr< gr::II_K7_310R::ch1_ddc_source_c > * >(argp1);
-  {
-    try {
-      result = (float)(*arg1)->pc_work_time();
-    }
-    catch(std::exception &e) {
-      SWIG_exception(SWIG_RuntimeError, e.what());
-    }
-    catch(...) {
-      SWIG_exception(SWIG_RuntimeError, "Unknown exception");
-    }
-    
-  }
-  resultobj = SWIG_From_float(static_cast< float >(result));
-  return resultobj;
-fail:
-  return NULL;
-}
-
-
-SWIGINTERN PyObject *_wrap_ch1_ddc_source_c_sptr_pc_work_time_avg(PyObject *SWIGUNUSEDPARM(self), PyObject *args) {
-  PyObject *resultobj = 0;
-  boost::shared_ptr< gr::II_K7_310R::ch1_ddc_source_c > *arg1 = (boost::shared_ptr< gr::II_K7_310R::ch1_ddc_source_c > *) 0 ;
-  void *argp1 = 0 ;
-  int res1 = 0 ;
-  PyObject * obj0 = 0 ;
-  float result;
-  
-  if(!PyArg_UnpackTuple(args,(char *)"ch1_ddc_source_c_sptr_pc_work_time_avg",1,1,&obj0)) SWIG_fail;
-  res1 = SWIG_ConvertPtr(obj0, &argp1,SWIGTYPE_p_boost__shared_ptrT_gr__II_K7_310R__ch1_ddc_source_c_t, 0 |  0 );
-  if (!SWIG_IsOK(res1)) {
-    SWIG_exception_fail(SWIG_ArgError(res1), "in method '" "ch1_ddc_source_c_sptr_pc_work_time_avg" "', argument " "1"" of type '" "boost::shared_ptr< gr::II_K7_310R::ch1_ddc_source_c > *""'"); 
-  }
-  arg1 = reinterpret_cast< boost::shared_ptr< gr::II_K7_310R::ch1_ddc_source_c > * >(argp1);
-  {
-    try {
-      result = (float)(*arg1)->pc_work_time_avg();
-    }
-    catch(std::exception &e) {
-      SWIG_exception(SWIG_RuntimeError, e.what());
-    }
-    catch(...) {
-      SWIG_exception(SWIG_RuntimeError, "Unknown exception");
-    }
-    
-  }
-  resultobj = SWIG_From_float(static_cast< float >(result));
-  return resultobj;
-fail:
-  return NULL;
-}
-
-
-SWIGINTERN PyObject *_wrap_ch1_ddc_source_c_sptr_pc_work_time_var(PyObject *SWIGUNUSEDPARM(self), PyObject *args) {
-  PyObject *resultobj = 0;
-  boost::shared_ptr< gr::II_K7_310R::ch1_ddc_source_c > *arg1 = (boost::shared_ptr< gr::II_K7_310R::ch1_ddc_source_c > *) 0 ;
-  void *argp1 = 0 ;
-  int res1 = 0 ;
-  PyObject * obj0 = 0 ;
-  float result;
-  
-  if(!PyArg_UnpackTuple(args,(char *)"ch1_ddc_source_c_sptr_pc_work_time_var",1,1,&obj0)) SWIG_fail;
-  res1 = SWIG_ConvertPtr(obj0, &argp1,SWIGTYPE_p_boost__shared_ptrT_gr__II_K7_310R__ch1_ddc_source_c_t, 0 |  0 );
-  if (!SWIG_IsOK(res1)) {
-    SWIG_exception_fail(SWIG_ArgError(res1), "in method '" "ch1_ddc_source_c_sptr_pc_work_time_var" "', argument " "1"" of type '" "boost::shared_ptr< gr::II_K7_310R::ch1_ddc_source_c > *""'"); 
-  }
-  arg1 = reinterpret_cast< boost::shared_ptr< gr::II_K7_310R::ch1_ddc_source_c > * >(argp1);
-  {
-    try {
-      result = (float)(*arg1)->pc_work_time_var();
-    }
-    catch(std::exception &e) {
-      SWIG_exception(SWIG_RuntimeError, e.what());
-    }
-    catch(...) {
-      SWIG_exception(SWIG_RuntimeError, "Unknown exception");
-    }
-    
-  }
-  resultobj = SWIG_From_float(static_cast< float >(result));
-  return resultobj;
-fail:
-  return NULL;
-}
-
-
-SWIGINTERN PyObject *_wrap_ch1_ddc_source_c_sptr_pc_work_time_total(PyObject *SWIGUNUSEDPARM(self), PyObject *args) {
-  PyObject *resultobj = 0;
-  boost::shared_ptr< gr::II_K7_310R::ch1_ddc_source_c > *arg1 = (boost::shared_ptr< gr::II_K7_310R::ch1_ddc_source_c > *) 0 ;
-  void *argp1 = 0 ;
-  int res1 = 0 ;
-  PyObject * obj0 = 0 ;
-  float result;
-  
-  if(!PyArg_UnpackTuple(args,(char *)"ch1_ddc_source_c_sptr_pc_work_time_total",1,1,&obj0)) SWIG_fail;
-  res1 = SWIG_ConvertPtr(obj0, &argp1,SWIGTYPE_p_boost__shared_ptrT_gr__II_K7_310R__ch1_ddc_source_c_t, 0 |  0 );
-  if (!SWIG_IsOK(res1)) {
-    SWIG_exception_fail(SWIG_ArgError(res1), "in method '" "ch1_ddc_source_c_sptr_pc_work_time_total" "', argument " "1"" of type '" "boost::shared_ptr< gr::II_K7_310R::ch1_ddc_source_c > *""'"); 
-  }
-  arg1 = reinterpret_cast< boost::shared_ptr< gr::II_K7_310R::ch1_ddc_source_c > * >(argp1);
-  {
-    try {
-      result = (float)(*arg1)->pc_work_time_total();
-    }
-    catch(std::exception &e) {
-      SWIG_exception(SWIG_RuntimeError, e.what());
-    }
-    catch(...) {
-      SWIG_exception(SWIG_RuntimeError, "Unknown exception");
-    }
-    
-  }
-  resultobj = SWIG_From_float(static_cast< float >(result));
-  return resultobj;
-fail:
-  return NULL;
-}
-
-
-SWIGINTERN PyObject *_wrap_ch1_ddc_source_c_sptr_pc_throughput_avg(PyObject *SWIGUNUSEDPARM(self), PyObject *args) {
-  PyObject *resultobj = 0;
-  boost::shared_ptr< gr::II_K7_310R::ch1_ddc_source_c > *arg1 = (boost::shared_ptr< gr::II_K7_310R::ch1_ddc_source_c > *) 0 ;
-  void *argp1 = 0 ;
-  int res1 = 0 ;
-  PyObject * obj0 = 0 ;
-  float result;
-  
-  if(!PyArg_UnpackTuple(args,(char *)"ch1_ddc_source_c_sptr_pc_throughput_avg",1,1,&obj0)) SWIG_fail;
-  res1 = SWIG_ConvertPtr(obj0, &argp1,SWIGTYPE_p_boost__shared_ptrT_gr__II_K7_310R__ch1_ddc_source_c_t, 0 |  0 );
-  if (!SWIG_IsOK(res1)) {
-    SWIG_exception_fail(SWIG_ArgError(res1), "in method '" "ch1_ddc_source_c_sptr_pc_throughput_avg" "', argument " "1"" of type '" "boost::shared_ptr< gr::II_K7_310R::ch1_ddc_source_c > *""'"); 
-  }
-  arg1 = reinterpret_cast< boost::shared_ptr< gr::II_K7_310R::ch1_ddc_source_c > * >(argp1);
-  {
-    try {
-      result = (float)(*arg1)->pc_throughput_avg();
-    }
-    catch(std::exception &e) {
-      SWIG_exception(SWIG_RuntimeError, e.what());
-    }
-    catch(...) {
-      SWIG_exception(SWIG_RuntimeError, "Unknown exception");
-    }
-    
-  }
-  resultobj = SWIG_From_float(static_cast< float >(result));
-  return resultobj;
-fail:
-  return NULL;
-}
-
-
-SWIGINTERN PyObject *_wrap_ch1_ddc_source_c_sptr_set_processor_affinity(PyObject *SWIGUNUSEDPARM(self), PyObject *args, PyObject *kwargs) {
-  PyObject *resultobj = 0;
-  boost::shared_ptr< gr::II_K7_310R::ch1_ddc_source_c > *arg1 = (boost::shared_ptr< gr::II_K7_310R::ch1_ddc_source_c > *) 0 ;
-  std::vector< int,std::allocator< int > > *arg2 = 0 ;
-  void *argp1 = 0 ;
-  int res1 = 0 ;
-  int res2 = SWIG_OLDOBJ ;
-  PyObject * obj0 = 0 ;
-  PyObject * obj1 = 0 ;
-  char *  kwnames[] = {
-    (char *) "self",(char *) "mask", NULL 
-  };
-  
-  if (!PyArg_ParseTupleAndKeywords(args,kwargs,(char *)"OO:ch1_ddc_source_c_sptr_set_processor_affinity",kwnames,&obj0,&obj1)) SWIG_fail;
-  res1 = SWIG_ConvertPtr(obj0, &argp1,SWIGTYPE_p_boost__shared_ptrT_gr__II_K7_310R__ch1_ddc_source_c_t, 0 |  0 );
-  if (!SWIG_IsOK(res1)) {
-    SWIG_exception_fail(SWIG_ArgError(res1), "in method '" "ch1_ddc_source_c_sptr_set_processor_affinity" "', argument " "1"" of type '" "boost::shared_ptr< gr::II_K7_310R::ch1_ddc_source_c > *""'"); 
-  }
-  arg1 = reinterpret_cast< boost::shared_ptr< gr::II_K7_310R::ch1_ddc_source_c > * >(argp1);
-  {
-    std::vector< int,std::allocator< int > > *ptr = (std::vector< int,std::allocator< int > > *)0;
-    res2 = swig::asptr(obj1, &ptr);
-    if (!SWIG_IsOK(res2)) {
-      SWIG_exception_fail(SWIG_ArgError(res2), "in method '" "ch1_ddc_source_c_sptr_set_processor_affinity" "', argument " "2"" of type '" "std::vector< int,std::allocator< int > > const &""'"); 
-    }
-    if (!ptr) {
-      SWIG_exception_fail(SWIG_ValueError, "invalid null reference " "in method '" "ch1_ddc_source_c_sptr_set_processor_affinity" "', argument " "2"" of type '" "std::vector< int,std::allocator< int > > const &""'"); 
-    }
-    arg2 = ptr;
-  }
-  {
-    try {
-      (*arg1)->set_processor_affinity((std::vector< int,std::allocator< int > > const &)*arg2);
-    }
-    catch(std::exception &e) {
-      SWIG_exception(SWIG_RuntimeError, e.what());
-    }
-    catch(...) {
-      SWIG_exception(SWIG_RuntimeError, "Unknown exception");
-    }
-    
-  }
-  resultobj = SWIG_Py_Void();
-  if (SWIG_IsNewObj(res2)) delete arg2;
-  return resultobj;
-fail:
-  if (SWIG_IsNewObj(res2)) delete arg2;
-  return NULL;
-}
-
-
-SWIGINTERN PyObject *_wrap_ch1_ddc_source_c_sptr_unset_processor_affinity(PyObject *SWIGUNUSEDPARM(self), PyObject *args) {
-  PyObject *resultobj = 0;
-  boost::shared_ptr< gr::II_K7_310R::ch1_ddc_source_c > *arg1 = (boost::shared_ptr< gr::II_K7_310R::ch1_ddc_source_c > *) 0 ;
-  void *argp1 = 0 ;
-  int res1 = 0 ;
-  PyObject * obj0 = 0 ;
-  
-  if(!PyArg_UnpackTuple(args,(char *)"ch1_ddc_source_c_sptr_unset_processor_affinity",1,1,&obj0)) SWIG_fail;
-  res1 = SWIG_ConvertPtr(obj0, &argp1,SWIGTYPE_p_boost__shared_ptrT_gr__II_K7_310R__ch1_ddc_source_c_t, 0 |  0 );
-  if (!SWIG_IsOK(res1)) {
-    SWIG_exception_fail(SWIG_ArgError(res1), "in method '" "ch1_ddc_source_c_sptr_unset_processor_affinity" "', argument " "1"" of type '" "boost::shared_ptr< gr::II_K7_310R::ch1_ddc_source_c > *""'"); 
-  }
-  arg1 = reinterpret_cast< boost::shared_ptr< gr::II_K7_310R::ch1_ddc_source_c > * >(argp1);
-  {
-    try {
-      (*arg1)->unset_processor_affinity();
-    }
-    catch(std::exception &e) {
-      SWIG_exception(SWIG_RuntimeError, e.what());
-    }
-    catch(...) {
-      SWIG_exception(SWIG_RuntimeError, "Unknown exception");
-    }
-    
-  }
-  resultobj = SWIG_Py_Void();
-  return resultobj;
-fail:
-  return NULL;
-}
-
-
-SWIGINTERN PyObject *_wrap_ch1_ddc_source_c_sptr_processor_affinity(PyObject *SWIGUNUSEDPARM(self), PyObject *args) {
-  PyObject *resultobj = 0;
-  boost::shared_ptr< gr::II_K7_310R::ch1_ddc_source_c > *arg1 = (boost::shared_ptr< gr::II_K7_310R::ch1_ddc_source_c > *) 0 ;
-  void *argp1 = 0 ;
-  int res1 = 0 ;
-  PyObject * obj0 = 0 ;
-  std::vector< int,std::allocator< int > > result;
-  
-  if(!PyArg_UnpackTuple(args,(char *)"ch1_ddc_source_c_sptr_processor_affinity",1,1,&obj0)) SWIG_fail;
-  res1 = SWIG_ConvertPtr(obj0, &argp1,SWIGTYPE_p_boost__shared_ptrT_gr__II_K7_310R__ch1_ddc_source_c_t, 0 |  0 );
-  if (!SWIG_IsOK(res1)) {
-    SWIG_exception_fail(SWIG_ArgError(res1), "in method '" "ch1_ddc_source_c_sptr_processor_affinity" "', argument " "1"" of type '" "boost::shared_ptr< gr::II_K7_310R::ch1_ddc_source_c > *""'"); 
-  }
-  arg1 = reinterpret_cast< boost::shared_ptr< gr::II_K7_310R::ch1_ddc_source_c > * >(argp1);
-  {
-    try {
-      result = (*arg1)->processor_affinity();
-    }
-    catch(std::exception &e) {
-      SWIG_exception(SWIG_RuntimeError, e.what());
-    }
-    catch(...) {
-      SWIG_exception(SWIG_RuntimeError, "Unknown exception");
-    }
-    
-  }
-  resultobj = swig::from(static_cast< std::vector< int,std::allocator< int > > >(result));
-  return resultobj;
-fail:
-  return NULL;
-}
-
-
-SWIGINTERN PyObject *_wrap_ch1_ddc_source_c_sptr_active_thread_priority(PyObject *SWIGUNUSEDPARM(self), PyObject *args) {
-  PyObject *resultobj = 0;
-  boost::shared_ptr< gr::II_K7_310R::ch1_ddc_source_c > *arg1 = (boost::shared_ptr< gr::II_K7_310R::ch1_ddc_source_c > *) 0 ;
-  void *argp1 = 0 ;
-  int res1 = 0 ;
-  PyObject * obj0 = 0 ;
-  int result;
-  
-  if(!PyArg_UnpackTuple(args,(char *)"ch1_ddc_source_c_sptr_active_thread_priority",1,1,&obj0)) SWIG_fail;
-  res1 = SWIG_ConvertPtr(obj0, &argp1,SWIGTYPE_p_boost__shared_ptrT_gr__II_K7_310R__ch1_ddc_source_c_t, 0 |  0 );
-  if (!SWIG_IsOK(res1)) {
-    SWIG_exception_fail(SWIG_ArgError(res1), "in method '" "ch1_ddc_source_c_sptr_active_thread_priority" "', argument " "1"" of type '" "boost::shared_ptr< gr::II_K7_310R::ch1_ddc_source_c > *""'"); 
-  }
-  arg1 = reinterpret_cast< boost::shared_ptr< gr::II_K7_310R::ch1_ddc_source_c > * >(argp1);
-  {
-    try {
-      result = (int)(*arg1)->active_thread_priority();
-    }
-    catch(std::exception &e) {
-      SWIG_exception(SWIG_RuntimeError, e.what());
-    }
-    catch(...) {
-      SWIG_exception(SWIG_RuntimeError, "Unknown exception");
-    }
-    
-  }
-  resultobj = SWIG_From_int(static_cast< int >(result));
-  return resultobj;
-fail:
-  return NULL;
-}
-
-
-SWIGINTERN PyObject *_wrap_ch1_ddc_source_c_sptr_thread_priority(PyObject *SWIGUNUSEDPARM(self), PyObject *args) {
-  PyObject *resultobj = 0;
-  boost::shared_ptr< gr::II_K7_310R::ch1_ddc_source_c > *arg1 = (boost::shared_ptr< gr::II_K7_310R::ch1_ddc_source_c > *) 0 ;
-  void *argp1 = 0 ;
-  int res1 = 0 ;
-  PyObject * obj0 = 0 ;
-  int result;
-  
-  if(!PyArg_UnpackTuple(args,(char *)"ch1_ddc_source_c_sptr_thread_priority",1,1,&obj0)) SWIG_fail;
-  res1 = SWIG_ConvertPtr(obj0, &argp1,SWIGTYPE_p_boost__shared_ptrT_gr__II_K7_310R__ch1_ddc_source_c_t, 0 |  0 );
-  if (!SWIG_IsOK(res1)) {
-    SWIG_exception_fail(SWIG_ArgError(res1), "in method '" "ch1_ddc_source_c_sptr_thread_priority" "', argument " "1"" of type '" "boost::shared_ptr< gr::II_K7_310R::ch1_ddc_source_c > *""'"); 
-  }
-  arg1 = reinterpret_cast< boost::shared_ptr< gr::II_K7_310R::ch1_ddc_source_c > * >(argp1);
-  {
-    try {
-      result = (int)(*arg1)->thread_priority();
-    }
-    catch(std::exception &e) {
-      SWIG_exception(SWIG_RuntimeError, e.what());
-    }
-    catch(...) {
-      SWIG_exception(SWIG_RuntimeError, "Unknown exception");
-    }
-    
-  }
-  resultobj = SWIG_From_int(static_cast< int >(result));
-  return resultobj;
-fail:
-  return NULL;
-}
-
-
-SWIGINTERN PyObject *_wrap_ch1_ddc_source_c_sptr_set_thread_priority(PyObject *SWIGUNUSEDPARM(self), PyObject *args, PyObject *kwargs) {
-  PyObject *resultobj = 0;
-  boost::shared_ptr< gr::II_K7_310R::ch1_ddc_source_c > *arg1 = (boost::shared_ptr< gr::II_K7_310R::ch1_ddc_source_c > *) 0 ;
-  int arg2 ;
-  void *argp1 = 0 ;
-  int res1 = 0 ;
-  int val2 ;
-  int ecode2 = 0 ;
-  PyObject * obj0 = 0 ;
-  PyObject * obj1 = 0 ;
-  char *  kwnames[] = {
-    (char *) "self",(char *) "priority", NULL 
-  };
-  int result;
-  
-  if (!PyArg_ParseTupleAndKeywords(args,kwargs,(char *)"OO:ch1_ddc_source_c_sptr_set_thread_priority",kwnames,&obj0,&obj1)) SWIG_fail;
-  res1 = SWIG_ConvertPtr(obj0, &argp1,SWIGTYPE_p_boost__shared_ptrT_gr__II_K7_310R__ch1_ddc_source_c_t, 0 |  0 );
-  if (!SWIG_IsOK(res1)) {
-    SWIG_exception_fail(SWIG_ArgError(res1), "in method '" "ch1_ddc_source_c_sptr_set_thread_priority" "', argument " "1"" of type '" "boost::shared_ptr< gr::II_K7_310R::ch1_ddc_source_c > *""'"); 
-  }
-  arg1 = reinterpret_cast< boost::shared_ptr< gr::II_K7_310R::ch1_ddc_source_c > * >(argp1);
-  ecode2 = SWIG_AsVal_int(obj1, &val2);
-  if (!SWIG_IsOK(ecode2)) {
-    SWIG_exception_fail(SWIG_ArgError(ecode2), "in method '" "ch1_ddc_source_c_sptr_set_thread_priority" "', argument " "2"" of type '" "int""'");
-  } 
-  arg2 = static_cast< int >(val2);
-  {
-    try {
-      result = (int)(*arg1)->set_thread_priority(arg2);
-    }
-    catch(std::exception &e) {
-      SWIG_exception(SWIG_RuntimeError, e.what());
-    }
-    catch(...) {
-      SWIG_exception(SWIG_RuntimeError, "Unknown exception");
-    }
-    
-  }
-  resultobj = SWIG_From_int(static_cast< int >(result));
-  return resultobj;
-fail:
-  return NULL;
-}
-
-
-SWIGINTERN PyObject *_wrap_ch1_ddc_source_c_sptr_name(PyObject *SWIGUNUSEDPARM(self), PyObject *args) {
-  PyObject *resultobj = 0;
-  boost::shared_ptr< gr::II_K7_310R::ch1_ddc_source_c > *arg1 = (boost::shared_ptr< gr::II_K7_310R::ch1_ddc_source_c > *) 0 ;
-  void *argp1 = 0 ;
-  int res1 = 0 ;
-  PyObject * obj0 = 0 ;
-  std::string result;
-  
-  if(!PyArg_UnpackTuple(args,(char *)"ch1_ddc_source_c_sptr_name",1,1,&obj0)) SWIG_fail;
-  res1 = SWIG_ConvertPtr(obj0, &argp1,SWIGTYPE_p_boost__shared_ptrT_gr__II_K7_310R__ch1_ddc_source_c_t, 0 |  0 );
-  if (!SWIG_IsOK(res1)) {
-    SWIG_exception_fail(SWIG_ArgError(res1), "in method '" "ch1_ddc_source_c_sptr_name" "', argument " "1"" of type '" "boost::shared_ptr< gr::II_K7_310R::ch1_ddc_source_c > const *""'"); 
-  }
-  arg1 = reinterpret_cast< boost::shared_ptr< gr::II_K7_310R::ch1_ddc_source_c > * >(argp1);
-  {
-    try {
-      result = (*arg1)->name();
-    }
-    catch(std::exception &e) {
-      SWIG_exception(SWIG_RuntimeError, e.what());
-    }
-    catch(...) {
-      SWIG_exception(SWIG_RuntimeError, "Unknown exception");
-    }
-    
-  }
-  resultobj = SWIG_From_std_string(static_cast< std::string >(result));
-  return resultobj;
-fail:
-  return NULL;
-}
-
-
-SWIGINTERN PyObject *_wrap_ch1_ddc_source_c_sptr_symbol_name(PyObject *SWIGUNUSEDPARM(self), PyObject *args) {
-  PyObject *resultobj = 0;
-  boost::shared_ptr< gr::II_K7_310R::ch1_ddc_source_c > *arg1 = (boost::shared_ptr< gr::II_K7_310R::ch1_ddc_source_c > *) 0 ;
-  void *argp1 = 0 ;
-  int res1 = 0 ;
-  PyObject * obj0 = 0 ;
-  std::string result;
-  
-  if(!PyArg_UnpackTuple(args,(char *)"ch1_ddc_source_c_sptr_symbol_name",1,1,&obj0)) SWIG_fail;
-  res1 = SWIG_ConvertPtr(obj0, &argp1,SWIGTYPE_p_boost__shared_ptrT_gr__II_K7_310R__ch1_ddc_source_c_t, 0 |  0 );
-  if (!SWIG_IsOK(res1)) {
-    SWIG_exception_fail(SWIG_ArgError(res1), "in method '" "ch1_ddc_source_c_sptr_symbol_name" "', argument " "1"" of type '" "boost::shared_ptr< gr::II_K7_310R::ch1_ddc_source_c > const *""'"); 
-  }
-  arg1 = reinterpret_cast< boost::shared_ptr< gr::II_K7_310R::ch1_ddc_source_c > * >(argp1);
-  {
-    try {
-      result = (*arg1)->symbol_name();
-    }
-    catch(std::exception &e) {
-      SWIG_exception(SWIG_RuntimeError, e.what());
-    }
-    catch(...) {
-      SWIG_exception(SWIG_RuntimeError, "Unknown exception");
-    }
-    
-  }
-  resultobj = SWIG_From_std_string(static_cast< std::string >(result));
-  return resultobj;
-fail:
-  return NULL;
-}
-
-
-SWIGINTERN PyObject *_wrap_ch1_ddc_source_c_sptr_input_signature(PyObject *SWIGUNUSEDPARM(self), PyObject *args) {
-  PyObject *resultobj = 0;
-  boost::shared_ptr< gr::II_K7_310R::ch1_ddc_source_c > *arg1 = (boost::shared_ptr< gr::II_K7_310R::ch1_ddc_source_c > *) 0 ;
-  void *argp1 = 0 ;
-  int res1 = 0 ;
-  PyObject * obj0 = 0 ;
-  gr::io_signature::sptr result;
-  
-  if(!PyArg_UnpackTuple(args,(char *)"ch1_ddc_source_c_sptr_input_signature",1,1,&obj0)) SWIG_fail;
-  res1 = SWIG_ConvertPtr(obj0, &argp1,SWIGTYPE_p_boost__shared_ptrT_gr__II_K7_310R__ch1_ddc_source_c_t, 0 |  0 );
-  if (!SWIG_IsOK(res1)) {
-    SWIG_exception_fail(SWIG_ArgError(res1), "in method '" "ch1_ddc_source_c_sptr_input_signature" "', argument " "1"" of type '" "boost::shared_ptr< gr::II_K7_310R::ch1_ddc_source_c > const *""'"); 
-  }
-  arg1 = reinterpret_cast< boost::shared_ptr< gr::II_K7_310R::ch1_ddc_source_c > * >(argp1);
-  {
-    try {
-      result = (*arg1)->input_signature();
-    }
-    catch(std::exception &e) {
-      SWIG_exception(SWIG_RuntimeError, e.what());
-    }
-    catch(...) {
-      SWIG_exception(SWIG_RuntimeError, "Unknown exception");
-    }
-    
-  }
-  resultobj = SWIG_NewPointerObj((new gr::io_signature::sptr(static_cast< const gr::io_signature::sptr& >(result))), SWIGTYPE_p_boost__shared_ptrT_gr__io_signature_t, SWIG_POINTER_OWN |  0 );
-  return resultobj;
-fail:
-  return NULL;
-}
-
-
-SWIGINTERN PyObject *_wrap_ch1_ddc_source_c_sptr_output_signature(PyObject *SWIGUNUSEDPARM(self), PyObject *args) {
-  PyObject *resultobj = 0;
-  boost::shared_ptr< gr::II_K7_310R::ch1_ddc_source_c > *arg1 = (boost::shared_ptr< gr::II_K7_310R::ch1_ddc_source_c > *) 0 ;
-  void *argp1 = 0 ;
-  int res1 = 0 ;
-  PyObject * obj0 = 0 ;
-  gr::io_signature::sptr result;
-  
-  if(!PyArg_UnpackTuple(args,(char *)"ch1_ddc_source_c_sptr_output_signature",1,1,&obj0)) SWIG_fail;
-  res1 = SWIG_ConvertPtr(obj0, &argp1,SWIGTYPE_p_boost__shared_ptrT_gr__II_K7_310R__ch1_ddc_source_c_t, 0 |  0 );
-  if (!SWIG_IsOK(res1)) {
-    SWIG_exception_fail(SWIG_ArgError(res1), "in method '" "ch1_ddc_source_c_sptr_output_signature" "', argument " "1"" of type '" "boost::shared_ptr< gr::II_K7_310R::ch1_ddc_source_c > const *""'"); 
-  }
-  arg1 = reinterpret_cast< boost::shared_ptr< gr::II_K7_310R::ch1_ddc_source_c > * >(argp1);
-  {
-    try {
-      result = (*arg1)->output_signature();
-    }
-    catch(std::exception &e) {
-      SWIG_exception(SWIG_RuntimeError, e.what());
-    }
-    catch(...) {
-      SWIG_exception(SWIG_RuntimeError, "Unknown exception");
-    }
-    
-  }
-  resultobj = SWIG_NewPointerObj((new gr::io_signature::sptr(static_cast< const gr::io_signature::sptr& >(result))), SWIGTYPE_p_boost__shared_ptrT_gr__io_signature_t, SWIG_POINTER_OWN |  0 );
-  return resultobj;
-fail:
-  return NULL;
-}
-
-
-SWIGINTERN PyObject *_wrap_ch1_ddc_source_c_sptr_unique_id(PyObject *SWIGUNUSEDPARM(self), PyObject *args) {
-  PyObject *resultobj = 0;
-  boost::shared_ptr< gr::II_K7_310R::ch1_ddc_source_c > *arg1 = (boost::shared_ptr< gr::II_K7_310R::ch1_ddc_source_c > *) 0 ;
-  void *argp1 = 0 ;
-  int res1 = 0 ;
-  PyObject * obj0 = 0 ;
-  long result;
-  
-  if(!PyArg_UnpackTuple(args,(char *)"ch1_ddc_source_c_sptr_unique_id",1,1,&obj0)) SWIG_fail;
-  res1 = SWIG_ConvertPtr(obj0, &argp1,SWIGTYPE_p_boost__shared_ptrT_gr__II_K7_310R__ch1_ddc_source_c_t, 0 |  0 );
-  if (!SWIG_IsOK(res1)) {
-    SWIG_exception_fail(SWIG_ArgError(res1), "in method '" "ch1_ddc_source_c_sptr_unique_id" "', argument " "1"" of type '" "boost::shared_ptr< gr::II_K7_310R::ch1_ddc_source_c > const *""'"); 
-  }
-  arg1 = reinterpret_cast< boost::shared_ptr< gr::II_K7_310R::ch1_ddc_source_c > * >(argp1);
-  {
-    try {
-      result = (long)(*arg1)->unique_id();
-    }
-    catch(std::exception &e) {
-      SWIG_exception(SWIG_RuntimeError, e.what());
-    }
-    catch(...) {
-      SWIG_exception(SWIG_RuntimeError, "Unknown exception");
-    }
-    
-  }
-  resultobj = SWIG_From_long(static_cast< long >(result));
-  return resultobj;
-fail:
-  return NULL;
-}
-
-
-SWIGINTERN PyObject *_wrap_ch1_ddc_source_c_sptr_to_basic_block(PyObject *SWIGUNUSEDPARM(self), PyObject *args) {
-  PyObject *resultobj = 0;
-  boost::shared_ptr< gr::II_K7_310R::ch1_ddc_source_c > *arg1 = (boost::shared_ptr< gr::II_K7_310R::ch1_ddc_source_c > *) 0 ;
-  void *argp1 = 0 ;
-  int res1 = 0 ;
-  PyObject * obj0 = 0 ;
-  gr::basic_block_sptr result;
-  
-  if(!PyArg_UnpackTuple(args,(char *)"ch1_ddc_source_c_sptr_to_basic_block",1,1,&obj0)) SWIG_fail;
-  res1 = SWIG_ConvertPtr(obj0, &argp1,SWIGTYPE_p_boost__shared_ptrT_gr__II_K7_310R__ch1_ddc_source_c_t, 0 |  0 );
-  if (!SWIG_IsOK(res1)) {
-    SWIG_exception_fail(SWIG_ArgError(res1), "in method '" "ch1_ddc_source_c_sptr_to_basic_block" "', argument " "1"" of type '" "boost::shared_ptr< gr::II_K7_310R::ch1_ddc_source_c > *""'"); 
-  }
-  arg1 = reinterpret_cast< boost::shared_ptr< gr::II_K7_310R::ch1_ddc_source_c > * >(argp1);
-  {
-    try {
-      result = (*arg1)->to_basic_block();
-    }
-    catch(std::exception &e) {
-      SWIG_exception(SWIG_RuntimeError, e.what());
-    }
-    catch(...) {
-      SWIG_exception(SWIG_RuntimeError, "Unknown exception");
-    }
-    
-  }
-  resultobj = SWIG_NewPointerObj((new gr::basic_block_sptr(static_cast< const gr::basic_block_sptr& >(result))), SWIGTYPE_p_boost__shared_ptrT_gr__basic_block_t, SWIG_POINTER_OWN |  0 );
-  return resultobj;
-fail:
-  return NULL;
-}
-
-
-SWIGINTERN PyObject *_wrap_ch1_ddc_source_c_sptr_check_topology(PyObject *SWIGUNUSEDPARM(self), PyObject *args, PyObject *kwargs) {
-  PyObject *resultobj = 0;
-  boost::shared_ptr< gr::II_K7_310R::ch1_ddc_source_c > *arg1 = (boost::shared_ptr< gr::II_K7_310R::ch1_ddc_source_c > *) 0 ;
-  int arg2 ;
-  int arg3 ;
-  void *argp1 = 0 ;
-  int res1 = 0 ;
-  int val2 ;
-  int ecode2 = 0 ;
-  int val3 ;
-  int ecode3 = 0 ;
-  PyObject * obj0 = 0 ;
-  PyObject * obj1 = 0 ;
-  PyObject * obj2 = 0 ;
-  char *  kwnames[] = {
-    (char *) "self",(char *) "ninputs",(char *) "noutputs", NULL 
-  };
-  bool result;
-  
-  if (!PyArg_ParseTupleAndKeywords(args,kwargs,(char *)"OOO:ch1_ddc_source_c_sptr_check_topology",kwnames,&obj0,&obj1,&obj2)) SWIG_fail;
-  res1 = SWIG_ConvertPtr(obj0, &argp1,SWIGTYPE_p_boost__shared_ptrT_gr__II_K7_310R__ch1_ddc_source_c_t, 0 |  0 );
-  if (!SWIG_IsOK(res1)) {
-    SWIG_exception_fail(SWIG_ArgError(res1), "in method '" "ch1_ddc_source_c_sptr_check_topology" "', argument " "1"" of type '" "boost::shared_ptr< gr::II_K7_310R::ch1_ddc_source_c > *""'"); 
-  }
-  arg1 = reinterpret_cast< boost::shared_ptr< gr::II_K7_310R::ch1_ddc_source_c > * >(argp1);
-  ecode2 = SWIG_AsVal_int(obj1, &val2);
-  if (!SWIG_IsOK(ecode2)) {
-    SWIG_exception_fail(SWIG_ArgError(ecode2), "in method '" "ch1_ddc_source_c_sptr_check_topology" "', argument " "2"" of type '" "int""'");
-  } 
-  arg2 = static_cast< int >(val2);
-  ecode3 = SWIG_AsVal_int(obj2, &val3);
-  if (!SWIG_IsOK(ecode3)) {
-    SWIG_exception_fail(SWIG_ArgError(ecode3), "in method '" "ch1_ddc_source_c_sptr_check_topology" "', argument " "3"" of type '" "int""'");
-  } 
-  arg3 = static_cast< int >(val3);
-  {
-    try {
-      result = (bool)(*arg1)->check_topology(arg2,arg3);
-    }
-    catch(std::exception &e) {
-      SWIG_exception(SWIG_RuntimeError, e.what());
-    }
-    catch(...) {
-      SWIG_exception(SWIG_RuntimeError, "Unknown exception");
-    }
-    
-  }
-  resultobj = SWIG_From_bool(static_cast< bool >(result));
-  return resultobj;
-fail:
-  return NULL;
-}
-
-
-SWIGINTERN PyObject *_wrap_ch1_ddc_source_c_sptr_alias(PyObject *SWIGUNUSEDPARM(self), PyObject *args) {
-  PyObject *resultobj = 0;
-  boost::shared_ptr< gr::II_K7_310R::ch1_ddc_source_c > *arg1 = (boost::shared_ptr< gr::II_K7_310R::ch1_ddc_source_c > *) 0 ;
-  void *argp1 = 0 ;
-  int res1 = 0 ;
-  PyObject * obj0 = 0 ;
-  std::string result;
-  
-  if(!PyArg_UnpackTuple(args,(char *)"ch1_ddc_source_c_sptr_alias",1,1,&obj0)) SWIG_fail;
-  res1 = SWIG_ConvertPtr(obj0, &argp1,SWIGTYPE_p_boost__shared_ptrT_gr__II_K7_310R__ch1_ddc_source_c_t, 0 |  0 );
-  if (!SWIG_IsOK(res1)) {
-    SWIG_exception_fail(SWIG_ArgError(res1), "in method '" "ch1_ddc_source_c_sptr_alias" "', argument " "1"" of type '" "boost::shared_ptr< gr::II_K7_310R::ch1_ddc_source_c > *""'"); 
-  }
-  arg1 = reinterpret_cast< boost::shared_ptr< gr::II_K7_310R::ch1_ddc_source_c > * >(argp1);
-  {
-    try {
-      result = (*arg1)->alias();
-    }
-    catch(std::exception &e) {
-      SWIG_exception(SWIG_RuntimeError, e.what());
-    }
-    catch(...) {
-      SWIG_exception(SWIG_RuntimeError, "Unknown exception");
-    }
-    
-  }
-  resultobj = SWIG_From_std_string(static_cast< std::string >(result));
-  return resultobj;
-fail:
-  return NULL;
-}
-
-
-SWIGINTERN PyObject *_wrap_ch1_ddc_source_c_sptr_set_block_alias(PyObject *SWIGUNUSEDPARM(self), PyObject *args, PyObject *kwargs) {
-  PyObject *resultobj = 0;
-  boost::shared_ptr< gr::II_K7_310R::ch1_ddc_source_c > *arg1 = (boost::shared_ptr< gr::II_K7_310R::ch1_ddc_source_c > *) 0 ;
-  std::string arg2 ;
-  void *argp1 = 0 ;
-  int res1 = 0 ;
-  PyObject * obj0 = 0 ;
-  PyObject * obj1 = 0 ;
-  char *  kwnames[] = {
-    (char *) "self",(char *) "name", NULL 
-  };
-  
-  if (!PyArg_ParseTupleAndKeywords(args,kwargs,(char *)"OO:ch1_ddc_source_c_sptr_set_block_alias",kwnames,&obj0,&obj1)) SWIG_fail;
-  res1 = SWIG_ConvertPtr(obj0, &argp1,SWIGTYPE_p_boost__shared_ptrT_gr__II_K7_310R__ch1_ddc_source_c_t, 0 |  0 );
-  if (!SWIG_IsOK(res1)) {
-    SWIG_exception_fail(SWIG_ArgError(res1), "in method '" "ch1_ddc_source_c_sptr_set_block_alias" "', argument " "1"" of type '" "boost::shared_ptr< gr::II_K7_310R::ch1_ddc_source_c > *""'"); 
-  }
-  arg1 = reinterpret_cast< boost::shared_ptr< gr::II_K7_310R::ch1_ddc_source_c > * >(argp1);
-  {
-    std::string *ptr = (std::string *)0;
-    int res = SWIG_AsPtr_std_string(obj1, &ptr);
-    if (!SWIG_IsOK(res) || !ptr) {
-      SWIG_exception_fail(SWIG_ArgError((ptr ? res : SWIG_TypeError)), "in method '" "ch1_ddc_source_c_sptr_set_block_alias" "', argument " "2"" of type '" "std::string""'"); 
-    }
-    arg2 = *ptr;
-    if (SWIG_IsNewObj(res)) delete ptr;
-  }
-  {
-    try {
-      (*arg1)->set_block_alias(arg2);
-    }
-    catch(std::exception &e) {
-      SWIG_exception(SWIG_RuntimeError, e.what());
-    }
-    catch(...) {
-      SWIG_exception(SWIG_RuntimeError, "Unknown exception");
-    }
-    
-  }
-  resultobj = SWIG_Py_Void();
-  return resultobj;
-fail:
-  return NULL;
-}
-
-
-SWIGINTERN PyObject *_wrap_ch1_ddc_source_c_sptr__post(PyObject *SWIGUNUSEDPARM(self), PyObject *args, PyObject *kwargs) {
-  PyObject *resultobj = 0;
-  boost::shared_ptr< gr::II_K7_310R::ch1_ddc_source_c > *arg1 = (boost::shared_ptr< gr::II_K7_310R::ch1_ddc_source_c > *) 0 ;
-  pmt::pmt_t arg2 ;
-  pmt::pmt_t arg3 ;
-  void *argp1 = 0 ;
-  int res1 = 0 ;
-  void *argp2 ;
-  int res2 = 0 ;
-  void *argp3 ;
-  int res3 = 0 ;
-  PyObject * obj0 = 0 ;
-  PyObject * obj1 = 0 ;
-  PyObject * obj2 = 0 ;
-  char *  kwnames[] = {
-    (char *) "self",(char *) "which_port",(char *) "msg", NULL 
-  };
-  
-  if (!PyArg_ParseTupleAndKeywords(args,kwargs,(char *)"OOO:ch1_ddc_source_c_sptr__post",kwnames,&obj0,&obj1,&obj2)) SWIG_fail;
-  res1 = SWIG_ConvertPtr(obj0, &argp1,SWIGTYPE_p_boost__shared_ptrT_gr__II_K7_310R__ch1_ddc_source_c_t, 0 |  0 );
-  if (!SWIG_IsOK(res1)) {
-    SWIG_exception_fail(SWIG_ArgError(res1), "in method '" "ch1_ddc_source_c_sptr__post" "', argument " "1"" of type '" "boost::shared_ptr< gr::II_K7_310R::ch1_ddc_source_c > *""'"); 
-  }
-  arg1 = reinterpret_cast< boost::shared_ptr< gr::II_K7_310R::ch1_ddc_source_c > * >(argp1);
-  {
-    res2 = SWIG_ConvertPtr(obj1, &argp2, SWIGTYPE_p_boost__intrusive_ptrT_pmt__pmt_base_t,  0  | 0);
-    if (!SWIG_IsOK(res2)) {
-      SWIG_exception_fail(SWIG_ArgError(res2), "in method '" "ch1_ddc_source_c_sptr__post" "', argument " "2"" of type '" "pmt::pmt_t""'"); 
-    }  
-    if (!argp2) {
-      SWIG_exception_fail(SWIG_ValueError, "invalid null reference " "in method '" "ch1_ddc_source_c_sptr__post" "', argument " "2"" of type '" "pmt::pmt_t""'");
-    } else {
-      pmt::pmt_t * temp = reinterpret_cast< pmt::pmt_t * >(argp2);
-      arg2 = *temp;
-      if (SWIG_IsNewObj(res2)) delete temp;
-    }
-  }
-  {
-    res3 = SWIG_ConvertPtr(obj2, &argp3, SWIGTYPE_p_boost__intrusive_ptrT_pmt__pmt_base_t,  0  | 0);
-    if (!SWIG_IsOK(res3)) {
-      SWIG_exception_fail(SWIG_ArgError(res3), "in method '" "ch1_ddc_source_c_sptr__post" "', argument " "3"" of type '" "pmt::pmt_t""'"); 
-    }  
-    if (!argp3) {
-      SWIG_exception_fail(SWIG_ValueError, "invalid null reference " "in method '" "ch1_ddc_source_c_sptr__post" "', argument " "3"" of type '" "pmt::pmt_t""'");
-    } else {
-      pmt::pmt_t * temp = reinterpret_cast< pmt::pmt_t * >(argp3);
-      arg3 = *temp;
-      if (SWIG_IsNewObj(res3)) delete temp;
-    }
-  }
-  {
-    try {
-      (*arg1)->_post(arg2,arg3);
-    }
-    catch(std::exception &e) {
-      SWIG_exception(SWIG_RuntimeError, e.what());
-    }
-    catch(...) {
-      SWIG_exception(SWIG_RuntimeError, "Unknown exception");
-    }
-    
-  }
-  resultobj = SWIG_Py_Void();
-  return resultobj;
-fail:
-  return NULL;
-}
-
-
-SWIGINTERN PyObject *_wrap_ch1_ddc_source_c_sptr_message_ports_in(PyObject *SWIGUNUSEDPARM(self), PyObject *args) {
-  PyObject *resultobj = 0;
-  boost::shared_ptr< gr::II_K7_310R::ch1_ddc_source_c > *arg1 = (boost::shared_ptr< gr::II_K7_310R::ch1_ddc_source_c > *) 0 ;
-  void *argp1 = 0 ;
-  int res1 = 0 ;
-  PyObject * obj0 = 0 ;
-  pmt::pmt_t result;
-  
-  if(!PyArg_UnpackTuple(args,(char *)"ch1_ddc_source_c_sptr_message_ports_in",1,1,&obj0)) SWIG_fail;
-  res1 = SWIG_ConvertPtr(obj0, &argp1,SWIGTYPE_p_boost__shared_ptrT_gr__II_K7_310R__ch1_ddc_source_c_t, 0 |  0 );
-  if (!SWIG_IsOK(res1)) {
-    SWIG_exception_fail(SWIG_ArgError(res1), "in method '" "ch1_ddc_source_c_sptr_message_ports_in" "', argument " "1"" of type '" "boost::shared_ptr< gr::II_K7_310R::ch1_ddc_source_c > *""'"); 
-  }
-  arg1 = reinterpret_cast< boost::shared_ptr< gr::II_K7_310R::ch1_ddc_source_c > * >(argp1);
-  {
-    try {
-      result = (*arg1)->message_ports_in();
-    }
-    catch(std::exception &e) {
-      SWIG_exception(SWIG_RuntimeError, e.what());
-    }
-    catch(...) {
-      SWIG_exception(SWIG_RuntimeError, "Unknown exception");
-    }
-    
-  }
-  resultobj = SWIG_NewPointerObj((new pmt::pmt_t(static_cast< const pmt::pmt_t& >(result))), SWIGTYPE_p_boost__intrusive_ptrT_pmt__pmt_base_t, SWIG_POINTER_OWN |  0 );
-  return resultobj;
-fail:
-  return NULL;
-}
-
-
-SWIGINTERN PyObject *_wrap_ch1_ddc_source_c_sptr_message_ports_out(PyObject *SWIGUNUSEDPARM(self), PyObject *args) {
-  PyObject *resultobj = 0;
-  boost::shared_ptr< gr::II_K7_310R::ch1_ddc_source_c > *arg1 = (boost::shared_ptr< gr::II_K7_310R::ch1_ddc_source_c > *) 0 ;
-  void *argp1 = 0 ;
-  int res1 = 0 ;
-  PyObject * obj0 = 0 ;
-  pmt::pmt_t result;
-  
-  if(!PyArg_UnpackTuple(args,(char *)"ch1_ddc_source_c_sptr_message_ports_out",1,1,&obj0)) SWIG_fail;
-  res1 = SWIG_ConvertPtr(obj0, &argp1,SWIGTYPE_p_boost__shared_ptrT_gr__II_K7_310R__ch1_ddc_source_c_t, 0 |  0 );
-  if (!SWIG_IsOK(res1)) {
-    SWIG_exception_fail(SWIG_ArgError(res1), "in method '" "ch1_ddc_source_c_sptr_message_ports_out" "', argument " "1"" of type '" "boost::shared_ptr< gr::II_K7_310R::ch1_ddc_source_c > *""'"); 
-  }
-  arg1 = reinterpret_cast< boost::shared_ptr< gr::II_K7_310R::ch1_ddc_source_c > * >(argp1);
-  {
-    try {
-      result = (*arg1)->message_ports_out();
-    }
-    catch(std::exception &e) {
-      SWIG_exception(SWIG_RuntimeError, e.what());
-    }
-    catch(...) {
-      SWIG_exception(SWIG_RuntimeError, "Unknown exception");
-    }
-    
-  }
-  resultobj = SWIG_NewPointerObj((new pmt::pmt_t(static_cast< const pmt::pmt_t& >(result))), SWIGTYPE_p_boost__intrusive_ptrT_pmt__pmt_base_t, SWIG_POINTER_OWN |  0 );
-  return resultobj;
-fail:
-  return NULL;
-}
-
-
-SWIGINTERN PyObject *_wrap_ch1_ddc_source_c_sptr_message_subscribers(PyObject *SWIGUNUSEDPARM(self), PyObject *args, PyObject *kwargs) {
-  PyObject *resultobj = 0;
-  boost::shared_ptr< gr::II_K7_310R::ch1_ddc_source_c > *arg1 = (boost::shared_ptr< gr::II_K7_310R::ch1_ddc_source_c > *) 0 ;
-  pmt::pmt_t arg2 ;
-  void *argp1 = 0 ;
-  int res1 = 0 ;
-  void *argp2 ;
-  int res2 = 0 ;
-  PyObject * obj0 = 0 ;
-  PyObject * obj1 = 0 ;
-  char *  kwnames[] = {
-    (char *) "self",(char *) "which_port", NULL 
-  };
-  pmt::pmt_t result;
-  
-  if (!PyArg_ParseTupleAndKeywords(args,kwargs,(char *)"OO:ch1_ddc_source_c_sptr_message_subscribers",kwnames,&obj0,&obj1)) SWIG_fail;
-  res1 = SWIG_ConvertPtr(obj0, &argp1,SWIGTYPE_p_boost__shared_ptrT_gr__II_K7_310R__ch1_ddc_source_c_t, 0 |  0 );
-  if (!SWIG_IsOK(res1)) {
-    SWIG_exception_fail(SWIG_ArgError(res1), "in method '" "ch1_ddc_source_c_sptr_message_subscribers" "', argument " "1"" of type '" "boost::shared_ptr< gr::II_K7_310R::ch1_ddc_source_c > *""'"); 
-  }
-  arg1 = reinterpret_cast< boost::shared_ptr< gr::II_K7_310R::ch1_ddc_source_c > * >(argp1);
-  {
-    res2 = SWIG_ConvertPtr(obj1, &argp2, SWIGTYPE_p_boost__intrusive_ptrT_pmt__pmt_base_t,  0  | 0);
-    if (!SWIG_IsOK(res2)) {
-      SWIG_exception_fail(SWIG_ArgError(res2), "in method '" "ch1_ddc_source_c_sptr_message_subscribers" "', argument " "2"" of type '" "pmt::pmt_t""'"); 
-    }  
-    if (!argp2) {
-      SWIG_exception_fail(SWIG_ValueError, "invalid null reference " "in method '" "ch1_ddc_source_c_sptr_message_subscribers" "', argument " "2"" of type '" "pmt::pmt_t""'");
-    } else {
-      pmt::pmt_t * temp = reinterpret_cast< pmt::pmt_t * >(argp2);
-      arg2 = *temp;
-      if (SWIG_IsNewObj(res2)) delete temp;
-    }
-  }
-  {
-    try {
-      result = (*arg1)->message_subscribers(arg2);
-    }
-    catch(std::exception &e) {
-      SWIG_exception(SWIG_RuntimeError, e.what());
-    }
-    catch(...) {
-      SWIG_exception(SWIG_RuntimeError, "Unknown exception");
-    }
-    
-  }
-  resultobj = SWIG_NewPointerObj((new pmt::pmt_t(static_cast< const pmt::pmt_t& >(result))), SWIGTYPE_p_boost__intrusive_ptrT_pmt__pmt_base_t, SWIG_POINTER_OWN |  0 );
-  return resultobj;
-fail:
-  return NULL;
-}
-
-
-SWIGINTERN PyObject *ch1_ddc_source_c_sptr_swigregister(PyObject *SWIGUNUSEDPARM(self), PyObject *args) {
-  PyObject *obj;
-  if (!PyArg_UnpackTuple(args,(char*)"swigregister", 1, 1,&obj)) return NULL;
-  SWIG_TypeNewClientData(SWIGTYPE_p_boost__shared_ptrT_gr__II_K7_310R__ch1_ddc_source_c_t, SWIG_NewClientData(obj));
-  return SWIG_Py_Void();
-}
-
 static PyMethodDef SwigMethods[] = {
 	 { (char *)"SWIG_PyInstanceMethod_New", (PyCFunction)SWIG_PyInstanceMethod_New, METH_O, NULL},
 	 { (char *)"high_res_timer_now", _wrap_high_res_timer_now, METH_VARARGS, (char *)"high_res_timer_now() -> gr::high_res_timer_type"},
@@ -12303,14 +9334,19 @@ static PyMethodDef SwigMethods[] = {
 	 { (char *)"high_res_timer_epoch", _wrap_high_res_timer_epoch, METH_VARARGS, (char *)"high_res_timer_epoch() -> gr::high_res_timer_type"},
 	 { (char *)"Ch16Software_swigconstant", Ch16Software_swigconstant, METH_VARARGS, NULL},
 	 { (char *)"Ch16External_swigconstant", Ch16External_swigconstant, METH_VARARGS, NULL},
+	 { (char *)"Adc0_swigconstant", Adc0_swigconstant, METH_VARARGS, NULL},
+	 { (char *)"Adc1_swigconstant", Adc1_swigconstant, METH_VARARGS, NULL},
+	 { (char *)"Adc2_swigconstant", Adc2_swigconstant, METH_VARARGS, NULL},
+	 { (char *)"Adc3_swigconstant", Adc3_swigconstant, METH_VARARGS, NULL},
+	 { (char *)"Test_swigconstant", Test_swigconstant, METH_VARARGS, NULL},
 	 { (char *)"ch16_ddc_source_c_make", (PyCFunction) _wrap_ch16_ddc_source_c_make, METH_VARARGS | METH_KEYWORDS, (char *)"\n"
-		"ch16_ddc_source_c_make(short max_ch, float rf_gain, gr::II_K7_310R::Ch16TriggerSource trigger_source, char const * ddc_filter_path, bool is_rf_tuner, float rf_center_freq, float ch0_offset_freq, float ch1_offset_freq, float ch2_offset_freq, float ch3_offset_freq, float ch4_offset_freq, float ch5_offset_freq, float ch6_offset_freq, float ch7_offset_freq, float ch8_offset_freq, float ch9_offset_freq, float ch10_offset_freq, float ch11_offset_freq, float ch12_offset_freq, float ch13_offset_freq, float ch14_offset_freq, float ch15_offset_freq, float ch0_tune_freq, float ch1_tune_freq, float ch2_tune_freq, float ch3_tune_freq, float ch4_tune_freq, float ch5_tune_freq, float ch6_tune_freq, float ch7_tune_freq, float ch8_tune_freq, float ch9_tune_freq, float ch10_tune_freq, float ch11_tune_freq, float ch12_tune_freq, float ch13_tune_freq, float ch14_tune_freq, float ch15_tune_freq) -> ch16_ddc_source_c_sptr\n"
+		"ch16_ddc_source_c_make(short max_ch, float rf_gain, gr::II_K7_310R::Ch16TriggerSource trigger_source, char const * ddc_filter_path, bool is_rf_tuner, float rf_center_freq, float ch0_offset_freq, float ch1_offset_freq, float ch2_offset_freq, float ch3_offset_freq, float ch4_offset_freq, float ch5_offset_freq, float ch6_offset_freq, float ch7_offset_freq, float ch8_offset_freq, float ch9_offset_freq, float ch10_offset_freq, float ch11_offset_freq, float ch12_offset_freq, float ch13_offset_freq, float ch14_offset_freq, float ch15_offset_freq, float ch0_tune_freq, float ch1_tune_freq, float ch2_tune_freq, float ch3_tune_freq, float ch4_tune_freq, float ch5_tune_freq, float ch6_tune_freq, float ch7_tune_freq, float ch8_tune_freq, float ch9_tune_freq, float ch10_tune_freq, float ch11_tune_freq, float ch12_tune_freq, float ch13_tune_freq, float ch14_tune_freq, float ch15_tune_freq, gr::II_K7_310R::Ch16Source ch0_source, gr::II_K7_310R::Ch16Source ch1_source, gr::II_K7_310R::Ch16Source ch2_source, gr::II_K7_310R::Ch16Source ch3_source, gr::II_K7_310R::Ch16Source ch4_source, gr::II_K7_310R::Ch16Source ch5_source, gr::II_K7_310R::Ch16Source ch6_source, gr::II_K7_310R::Ch16Source ch7_source, gr::II_K7_310R::Ch16Source ch8_source, gr::II_K7_310R::Ch16Source ch9_source, gr::II_K7_310R::Ch16Source ch10_source, gr::II_K7_310R::Ch16Source ch11_source, gr::II_K7_310R::Ch16Source ch12_source, gr::II_K7_310R::Ch16Source ch13_source, gr::II_K7_310R::Ch16Source ch14_source, gr::II_K7_310R::Ch16Source ch15_source) -> ch16_ddc_source_c_sptr\n"
 		"\n"
 		"Return a shared_ptr to a new instance of II_K7_310R::ch16_ddc_source_c.\n"
 		"\n"
 		"To avoid accidental use of raw pointers, II_K7_310R::ch16_ddc_source_c's constructor is in a private implementation class. II_K7_310R::ch16_ddc_source_c::make is the public interface for creating new instances.\n"
 		"\n"
-		"Params: (max_ch, rf_gain, trigger_source, ddc_filter_path, is_rf_tuner, rf_center_freq, ch0_offset_freq, ch1_offset_freq, ch2_offset_freq, ch3_offset_freq, ch4_offset_freq, ch5_offset_freq, ch6_offset_freq, ch7_offset_freq, ch8_offset_freq, ch9_offset_freq, ch10_offset_freq, ch11_offset_freq, ch12_offset_freq, ch13_offset_freq, ch14_offset_freq, ch15_offset_freq, ch0_tune_freq, ch1_tune_freq, ch2_tune_freq, ch3_tune_freq, ch4_tune_freq, ch5_tune_freq, ch6_tune_freq, ch7_tune_freq, ch8_tune_freq, ch9_tune_freq, ch10_tune_freq, ch11_tune_freq, ch12_tune_freq, ch13_tune_freq, ch14_tune_freq, ch15_tune_freq)\n"
+		"Params: (max_ch, rf_gain, trigger_source, ddc_filter_path, is_rf_tuner, rf_center_freq, ch0_offset_freq, ch1_offset_freq, ch2_offset_freq, ch3_offset_freq, ch4_offset_freq, ch5_offset_freq, ch6_offset_freq, ch7_offset_freq, ch8_offset_freq, ch9_offset_freq, ch10_offset_freq, ch11_offset_freq, ch12_offset_freq, ch13_offset_freq, ch14_offset_freq, ch15_offset_freq, ch0_tune_freq, ch1_tune_freq, ch2_tune_freq, ch3_tune_freq, ch4_tune_freq, ch5_tune_freq, ch6_tune_freq, ch7_tune_freq, ch8_tune_freq, ch9_tune_freq, ch10_tune_freq, ch11_tune_freq, ch12_tune_freq, ch13_tune_freq, ch14_tune_freq, ch15_tune_freq, ch0_source, ch1_source, ch2_source, ch3_source, ch4_source, ch5_source, ch6_source, ch7_source, ch8_source, ch9_source, ch10_source, ch11_source, ch12_source, ch13_source, ch14_source, ch15_source)\n"
 		""},
 	 { (char *)"delete_ch16_ddc_source_c", _wrap_delete_ch16_ddc_source_c, METH_VARARGS, (char *)"delete_ch16_ddc_source_c(ch16_ddc_source_c self)"},
 	 { (char *)"ch16_ddc_source_c_swigregister", ch16_ddc_source_c_swigregister, METH_VARARGS, NULL},
@@ -12321,13 +9357,13 @@ static PyMethodDef SwigMethods[] = {
 	 { (char *)"ch16_ddc_source_c_sptr___deref__", _wrap_ch16_ddc_source_c_sptr___deref__, METH_VARARGS, (char *)"ch16_ddc_source_c_sptr___deref__(ch16_ddc_source_c_sptr self) -> ch16_ddc_source_c"},
 	 { (char *)"delete_ch16_ddc_source_c_sptr", _wrap_delete_ch16_ddc_source_c_sptr, METH_VARARGS, (char *)"delete_ch16_ddc_source_c_sptr(ch16_ddc_source_c_sptr self)"},
 	 { (char *)"ch16_ddc_source_c_sptr_make", (PyCFunction) _wrap_ch16_ddc_source_c_sptr_make, METH_VARARGS | METH_KEYWORDS, (char *)"\n"
-		"ch16_ddc_source_c_sptr_make(ch16_ddc_source_c_sptr self, short max_ch, float rf_gain, gr::II_K7_310R::Ch16TriggerSource trigger_source, char const * ddc_filter_path, bool is_rf_tuner, float rf_center_freq, float ch0_offset_freq, float ch1_offset_freq, float ch2_offset_freq, float ch3_offset_freq, float ch4_offset_freq, float ch5_offset_freq, float ch6_offset_freq, float ch7_offset_freq, float ch8_offset_freq, float ch9_offset_freq, float ch10_offset_freq, float ch11_offset_freq, float ch12_offset_freq, float ch13_offset_freq, float ch14_offset_freq, float ch15_offset_freq, float ch0_tune_freq, float ch1_tune_freq, float ch2_tune_freq, float ch3_tune_freq, float ch4_tune_freq, float ch5_tune_freq, float ch6_tune_freq, float ch7_tune_freq, float ch8_tune_freq, float ch9_tune_freq, float ch10_tune_freq, float ch11_tune_freq, float ch12_tune_freq, float ch13_tune_freq, float ch14_tune_freq, float ch15_tune_freq) -> ch16_ddc_source_c_sptr\n"
+		"ch16_ddc_source_c_sptr_make(ch16_ddc_source_c_sptr self, short max_ch, float rf_gain, gr::II_K7_310R::Ch16TriggerSource trigger_source, char const * ddc_filter_path, bool is_rf_tuner, float rf_center_freq, float ch0_offset_freq, float ch1_offset_freq, float ch2_offset_freq, float ch3_offset_freq, float ch4_offset_freq, float ch5_offset_freq, float ch6_offset_freq, float ch7_offset_freq, float ch8_offset_freq, float ch9_offset_freq, float ch10_offset_freq, float ch11_offset_freq, float ch12_offset_freq, float ch13_offset_freq, float ch14_offset_freq, float ch15_offset_freq, float ch0_tune_freq, float ch1_tune_freq, float ch2_tune_freq, float ch3_tune_freq, float ch4_tune_freq, float ch5_tune_freq, float ch6_tune_freq, float ch7_tune_freq, float ch8_tune_freq, float ch9_tune_freq, float ch10_tune_freq, float ch11_tune_freq, float ch12_tune_freq, float ch13_tune_freq, float ch14_tune_freq, float ch15_tune_freq, gr::II_K7_310R::Ch16Source ch0_source, gr::II_K7_310R::Ch16Source ch1_source, gr::II_K7_310R::Ch16Source ch2_source, gr::II_K7_310R::Ch16Source ch3_source, gr::II_K7_310R::Ch16Source ch4_source, gr::II_K7_310R::Ch16Source ch5_source, gr::II_K7_310R::Ch16Source ch6_source, gr::II_K7_310R::Ch16Source ch7_source, gr::II_K7_310R::Ch16Source ch8_source, gr::II_K7_310R::Ch16Source ch9_source, gr::II_K7_310R::Ch16Source ch10_source, gr::II_K7_310R::Ch16Source ch11_source, gr::II_K7_310R::Ch16Source ch12_source, gr::II_K7_310R::Ch16Source ch13_source, gr::II_K7_310R::Ch16Source ch14_source, gr::II_K7_310R::Ch16Source ch15_source) -> ch16_ddc_source_c_sptr\n"
 		"\n"
 		"Return a shared_ptr to a new instance of II_K7_310R::ch16_ddc_source_c.\n"
 		"\n"
 		"To avoid accidental use of raw pointers, II_K7_310R::ch16_ddc_source_c's constructor is in a private implementation class. II_K7_310R::ch16_ddc_source_c::make is the public interface for creating new instances.\n"
 		"\n"
-		"Params: (max_ch, rf_gain, trigger_source, ddc_filter_path, is_rf_tuner, rf_center_freq, ch0_offset_freq, ch1_offset_freq, ch2_offset_freq, ch3_offset_freq, ch4_offset_freq, ch5_offset_freq, ch6_offset_freq, ch7_offset_freq, ch8_offset_freq, ch9_offset_freq, ch10_offset_freq, ch11_offset_freq, ch12_offset_freq, ch13_offset_freq, ch14_offset_freq, ch15_offset_freq, ch0_tune_freq, ch1_tune_freq, ch2_tune_freq, ch3_tune_freq, ch4_tune_freq, ch5_tune_freq, ch6_tune_freq, ch7_tune_freq, ch8_tune_freq, ch9_tune_freq, ch10_tune_freq, ch11_tune_freq, ch12_tune_freq, ch13_tune_freq, ch14_tune_freq, ch15_tune_freq)\n"
+		"Params: (max_ch, rf_gain, trigger_source, ddc_filter_path, is_rf_tuner, rf_center_freq, ch0_offset_freq, ch1_offset_freq, ch2_offset_freq, ch3_offset_freq, ch4_offset_freq, ch5_offset_freq, ch6_offset_freq, ch7_offset_freq, ch8_offset_freq, ch9_offset_freq, ch10_offset_freq, ch11_offset_freq, ch12_offset_freq, ch13_offset_freq, ch14_offset_freq, ch15_offset_freq, ch0_tune_freq, ch1_tune_freq, ch2_tune_freq, ch3_tune_freq, ch4_tune_freq, ch5_tune_freq, ch6_tune_freq, ch7_tune_freq, ch8_tune_freq, ch9_tune_freq, ch10_tune_freq, ch11_tune_freq, ch12_tune_freq, ch13_tune_freq, ch14_tune_freq, ch15_tune_freq, ch0_source, ch1_source, ch2_source, ch3_source, ch4_source, ch5_source, ch6_source, ch7_source, ch8_source, ch9_source, ch10_source, ch11_source, ch12_source, ch13_source, ch14_source, ch15_source)\n"
 		""},
 	 { (char *)"ch16_ddc_source_c_sptr_history", _wrap_ch16_ddc_source_c_sptr_history, METH_VARARGS, (char *)"ch16_ddc_source_c_sptr_history(ch16_ddc_source_c_sptr self) -> unsigned int"},
 	 { (char *)"ch16_ddc_source_c_sptr_declare_sample_delay", _wrap_ch16_ddc_source_c_sptr_declare_sample_delay, METH_VARARGS, (char *)"\n"
@@ -12412,117 +9448,6 @@ static PyMethodDef SwigMethods[] = {
 	 { (char *)"ch16_ddc_source_c_sptr_message_ports_out", _wrap_ch16_ddc_source_c_sptr_message_ports_out, METH_VARARGS, (char *)"ch16_ddc_source_c_sptr_message_ports_out(ch16_ddc_source_c_sptr self) -> swig_int_ptr"},
 	 { (char *)"ch16_ddc_source_c_sptr_message_subscribers", (PyCFunction) _wrap_ch16_ddc_source_c_sptr_message_subscribers, METH_VARARGS | METH_KEYWORDS, (char *)"ch16_ddc_source_c_sptr_message_subscribers(ch16_ddc_source_c_sptr self, swig_int_ptr which_port) -> swig_int_ptr"},
 	 { (char *)"ch16_ddc_source_c_sptr_swigregister", ch16_ddc_source_c_sptr_swigregister, METH_VARARGS, NULL},
-	 { (char *)"Ch1Software_swigconstant", Ch1Software_swigconstant, METH_VARARGS, NULL},
-	 { (char *)"Ch1External_swigconstant", Ch1External_swigconstant, METH_VARARGS, NULL},
-	 { (char *)"ch1_ddc_source_c_make", (PyCFunction) _wrap_ch1_ddc_source_c_make, METH_VARARGS | METH_KEYWORDS, (char *)"\n"
-		"ch1_ddc_source_c_make(float rf_gain, gr::II_K7_310R::Ch1TriggerSource trigger_source, char const * ddc_filter_path, bool is_rf_tuner, float rf_center_freq, float ch0_offset_freq, float ch0_tune_freq) -> ch1_ddc_source_c_sptr\n"
-		"\n"
-		"Return a shared_ptr to a new instance of II_K7_310R::ch1_ddc_source_c.\n"
-		"\n"
-		"To avoid accidental use of raw pointers, II_K7_310R::ch1_ddc_source_c's constructor is in a private implementation class. II_K7_310R::ch1_ddc_source_c::make is the public interface for creating new instances.\n"
-		"\n"
-		"Params: (rf_gain, trigger_source, ddc_filter_path, is_rf_tuner, rf_center_freq, ch0_offset_freq, ch0_tune_freq)\n"
-		""},
-	 { (char *)"delete_ch1_ddc_source_c", _wrap_delete_ch1_ddc_source_c, METH_VARARGS, (char *)"delete_ch1_ddc_source_c(ch1_ddc_source_c self)"},
-	 { (char *)"ch1_ddc_source_c_swigregister", ch1_ddc_source_c_swigregister, METH_VARARGS, NULL},
-	 { (char *)"new_ch1_ddc_source_c_sptr", _wrap_new_ch1_ddc_source_c_sptr, METH_VARARGS, (char *)"\n"
-		"ch1_ddc_source_c_sptr()\n"
-		"new_ch1_ddc_source_c_sptr(ch1_ddc_source_c p) -> ch1_ddc_source_c_sptr\n"
-		""},
-	 { (char *)"ch1_ddc_source_c_sptr___deref__", _wrap_ch1_ddc_source_c_sptr___deref__, METH_VARARGS, (char *)"ch1_ddc_source_c_sptr___deref__(ch1_ddc_source_c_sptr self) -> ch1_ddc_source_c"},
-	 { (char *)"delete_ch1_ddc_source_c_sptr", _wrap_delete_ch1_ddc_source_c_sptr, METH_VARARGS, (char *)"delete_ch1_ddc_source_c_sptr(ch1_ddc_source_c_sptr self)"},
-	 { (char *)"ch1_ddc_source_c_sptr_make", (PyCFunction) _wrap_ch1_ddc_source_c_sptr_make, METH_VARARGS | METH_KEYWORDS, (char *)"\n"
-		"ch1_ddc_source_c_sptr_make(ch1_ddc_source_c_sptr self, float rf_gain, gr::II_K7_310R::Ch1TriggerSource trigger_source, char const * ddc_filter_path, bool is_rf_tuner, float rf_center_freq, float ch0_offset_freq, float ch0_tune_freq) -> ch1_ddc_source_c_sptr\n"
-		"\n"
-		"Return a shared_ptr to a new instance of II_K7_310R::ch1_ddc_source_c.\n"
-		"\n"
-		"To avoid accidental use of raw pointers, II_K7_310R::ch1_ddc_source_c's constructor is in a private implementation class. II_K7_310R::ch1_ddc_source_c::make is the public interface for creating new instances.\n"
-		"\n"
-		"Params: (rf_gain, trigger_source, ddc_filter_path, is_rf_tuner, rf_center_freq, ch0_offset_freq, ch0_tune_freq)\n"
-		""},
-	 { (char *)"ch1_ddc_source_c_sptr_history", _wrap_ch1_ddc_source_c_sptr_history, METH_VARARGS, (char *)"ch1_ddc_source_c_sptr_history(ch1_ddc_source_c_sptr self) -> unsigned int"},
-	 { (char *)"ch1_ddc_source_c_sptr_declare_sample_delay", _wrap_ch1_ddc_source_c_sptr_declare_sample_delay, METH_VARARGS, (char *)"\n"
-		"declare_sample_delay(int which, int delay)\n"
-		"ch1_ddc_source_c_sptr_declare_sample_delay(ch1_ddc_source_c_sptr self, unsigned int delay)\n"
-		""},
-	 { (char *)"ch1_ddc_source_c_sptr_sample_delay", (PyCFunction) _wrap_ch1_ddc_source_c_sptr_sample_delay, METH_VARARGS | METH_KEYWORDS, (char *)"ch1_ddc_source_c_sptr_sample_delay(ch1_ddc_source_c_sptr self, int which) -> unsigned int"},
-	 { (char *)"ch1_ddc_source_c_sptr_output_multiple", _wrap_ch1_ddc_source_c_sptr_output_multiple, METH_VARARGS, (char *)"ch1_ddc_source_c_sptr_output_multiple(ch1_ddc_source_c_sptr self) -> int"},
-	 { (char *)"ch1_ddc_source_c_sptr_relative_rate", _wrap_ch1_ddc_source_c_sptr_relative_rate, METH_VARARGS, (char *)"ch1_ddc_source_c_sptr_relative_rate(ch1_ddc_source_c_sptr self) -> double"},
-	 { (char *)"ch1_ddc_source_c_sptr_start", _wrap_ch1_ddc_source_c_sptr_start, METH_VARARGS, (char *)"ch1_ddc_source_c_sptr_start(ch1_ddc_source_c_sptr self) -> bool"},
-	 { (char *)"ch1_ddc_source_c_sptr_stop", _wrap_ch1_ddc_source_c_sptr_stop, METH_VARARGS, (char *)"ch1_ddc_source_c_sptr_stop(ch1_ddc_source_c_sptr self) -> bool"},
-	 { (char *)"ch1_ddc_source_c_sptr_nitems_read", (PyCFunction) _wrap_ch1_ddc_source_c_sptr_nitems_read, METH_VARARGS | METH_KEYWORDS, (char *)"ch1_ddc_source_c_sptr_nitems_read(ch1_ddc_source_c_sptr self, unsigned int which_input) -> uint64_t"},
-	 { (char *)"ch1_ddc_source_c_sptr_nitems_written", (PyCFunction) _wrap_ch1_ddc_source_c_sptr_nitems_written, METH_VARARGS | METH_KEYWORDS, (char *)"ch1_ddc_source_c_sptr_nitems_written(ch1_ddc_source_c_sptr self, unsigned int which_output) -> uint64_t"},
-	 { (char *)"ch1_ddc_source_c_sptr_max_noutput_items", _wrap_ch1_ddc_source_c_sptr_max_noutput_items, METH_VARARGS, (char *)"ch1_ddc_source_c_sptr_max_noutput_items(ch1_ddc_source_c_sptr self) -> int"},
-	 { (char *)"ch1_ddc_source_c_sptr_set_max_noutput_items", (PyCFunction) _wrap_ch1_ddc_source_c_sptr_set_max_noutput_items, METH_VARARGS | METH_KEYWORDS, (char *)"ch1_ddc_source_c_sptr_set_max_noutput_items(ch1_ddc_source_c_sptr self, int m)"},
-	 { (char *)"ch1_ddc_source_c_sptr_unset_max_noutput_items", _wrap_ch1_ddc_source_c_sptr_unset_max_noutput_items, METH_VARARGS, (char *)"ch1_ddc_source_c_sptr_unset_max_noutput_items(ch1_ddc_source_c_sptr self)"},
-	 { (char *)"ch1_ddc_source_c_sptr_is_set_max_noutput_items", _wrap_ch1_ddc_source_c_sptr_is_set_max_noutput_items, METH_VARARGS, (char *)"ch1_ddc_source_c_sptr_is_set_max_noutput_items(ch1_ddc_source_c_sptr self) -> bool"},
-	 { (char *)"ch1_ddc_source_c_sptr_set_min_noutput_items", (PyCFunction) _wrap_ch1_ddc_source_c_sptr_set_min_noutput_items, METH_VARARGS | METH_KEYWORDS, (char *)"ch1_ddc_source_c_sptr_set_min_noutput_items(ch1_ddc_source_c_sptr self, int m)"},
-	 { (char *)"ch1_ddc_source_c_sptr_min_noutput_items", _wrap_ch1_ddc_source_c_sptr_min_noutput_items, METH_VARARGS, (char *)"ch1_ddc_source_c_sptr_min_noutput_items(ch1_ddc_source_c_sptr self) -> int"},
-	 { (char *)"ch1_ddc_source_c_sptr_max_output_buffer", (PyCFunction) _wrap_ch1_ddc_source_c_sptr_max_output_buffer, METH_VARARGS | METH_KEYWORDS, (char *)"ch1_ddc_source_c_sptr_max_output_buffer(ch1_ddc_source_c_sptr self, int i) -> long"},
-	 { (char *)"ch1_ddc_source_c_sptr_set_max_output_buffer", _wrap_ch1_ddc_source_c_sptr_set_max_output_buffer, METH_VARARGS, (char *)"\n"
-		"set_max_output_buffer(long max_output_buffer)\n"
-		"ch1_ddc_source_c_sptr_set_max_output_buffer(ch1_ddc_source_c_sptr self, int port, long max_output_buffer)\n"
-		""},
-	 { (char *)"ch1_ddc_source_c_sptr_min_output_buffer", (PyCFunction) _wrap_ch1_ddc_source_c_sptr_min_output_buffer, METH_VARARGS | METH_KEYWORDS, (char *)"ch1_ddc_source_c_sptr_min_output_buffer(ch1_ddc_source_c_sptr self, int i) -> long"},
-	 { (char *)"ch1_ddc_source_c_sptr_set_min_output_buffer", _wrap_ch1_ddc_source_c_sptr_set_min_output_buffer, METH_VARARGS, (char *)"\n"
-		"set_min_output_buffer(long min_output_buffer)\n"
-		"ch1_ddc_source_c_sptr_set_min_output_buffer(ch1_ddc_source_c_sptr self, int port, long min_output_buffer)\n"
-		""},
-	 { (char *)"ch1_ddc_source_c_sptr_pc_noutput_items", _wrap_ch1_ddc_source_c_sptr_pc_noutput_items, METH_VARARGS, (char *)"ch1_ddc_source_c_sptr_pc_noutput_items(ch1_ddc_source_c_sptr self) -> float"},
-	 { (char *)"ch1_ddc_source_c_sptr_pc_noutput_items_avg", _wrap_ch1_ddc_source_c_sptr_pc_noutput_items_avg, METH_VARARGS, (char *)"ch1_ddc_source_c_sptr_pc_noutput_items_avg(ch1_ddc_source_c_sptr self) -> float"},
-	 { (char *)"ch1_ddc_source_c_sptr_pc_noutput_items_var", _wrap_ch1_ddc_source_c_sptr_pc_noutput_items_var, METH_VARARGS, (char *)"ch1_ddc_source_c_sptr_pc_noutput_items_var(ch1_ddc_source_c_sptr self) -> float"},
-	 { (char *)"ch1_ddc_source_c_sptr_pc_nproduced", _wrap_ch1_ddc_source_c_sptr_pc_nproduced, METH_VARARGS, (char *)"ch1_ddc_source_c_sptr_pc_nproduced(ch1_ddc_source_c_sptr self) -> float"},
-	 { (char *)"ch1_ddc_source_c_sptr_pc_nproduced_avg", _wrap_ch1_ddc_source_c_sptr_pc_nproduced_avg, METH_VARARGS, (char *)"ch1_ddc_source_c_sptr_pc_nproduced_avg(ch1_ddc_source_c_sptr self) -> float"},
-	 { (char *)"ch1_ddc_source_c_sptr_pc_nproduced_var", _wrap_ch1_ddc_source_c_sptr_pc_nproduced_var, METH_VARARGS, (char *)"ch1_ddc_source_c_sptr_pc_nproduced_var(ch1_ddc_source_c_sptr self) -> float"},
-	 { (char *)"ch1_ddc_source_c_sptr_pc_input_buffers_full", _wrap_ch1_ddc_source_c_sptr_pc_input_buffers_full, METH_VARARGS, (char *)"\n"
-		"pc_input_buffers_full(int which) -> float\n"
-		"ch1_ddc_source_c_sptr_pc_input_buffers_full(ch1_ddc_source_c_sptr self) -> pmt_vector_float\n"
-		""},
-	 { (char *)"ch1_ddc_source_c_sptr_pc_input_buffers_full_avg", _wrap_ch1_ddc_source_c_sptr_pc_input_buffers_full_avg, METH_VARARGS, (char *)"\n"
-		"pc_input_buffers_full_avg(int which) -> float\n"
-		"ch1_ddc_source_c_sptr_pc_input_buffers_full_avg(ch1_ddc_source_c_sptr self) -> pmt_vector_float\n"
-		""},
-	 { (char *)"ch1_ddc_source_c_sptr_pc_input_buffers_full_var", _wrap_ch1_ddc_source_c_sptr_pc_input_buffers_full_var, METH_VARARGS, (char *)"\n"
-		"pc_input_buffers_full_var(int which) -> float\n"
-		"ch1_ddc_source_c_sptr_pc_input_buffers_full_var(ch1_ddc_source_c_sptr self) -> pmt_vector_float\n"
-		""},
-	 { (char *)"ch1_ddc_source_c_sptr_pc_output_buffers_full", _wrap_ch1_ddc_source_c_sptr_pc_output_buffers_full, METH_VARARGS, (char *)"\n"
-		"pc_output_buffers_full(int which) -> float\n"
-		"ch1_ddc_source_c_sptr_pc_output_buffers_full(ch1_ddc_source_c_sptr self) -> pmt_vector_float\n"
-		""},
-	 { (char *)"ch1_ddc_source_c_sptr_pc_output_buffers_full_avg", _wrap_ch1_ddc_source_c_sptr_pc_output_buffers_full_avg, METH_VARARGS, (char *)"\n"
-		"pc_output_buffers_full_avg(int which) -> float\n"
-		"ch1_ddc_source_c_sptr_pc_output_buffers_full_avg(ch1_ddc_source_c_sptr self) -> pmt_vector_float\n"
-		""},
-	 { (char *)"ch1_ddc_source_c_sptr_pc_output_buffers_full_var", _wrap_ch1_ddc_source_c_sptr_pc_output_buffers_full_var, METH_VARARGS, (char *)"\n"
-		"pc_output_buffers_full_var(int which) -> float\n"
-		"ch1_ddc_source_c_sptr_pc_output_buffers_full_var(ch1_ddc_source_c_sptr self) -> pmt_vector_float\n"
-		""},
-	 { (char *)"ch1_ddc_source_c_sptr_pc_work_time", _wrap_ch1_ddc_source_c_sptr_pc_work_time, METH_VARARGS, (char *)"ch1_ddc_source_c_sptr_pc_work_time(ch1_ddc_source_c_sptr self) -> float"},
-	 { (char *)"ch1_ddc_source_c_sptr_pc_work_time_avg", _wrap_ch1_ddc_source_c_sptr_pc_work_time_avg, METH_VARARGS, (char *)"ch1_ddc_source_c_sptr_pc_work_time_avg(ch1_ddc_source_c_sptr self) -> float"},
-	 { (char *)"ch1_ddc_source_c_sptr_pc_work_time_var", _wrap_ch1_ddc_source_c_sptr_pc_work_time_var, METH_VARARGS, (char *)"ch1_ddc_source_c_sptr_pc_work_time_var(ch1_ddc_source_c_sptr self) -> float"},
-	 { (char *)"ch1_ddc_source_c_sptr_pc_work_time_total", _wrap_ch1_ddc_source_c_sptr_pc_work_time_total, METH_VARARGS, (char *)"ch1_ddc_source_c_sptr_pc_work_time_total(ch1_ddc_source_c_sptr self) -> float"},
-	 { (char *)"ch1_ddc_source_c_sptr_pc_throughput_avg", _wrap_ch1_ddc_source_c_sptr_pc_throughput_avg, METH_VARARGS, (char *)"ch1_ddc_source_c_sptr_pc_throughput_avg(ch1_ddc_source_c_sptr self) -> float"},
-	 { (char *)"ch1_ddc_source_c_sptr_set_processor_affinity", (PyCFunction) _wrap_ch1_ddc_source_c_sptr_set_processor_affinity, METH_VARARGS | METH_KEYWORDS, (char *)"ch1_ddc_source_c_sptr_set_processor_affinity(ch1_ddc_source_c_sptr self, std::vector< int,std::allocator< int > > const & mask)"},
-	 { (char *)"ch1_ddc_source_c_sptr_unset_processor_affinity", _wrap_ch1_ddc_source_c_sptr_unset_processor_affinity, METH_VARARGS, (char *)"ch1_ddc_source_c_sptr_unset_processor_affinity(ch1_ddc_source_c_sptr self)"},
-	 { (char *)"ch1_ddc_source_c_sptr_processor_affinity", _wrap_ch1_ddc_source_c_sptr_processor_affinity, METH_VARARGS, (char *)"ch1_ddc_source_c_sptr_processor_affinity(ch1_ddc_source_c_sptr self) -> std::vector< int,std::allocator< int > >"},
-	 { (char *)"ch1_ddc_source_c_sptr_active_thread_priority", _wrap_ch1_ddc_source_c_sptr_active_thread_priority, METH_VARARGS, (char *)"ch1_ddc_source_c_sptr_active_thread_priority(ch1_ddc_source_c_sptr self) -> int"},
-	 { (char *)"ch1_ddc_source_c_sptr_thread_priority", _wrap_ch1_ddc_source_c_sptr_thread_priority, METH_VARARGS, (char *)"ch1_ddc_source_c_sptr_thread_priority(ch1_ddc_source_c_sptr self) -> int"},
-	 { (char *)"ch1_ddc_source_c_sptr_set_thread_priority", (PyCFunction) _wrap_ch1_ddc_source_c_sptr_set_thread_priority, METH_VARARGS | METH_KEYWORDS, (char *)"ch1_ddc_source_c_sptr_set_thread_priority(ch1_ddc_source_c_sptr self, int priority) -> int"},
-	 { (char *)"ch1_ddc_source_c_sptr_name", _wrap_ch1_ddc_source_c_sptr_name, METH_VARARGS, (char *)"ch1_ddc_source_c_sptr_name(ch1_ddc_source_c_sptr self) -> std::string"},
-	 { (char *)"ch1_ddc_source_c_sptr_symbol_name", _wrap_ch1_ddc_source_c_sptr_symbol_name, METH_VARARGS, (char *)"ch1_ddc_source_c_sptr_symbol_name(ch1_ddc_source_c_sptr self) -> std::string"},
-	 { (char *)"ch1_ddc_source_c_sptr_input_signature", _wrap_ch1_ddc_source_c_sptr_input_signature, METH_VARARGS, (char *)"ch1_ddc_source_c_sptr_input_signature(ch1_ddc_source_c_sptr self) -> io_signature_sptr"},
-	 { (char *)"ch1_ddc_source_c_sptr_output_signature", _wrap_ch1_ddc_source_c_sptr_output_signature, METH_VARARGS, (char *)"ch1_ddc_source_c_sptr_output_signature(ch1_ddc_source_c_sptr self) -> io_signature_sptr"},
-	 { (char *)"ch1_ddc_source_c_sptr_unique_id", _wrap_ch1_ddc_source_c_sptr_unique_id, METH_VARARGS, (char *)"ch1_ddc_source_c_sptr_unique_id(ch1_ddc_source_c_sptr self) -> long"},
-	 { (char *)"ch1_ddc_source_c_sptr_to_basic_block", _wrap_ch1_ddc_source_c_sptr_to_basic_block, METH_VARARGS, (char *)"ch1_ddc_source_c_sptr_to_basic_block(ch1_ddc_source_c_sptr self) -> basic_block_sptr"},
-	 { (char *)"ch1_ddc_source_c_sptr_check_topology", (PyCFunction) _wrap_ch1_ddc_source_c_sptr_check_topology, METH_VARARGS | METH_KEYWORDS, (char *)"ch1_ddc_source_c_sptr_check_topology(ch1_ddc_source_c_sptr self, int ninputs, int noutputs) -> bool"},
-	 { (char *)"ch1_ddc_source_c_sptr_alias", _wrap_ch1_ddc_source_c_sptr_alias, METH_VARARGS, (char *)"ch1_ddc_source_c_sptr_alias(ch1_ddc_source_c_sptr self) -> std::string"},
-	 { (char *)"ch1_ddc_source_c_sptr_set_block_alias", (PyCFunction) _wrap_ch1_ddc_source_c_sptr_set_block_alias, METH_VARARGS | METH_KEYWORDS, (char *)"ch1_ddc_source_c_sptr_set_block_alias(ch1_ddc_source_c_sptr self, std::string name)"},
-	 { (char *)"ch1_ddc_source_c_sptr__post", (PyCFunction) _wrap_ch1_ddc_source_c_sptr__post, METH_VARARGS | METH_KEYWORDS, (char *)"ch1_ddc_source_c_sptr__post(ch1_ddc_source_c_sptr self, swig_int_ptr which_port, swig_int_ptr msg)"},
-	 { (char *)"ch1_ddc_source_c_sptr_message_ports_in", _wrap_ch1_ddc_source_c_sptr_message_ports_in, METH_VARARGS, (char *)"ch1_ddc_source_c_sptr_message_ports_in(ch1_ddc_source_c_sptr self) -> swig_int_ptr"},
-	 { (char *)"ch1_ddc_source_c_sptr_message_ports_out", _wrap_ch1_ddc_source_c_sptr_message_ports_out, METH_VARARGS, (char *)"ch1_ddc_source_c_sptr_message_ports_out(ch1_ddc_source_c_sptr self) -> swig_int_ptr"},
-	 { (char *)"ch1_ddc_source_c_sptr_message_subscribers", (PyCFunction) _wrap_ch1_ddc_source_c_sptr_message_subscribers, METH_VARARGS | METH_KEYWORDS, (char *)"ch1_ddc_source_c_sptr_message_subscribers(ch1_ddc_source_c_sptr self, swig_int_ptr which_port) -> swig_int_ptr"},
-	 { (char *)"ch1_ddc_source_c_sptr_swigregister", ch1_ddc_source_c_sptr_swigregister, METH_VARARGS, NULL},
 	 { NULL, NULL, 0, NULL }
 };
 
@@ -12534,9 +9459,6 @@ static void *_p_gr__sync_decimatorTo_p_gr__block(void *x, int *SWIGUNUSEDPARM(ne
 }
 static void *_p_gr__II_K7_310R__ch16_ddc_source_cTo_p_gr__block(void *x, int *SWIGUNUSEDPARM(newmemory)) {
     return (void *)((gr::block *) (gr::sync_block *) ((gr::II_K7_310R::ch16_ddc_source_c *) x));
-}
-static void *_p_gr__II_K7_310R__ch1_ddc_source_cTo_p_gr__block(void *x, int *SWIGUNUSEDPARM(newmemory)) {
-    return (void *)((gr::block *) (gr::sync_block *) ((gr::II_K7_310R::ch1_ddc_source_c *) x));
 }
 static void *_p_gr__sync_blockTo_p_gr__block(void *x, int *SWIGUNUSEDPARM(newmemory)) {
     return (void *)((gr::block *)  ((gr::sync_block *) x));
@@ -12556,9 +9478,6 @@ static void *_p_gr__sync_decimatorTo_p_gr__sync_block(void *x, int *SWIGUNUSEDPA
 static void *_p_gr__II_K7_310R__ch16_ddc_source_cTo_p_gr__sync_block(void *x, int *SWIGUNUSEDPARM(newmemory)) {
     return (void *)((gr::sync_block *)  ((gr::II_K7_310R::ch16_ddc_source_c *) x));
 }
-static void *_p_gr__II_K7_310R__ch1_ddc_source_cTo_p_gr__sync_block(void *x, int *SWIGUNUSEDPARM(newmemory)) {
-    return (void *)((gr::sync_block *)  ((gr::II_K7_310R::ch1_ddc_source_c *) x));
-}
 static void *_p_gr__sync_interpolatorTo_p_gr__sync_block(void *x, int *SWIGUNUSEDPARM(newmemory)) {
     return (void *)((gr::sync_block *)  ((gr::sync_interpolator *) x));
 }
@@ -12570,9 +9489,6 @@ static void *_p_gr__sync_decimatorTo_p_gr__basic_block(void *x, int *SWIGUNUSEDP
 }
 static void *_p_gr__II_K7_310R__ch16_ddc_source_cTo_p_gr__basic_block(void *x, int *SWIGUNUSEDPARM(newmemory)) {
     return (void *)((gr::basic_block *) (gr::block *)(gr::sync_block *) ((gr::II_K7_310R::ch16_ddc_source_c *) x));
-}
-static void *_p_gr__II_K7_310R__ch1_ddc_source_cTo_p_gr__basic_block(void *x, int *SWIGUNUSEDPARM(newmemory)) {
-    return (void *)((gr::basic_block *) (gr::block *)(gr::sync_block *) ((gr::II_K7_310R::ch1_ddc_source_c *) x));
 }
 static void *_p_gr__hier_block2To_p_gr__basic_block(void *x, int *SWIGUNUSEDPARM(newmemory)) {
     return (void *)((gr::basic_block *)  ((gr::hier_block2 *) x));
@@ -12595,7 +9511,6 @@ static void *_p_gr__top_blockTo_p_gr__basic_block(void *x, int *SWIGUNUSEDPARM(n
 static swig_type_info _swigt__p_allocator_type = {"_p_allocator_type", "allocator_type *", 0, 0, (void*)0, 0};
 static swig_type_info _swigt__p_boost__intrusive_ptrT_pmt__pmt_base_t = {"_p_boost__intrusive_ptrT_pmt__pmt_base_t", "pmt::pmt_t *|boost::intrusive_ptr< pmt::pmt_base > *", 0, 0, (void*)0, 0};
 static swig_type_info _swigt__p_boost__shared_ptrT_gr__II_K7_310R__ch16_ddc_source_c_t = {"_p_boost__shared_ptrT_gr__II_K7_310R__ch16_ddc_source_c_t", "gr::II_K7_310R::ch16_ddc_source_c::sptr *|boost::shared_ptr< gr::II_K7_310R::ch16_ddc_source_c > *", 0, 0, (void*)0, 0};
-static swig_type_info _swigt__p_boost__shared_ptrT_gr__II_K7_310R__ch1_ddc_source_c_t = {"_p_boost__shared_ptrT_gr__II_K7_310R__ch1_ddc_source_c_t", "boost::shared_ptr< gr::II_K7_310R::ch1_ddc_source_c > *|gr::II_K7_310R::ch1_ddc_source_c::sptr *", 0, 0, (void*)0, 0};
 static swig_type_info _swigt__p_boost__shared_ptrT_gr__basic_block_t = {"_p_boost__shared_ptrT_gr__basic_block_t", "boost::shared_ptr< gr::basic_block > *|gr::basic_block_sptr *", 0, 0, (void*)0, 0};
 static swig_type_info _swigt__p_boost__shared_ptrT_gr__block_detail_t = {"_p_boost__shared_ptrT_gr__block_detail_t", "boost::shared_ptr< gr::block_detail > *|gr::block_detail_sptr *", 0, 0, (void*)0, 0};
 static swig_type_info _swigt__p_boost__shared_ptrT_gr__block_t = {"_p_boost__shared_ptrT_gr__block_t", "boost::shared_ptr< gr::block > *|gr::block_sptr *", 0, 0, (void*)0, 0};
@@ -12610,7 +9525,6 @@ static swig_type_info _swigt__p_char = {"_p_char", "char *", 0, 0, (void*)0, 0};
 static swig_type_info _swigt__p_const_reference = {"_p_const_reference", "const_reference *", 0, 0, (void*)0, 0};
 static swig_type_info _swigt__p_difference_type = {"_p_difference_type", "difference_type *", 0, 0, (void*)0, 0};
 static swig_type_info _swigt__p_gr__II_K7_310R__ch16_ddc_source_c = {"_p_gr__II_K7_310R__ch16_ddc_source_c", "gr::II_K7_310R::ch16_ddc_source_c *", 0, 0, (void*)0, 0};
-static swig_type_info _swigt__p_gr__II_K7_310R__ch1_ddc_source_c = {"_p_gr__II_K7_310R__ch1_ddc_source_c", "gr::II_K7_310R::ch1_ddc_source_c *", 0, 0, (void*)0, 0};
 static swig_type_info _swigt__p_gr__basic_block = {"_p_gr__basic_block", "gr::basic_block *", 0, 0, (void*)0, 0};
 static swig_type_info _swigt__p_gr__sync_decimator = {"_p_gr__sync_decimator", 0, 0, 0, 0, 0};
 static swig_type_info _swigt__p_gr__tagged_stream_block = {"_p_gr__tagged_stream_block", 0, 0, 0, 0, 0};
@@ -12641,7 +9555,6 @@ static swig_type_info *swig_type_initial[] = {
   &_swigt__p_allocator_type,
   &_swigt__p_boost__intrusive_ptrT_pmt__pmt_base_t,
   &_swigt__p_boost__shared_ptrT_gr__II_K7_310R__ch16_ddc_source_c_t,
-  &_swigt__p_boost__shared_ptrT_gr__II_K7_310R__ch1_ddc_source_c_t,
   &_swigt__p_boost__shared_ptrT_gr__basic_block_t,
   &_swigt__p_boost__shared_ptrT_gr__block_detail_t,
   &_swigt__p_boost__shared_ptrT_gr__block_t,
@@ -12656,7 +9569,6 @@ static swig_type_info *swig_type_initial[] = {
   &_swigt__p_const_reference,
   &_swigt__p_difference_type,
   &_swigt__p_gr__II_K7_310R__ch16_ddc_source_c,
-  &_swigt__p_gr__II_K7_310R__ch1_ddc_source_c,
   &_swigt__p_gr__basic_block,
   &_swigt__p_gr__block,
   &_swigt__p_gr__block_gateway,
@@ -12687,7 +9599,6 @@ static swig_type_info *swig_type_initial[] = {
 static swig_cast_info _swigc__p_allocator_type[] = {  {&_swigt__p_allocator_type, 0, 0, 0},{0, 0, 0, 0}};
 static swig_cast_info _swigc__p_boost__intrusive_ptrT_pmt__pmt_base_t[] = {  {&_swigt__p_boost__intrusive_ptrT_pmt__pmt_base_t, 0, 0, 0},{0, 0, 0, 0}};
 static swig_cast_info _swigc__p_boost__shared_ptrT_gr__II_K7_310R__ch16_ddc_source_c_t[] = {  {&_swigt__p_boost__shared_ptrT_gr__II_K7_310R__ch16_ddc_source_c_t, 0, 0, 0},{0, 0, 0, 0}};
-static swig_cast_info _swigc__p_boost__shared_ptrT_gr__II_K7_310R__ch1_ddc_source_c_t[] = {  {&_swigt__p_boost__shared_ptrT_gr__II_K7_310R__ch1_ddc_source_c_t, 0, 0, 0},{0, 0, 0, 0}};
 static swig_cast_info _swigc__p_boost__shared_ptrT_gr__basic_block_t[] = {  {&_swigt__p_boost__shared_ptrT_gr__basic_block_t, 0, 0, 0},{0, 0, 0, 0}};
 static swig_cast_info _swigc__p_boost__shared_ptrT_gr__block_detail_t[] = {  {&_swigt__p_boost__shared_ptrT_gr__block_detail_t, 0, 0, 0},{0, 0, 0, 0}};
 static swig_cast_info _swigc__p_boost__shared_ptrT_gr__block_t[] = {  {&_swigt__p_boost__shared_ptrT_gr__block_t, 0, 0, 0},{0, 0, 0, 0}};
@@ -12702,18 +9613,17 @@ static swig_cast_info _swigc__p_char[] = {  {&_swigt__p_char, 0, 0, 0},{0, 0, 0,
 static swig_cast_info _swigc__p_const_reference[] = {  {&_swigt__p_const_reference, 0, 0, 0},{0, 0, 0, 0}};
 static swig_cast_info _swigc__p_difference_type[] = {  {&_swigt__p_difference_type, 0, 0, 0},{0, 0, 0, 0}};
 static swig_cast_info _swigc__p_gr__II_K7_310R__ch16_ddc_source_c[] = {  {&_swigt__p_gr__II_K7_310R__ch16_ddc_source_c, 0, 0, 0},{0, 0, 0, 0}};
-static swig_cast_info _swigc__p_gr__II_K7_310R__ch1_ddc_source_c[] = {  {&_swigt__p_gr__II_K7_310R__ch1_ddc_source_c, 0, 0, 0},{0, 0, 0, 0}};
 static swig_cast_info _swigc__p_gr__sync_decimator[] = {{&_swigt__p_gr__sync_decimator, 0, 0, 0},{0, 0, 0, 0}};
 static swig_cast_info _swigc__p_gr__tagged_stream_block[] = {{&_swigt__p_gr__tagged_stream_block, 0, 0, 0},{0, 0, 0, 0}};
 static swig_cast_info _swigc__p_gr__block_gateway[] = {{&_swigt__p_gr__block_gateway, 0, 0, 0},{0, 0, 0, 0}};
 static swig_cast_info _swigc__p_gr__hier_block2[] = {{&_swigt__p_gr__hier_block2, 0, 0, 0},{0, 0, 0, 0}};
 static swig_cast_info _swigc__p_gr__sync_interpolator[] = {{&_swigt__p_gr__sync_interpolator, 0, 0, 0},{0, 0, 0, 0}};
 static swig_cast_info _swigc__p_gr__top_block[] = {{&_swigt__p_gr__top_block, 0, 0, 0},{0, 0, 0, 0}};
-static swig_cast_info _swigc__p_gr__basic_block[] = {  {&_swigt__p_gr__sync_decimator, _p_gr__sync_decimatorTo_p_gr__basic_block, 0, 0},  {&_swigt__p_gr__II_K7_310R__ch16_ddc_source_c, _p_gr__II_K7_310R__ch16_ddc_source_cTo_p_gr__basic_block, 0, 0},  {&_swigt__p_gr__II_K7_310R__ch1_ddc_source_c, _p_gr__II_K7_310R__ch1_ddc_source_cTo_p_gr__basic_block, 0, 0},  {&_swigt__p_gr__basic_block, 0, 0, 0},  {&_swigt__p_gr__block, _p_gr__blockTo_p_gr__basic_block, 0, 0},  {&_swigt__p_gr__sync_block, _p_gr__sync_blockTo_p_gr__basic_block, 0, 0},  {&_swigt__p_gr__tagged_stream_block, _p_gr__tagged_stream_blockTo_p_gr__basic_block, 0, 0},  {&_swigt__p_gr__block_gateway, _p_gr__block_gatewayTo_p_gr__basic_block, 0, 0},  {&_swigt__p_gr__hier_block2, _p_gr__hier_block2To_p_gr__basic_block, 0, 0},  {&_swigt__p_gr__sync_interpolator, _p_gr__sync_interpolatorTo_p_gr__basic_block, 0, 0},  {&_swigt__p_gr__top_block, _p_gr__top_blockTo_p_gr__basic_block, 0, 0},{0, 0, 0, 0}};
-static swig_cast_info _swigc__p_gr__block[] = {  {&_swigt__p_gr__sync_decimator, _p_gr__sync_decimatorTo_p_gr__block, 0, 0},  {&_swigt__p_gr__II_K7_310R__ch16_ddc_source_c, _p_gr__II_K7_310R__ch16_ddc_source_cTo_p_gr__block, 0, 0},  {&_swigt__p_gr__II_K7_310R__ch1_ddc_source_c, _p_gr__II_K7_310R__ch1_ddc_source_cTo_p_gr__block, 0, 0},  {&_swigt__p_gr__block, 0, 0, 0},  {&_swigt__p_gr__sync_block, _p_gr__sync_blockTo_p_gr__block, 0, 0},  {&_swigt__p_gr__tagged_stream_block, _p_gr__tagged_stream_blockTo_p_gr__block, 0, 0},  {&_swigt__p_gr__block_gateway, _p_gr__block_gatewayTo_p_gr__block, 0, 0},  {&_swigt__p_gr__sync_interpolator, _p_gr__sync_interpolatorTo_p_gr__block, 0, 0},{0, 0, 0, 0}};
+static swig_cast_info _swigc__p_gr__basic_block[] = {  {&_swigt__p_gr__sync_decimator, _p_gr__sync_decimatorTo_p_gr__basic_block, 0, 0},  {&_swigt__p_gr__II_K7_310R__ch16_ddc_source_c, _p_gr__II_K7_310R__ch16_ddc_source_cTo_p_gr__basic_block, 0, 0},  {&_swigt__p_gr__basic_block, 0, 0, 0},  {&_swigt__p_gr__block, _p_gr__blockTo_p_gr__basic_block, 0, 0},  {&_swigt__p_gr__sync_block, _p_gr__sync_blockTo_p_gr__basic_block, 0, 0},  {&_swigt__p_gr__tagged_stream_block, _p_gr__tagged_stream_blockTo_p_gr__basic_block, 0, 0},  {&_swigt__p_gr__block_gateway, _p_gr__block_gatewayTo_p_gr__basic_block, 0, 0},  {&_swigt__p_gr__hier_block2, _p_gr__hier_block2To_p_gr__basic_block, 0, 0},  {&_swigt__p_gr__sync_interpolator, _p_gr__sync_interpolatorTo_p_gr__basic_block, 0, 0},  {&_swigt__p_gr__top_block, _p_gr__top_blockTo_p_gr__basic_block, 0, 0},{0, 0, 0, 0}};
+static swig_cast_info _swigc__p_gr__block[] = {  {&_swigt__p_gr__sync_decimator, _p_gr__sync_decimatorTo_p_gr__block, 0, 0},  {&_swigt__p_gr__II_K7_310R__ch16_ddc_source_c, _p_gr__II_K7_310R__ch16_ddc_source_cTo_p_gr__block, 0, 0},  {&_swigt__p_gr__block, 0, 0, 0},  {&_swigt__p_gr__sync_block, _p_gr__sync_blockTo_p_gr__block, 0, 0},  {&_swigt__p_gr__tagged_stream_block, _p_gr__tagged_stream_blockTo_p_gr__block, 0, 0},  {&_swigt__p_gr__block_gateway, _p_gr__block_gatewayTo_p_gr__block, 0, 0},  {&_swigt__p_gr__sync_interpolator, _p_gr__sync_interpolatorTo_p_gr__block, 0, 0},{0, 0, 0, 0}};
 static swig_cast_info _swigc__p_gr__endianness_t[] = {  {&_swigt__p_gr__endianness_t, 0, 0, 0},{0, 0, 0, 0}};
 static swig_cast_info _swigc__p_gr__rt_status_t[] = {  {&_swigt__p_gr__rt_status_t, 0, 0, 0},{0, 0, 0, 0}};
-static swig_cast_info _swigc__p_gr__sync_block[] = {  {&_swigt__p_gr__sync_decimator, _p_gr__sync_decimatorTo_p_gr__sync_block, 0, 0},  {&_swigt__p_gr__II_K7_310R__ch16_ddc_source_c, _p_gr__II_K7_310R__ch16_ddc_source_cTo_p_gr__sync_block, 0, 0},  {&_swigt__p_gr__II_K7_310R__ch1_ddc_source_c, _p_gr__II_K7_310R__ch1_ddc_source_cTo_p_gr__sync_block, 0, 0},  {&_swigt__p_gr__sync_block, 0, 0, 0},  {&_swigt__p_gr__sync_interpolator, _p_gr__sync_interpolatorTo_p_gr__sync_block, 0, 0},{0, 0, 0, 0}};
+static swig_cast_info _swigc__p_gr__sync_block[] = {  {&_swigt__p_gr__sync_decimator, _p_gr__sync_decimatorTo_p_gr__sync_block, 0, 0},  {&_swigt__p_gr__II_K7_310R__ch16_ddc_source_c, _p_gr__II_K7_310R__ch16_ddc_source_cTo_p_gr__sync_block, 0, 0},  {&_swigt__p_gr__sync_block, 0, 0, 0},  {&_swigt__p_gr__sync_interpolator, _p_gr__sync_interpolatorTo_p_gr__sync_block, 0, 0},{0, 0, 0, 0}};
 static swig_cast_info _swigc__p_int[] = {  {&_swigt__p_int, 0, 0, 0},{0, 0, 0, 0}};
 static swig_cast_info _swigc__p_long_long[] = {  {&_swigt__p_long_long, 0, 0, 0},{0, 0, 0, 0}};
 static swig_cast_info _swigc__p_reference[] = {  {&_swigt__p_reference, 0, 0, 0},{0, 0, 0, 0}};
@@ -12733,7 +9643,6 @@ static swig_cast_info *swig_cast_initial[] = {
   _swigc__p_allocator_type,
   _swigc__p_boost__intrusive_ptrT_pmt__pmt_base_t,
   _swigc__p_boost__shared_ptrT_gr__II_K7_310R__ch16_ddc_source_c_t,
-  _swigc__p_boost__shared_ptrT_gr__II_K7_310R__ch1_ddc_source_c_t,
   _swigc__p_boost__shared_ptrT_gr__basic_block_t,
   _swigc__p_boost__shared_ptrT_gr__block_detail_t,
   _swigc__p_boost__shared_ptrT_gr__block_t,
@@ -12748,7 +9657,6 @@ static swig_cast_info *swig_cast_initial[] = {
   _swigc__p_const_reference,
   _swigc__p_difference_type,
   _swigc__p_gr__II_K7_310R__ch16_ddc_source_c,
-  _swigc__p_gr__II_K7_310R__ch1_ddc_source_c,
   _swigc__p_gr__basic_block,
   _swigc__p_gr__block,
   _swigc__p_gr__block_gateway,

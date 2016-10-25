@@ -1,8 +1,8 @@
-# Install script for directory: ${CMAKE_SOURCE_DIR}/../docs
+# Install script for directory: /home/user/Documents/GnuRadio/gr-II_K7_310R/docs
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
-  set(CMAKE_INSTALL_PREFIX "${CMAKE_SOURCE_DIR}/../../..")
+  set(CMAKE_INSTALL_PREFIX "/usr/local")
 endif()
 string(REGEX REPLACE "/$" "" CMAKE_INSTALL_PREFIX "${CMAKE_INSTALL_PREFIX}")
 
@@ -34,7 +34,7 @@ endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for each subdirectory.
-  include("${CMAKE_BINARY_DIR}/docs/doxygen/cmake_install.cmake")
+  include("/home/user/Documents/GnuRadio/gr-II_K7_310R/build/docs/doxygen/cmake_install.cmake")
 
 endif()
 

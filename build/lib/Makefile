@@ -222,33 +222,6 @@ ch16_ddc_source_c_impl.cc.s:
 	cd /home/user/Documents/GnuRadio/gr-II_K7_310R/build && $(MAKE) -f lib/CMakeFiles/gnuradio-II_K7_310R.dir/build.make lib/CMakeFiles/gnuradio-II_K7_310R.dir/ch16_ddc_source_c_impl.cc.s
 .PHONY : ch16_ddc_source_c_impl.cc.s
 
-ch1_ddc_source_c_impl.o: ch1_ddc_source_c_impl.cc.o
-
-.PHONY : ch1_ddc_source_c_impl.o
-
-# target to build an object file
-ch1_ddc_source_c_impl.cc.o:
-	cd /home/user/Documents/GnuRadio/gr-II_K7_310R/build && $(MAKE) -f lib/CMakeFiles/gnuradio-II_K7_310R.dir/build.make lib/CMakeFiles/gnuradio-II_K7_310R.dir/ch1_ddc_source_c_impl.cc.o
-.PHONY : ch1_ddc_source_c_impl.cc.o
-
-ch1_ddc_source_c_impl.i: ch1_ddc_source_c_impl.cc.i
-
-.PHONY : ch1_ddc_source_c_impl.i
-
-# target to preprocess a source file
-ch1_ddc_source_c_impl.cc.i:
-	cd /home/user/Documents/GnuRadio/gr-II_K7_310R/build && $(MAKE) -f lib/CMakeFiles/gnuradio-II_K7_310R.dir/build.make lib/CMakeFiles/gnuradio-II_K7_310R.dir/ch1_ddc_source_c_impl.cc.i
-.PHONY : ch1_ddc_source_c_impl.cc.i
-
-ch1_ddc_source_c_impl.s: ch1_ddc_source_c_impl.cc.s
-
-.PHONY : ch1_ddc_source_c_impl.s
-
-# target to generate assembly for a file
-ch1_ddc_source_c_impl.cc.s:
-	cd /home/user/Documents/GnuRadio/gr-II_K7_310R/build && $(MAKE) -f lib/CMakeFiles/gnuradio-II_K7_310R.dir/build.make lib/CMakeFiles/gnuradio-II_K7_310R.dir/ch1_ddc_source_c_impl.cc.s
-.PHONY : ch1_ddc_source_c_impl.cc.s
-
 qa_II_K7_310R.o: qa_II_K7_310R.cc.o
 
 .PHONY : qa_II_K7_310R.o
@@ -348,9 +321,6 @@ help:
 	@echo "... ch16_ddc_source_c_impl.o"
 	@echo "... ch16_ddc_source_c_impl.i"
 	@echo "... ch16_ddc_source_c_impl.s"
-	@echo "... ch1_ddc_source_c_impl.o"
-	@echo "... ch1_ddc_source_c_impl.i"
-	@echo "... ch1_ddc_source_c_impl.s"
 	@echo "... qa_II_K7_310R.o"
 	@echo "... qa_II_K7_310R.i"
 	@echo "... qa_II_K7_310R.s"

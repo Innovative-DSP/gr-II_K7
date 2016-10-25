@@ -4,39 +4,46 @@
     <compoundname>ch16_ddc_source_c.h</compoundname>
     <includes refid="api_8h" local="no">II_K7_310R/api.h</includes>
     <includes local="no">gnuradio/sync_block.h</includes>
+    <includedby refid="ch16__ddc__source__c__impl_01virtual_8h" local="no">ch16_ddc_source_c_impl virtual.h</includedby>
     <includedby refid="ch16__ddc__source__c__impl_8h" local="no">ch16_ddc_source_c_impl.h</includedby>
     <incdepgraph>
-      <node id="10">
+      <node id="13">
         <label>gnuradio/sync_block.h</label>
       </node>
-      <node id="9">
+      <node id="12">
         <label>gnuradio/attributes.h</label>
       </node>
-      <node id="8">
+      <node id="11">
         <label>II_K7_310R/api.h</label>
         <link refid="api_8h"/>
-        <childnode refid="9" relation="include">
+        <childnode refid="12" relation="include">
         </childnode>
       </node>
-      <node id="7">
+      <node id="10">
         <label>ch16_ddc_source_c.h</label>
         <link refid="ch16_ddc_source_c.h"/>
-        <childnode refid="8" relation="include">
+        <childnode refid="11" relation="include">
         </childnode>
-        <childnode refid="10" relation="include">
+        <childnode refid="13" relation="include">
         </childnode>
       </node>
     </incdepgraph>
     <invincdepgraph>
-      <node id="11">
+      <node id="14">
         <label>ch16_ddc_source_c.h</label>
         <link refid="ch16_ddc_source_c.h"/>
-        <childnode refid="12" relation="include">
+        <childnode refid="15" relation="include">
+        </childnode>
+        <childnode refid="16" relation="include">
         </childnode>
       </node>
-      <node id="12">
+      <node id="16">
         <label>ch16_ddc_source_c_impl.h</label>
         <link refid="ch16__ddc__source__c__impl_8h"/>
+      </node>
+      <node id="15">
+        <label>ch16_ddc_source_c_impl virtual.h</label>
+        <link refid="ch16__ddc__source__c__impl_01virtual_8h"/>
       </node>
     </invincdepgraph>
     <innerclass refid="classgr_1_1II__K7__310R_1_1ch16__ddc__source__c" prot="public">gr::II_K7_310R::ch16_ddc_source_c</innerclass>

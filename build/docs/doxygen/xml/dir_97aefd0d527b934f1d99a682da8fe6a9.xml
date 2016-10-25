@@ -2,8 +2,11 @@
 <doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.11">
   <compounddef id="dir_97aefd0d527b934f1d99a682da8fe6a9" kind="dir">
     <compoundname>lib</compoundname>
+    <innerfile refid="ch16__ddc__source__c__impl_01virtual_8h">ch16_ddc_source_c_impl virtual.h</innerfile>
     <innerfile refid="ch16__ddc__source__c__impl_8h">ch16_ddc_source_c_impl.h</innerfile>
     <innerfile refid="ch1__ddc__source__c__impl_8h">ch1_ddc_source_c_impl.h</innerfile>
+    <innerfile refid="GRGpK7Fmc310_01virtual_8h">GRGpK7Fmc310 virtual.h</innerfile>
+    <innerfile refid="GRGpK7Fmc310_8h">GRGpK7Fmc310.h</innerfile>
     <briefdescription>
     </briefdescription>
     <detaileddescription>

@@ -142,8 +142,8 @@ lib/test-II_K7_310R: lib/CMakeFiles/test-II_K7_310R.dir/test_II_K7_310R.cc.o
 lib/test-II_K7_310R: lib/CMakeFiles/test-II_K7_310R.dir/qa_II_K7_310R.cc.o
 lib/test-II_K7_310R: lib/CMakeFiles/test-II_K7_310R.dir/qa_ch16_ddc_source_c.cc.o
 lib/test-II_K7_310R: lib/CMakeFiles/test-II_K7_310R.dir/build.make
-lib/test-II_K7_310R: /usr/lib/x86_64-linux-gnu/libgnuradio-runtime.so
-lib/test-II_K7_310R: /usr/lib/x86_64-linux-gnu/libgnuradio-pmt.so
+lib/test-II_K7_310R: /usr/local/lib/libgnuradio-runtime.so
+lib/test-II_K7_310R: /usr/local/lib/libgnuradio-pmt.so
 lib/test-II_K7_310R: /usr/lib/x86_64-linux-gnu/libboost_filesystem.so
 lib/test-II_K7_310R: /usr/lib/x86_64-linux-gnu/libboost_system.so
 lib/test-II_K7_310R: /usr/lib/x86_64-linux-gnu/libcppunit.so

@@ -2,63 +2,44 @@
 <doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.11">
   <compounddef id="ch16__ddc__source__c__impl_8h" kind="file" language="C++">
     <compoundname>ch16_ddc_source_c_impl.h</compoundname>
-    <includes local="no">queue</includes>
     <includes refid="ch16__ddc__source__c_8h" local="no">II_K7_310R/ch16_ddc_source_c.h</includes>
-    <includes local="no">LibraryIo.h</includes>
-    <includes local="no">BufferDatagrams_Mb.h</includes>
-    <includes local="no">ThreadSafeQueue_Mb.h</includes>
-    <includes local="no">Event_Mb.h</includes>
+    <includes refid="GRGpK7Fmc310_8h" local="no">GRGpK7Fmc310.h</includes>
     <incdepgraph>
-      <node id="19">
-        <label>LibraryIo.h</label>
-      </node>
-      <node id="14">
-        <label>queue</label>
-      </node>
-      <node id="18">
+      <node id="28">
         <label>gnuradio/sync_block.h</label>
       </node>
-      <node id="17">
+      <node id="27">
         <label>gnuradio/attributes.h</label>
       </node>
-      <node id="16">
+      <node id="26">
         <label>II_K7_310R/api.h</label>
         <link refid="api_8h"/>
-        <childnode refid="17" relation="include">
+        <childnode refid="27" relation="include">
         </childnode>
       </node>
-      <node id="15">
+      <node id="25">
         <label>II_K7_310R/ch16_ddc_source_c.h</label>
         <link refid="ch16__ddc__source__c_8h"/>
-        <childnode refid="16" relation="include">
+        <childnode refid="26" relation="include">
         </childnode>
-        <childnode refid="18" relation="include">
+        <childnode refid="28" relation="include">
         </childnode>
       </node>
-      <node id="20">
-        <label>BufferDatagrams_Mb.h</label>
-      </node>
-      <node id="21">
-        <label>ThreadSafeQueue_Mb.h</label>
-      </node>
-      <node id="13">
+      <node id="24">
         <label>ch16_ddc_source_c_impl.h</label>
         <link refid="ch16_ddc_source_c_impl.h"/>
-        <childnode refid="14" relation="include">
+        <childnode refid="25" relation="include">
         </childnode>
-        <childnode refid="15" relation="include">
-        </childnode>
-        <childnode refid="19" relation="include">
-        </childnode>
-        <childnode refid="20" relation="include">
-        </childnode>
-        <childnode refid="21" relation="include">
-        </childnode>
-        <childnode refid="22" relation="include">
+        <childnode refid="29" relation="include">
         </childnode>
       </node>
-      <node id="22">
-        <label>Event_Mb.h</label>
+      <node id="29">
+        <label>GRGpK7Fmc310.h</label>
+        <link refid="GRGpK7Fmc310_8h"/>
+        <childnode refid="26" relation="include">
+        </childnode>
+        <childnode refid="28" relation="include">
+        </childnode>
       </node>
     </incdepgraph>
     <innerclass refid="classgr_1_1II__K7__310R_1_1ch16__ddc__source__c__impl" prot="public">gr::II_K7_310R::ch16_ddc_source_c_impl</innerclass>

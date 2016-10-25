@@ -1,0 +1,215 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.11">
+  <compounddef id="classGRGpK7Fmc310" kind="class" language="C++" prot="public">
+    <compoundname>GRGpK7Fmc310</compoundname>
+    <includes refid="GRGpK7Fmc310_01virtual_8h" local="no">GRGpK7Fmc310 virtual.h</includes>
+    <innerclass refid="structGRGpK7Fmc310_1_1GpDspSettings" prot="public">GRGpK7Fmc310::GpDspSettings</innerclass>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classGRGpK7Fmc310_1a869d6631d9e5ac1df6b534d5b3861a5b" prot="private" static="no" mutable="no">
+        <type>LibraryIo *</type>
+        <definition>LibraryIo * GRGpK7Fmc310::Io</definition>
+        <argsstring></argsstring>
+        <name>Io</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/user/Documents/GnuRadio/gr-II_K7_310R/lib/GRGpK7Fmc310 virtual.h" line="96" column="1" bodyfile="/home/user/Documents/GnuRadio/gr-II_K7_310R/lib/GRGpK7Fmc310 virtual.h" bodystart="96" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classGRGpK7Fmc310_1aea4604c72d6050e7b57b924175103ea0" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>GRGpK7Fmc310::GRGpK7Fmc310</definition>
+        <argsstring>(ILoggerInterface *Logger)</argsstring>
+        <name>GRGpK7Fmc310</name>
+        <param>
+          <type><ref refid="classILoggerInterface" kindref="compound">ILoggerInterface</ref> *</type>
+          <declname>Logger</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/user/Documents/GnuRadio/gr-II_K7_310R/lib/GRGpK7Fmc310 virtual.h" line="38" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classGRGpK7Fmc310_1aa5d2734240ce583c43bad9b1594d78d7" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>GRGpK7Fmc310::~GRGpK7Fmc310</definition>
+        <argsstring>()</argsstring>
+        <name>~GRGpK7Fmc310</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/user/Documents/GnuRadio/gr-II_K7_310R/lib/GRGpK7Fmc310 virtual.h" line="39" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classGRGpK7Fmc310_1a5b209dec44c45cedbb1d690db7aeef19" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void GRGpK7Fmc310::SetSettings</definition>
+        <argsstring>(const GpDspSettings &amp;settings)</argsstring>
+        <name>SetSettings</name>
+        <param>
+          <type>const <ref refid="structGRGpK7Fmc310_1_1GpDspSettings" kindref="compound">GpDspSettings</ref> &amp;</type>
+          <declname>settings</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/user/Documents/GnuRadio/gr-II_K7_310R/lib/GRGpK7Fmc310 virtual.h" line="91" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classGRGpK7Fmc310_1a8028b47466f846c5c99424b0ea35fce8" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classIGnuRadioBlockInterface" kindref="compound">IGnuRadioBlockInterface</ref> *</type>
+        <definition>IGnuRadioBlockInterface* GRGpK7Fmc310::GetDriver</definition>
+        <argsstring>()</argsstring>
+        <name>GetDriver</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/user/Documents/GnuRadio/gr-II_K7_310R/lib/GRGpK7Fmc310 virtual.h" line="93" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classGRGpK7Fmc310_1aea4604c72d6050e7b57b924175103ea0" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>GRGpK7Fmc310::GRGpK7Fmc310</definition>
+        <argsstring>(ILoggerInterface *Logger)</argsstring>
+        <name>GRGpK7Fmc310</name>
+        <param>
+          <type><ref refid="classILoggerInterface" kindref="compound">ILoggerInterface</ref> *</type>
+          <declname>Logger</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/user/Documents/GnuRadio/gr-II_K7_310R/lib/GRGpK7Fmc310.h" line="22" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classGRGpK7Fmc310_1aa5d2734240ce583c43bad9b1594d78d7" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>GRGpK7Fmc310::~GRGpK7Fmc310</definition>
+        <argsstring>()</argsstring>
+        <name>~GRGpK7Fmc310</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/user/Documents/GnuRadio/gr-II_K7_310R/lib/GRGpK7Fmc310.h" line="23" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classGRGpK7Fmc310_1a5b209dec44c45cedbb1d690db7aeef19" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void GRGpK7Fmc310::SetSettings</definition>
+        <argsstring>(const GpDspSettings &amp;settings)</argsstring>
+        <name>SetSettings</name>
+        <param>
+          <type>const <ref refid="structGRGpK7Fmc310_1_1GpDspSettings" kindref="compound">GpDspSettings</ref> &amp;</type>
+          <declname>settings</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/user/Documents/GnuRadio/gr-II_K7_310R/lib/GRGpK7Fmc310.h" line="94" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classGRGpK7Fmc310_1a86ed97dccbdf28b82df1553833d8de1b" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void GRGpK7Fmc310::OpenDriver</definition>
+        <argsstring>()</argsstring>
+        <name>OpenDriver</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/user/Documents/GnuRadio/gr-II_K7_310R/lib/GRGpK7Fmc310.h" line="97" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classGRGpK7Fmc310_1a674a4c1eaeb30248603e352413fb332c" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool GRGpK7Fmc310::Start</definition>
+        <argsstring>()</argsstring>
+        <name>Start</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/user/Documents/GnuRadio/gr-II_K7_310R/lib/GRGpK7Fmc310.h" line="98" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classGRGpK7Fmc310_1a8f4b9c21a00c753b5fce4d450bab8455" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool GRGpK7Fmc310::Stop</definition>
+        <argsstring>()</argsstring>
+        <name>Stop</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/user/Documents/GnuRadio/gr-II_K7_310R/lib/GRGpK7Fmc310.h" line="99" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classGRGpK7Fmc310_1addada4d77c3a16bd7814af7b67e6464a" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int GRGpK7Fmc310::Work</definition>
+        <argsstring>(int noutput_items, gr_vector_const_void_star &amp;input_items, gr_vector_void_star &amp;output_items)</argsstring>
+        <name>Work</name>
+        <param>
+          <type>int</type>
+          <declname>noutput_items</declname>
+        </param>
+        <param>
+          <type>gr_vector_const_void_star &amp;</type>
+          <declname>input_items</declname>
+        </param>
+        <param>
+          <type>gr_vector_void_star &amp;</type>
+          <declname>output_items</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/user/Documents/GnuRadio/gr-II_K7_310R/lib/GRGpK7Fmc310.h" line="101" column="1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/home/user/Documents/GnuRadio/gr-II_K7_310R/lib/GRGpK7Fmc310 virtual.h" line="36" column="1" bodyfile="/home/user/Documents/GnuRadio/gr-II_K7_310R/lib/GRGpK7Fmc310 virtual.h" bodystart="35" bodyend="97"/>
+    <listofallmembers>
+      <member refid="classGRGpK7Fmc310_1a8028b47466f846c5c99424b0ea35fce8" prot="public" virt="non-virtual"><scope>GRGpK7Fmc310</scope><name>GetDriver</name></member>
+      <member refid="classGRGpK7Fmc310_1aea4604c72d6050e7b57b924175103ea0" prot="public" virt="non-virtual"><scope>GRGpK7Fmc310</scope><name>GRGpK7Fmc310</name></member>
+      <member refid="classGRGpK7Fmc310_1aea4604c72d6050e7b57b924175103ea0" prot="public" virt="non-virtual"><scope>GRGpK7Fmc310</scope><name>GRGpK7Fmc310</name></member>
+      <member refid="classGRGpK7Fmc310_1a869d6631d9e5ac1df6b534d5b3861a5b" prot="private" virt="non-virtual"><scope>GRGpK7Fmc310</scope><name>Io</name></member>
+      <member refid="classGRGpK7Fmc310_1a86ed97dccbdf28b82df1553833d8de1b" prot="public" virt="non-virtual"><scope>GRGpK7Fmc310</scope><name>OpenDriver</name></member>
+      <member refid="classGRGpK7Fmc310_1a5b209dec44c45cedbb1d690db7aeef19" prot="public" virt="non-virtual"><scope>GRGpK7Fmc310</scope><name>SetSettings</name></member>
+      <member refid="classGRGpK7Fmc310_1a5b209dec44c45cedbb1d690db7aeef19" prot="public" virt="non-virtual"><scope>GRGpK7Fmc310</scope><name>SetSettings</name></member>
+      <member refid="classGRGpK7Fmc310_1a674a4c1eaeb30248603e352413fb332c" prot="public" virt="non-virtual"><scope>GRGpK7Fmc310</scope><name>Start</name></member>
+      <member refid="classGRGpK7Fmc310_1a8f4b9c21a00c753b5fce4d450bab8455" prot="public" virt="non-virtual"><scope>GRGpK7Fmc310</scope><name>Stop</name></member>
+      <member refid="classGRGpK7Fmc310_1addada4d77c3a16bd7814af7b67e6464a" prot="public" virt="non-virtual"><scope>GRGpK7Fmc310</scope><name>Work</name></member>
+      <member refid="classGRGpK7Fmc310_1aa5d2734240ce583c43bad9b1594d78d7" prot="public" virt="non-virtual"><scope>GRGpK7Fmc310</scope><name>~GRGpK7Fmc310</name></member>
+      <member refid="classGRGpK7Fmc310_1aa5d2734240ce583c43bad9b1594d78d7" prot="public" virt="non-virtual"><scope>GRGpK7Fmc310</scope><name>~GRGpK7Fmc310</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

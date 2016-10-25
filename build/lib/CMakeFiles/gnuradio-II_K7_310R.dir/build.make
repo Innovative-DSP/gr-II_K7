@@ -81,45 +81,19 @@ lib/CMakeFiles/gnuradio-II_K7_310R.dir/ch16_ddc_source_c_impl.cc.o.provides: lib
 lib/CMakeFiles/gnuradio-II_K7_310R.dir/ch16_ddc_source_c_impl.cc.o.provides.build: lib/CMakeFiles/gnuradio-II_K7_310R.dir/ch16_ddc_source_c_impl.cc.o
 
 
-lib/CMakeFiles/gnuradio-II_K7_310R.dir/ch1_ddc_source_c_impl.cc.o: lib/CMakeFiles/gnuradio-II_K7_310R.dir/flags.make
-lib/CMakeFiles/gnuradio-II_K7_310R.dir/ch1_ddc_source_c_impl.cc.o: ../lib/ch1_ddc_source_c_impl.cc
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/user/Documents/GnuRadio/gr-II_K7_310R/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object lib/CMakeFiles/gnuradio-II_K7_310R.dir/ch1_ddc_source_c_impl.cc.o"
-	cd /home/user/Documents/GnuRadio/gr-II_K7_310R/build/lib && /usr/bin/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/gnuradio-II_K7_310R.dir/ch1_ddc_source_c_impl.cc.o -c /home/user/Documents/GnuRadio/gr-II_K7_310R/lib/ch1_ddc_source_c_impl.cc
-
-lib/CMakeFiles/gnuradio-II_K7_310R.dir/ch1_ddc_source_c_impl.cc.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/gnuradio-II_K7_310R.dir/ch1_ddc_source_c_impl.cc.i"
-	cd /home/user/Documents/GnuRadio/gr-II_K7_310R/build/lib && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/user/Documents/GnuRadio/gr-II_K7_310R/lib/ch1_ddc_source_c_impl.cc > CMakeFiles/gnuradio-II_K7_310R.dir/ch1_ddc_source_c_impl.cc.i
-
-lib/CMakeFiles/gnuradio-II_K7_310R.dir/ch1_ddc_source_c_impl.cc.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/gnuradio-II_K7_310R.dir/ch1_ddc_source_c_impl.cc.s"
-	cd /home/user/Documents/GnuRadio/gr-II_K7_310R/build/lib && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/user/Documents/GnuRadio/gr-II_K7_310R/lib/ch1_ddc_source_c_impl.cc -o CMakeFiles/gnuradio-II_K7_310R.dir/ch1_ddc_source_c_impl.cc.s
-
-lib/CMakeFiles/gnuradio-II_K7_310R.dir/ch1_ddc_source_c_impl.cc.o.requires:
-
-.PHONY : lib/CMakeFiles/gnuradio-II_K7_310R.dir/ch1_ddc_source_c_impl.cc.o.requires
-
-lib/CMakeFiles/gnuradio-II_K7_310R.dir/ch1_ddc_source_c_impl.cc.o.provides: lib/CMakeFiles/gnuradio-II_K7_310R.dir/ch1_ddc_source_c_impl.cc.o.requires
-	$(MAKE) -f lib/CMakeFiles/gnuradio-II_K7_310R.dir/build.make lib/CMakeFiles/gnuradio-II_K7_310R.dir/ch1_ddc_source_c_impl.cc.o.provides.build
-.PHONY : lib/CMakeFiles/gnuradio-II_K7_310R.dir/ch1_ddc_source_c_impl.cc.o.provides
-
-lib/CMakeFiles/gnuradio-II_K7_310R.dir/ch1_ddc_source_c_impl.cc.o.provides.build: lib/CMakeFiles/gnuradio-II_K7_310R.dir/ch1_ddc_source_c_impl.cc.o
-
-
 # Object files for target gnuradio-II_K7_310R
 gnuradio__II_K7_310R_OBJECTS = \
-"CMakeFiles/gnuradio-II_K7_310R.dir/ch16_ddc_source_c_impl.cc.o" \
-"CMakeFiles/gnuradio-II_K7_310R.dir/ch1_ddc_source_c_impl.cc.o"
+"CMakeFiles/gnuradio-II_K7_310R.dir/ch16_ddc_source_c_impl.cc.o"
 
 # External object files for target gnuradio-II_K7_310R
 gnuradio__II_K7_310R_EXTERNAL_OBJECTS =
 
 lib/libgnuradio-II_K7_310R.so: lib/CMakeFiles/gnuradio-II_K7_310R.dir/ch16_ddc_source_c_impl.cc.o
-lib/libgnuradio-II_K7_310R.so: lib/CMakeFiles/gnuradio-II_K7_310R.dir/ch1_ddc_source_c_impl.cc.o
 lib/libgnuradio-II_K7_310R.so: lib/CMakeFiles/gnuradio-II_K7_310R.dir/build.make
 lib/libgnuradio-II_K7_310R.so: /usr/lib/x86_64-linux-gnu/libboost_filesystem.so
 lib/libgnuradio-II_K7_310R.so: /usr/lib/x86_64-linux-gnu/libboost_system.so
-lib/libgnuradio-II_K7_310R.so: /usr/lib/x86_64-linux-gnu/libgnuradio-runtime.so
-lib/libgnuradio-II_K7_310R.so: /usr/lib/x86_64-linux-gnu/libgnuradio-pmt.so
+lib/libgnuradio-II_K7_310R.so: /usr/local/lib/libgnuradio-runtime.so
+lib/libgnuradio-II_K7_310R.so: /usr/local/lib/libgnuradio-pmt.so
 lib/libgnuradio-II_K7_310R.so: /usr/Innovative/Lib/Gcc/Release/libGP-K7.a
 lib/libgnuradio-II_K7_310R.so: /usr/Innovative/Lib/Gcc/Release/libGPDDC.a
 lib/libgnuradio-II_K7_310R.so: /usr/Innovative/Lib/Gcc/Release/libAnalysis_Mb.a
@@ -152,7 +126,7 @@ lib/libgnuradio-II_K7_310R.so: /usr/Innovative/Lib/Gcc/libippvm_l-7.0.a
 lib/libgnuradio-II_K7_310R.so: /usr/lib/x86_64-linux-gnu/libdl.so
 lib/libgnuradio-II_K7_310R.so: /usr/lib/libwdapi.so
 lib/libgnuradio-II_K7_310R.so: lib/CMakeFiles/gnuradio-II_K7_310R.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/user/Documents/GnuRadio/gr-II_K7_310R/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Linking CXX shared library libgnuradio-II_K7_310R.so"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/user/Documents/GnuRadio/gr-II_K7_310R/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Linking CXX shared library libgnuradio-II_K7_310R.so"
 	cd /home/user/Documents/GnuRadio/gr-II_K7_310R/build/lib && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/gnuradio-II_K7_310R.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
@@ -161,7 +135,6 @@ lib/CMakeFiles/gnuradio-II_K7_310R.dir/build: lib/libgnuradio-II_K7_310R.so
 .PHONY : lib/CMakeFiles/gnuradio-II_K7_310R.dir/build
 
 lib/CMakeFiles/gnuradio-II_K7_310R.dir/requires: lib/CMakeFiles/gnuradio-II_K7_310R.dir/ch16_ddc_source_c_impl.cc.o.requires
-lib/CMakeFiles/gnuradio-II_K7_310R.dir/requires: lib/CMakeFiles/gnuradio-II_K7_310R.dir/ch1_ddc_source_c_impl.cc.o.requires
 
 .PHONY : lib/CMakeFiles/gnuradio-II_K7_310R.dir/requires
 

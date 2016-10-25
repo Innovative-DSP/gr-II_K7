@@ -5,7 +5,6 @@ set(CMAKE_DEPENDS_LANGUAGES
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_CXX
   "/home/user/Documents/GnuRadio/gr-II_K7_310R/lib/ch16_ddc_source_c_impl.cc" "/home/user/Documents/GnuRadio/gr-II_K7_310R/build/lib/CMakeFiles/gnuradio-II_K7_310R.dir/ch16_ddc_source_c_impl.cc.o"
-  "/home/user/Documents/GnuRadio/gr-II_K7_310R/lib/ch1_ddc_source_c_impl.cc" "/home/user/Documents/GnuRadio/gr-II_K7_310R/build/lib/CMakeFiles/gnuradio-II_K7_310R.dir/ch1_ddc_source_c_impl.cc.o"
   )
 set(CMAKE_CXX_COMPILER_ID "GNU")
 
@@ -24,6 +23,7 @@ set(CMAKE_CXX_TARGET_INCLUDE_PATH
   "../include"
   "lib"
   "include"
+  "/usr/local/include"
   "/usr/Innovative/Digital_Receiver_K707-1.0/Digital_Receiver_K707/GP-K7-LIB/Common"
   "/usr/Innovative/Digital_Receiver_K707-1.0/Digital_Receiver_K707/GP-LIB/GpDsp"
   "/usr/Innovative/Digital_Receiver_K707-1.0/Digital_Receiver_K707/GP-LIB/Common"

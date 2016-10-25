@@ -6,7 +6,7 @@ CXX_FLAGS = -O3 -DNDEBUG -fPIC   -fvisibility=hidden
 
 CXX_DEFINES = -DDRC -DFoundation_EXPORTS -DGCC -DLINUX -D_II_K7_310R_swig_EXPORTS -D_MT
 
-CXX_INCLUDES = -I/home/user/Documents/GnuRadio/gr-II_K7_310R/lib -I/home/user/Documents/GnuRadio/gr-II_K7_310R/include -I/home/user/Documents/GnuRadio/gr-II_K7_310R/build/lib -I/home/user/Documents/GnuRadio/gr-II_K7_310R/build/include -I/home/user/Documents/GnuRadio/gr-II_K7_310R/build/swig -I/home/user/Documents/GnuRadio/gr-II_K7_310R/swig -I/usr/include/gnuradio/swig -I/usr/include/python2.7 -I/usr/Innovative/Digital_Receiver_K707-1.0/Digital_Receiver_K707/GP-K7-LIB/Common -I/usr/Innovative/Digital_Receiver_K707-1.0/Digital_Receiver_K707/GP-LIB/GpDsp -I/usr/Innovative/Digital_Receiver_K707-1.0/Digital_Receiver_K707/GP-LIB/Common -I/usr/Innovative/Malibu -I/usr/Innovative/Malibu/Poco/Foundation/include 
+CXX_INCLUDES = -I/home/user/Documents/GnuRadio/gr-II_K7_310R/lib -I/home/user/Documents/GnuRadio/gr-II_K7_310R/include -I/home/user/Documents/GnuRadio/gr-II_K7_310R/build/lib -I/home/user/Documents/GnuRadio/gr-II_K7_310R/build/include -I/usr/local/include -I/home/user/Documents/GnuRadio/gr-II_K7_310R/build/swig -I/home/user/Documents/GnuRadio/gr-II_K7_310R/swig -I/usr/local/include/gnuradio/swig -I/usr/include/python2.7 -I/usr/Innovative/Digital_Receiver_K707-1.0/Digital_Receiver_K707/GP-K7-LIB/Common -I/usr/Innovative/Digital_Receiver_K707-1.0/Digital_Receiver_K707/GP-LIB/GpDsp -I/usr/Innovative/Digital_Receiver_K707-1.0/Digital_Receiver_K707/GP-LIB/Common -I/usr/Innovative/Malibu -I/usr/Innovative/Malibu/Poco/Foundation/include 
 
 # Custom flags: swig/CMakeFiles/_II_K7_310R_swig.dir/II_K7_310R_swigPYTHON_wrap.cxx.o_FLAGS = -Wno-unused-but-set-variable
 

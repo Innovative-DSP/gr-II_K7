@@ -2,44 +2,29 @@
 <doxygenindex xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="index.xsd" version="1.8.11">
   <compound refid="classgr_1_1II__K7__310R_1_1ch16__ddc__source__c" kind="class"><name>gr::II_K7_310R::ch16_ddc_source_c</name>
     <member refid="classgr_1_1II__K7__310R_1_1ch16__ddc__source__c_1ad026bb94ebadc43c8a030ce0fbcea56e" kind="typedef"><name>sptr</name></member>
-    <member refid="classgr_1_1II__K7__310R_1_1ch16__ddc__source__c_1a0e463bf877635ab6872f1d9d4b467618" kind="function"><name>make</name></member>
+    <member refid="classgr_1_1II__K7__310R_1_1ch16__ddc__source__c_1a82ad25cbee2091bca0448cfed8c92909" kind="function"><name>make</name></member>
   </compound>
   <compound refid="classgr_1_1II__K7__310R_1_1ch16__ddc__source__c__impl" kind="class"><name>gr::II_K7_310R::ch16_ddc_source_c_impl</name>
-    <member refid="classgr_1_1II__K7__310R_1_1ch16__ddc__source__c__impl_1ad301387ce49ecac87d2080ca1a180868" kind="variable"><name>Settings</name></member>
-    <member refid="classgr_1_1II__K7__310R_1_1ch16__ddc__source__c__impl_1a66b84e9014d5550012a3a9dcb189ceee" kind="variable"><name>Io</name></member>
+    <member refid="classgr_1_1II__K7__310R_1_1ch16__ddc__source__c__impl_1a6659e538a49248170a88d030ca5a0e4c" kind="variable"><name>Settings</name></member>
+    <member refid="classgr_1_1II__K7__310R_1_1ch16__ddc__source__c__impl_1a299e427ea21935bc0c3dcde71b371fab" kind="variable"><name>Driver</name></member>
+    <member refid="classgr_1_1II__K7__310R_1_1ch16__ddc__source__c__impl_1a2b8f046b98a587543e55dc51da7a3b82" kind="variable"><name>Io</name></member>
     <member refid="classgr_1_1II__K7__310R_1_1ch16__ddc__source__c__impl_1ab32a6a2db1438c2e412e26c1f550fc5a" kind="variable"><name>BlockId</name></member>
-    <member refid="classgr_1_1II__K7__310R_1_1ch16__ddc__source__c__impl_1a4a0d68e8dcd7f7ffd29dfa0390f71873" kind="variable"><name>PacketQ</name></member>
-    <member refid="classgr_1_1II__K7__310R_1_1ch16__ddc__source__c__impl_1a3d8b312116b249d315b0789922a4c353" kind="variable"><name>SampleIndex</name></member>
-    <member refid="classgr_1_1II__K7__310R_1_1ch16__ddc__source__c__impl_1acb00cf79166d238b0404b7f703499f40" kind="variable"><name>CurrentPacket</name></member>
-    <member refid="classgr_1_1II__K7__310R_1_1ch16__ddc__source__c__impl_1a50afdef086cb1bf18eaea0a227e8c699" kind="variable"><name>IsNotFull</name></member>
-    <member refid="classgr_1_1II__K7__310R_1_1ch16__ddc__source__c__impl_1aa87619024d974ac83922886beaa901c8" kind="variable"><name>IsNotEmpty</name></member>
-    <member refid="classgr_1_1II__K7__310R_1_1ch16__ddc__source__c__impl_1a6ef5f6c432be6211fe9962dde219c454" kind="variable"><name>RxByteCountMin</name></member>
-    <member refid="classgr_1_1II__K7__310R_1_1ch16__ddc__source__c__impl_1af7eeb1183c5dbc99b8a59d81f0dedab6" kind="variable"><name>RxByteCountMax</name></member>
-    <member refid="classgr_1_1II__K7__310R_1_1ch16__ddc__source__c__impl_1a25dd5b011548376bf5bc01b5800639a4" kind="variable"><name>TxByteCountMin</name></member>
-    <member refid="classgr_1_1II__K7__310R_1_1ch16__ddc__source__c__impl_1a47741099bc27ed27594df31a2291895c" kind="variable"><name>TxByteCountMax</name></member>
-    <member refid="classgr_1_1II__K7__310R_1_1ch16__ddc__source__c__impl_1a26cee6f96d78cb9292ba2bb9ba908874" kind="variable"><name>BlockCount</name></member>
-    <member refid="classgr_1_1II__K7__310R_1_1ch16__ddc__source__c__impl_1ac684de054993e43cc7fa1faa447c30ea" kind="variable"><name>MaxPackets</name></member>
+    <member refid="classgr_1_1II__K7__310R_1_1ch16__ddc__source__c__impl_1ad9961939c7d671819033ce9f17289410" kind="variable"><name>Io</name></member>
+    <member refid="classgr_1_1II__K7__310R_1_1ch16__ddc__source__c__impl_1ada9674394c21b790fb265f3256258895" kind="variable"><name>BlockCount</name></member>
     <member refid="classgr_1_1II__K7__310R_1_1ch16__ddc__source__c__impl_1a0170cb9d2bdd6e7f6a83f646ee4360a3" kind="function"><name>ch16_ddc_source_c_impl</name></member>
     <member refid="classgr_1_1II__K7__310R_1_1ch16__ddc__source__c__impl_1aa0bbcaae60a555cb61ee2bb6a5b395d3" kind="function"><name>~ch16_ddc_source_c_impl</name></member>
     <member refid="classgr_1_1II__K7__310R_1_1ch16__ddc__source__c__impl_1a38ad137ed1f88fa6fdcca54a98af1952" kind="function"><name>work</name></member>
     <member refid="classgr_1_1II__K7__310R_1_1ch16__ddc__source__c__impl_1a43087faf21fb0e4b4377e625d705e090" kind="function"><name>start</name></member>
     <member refid="classgr_1_1II__K7__310R_1_1ch16__ddc__source__c__impl_1a15414660b44892e05e877a18963f9a6d" kind="function"><name>stop</name></member>
-    <member refid="classgr_1_1II__K7__310R_1_1ch16__ddc__source__c__impl_1aa884c09c3125c5a4710296c98e0ea665" kind="function"><name>CheckForData</name></member>
+    <member refid="classgr_1_1II__K7__310R_1_1ch16__ddc__source__c__impl_1a5e0dea5adba314d3909b984583c98c3c" kind="function"><name>ch16_ddc_source_c_impl</name></member>
+    <member refid="classgr_1_1II__K7__310R_1_1ch16__ddc__source__c__impl_1aa0bbcaae60a555cb61ee2bb6a5b395d3" kind="function"><name>~ch16_ddc_source_c_impl</name></member>
+    <member refid="classgr_1_1II__K7__310R_1_1ch16__ddc__source__c__impl_1a38ad137ed1f88fa6fdcca54a98af1952" kind="function"><name>work</name></member>
+    <member refid="classgr_1_1II__K7__310R_1_1ch16__ddc__source__c__impl_1a43087faf21fb0e4b4377e625d705e090" kind="function"><name>start</name></member>
+    <member refid="classgr_1_1II__K7__310R_1_1ch16__ddc__source__c__impl_1a15414660b44892e05e877a18963f9a6d" kind="function"><name>stop</name></member>
     <member refid="classgr_1_1II__K7__310R_1_1ch16__ddc__source__c__impl_1aaba5386d5aef4c69214ee2298291be25" kind="function"><name>Log</name></member>
-    <member refid="classgr_1_1II__K7__310R_1_1ch16__ddc__source__c__impl_1a38ce0180b2cbc48ef69b7a5ceb408302" kind="function"><name>DataPacketAvailable</name></member>
-    <member refid="classgr_1_1II__K7__310R_1_1ch16__ddc__source__c__impl_1a7b5b08668c2cd8b80817627d740c2cc0" kind="function"><name>PeriodicStatus</name></member>
-    <member refid="classgr_1_1II__K7__310R_1_1ch16__ddc__source__c__impl_1a639af3a6f4954cee629a495b6e0cbcb1" kind="function"><name>BeforeStreamStart</name></member>
-    <member refid="classgr_1_1II__K7__310R_1_1ch16__ddc__source__c__impl_1a8aa35b722f141b7b4a492f8d347d96e7" kind="function"><name>AfterStreamStart</name></member>
-    <member refid="classgr_1_1II__K7__310R_1_1ch16__ddc__source__c__impl_1ac5d00de07e39fded02ee4d9a5abe64c0" kind="function"><name>AfterStreamAutoStop</name></member>
-    <member refid="classgr_1_1II__K7__310R_1_1ch16__ddc__source__c__impl_1a33dc2342b6af4e2d6ba306cf8393236d" kind="function"><name>Plot</name></member>
-    <member refid="classgr_1_1II__K7__310R_1_1ch16__ddc__source__c__impl_1a609f91ed6e7eea706d88be853034b806" kind="function"><name>BeforeDrcOpen</name></member>
-    <member refid="classgr_1_1II__K7__310R_1_1ch16__ddc__source__c__impl_1a20a02e842008a521a54590666e019176" kind="function"><name>AfterDrcOpen</name></member>
-    <member refid="classgr_1_1II__K7__310R_1_1ch16__ddc__source__c__impl_1a8b725e7a9eaccabd21343fe378862dc2" kind="function"><name>BeforeDrcClose</name></member>
-    <member refid="classgr_1_1II__K7__310R_1_1ch16__ddc__source__c__impl_1a6d8aa987baf79cf59e2c89a36afa0bd2" kind="function"><name>AfterDrcClose</name></member>
-    <member refid="classgr_1_1II__K7__310R_1_1ch16__ddc__source__c__impl_1ab1cb6d019282f1c982f23c849ba2d800" kind="function"><name>AfterDrcStreamStart</name></member>
-    <member refid="classgr_1_1II__K7__310R_1_1ch16__ddc__source__c__impl_1a9df3a00df10fdcf3d06944e59ee771ae" kind="function"><name>BeforeDrcStreamStart</name></member>
-    <member refid="classgr_1_1II__K7__310R_1_1ch16__ddc__source__c__impl_1ab3a558cc653f70f2d2b11f28b48cd258" kind="function"><name>AfterDrcStreamStop</name></member>
-    <member refid="classgr_1_1II__K7__310R_1_1ch16__ddc__source__c__impl_1a814bbb7524df1ade709035f337d291d5" kind="function"><name>BeforeDrcStreamStop</name></member>
+    <member refid="classgr_1_1II__K7__310R_1_1ch16__ddc__source__c__impl_1a03a3f65ae66e75e93a296b9c644d08dd" kind="function"><name>DebugLog</name></member>
+    <member refid="classgr_1_1II__K7__310R_1_1ch16__ddc__source__c__impl_1aaba5386d5aef4c69214ee2298291be25" kind="function"><name>Log</name></member>
+    <member refid="classgr_1_1II__K7__310R_1_1ch16__ddc__source__c__impl_1a03a3f65ae66e75e93a296b9c644d08dd" kind="function"><name>DebugLog</name></member>
   </compound>
   <compound refid="classgr_1_1II__K7__310R_1_1ch1__ddc__source__c" kind="class"><name>gr::II_K7_310R::ch1_ddc_source_c</name>
     <member refid="classgr_1_1II__K7__310R_1_1ch1__ddc__source__c_1aa115e9ce2b97fbf3ae5fde1f0a8d1ff6" kind="typedef"><name>sptr</name></member>
@@ -80,12 +65,62 @@
     <member refid="classgr_1_1II__K7__310R_1_1ch1__ddc__source__c__impl_1af8f2acc4be414fec2cbe9b7b2b06afbb" kind="function"><name>AfterDrcStreamStop</name></member>
     <member refid="classgr_1_1II__K7__310R_1_1ch1__ddc__source__c__impl_1a85ae98b88ecb6101036ea1d30b7b0e7a" kind="function"><name>BeforeDrcStreamStop</name></member>
   </compound>
+  <compound refid="structGRGpK7Fmc310_1_1GpDspSettings" kind="struct"><name>GRGpK7Fmc310::GpDspSettings</name>
+    <member refid="structGRGpK7Fmc310_1_1GpDspSettings_1a788e0d9dc3d13f8518f9cc8deb2b0a94" kind="variable"><name>RfGain</name></member>
+    <member refid="structGRGpK7Fmc310_1_1GpDspSettings_1ab067832c2936ceaceacd05d2e4c762a7" kind="variable"><name>TriggerSource</name></member>
+    <member refid="structGRGpK7Fmc310_1_1GpDspSettings_1a1623941e74a1ac1853af897f657a329c" kind="variable"><name>DdcFilterPath</name></member>
+    <member refid="structGRGpK7Fmc310_1_1GpDspSettings_1a1150e16ec76ec2c0215a06873af978ee" kind="variable"><name>IsRfTuner</name></member>
+    <member refid="structGRGpK7Fmc310_1_1GpDspSettings_1a984f55444ca8c904adae602c99bdf245" kind="variable"><name>RfCenterFreq</name></member>
+    <member refid="structGRGpK7Fmc310_1_1GpDspSettings_1aa659cc9e3d20912ee2eca6036ee09105" kind="variable"><name>MaxChannels</name></member>
+    <member refid="structGRGpK7Fmc310_1_1GpDspSettings_1a7480152823ffe23e228d162bcfa25762" kind="variable"><name>ChOffsetFreq</name></member>
+    <member refid="structGRGpK7Fmc310_1_1GpDspSettings_1aa8e2a0eec5731606d480eb3624e08aea" kind="variable"><name>ChSource</name></member>
+    <member refid="structGRGpK7Fmc310_1_1GpDspSettings_1a151dbf824f29bc2bb2390a3dbcad00d9" kind="function"><name>GpDspSettings</name></member>
+    <member refid="structGRGpK7Fmc310_1_1GpDspSettings_1a35dafd9dccc65df8efbc393fc36344d8" kind="function"><name>GpDspSettings</name></member>
+    <member refid="structGRGpK7Fmc310_1_1GpDspSettings_1a151dbf824f29bc2bb2390a3dbcad00d9" kind="function"><name>GpDspSettings</name></member>
+    <member refid="structGRGpK7Fmc310_1_1GpDspSettings_1ab18e2b940d647a87d5b96d101e31dbf4" kind="function"><name>GpDspSettings</name></member>
+  </compound>
+  <compound refid="classGRGpK7Fmc310" kind="class"><name>GRGpK7Fmc310</name>
+    <member refid="classGRGpK7Fmc310_1a869d6631d9e5ac1df6b534d5b3861a5b" kind="variable"><name>Io</name></member>
+    <member refid="classGRGpK7Fmc310_1aea4604c72d6050e7b57b924175103ea0" kind="function"><name>GRGpK7Fmc310</name></member>
+    <member refid="classGRGpK7Fmc310_1aa5d2734240ce583c43bad9b1594d78d7" kind="function"><name>~GRGpK7Fmc310</name></member>
+    <member refid="classGRGpK7Fmc310_1a5b209dec44c45cedbb1d690db7aeef19" kind="function"><name>SetSettings</name></member>
+    <member refid="classGRGpK7Fmc310_1a8028b47466f846c5c99424b0ea35fce8" kind="function"><name>GetDriver</name></member>
+    <member refid="classGRGpK7Fmc310_1aea4604c72d6050e7b57b924175103ea0" kind="function"><name>GRGpK7Fmc310</name></member>
+    <member refid="classGRGpK7Fmc310_1aa5d2734240ce583c43bad9b1594d78d7" kind="function"><name>~GRGpK7Fmc310</name></member>
+    <member refid="classGRGpK7Fmc310_1a5b209dec44c45cedbb1d690db7aeef19" kind="function"><name>SetSettings</name></member>
+    <member refid="classGRGpK7Fmc310_1a86ed97dccbdf28b82df1553833d8de1b" kind="function"><name>OpenDriver</name></member>
+    <member refid="classGRGpK7Fmc310_1a674a4c1eaeb30248603e352413fb332c" kind="function"><name>Start</name></member>
+    <member refid="classGRGpK7Fmc310_1a8f4b9c21a00c753b5fce4d450bab8455" kind="function"><name>Stop</name></member>
+    <member refid="classGRGpK7Fmc310_1addada4d77c3a16bd7814af7b67e6464a" kind="function"><name>Work</name></member>
+  </compound>
+  <compound refid="classIGnuRadioBlockInterface" kind="class"><name>IGnuRadioBlockInterface</name>
+    <member refid="classIGnuRadioBlockInterface_1abda1cf7be11d348b7ef5bddf6541bcfe" kind="function"><name>~IGnuRadioBlockInterface</name></member>
+    <member refid="classIGnuRadioBlockInterface_1a833f33ffffc0606754a64576298216bf" kind="function"><name>OpenDriver</name></member>
+    <member refid="classIGnuRadioBlockInterface_1a95edf01abc019188b0b7b48bdb539c72" kind="function"><name>StreamStart</name></member>
+    <member refid="classIGnuRadioBlockInterface_1a5e1c45da5976668feb2a966ac544404e" kind="function"><name>StreamStop</name></member>
+    <member refid="classIGnuRadioBlockInterface_1a7241a3c0e4f6008ee8b5eddd5162bf1e" kind="function"><name>CloseDriver</name></member>
+    <member refid="classIGnuRadioBlockInterface_1abc5cb45351fafffc1d4faae01020cc5e" kind="function"><name>Work</name></member>
+  </compound>
+  <compound refid="classILoggerInterface" kind="class"><name>ILoggerInterface</name>
+    <member refid="classILoggerInterface_1a8d1c9d46b9b3989eb0377e2ad7b6a470" kind="function"><name>~ILoggerInterface</name></member>
+    <member refid="classILoggerInterface_1ab1ae0603a797e4ee51bde086388987ae" kind="function"><name>Log</name></member>
+    <member refid="classILoggerInterface_1a7012e387ea528540c55e727b75fe7cd2" kind="function"><name>DebugLog</name></member>
+    <member refid="classILoggerInterface_1a8d1c9d46b9b3989eb0377e2ad7b6a470" kind="function"><name>~ILoggerInterface</name></member>
+    <member refid="classILoggerInterface_1ab1ae0603a797e4ee51bde086388987ae" kind="function"><name>Log</name></member>
+    <member refid="classILoggerInterface_1a7012e387ea528540c55e727b75fe7cd2" kind="function"><name>DebugLog</name></member>
+  </compound>
   <compound refid="namespacegr" kind="namespace"><name>gr</name>
   </compound>
   <compound refid="namespacegr_1_1II__K7__310R" kind="namespace"><name>gr::II_K7_310R</name>
     <member refid="namespacegr_1_1II__K7__310R_1a1c1292d8181e46a2985782e82e3d9727" kind="enum"><name>Ch16TriggerSource</name></member>
     <member refid="namespacegr_1_1II__K7__310R_1a1c1292d8181e46a2985782e82e3d9727a813e6a67049d88b632a28b4eacec5cb5" kind="enumvalue"><name>Ch16Software</name></member>
     <member refid="namespacegr_1_1II__K7__310R_1a1c1292d8181e46a2985782e82e3d9727a822716651d2c77ab56918c782bc368d3" kind="enumvalue"><name>Ch16External</name></member>
+    <member refid="namespacegr_1_1II__K7__310R_1a4a7d049ec25c380852d94007ceb74a79" kind="enum"><name>Ch16Source</name></member>
+    <member refid="namespacegr_1_1II__K7__310R_1a4a7d049ec25c380852d94007ceb74a79aed2fb8c985841fac9815fbfee89b618d" kind="enumvalue"><name>Adc0</name></member>
+    <member refid="namespacegr_1_1II__K7__310R_1a4a7d049ec25c380852d94007ceb74a79a9965b5e3936fc06e1f8b0868ae17ee22" kind="enumvalue"><name>Adc1</name></member>
+    <member refid="namespacegr_1_1II__K7__310R_1a4a7d049ec25c380852d94007ceb74a79a5d26f96a4be151781159c249c03281d2" kind="enumvalue"><name>Adc2</name></member>
+    <member refid="namespacegr_1_1II__K7__310R_1a4a7d049ec25c380852d94007ceb74a79a9d19cd33c43a213462638016fd00a708" kind="enumvalue"><name>Adc3</name></member>
+    <member refid="namespacegr_1_1II__K7__310R_1a4a7d049ec25c380852d94007ceb74a79a58c63a3bd117b3b043c0ea5526f1016e" kind="enumvalue"><name>Test</name></member>
     <member refid="namespacegr_1_1II__K7__310R_1ade8ee334a2f0ef778ef57e7491005420" kind="enum"><name>Ch1TriggerSource</name></member>
     <member refid="namespacegr_1_1II__K7__310R_1ade8ee334a2f0ef778ef57e7491005420a8b5aba2c8aa4fdc8e5bbb9b812b56e91" kind="enumvalue"><name>Ch1Software</name></member>
     <member refid="namespacegr_1_1II__K7__310R_1ade8ee334a2f0ef778ef57e7491005420aa60a78347281a01032190066413a874d" kind="enumvalue"><name>Ch1External</name></member>
@@ -97,11 +132,17 @@
   </compound>
   <compound refid="ch16__ddc__source__c_8h" kind="file"><name>ch16_ddc_source_c.h</name>
   </compound>
+  <compound refid="ch16__ddc__source__c__impl_01virtual_8h" kind="file"><name>ch16_ddc_source_c_impl virtual.h</name>
+  </compound>
   <compound refid="ch16__ddc__source__c__impl_8h" kind="file"><name>ch16_ddc_source_c_impl.h</name>
   </compound>
   <compound refid="ch1__ddc__source__c_8h" kind="file"><name>ch1_ddc_source_c.h</name>
   </compound>
   <compound refid="ch1__ddc__source__c__impl_8h" kind="file"><name>ch1_ddc_source_c_impl.h</name>
+  </compound>
+  <compound refid="GRGpK7Fmc310_01virtual_8h" kind="file"><name>GRGpK7Fmc310 virtual.h</name>
+  </compound>
+  <compound refid="GRGpK7Fmc310_8h" kind="file"><name>GRGpK7Fmc310.h</name>
   </compound>
   <compound refid="group__defs_8dox" kind="file"><name>group_defs.dox</name>
   </compound>

@@ -1,0 +1,39 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.11">
+  <compounddef id="GRGpK7Fmc310_01virtual_8h" kind="file" language="C++">
+    <compoundname>GRGpK7Fmc310 virtual.h</compoundname>
+    <includes refid="api_8h" local="no">II_K7_310R/api.h</includes>
+    <includes local="no">gnuradio/sync_block.h</includes>
+    <incdepgraph>
+      <node id="47">
+        <label>GRGpK7Fmc310 virtual.h</label>
+        <link refid="GRGpK7Fmc310 virtual.h"/>
+        <childnode refid="48" relation="include">
+        </childnode>
+        <childnode refid="50" relation="include">
+        </childnode>
+      </node>
+      <node id="50">
+        <label>gnuradio/sync_block.h</label>
+      </node>
+      <node id="49">
+        <label>gnuradio/attributes.h</label>
+      </node>
+      <node id="48">
+        <label>II_K7_310R/api.h</label>
+        <link refid="api_8h"/>
+        <childnode refid="49" relation="include">
+        </childnode>
+      </node>
+    </incdepgraph>
+    <innerclass refid="classILoggerInterface" prot="public">ILoggerInterface</innerclass>
+    <innerclass refid="classIGnuRadioBlockInterface" prot="public">IGnuRadioBlockInterface</innerclass>
+    <innerclass refid="classGRGpK7Fmc310" prot="public">GRGpK7Fmc310</innerclass>
+    <innerclass refid="structGRGpK7Fmc310_1_1GpDspSettings" prot="public">GRGpK7Fmc310::GpDspSettings</innerclass>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/home/user/Documents/GnuRadio/gr-II_K7_310R/lib/GRGpK7Fmc310 virtual.h"/>
+  </compounddef>
+</doxygen>

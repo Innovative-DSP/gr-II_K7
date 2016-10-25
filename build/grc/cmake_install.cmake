@@ -1,8 +1,8 @@
-# Install script for directory: ${CMAKE_SOURCE_DIR}/../grc
+# Install script for directory: /home/user/Documents/GnuRadio/gr-II_K7_310R/grc
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
-  set(CMAKE_INSTALL_PREFIX "${CMAKE_SOURCE_DIR}/../../..")
+  set(CMAKE_INSTALL_PREFIX "/usr/local")
 endif()
 string(REGEX REPLACE "/$" "" CMAKE_INSTALL_PREFIX "${CMAKE_INSTALL_PREFIX}")
 
@@ -33,9 +33,6 @@ if(NOT DEFINED CMAKE_INSTALL_SO_NO_EXE)
 endif()
 
 if(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "Unspecified")
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/gnuradio/grc/blocks" TYPE FILE FILES
-    "${CMAKE_SOURCE_DIR}/../grc/II_K7_310R_ch16_ddc_source_c.xml"
-    "${CMAKE_SOURCE_DIR}/../grc/II_K7_310R_ch1_ddc_source_c.xml"
-    )
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/gnuradio/grc/blocks" TYPE FILE FILES "/home/user/Documents/GnuRadio/gr-II_K7_310R/grc/II_K7_310R_ch16_ddc_source_c.xml")
 endif()
 
