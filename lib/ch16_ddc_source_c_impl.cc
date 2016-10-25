@@ -37,18 +37,19 @@ namespace gr {
     ch16_ddc_source_c::sptr
     ch16_ddc_source_c::make(short max_ch, float rf_gain, Ch16TriggerSource trigger_source,
                             const char*  ddc_filter_path, bool is_rf_tuner, float rf_center_freq,
-                            float ch0_offset_freq, float ch1_offset_freq, float ch2_offset_freq,
-                            float ch3_offset_freq, float ch4_offset_freq, float ch5_offset_freq,
-                            float ch6_offset_freq, float ch7_offset_freq, float ch8_offset_freq,
-                            float ch9_offset_freq, float ch10_offset_freq, float ch11_offset_freq,
-                            float ch12_offset_freq, float ch13_offset_freq, float ch14_offset_freq,
-                            float ch15_offset_freq,
-                            float ch0_tune_freq, float ch1_tune_freq, float ch2_tune_freq,
-                            float ch3_tune_freq, float ch4_tune_freq, float ch5_tune_freq,
-                            float ch6_tune_freq, float ch7_tune_freq, float ch8_tune_freq,
-                            float ch9_tune_freq, float ch10_tune_freq, float ch11_tune_freq,
-                            float ch12_tune_freq, float ch13_tune_freq, float ch14_tune_freq,
-                            float ch15_tune_freq)
+                            float ch0_offset_freq, float ch1_offset_freq, float ch2_offset_freq, float ch3_offset_freq,
+                            float ch4_offset_freq, float ch5_offset_freq, float ch6_offset_freq, float ch7_offset_freq,
+                            float ch8_offset_freq, float ch9_offset_freq, float ch10_offset_freq, float ch11_offset_freq,
+                            float ch12_offset_freq, float ch13_offset_freq, float ch14_offset_freq,float ch15_offset_freq,
+                            float ch0_tune_freq, float ch1_tune_freq, float ch2_tune_freq, float ch3_tune_freq,
+                            float ch4_tune_freq, float ch5_tune_freq, float ch6_tune_freq, float ch7_tune_freq,
+                            float ch8_tune_freq, float ch9_tune_freq, float ch10_tune_freq, float ch11_tune_freq,
+                            float ch12_tune_freq, float ch13_tune_freq, float ch14_tune_freq, float ch15_tune_freq,
+                            Ch16Source ch0_source, Ch16Source ch1_source, Ch16Source ch2_source, Ch16Source ch3_source,
+                            Ch16Source ch4_source, Ch16Source ch5_source, Ch16Source ch6_source, Ch16Source ch7_source,
+                            Ch16Source ch8_source, Ch16Source ch9_source, Ch16Source ch10_source, Ch16Source ch11_source,
+                            Ch16Source ch12_source, Ch16Source ch13_source, Ch16Source ch14_source, Ch16Source ch15_source
+                            )
     {
         float ch0_freq = is_rf_tuner ? ch0_offset_freq : ch0_tune_freq;
         float ch1_freq = is_rf_tuner ? ch1_offset_freq : ch1_tune_freq;
@@ -68,12 +69,11 @@ namespace gr {
         float ch15_freq = is_rf_tuner ? ch15_offset_freq : ch15_tune_freq;
 
         return gnuradio::get_initial_sptr
-          (new ch16_ddc_source_c_impl(max_ch, rf_gain, trigger_source, ddc_filter_path, is_rf_tuner,
-                                    rf_center_freq, ch0_freq, ch1_freq, ch2_freq,
-                                    ch3_freq, ch4_freq, ch5_freq, ch6_freq,
-                                    ch7_freq, ch8_freq, ch9_freq, ch10_freq,
-                                    ch11_freq, ch12_freq, ch13_freq, ch14_freq,
-                                    ch15_freq));
+          (new ch16_ddc_source_c_impl(max_ch, rf_gain, trigger_source, ddc_filter_path, is_rf_tuner, rf_center_freq,
+                                      ch0_freq, ch1_freq, ch2_freq, ch3_freq, ch4_freq, ch5_freq, ch6_freq, ch7_freq,
+                                      ch8_freq, ch9_freq, ch10_freq, ch11_freq, ch12_freq, ch13_freq, ch14_freq, ch15_freq,
+                                      ch0_source, ch1_source, ch2_source, ch3_source, ch4_source, ch5_source, ch6_source, ch7_source,
+                                      ch8_source, ch9_source, ch10_source, ch11_source, ch12_source, ch13_source, ch14_source, ch15_source));
     }
 
     /*
@@ -81,20 +81,23 @@ namespace gr {
      */
     ch16_ddc_source_c_impl::ch16_ddc_source_c_impl(short max_ch, float rf_gain, Ch16TriggerSource trigger_source,
                                                    const char* ddc_filter_path, bool is_rf_tuner, float rf_center_freq,
-                                                   float ch0_freq, float ch1_freq, float ch2_freq,
-                                                   float ch3_freq, float ch4_freq, float ch5_freq,
-                                                   float ch6_freq, float ch7_freq, float ch8_freq,
-                                                   float ch9_freq, float ch10_freq, float ch11_freq,
-                                                   float ch12_freq, float ch13_freq, float ch14_freq,
-                                                   float ch15_freq):
+                                                   float ch0_freq, float ch1_freq, float ch2_freq, float ch3_freq,
+                                                   float ch4_freq, float ch5_freq, float ch6_freq, float ch7_freq,
+                                                   float ch8_freq, float ch9_freq, float ch10_freq, float ch11_freq,
+                                                   float ch12_freq, float ch13_freq, float ch14_freq, float ch15_freq,
+                                                   Ch16Source ch0_source, Ch16Source ch1_source, Ch16Source ch2_source, Ch16Source ch3_source,
+                                                   Ch16Source ch4_source, Ch16Source ch5_source, Ch16Source ch6_source, Ch16Source ch7_source,
+                                                   Ch16Source ch8_source, Ch16Source ch9_source, Ch16Source ch10_source, Ch16Source ch11_source,
+                                                   Ch16Source ch12_source, Ch16Source ch13_source, Ch16Source ch14_source, Ch16Source ch15_source
+                                                   ) :
         Settings(rf_gain, static_cast<unsigned short>(trigger_source),
             ddc_filter_path,  // labeled as "DDC Bandwidth" in GR block
             is_rf_tuner,
             rf_center_freq, max_ch,
-            ch0_freq, ch1_freq, ch2_freq, ch3_freq,
-            ch4_freq, ch5_freq, ch6_freq, ch7_freq,
-            ch8_freq, ch9_freq, ch10_freq, ch11_freq,
-            ch12_freq, ch13_freq, ch14_freq, ch15_freq
+            ch0_freq, ch1_freq, ch2_freq, ch3_freq, ch4_freq, ch5_freq, ch6_freq, ch7_freq,
+            ch8_freq, ch9_freq, ch10_freq, ch11_freq, ch12_freq, ch13_freq, ch14_freq, ch15_freq,
+            ch0_source, ch1_source, ch2_source, ch3_source, ch4_source, ch5_source, ch6_source, ch7_source, ch8_source,
+            ch9_source, ch10_source, ch11_source, ch12_source, ch13_source, ch14_source, ch15_source
         ),
         gr::sync_block("ch16_ddc_source_c",
               gr::io_signature::make(0, 0, 0),

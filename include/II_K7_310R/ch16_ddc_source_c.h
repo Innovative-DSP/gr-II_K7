@@ -29,6 +29,7 @@ namespace gr {
   namespace II_K7_310R {
 
     enum Ch16TriggerSource {Ch16Software, Ch16External};
+    enum Ch16Source {Adc0, Adc1, Adc2, Adc3, Test};
 
     /*!
      * \brief source of DDC data
@@ -50,18 +51,18 @@ namespace gr {
        */
         static sptr make(short max_ch, float rf_gain, II_K7_310R::Ch16TriggerSource trigger_source,
                          const char*  ddc_filter_path, bool is_rf_tuner, float rf_center_freq,
-                         float ch0_offset_freq, float ch1_offset_freq, float ch2_offset_freq,
-                         float ch3_offset_freq, float ch4_offset_freq, float ch5_offset_freq,
-                         float ch6_offset_freq, float ch7_offset_freq, float ch8_offset_freq,
-                         float ch9_offset_freq, float ch10_offset_freq, float ch11_offset_freq,
-                         float ch12_offset_freq, float ch13_offset_freq, float ch14_offset_freq,
-                         float ch15_offset_freq,
-                         float ch0_tune_freq, float ch1_tune_freq, float ch2_tune_freq,
-                         float ch3_tune_freq, float ch4_tune_freq, float ch5_tune_freq,
-                         float ch6_tune_freq, float ch7_tune_freq, float ch8_tune_freq,
-                         float ch9_tune_freq, float ch10_tune_freq, float ch11_tune_freq,
-                         float ch12_tune_freq, float ch13_tune_freq, float ch14_tune_freq,
-                         float ch15_tune_freq);
+                         float ch0_offset_freq, float ch1_offset_freq, float ch2_offset_freq, float ch3_offset_freq,
+                         float ch4_offset_freq, float ch5_offset_freq, float ch6_offset_freq, float ch7_offset_freq,
+                         float ch8_offset_freq, float ch9_offset_freq, float ch10_offset_freq, float ch11_offset_freq,
+                         float ch12_offset_freq, float ch13_offset_freq, float ch14_offset_freq,float ch15_offset_freq,
+                         float ch0_tune_freq, float ch1_tune_freq, float ch2_tune_freq, float ch3_tune_freq,
+                         float ch4_tune_freq, float ch5_tune_freq, float ch6_tune_freq, float ch7_tune_freq,
+                         float ch8_tune_freq, float ch9_tune_freq, float ch10_tune_freq, float ch11_tune_freq,
+                         float ch12_tune_freq, float ch13_tune_freq, float ch14_tune_freq, float ch15_tune_freq,
+                         Ch16Source ch0_source, Ch16Source ch1_source, Ch16Source ch2_source, Ch16Source ch3_source,
+                         Ch16Source ch4_source, Ch16Source ch5_source, Ch16Source ch6_source, Ch16Source ch7_source,
+                         Ch16Source ch8_source, Ch16Source ch9_source, Ch16Source ch10_source, Ch16Source ch11_source,
+                         Ch16Source ch12_source, Ch16Source ch13_source, Ch16Source ch14_source, Ch16Source ch15_source);
     };
 
   } // namespace II_K7_310R
