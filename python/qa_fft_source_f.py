@@ -23,7 +23,7 @@ from gnuradio import gr, gr_unittest
 from gnuradio import blocks
 import II_K7_310R_swig as II_K7_310R
 
-class qa_ch16_ddc_source_c (gr_unittest.TestCase):
+class qa_fft_source_f (gr_unittest.TestCase):
 
     def setUp (self):
         self.tb = gr.top_block ()
@@ -33,14 +33,12 @@ class qa_ch16_ddc_source_c (gr_unittest.TestCase):
 
     def test_001_t (self):
         # set up fg
-        II_K7_310R_ch16_ddc_source_c_0 = II_K7_310R.ch16_ddc_source_c(2, 0.0, II_K7_310R.Ch16Software, '/home/user/Config/ddc/ddc_Fs250MHz_BW2MHz.ini', False, 250,
-              -0.5, 0.5, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 70.1,
-              70, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0,
-              II_K7_310R.Test, II_K7_310R.Test, II_K7_310R.Adc0, II_K7_310R.Adc0, II_K7_310R.Adc0, II_K7_310R.Adc0, II_K7_310R.Adc0, II_K7_310R.Adc0, II_K7_310R.Adc0, II_K7_310R.Adc0, II_K7_310R.Adc0, II_K7_310R.Adc0, II_K7_310R.Adc0, II_K7_310R.Adc0, II_K7_310R.Adc0, II_K7_310R.Adc0)
+        II_K7_310R_fft_source_f_0 = II_K7_310R.fft_source_f(II_K7_310R.FftTest, II_K7_310R.Rect, False, 0.0)
+        # x = II_K7_310R.Rect
 
         self.tb.run ()
         # check data
 
 
 if __name__ == '__main__':
-    gr_unittest.run(qa_ch16_ddc_source_c, "qa_ch16_ddc_source_c.xml")
+    gr_unittest.run(qa_fft_source_f, "qa_fft_source_f.xml")

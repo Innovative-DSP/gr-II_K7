@@ -26,11 +26,10 @@ find_package(Innovative)
 
 include_directories(${Boost_INCLUDE_DIR})
 link_directories(${Boost_LIBRARY_DIRS})
-
 list(APPEND II_K7_310R_sources
     ch16_ddc_source_c_impl.cc
     #ch1_ddc_source_c_impl.cc
-)
+    fft_source_f_impl.cc )
 
 set(II_K7_310R_sources "${II_K7_310R_sources}" PARENT_SCOPE)
 if(NOT II_K7_310R_sources)
@@ -87,10 +86,10 @@ install(TARGETS gnuradio-II_K7_310R
 include(GrTest)
 
 include_directories(${CPPUNIT_INCLUDE_DIRS} ${INNOVATIVE_INCLUDE_DIRS})
-
 list(APPEND test_II_K7_310R_sources
     ${CMAKE_CURRENT_SOURCE_DIR}/test_II_K7_310R.cc
     ${CMAKE_CURRENT_SOURCE_DIR}/qa_II_K7_310R.cc
+    ${CMAKE_CURRENT_SOURCE_DIR}/qa_fft_source_f.cc
     ${CMAKE_CURRENT_SOURCE_DIR}/qa_ch16_ddc_source_c.cc
 )
 

@@ -4,6 +4,7 @@
 
 #include <II_K7_310R/api.h>
 #include <gnuradio/sync_block.h>
+#include <boost/shared_ptr.hpp>
 
 class ILoggerInterface
 {
@@ -23,6 +24,7 @@ public:
     ~GRGpK7Fmc310();
 
     // Settings
+
     struct GpDspSettings {
         GpDspSettings() {};
         GpDspSettings(float rf_gain, unsigned short  trigger_source,
@@ -92,6 +94,24 @@ public:
         unsigned short ChSource[16];
     };
     void SetSettings(const GpDspSettings& settings);
+    bool IsDdc() const { return IsDdcFlag; }
+
+    struct GpFftSettings {
+        GpFftSettings() {};
+        GpFftSettings(unsigned short fft0_source, unsigned short  fft0_windowing, bool is_fft0_fasd, float fft0_fasd
+                      ) :
+            Fft0Source(fft0_source),
+            Fft0Windowing(fft0_windowing),
+            IsFft0Fasd(is_fft0_fasd),
+            Fft0Fasd(fft0_fasd)
+        {}
+        unsigned short  Fft0Source;
+        unsigned short  Fft0Windowing;
+        bool  IsFft0Fasd;
+        float Fft0Fasd;
+    };
+    void SetFftSettings(const GpFftSettings& settings);
+    bool IsFft() const { return IsFftFlag; }
 
     // Requires hardware:
     void  OpenDriver();
@@ -102,8 +122,20 @@ public:
              gr_vector_const_void_star &input_items,
              gr_vector_void_star &output_items);
 
+    int FftWork(int noutput_items,
+             gr_vector_const_void_star &input_items,
+             gr_vector_void_star &output_items);
+
+
 private:
-    LibraryIo  *Io;
+    // LibraryIo  *Io;
+    // typedef boost::shared_ptr<LibraryIo> LibIoPtr;
+    typedef LibraryIo* LibIoPtr;
+    static LibIoPtr  Io;
+    static bool  IsOpenFlag;
+    static bool  IsStreamingFlag;
+    static bool  IsDdcFlag;
+    static bool  IsFftFlag;
 };
 
 #endif // GRGPK7FMC310_H

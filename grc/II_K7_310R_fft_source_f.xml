@@ -1,0 +1,176 @@
+<?xml version="1.0"?>
+<block>
+  <name>II FFT Source</name>
+  <key>II_K7_310R_fft_source_f</key>
+  <category>[II K7 310R]</category>
+  <flags>throttle</flags>
+  <import>import II_K7_310R</import>
+  <make>II_K7_310R.fft_source_f($fft0_source, $fft0_windowing, $is_fft0_fasd, $fft0_fasd)</make>
+  <param>
+    <name>FFT[0] Source</name>
+    <key>fft0_source</key>
+    <value>II_K7_310R.FftDdc0</value>
+    <type>enum</type>
+    <hide>part</hide>
+    <option>
+        <name>DDC[1]</name>
+        <key>II_K7_310R.FftDdc1</key>
+    </option>
+    <option>
+        <name>DDC[0]</name>
+        <key>II_K7_310R.FftDdc0</key>
+    </option>
+    <option>
+        <name>DDC[2]</name>
+        <key>II_K7_310R.FftDdc2</key>
+    </option>
+    <option>
+        <name>DDC[3]</name>
+        <key>II_K7_310R.FftDdc3</key>
+    </option>
+    <option>
+        <name>DDC[4]</name>
+        <key>II_K7_310R.FftDdc4</key>
+    </option>
+    <option>
+        <name>DDC[5]</name>
+        <key>II_K7_310R.FftDdc5</key>
+    </option>
+    <option>
+        <name>DDC[6]</name>
+        <key>II_K7_310R.FftDdc6</key>
+    </option>
+    <option>
+        <name>DDC[7]</name>
+        <key>II_K7_310R.FftDdc7</key>
+    </option>
+    <option>
+        <name>DDC[8]</name>
+        <key>II_K7_310R.FftDdc8</key>
+    </option>
+    <option>
+        <name>DDC[9]</name>
+        <key>II_K7_310R.FftDdc9</key>
+    </option>
+    <option>
+        <name>DDC[10]</name>
+        <key>II_K7_310R.FftDdc10</key>
+    </option>
+    <option>
+        <name>DDC[11]</name>
+        <key>II_K7_310R.FftDdc11</key>
+    </option>
+    <option>
+        <name>DDC[12]</name>
+        <key>II_K7_310R.FftDdc12</key>
+    </option>
+    <option>
+        <name>DDC[13]</name>
+        <key>II_K7_310R.FftDdc13</key>
+    </option>
+    <option>
+        <name>DDC[14]</name>
+        <key>II_K7_310R.FftDdc14</key>
+    </option>
+    <option>
+        <name>DDC[15]</name>
+        <key>II_K7_310R.FftDdc15</key>
+    </option>
+    <option>
+        <name>Adc[0]</name>
+        <key>II_K7_310R.FftAdc0</key>
+    </option>
+    <option>
+        <name>Adc[1]</name>
+        <key>II_K7_310R.FftAdc1</key>
+    </option>
+    <option>
+        <name>Adc[2]</name>
+        <key>II_K7_310R.FftAdc2</key>
+    </option>
+    <option>
+        <name>Adc[3]</name>
+        <key>II_K7_310R.FftAdc3</key>
+    </option>
+    <option>
+        <name>Test</name>
+        <key>II_K7_310R.FftTest</key>
+    </option>
+  </param>
+  <param>
+    <name>FFT[0] Windowing</name>
+    <key>fft0_windowing</key>
+    <value>II_K7_310R.Rect</value>
+    <type>enum</type>
+    <hide>part</hide>
+    <option>
+        <name>Rect</name>
+        <key>II_K7_310R.Rect</key>
+    </option>
+    <option>
+        <name>Hann</name>
+        <key>II_K7_310R.Hann</key>
+    </option>
+    <option>
+        <name>Cheby</name>
+        <key>II_K7_310R.Cheby</key>
+    </option>
+    <option>
+        <name>Taylor</name>
+        <key>II_K7_310R.Taylor</key>
+    </option>
+    <option>
+        <name>Blackman</name>
+        <key>II_K7_310R.Blackman</key>
+    </option>
+    <option>
+        <name>Hamming</name>
+        <key>II_K7_310R.Hamming</key>
+    </option>
+    <option>
+        <name>Gauss</name>
+        <key>II_K7_310R.Gauss</key>
+    </option>
+    <option>
+        <name>Flattop</name>
+        <key>II_K7_310R.Flattop</key>
+    </option>
+  </param>
+  <param>
+    <name>Enable FASD</name>
+    <key>is_fft0_fasd</key>
+    <value>False</value>
+    <type>bool</type>
+    <hide>part</hide>
+    <option>
+      <name>Yes</name>
+      <key>True</key>
+    </option>
+    <option>
+      <name>No</name>
+      <key>False</key>
+    </option>
+  </param>
+  <param>
+    <name>Fast Attack, Slow Decay</name>
+    <key>fft0_fasd</key>
+    <value>0.0</value>
+    <type>float</type>
+    <hide>#if str($is_fft0_fasd()) == 'True' then 'none' else 'part'#</hide>
+  </param>
+
+  <!-- Make one 'source' node per output. Sub-nodes:
+       * name (an identifier for the GUI)
+       * type
+       * vlen
+       * optional (set to 1 for optional inputs) -->
+  <!-- type is e.g. int, float, complex, byte, short, xxx_vector, ...-->
+  <source>
+    <name>out</name>
+    <type>float</type>
+  </source>
+
+  <doc>
+TODO: See Billy Kao's 10/25/2016 e-mail, "RE: Adding GR FFT block".
+  </doc>
+</block>

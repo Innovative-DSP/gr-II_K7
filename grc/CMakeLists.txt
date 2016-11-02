@@ -16,9 +16,8 @@
 # along with GNU Radio; see the file COPYING.  If not, write to
 # the Free Software Foundation, Inc., 51 Franklin Street,
 # Boston, MA 02110-1301, USA.
-
 install(FILES
     II_K7_310R_ch16_ddc_source_c.xml
     #II_K7_310R_ch1_ddc_source_c.xml
-    DESTINATION share/gnuradio/grc/blocks
+    II_K7_310R_fft_source_f.xml DESTINATION share/gnuradio/grc/blocks
 )

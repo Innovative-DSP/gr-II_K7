@@ -107,16 +107,15 @@ namespace gr {
         // Ensure that LibraryIo is a singleton:
         if(!BlockId)
         {
+            GR_LOG_DEBUG(d_debug_logger, "Constructor called.");
             Io = new GRGpK7Fmc310(this);
 
-            GR_LOG_DEBUG(d_debug_logger, "Constructor called.");
             const int alignment_multiple = volk_get_alignment() / sizeof(float);
             set_alignment(std::max(1, alignment_multiple));
 
             Io->SetSettings(Settings);
             // TODO:GR_LOG_DEBUG(d_debug_logger, "Max channels: "+IntToString(Settings.MaxChannels));
-            // Requires hardware:
-            Io->OpenDriver();
+            GR_LOG_DEBUG(d_debug_logger, "Constructor finished.");
         }
     }
 
@@ -141,9 +140,12 @@ namespace gr {
         if(!BlockId)
             {
             // Requires hardware:
+            Io->OpenDriver();
+            // Requires hardware:
             Io->Start();
             }
         // TODO: return value?
+        GR_LOG_DEBUG(d_debug_logger, "start() finished.");
     }
 
     int
