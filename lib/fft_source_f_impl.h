@@ -22,7 +22,7 @@
 #define INCLUDED_II_K7_310R_FFT_SOURCE_F_IMPL_H
 
 #include <II_K7_310R/fft_source_f.h>
-#include <GRGpK7Fmc310.h>
+#include <GRGpK7Interface.h>
 
 namespace gr {
   namespace II_K7_310R {
@@ -30,8 +30,8 @@ namespace gr {
     class fft_source_f_impl : public fft_source_f, ILoggerInterface
     {
      private:
-        GRGpK7Fmc310::GpFftSettings  Settings;
-        GRGpK7Fmc310*  Io;
+        GRGpK7Interface::GpFftSettings  Settings;
+        GRGpK7Interface*  Io;
 
     public:
       fft_source_f_impl(II_K7_310R::FftSrc fft0_source, II_K7_310R::FftWindowing fft0_windowing, bool is_fft0_fasd, float fft0_fasd);

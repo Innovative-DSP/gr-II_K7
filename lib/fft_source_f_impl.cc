@@ -51,7 +51,7 @@ namespace gr {
                        gr::io_signature::make(1, gr::io_signature::IO_INFINITE, sizeof(float)))
     {
         GR_LOG_DEBUG(d_debug_logger, "FFT Constructor called.");
-        Io = new GRGpK7Fmc310(this);
+        Io = new GRGpK7Interface(this, GRGpK7Interface::GpK7Fmc310);
 
         const int alignment_multiple = volk_get_alignment() / sizeof(float);
         set_alignment(std::max(1, alignment_multiple));
@@ -97,6 +97,7 @@ namespace gr {
                 }
             }
         // Tell runtime system how many output items we produced.
+//        return Io->LibIoDesc->Io->FftWork(noutput_items, input_items, output_items);
         return Io->FftWork(noutput_items, input_items, output_items);
     }
 

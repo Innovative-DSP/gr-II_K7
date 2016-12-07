@@ -1,6 +1,6 @@
 
-#ifndef GRGPK7FMC310_H
-#define GRGPK7FMC310_H
+#ifndef GRGPK7INTERFACE_H
+#define GRGPK7INTERFACE_H
 
 #include <II_K7_310R/api.h>
 #include <gnuradio/sync_block.h>
@@ -15,13 +15,12 @@ public:
     virtual void  DebugLog(const std::string & a_string) = 0;
 };
 
-class LibraryIo;
-
-class GRGpK7Fmc310
+class GRGpK7Interface
 {
 public:
-    GRGpK7Fmc310(ILoggerInterface *Logger);
-    ~GRGpK7Fmc310();
+    enum LibIoSelector {GpK7Fmc250, GpK7Fmc310};
+    GRGpK7Interface(ILoggerInterface *Logger, LibIoSelector  LibIo);
+    ~GRGpK7Interface();
 
     // Settings
 
@@ -94,7 +93,6 @@ public:
         unsigned short ChSource[16];
     };
     void SetSettings(const GpDspSettings& settings);
-    bool IsDdc() const { return IsDdcFlag; }
 
     struct GpFftSettings {
         GpFftSettings() {};
@@ -111,7 +109,29 @@ public:
         float Fft0Fasd;
     };
     void SetFftSettings(const GpFftSettings& settings);
-    bool IsFft() const { return IsFftFlag; }
+
+    struct GpDucSettings {
+        GpDucSettings() {};
+        GpDucSettings(const char* duc_filter_path, short max_channels,
+                      float ch0_offset_freq, float ch1_offset_freq, float ch2_offset_freq, float ch3_offset_freq,
+                      float ch4_offset_freq, float ch5_offset_freq, float ch6_offset_freq, float ch7_offset_freq
+            ) :
+            DucFilterPath(duc_filter_path),  // TBD: labeled as "DUC Bandwidth" in GR block
+            MaxChannels(max_channels)
+        {
+            ChOffsetFreq[0] = ch0_offset_freq;
+            ChOffsetFreq[1] = ch1_offset_freq;
+            ChOffsetFreq[2] = ch2_offset_freq;
+            ChOffsetFreq[3] = ch3_offset_freq;
+            ChOffsetFreq[4] = ch4_offset_freq;
+            ChOffsetFreq[5] = ch5_offset_freq;
+            ChOffsetFreq[6] = ch6_offset_freq;
+            ChOffsetFreq[7] = ch7_offset_freq;
+        }
+        const char*  DucFilterPath;
+        short  MaxChannels;
+        float  ChOffsetFreq[8];
+    };
 
     // Requires hardware:
     void  OpenDriver();
@@ -120,22 +140,56 @@ public:
 
     int Work(int noutput_items,
              gr_vector_const_void_star &input_items,
-             gr_vector_void_star &output_items);
+             gr_vector_void_star &output_items)
+    {
+        return LibIoDesc->Io->Work(noutput_items, input_items, output_items);
+    }
 
     int FftWork(int noutput_items,
              gr_vector_const_void_star &input_items,
-             gr_vector_void_star &output_items);
+             gr_vector_void_star &output_items)
+    {
+        return LibIoDesc->Io->FftWork(noutput_items, input_items, output_items);
+    }
 
+    class IGRGpK7Fmc
+    {
+    public:
+        virtual ~IGRGpK7Fmc()  {}
+
+        virtual void  SetSettings(const GpDspSettings& settings) = 0;
+        virtual void  SetDucSettings(const GpDucSettings& settings) = 0;
+        virtual void  SetFftSettings(const GpFftSettings& settings) = 0;
+        // Requires hardware:
+        virtual void  OpenDriver(bool  IsDdc, bool  IsFft, bool IsDuc) = 0;
+        virtual void  StreamStart() = 0;
+        virtual void  StreamStop() = 0;
+        virtual void  CloseDriver() = 0;
+
+        virtual int Work(int noutput_items,
+                         gr_vector_const_void_star &input_items,
+                         gr_vector_void_star &output_items) = 0;
+        virtual int FftWork(int noutput_items,
+                 gr_vector_const_void_star &input_items,
+                 gr_vector_void_star &output_items) = 0;
+    };
 
 private:
     // LibraryIo  *Io;
     // typedef boost::shared_ptr<LibraryIo> LibIoPtr;
-    typedef LibraryIo* LibIoPtr;
-    static LibIoPtr  Io;
-    static bool  IsOpenFlag;
-    static bool  IsStreamingFlag;
-    static bool  IsDdcFlag;
-    static bool  IsFftFlag;
+    typedef IGRGpK7Fmc* LibIoPtr;
+    struct LibIoDescriptor
+    {
+        LibIoPtr  Io;
+        bool  IsOpenFlag;
+        bool  IsStreamingFlag;
+        bool  IsDdcFlag;
+        bool  IsDucFlag;
+        bool  IsFftFlag;
+    };
+    LibIoDescriptor*  LibIoDesc;
+    static LibIoDescriptor  GpK7Fmc310Desc;
+    static LibIoDescriptor  GpK7Fmc250Desc;
 };
 
 #endif // GRGPK7FMC310_H

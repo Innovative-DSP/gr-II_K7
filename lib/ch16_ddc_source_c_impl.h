@@ -22,7 +22,7 @@
 #define INCLUDED_II_K7_310R_CH16_DDC_SOURCE_C_IMPL_H
 
 #include <II_K7_310R/ch16_ddc_source_c.h>
-#include <GRGpK7Fmc310.h>
+#include <GRGpK7Interface.h>
 
 namespace gr {
   namespace II_K7_310R {
@@ -30,8 +30,8 @@ namespace gr {
     class ch16_ddc_source_c_impl : public ch16_ddc_source_c, ILoggerInterface
     {
     private:
-        GRGpK7Fmc310::GpDspSettings  Settings;
-        GRGpK7Fmc310*  Io;
+        GRGpK7Interface::GpDspSettings  Settings;
+        GRGpK7Interface*  Io;
         static unsigned  BlockCount;
         unsigned  BlockId;
 

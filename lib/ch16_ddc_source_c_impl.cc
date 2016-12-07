@@ -108,7 +108,7 @@ namespace gr {
         if(!BlockId)
         {
             GR_LOG_DEBUG(d_debug_logger, "Constructor called.");
-            Io = new GRGpK7Fmc310(this);
+            Io = new GRGpK7Interface(this, GRGpK7Interface::GpK7Fmc310);
 
             const int alignment_multiple = volk_get_alignment() / sizeof(float);
             set_alignment(std::max(1, alignment_multiple));
@@ -153,6 +153,7 @@ namespace gr {
         gr_vector_const_void_star &input_items,
         gr_vector_void_star &output_items)
     {
+//        return Io->LibIoDesc->Io->Work(noutput_items, input_items, output_items);
         return Io->Work(noutput_items, input_items, output_items);
     }
 
