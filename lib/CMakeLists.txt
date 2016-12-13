@@ -38,17 +38,17 @@ if(NOT II_K7_310R_sources)
 endif(NOT II_K7_310R_sources)
 
 add_library(gnuradio-II_K7_310R SHARED ${II_K7_310R_sources})
-target_include_directories(gnuradio-II_K7_310R PUBLIC
-    ${INNOVATIVE_LIBRARY_IO_INCLUDE_DIR} ${INNOVATIVE_GP_LIB_INCLUDE_DIR}
-    ${INNOVATIVE_GP_LIB_GUI_INCLUDE_DIR} ${INNOVATIVE_MALIBU_INCLUDE_DIR}
-    ${INNOVATIVE_MALIBU_POCO_INCLUDE_DIR} ${INNOVATIVE_COMMON_INCLUDE_DIR}
-)
+#target_include_directories(gnuradio-II_K7_310R PUBLIC
+#    ${INNOVATIVE_LIBRARY_IO_INCLUDE_DIR} ${INNOVATIVE_GP_LIB_INCLUDE_DIR}
+#    ${INNOVATIVE_GP_LIB_GUI_INCLUDE_DIR} ${INNOVATIVE_MALIBU_INCLUDE_DIR}
+#    ${INNOVATIVE_MALIBU_POCO_INCLUDE_DIR} ${INNOVATIVE_COMMON_INCLUDE_DIR}
+#)
 set(II_libs "${Innovative}/Lib/Gcc")
 set(II_config "$<$<CONFIG:DEBUG>:${II_libs}/Debug>$<$<CONFIG:RELEASE>:${II_libs}/Release>")
 set(INNOVATIVE_LIBRARIES
-    ${II_config}/libGP-K7.a              ${II_config}/libGPDDC.a          ${II_config}/libAnalysis_Mb.a
-    ${II_config}/libApplication_Mb.a     ${II_config}/libFicl_Mb.a
-    ${II_config}/libFramework_Mb.a       ${II_config}/libFramework_Con.a   ${II_config}/libHardware_Mb.a
+    ${II_config}/libGP-K7.a              ${II_config}/libGP-K7-FMC-250.a  ${II_config}/libGPDDC.a          
+    ${II_config}/libAnalysis_Mb.a        ${II_config}/libApplication_Mb.a ${II_config}/libFicl_Mb.a
+    ${II_config}/libFramework_Mb.a       ${II_config}/libFramework_Con.a  ${II_config}/libHardware_Mb.a
     ${II_config}/libOs_Mb.a              ${II_config}/libPci_Mb.a         ${II_config}/libPoco_Foundation_Mb.a
     ${II_config}/libPoco_Net_Mb.a        ${II_config}/libUtility_Mb.a     ${II_config}/libVpx_Mb.a
 )
