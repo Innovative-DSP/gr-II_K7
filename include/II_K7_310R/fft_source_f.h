@@ -28,6 +28,7 @@
 namespace gr {
   namespace II_K7_310R {
 
+    enum FftFmcModule {FftFmc250Module, FftFmc310Module}; // AKA LibIoSelector in GRGpK7Interface
     enum FftSrc {FftDdc0, FftDdc1, FftDdc2, FftDdc3, FftDdc4, FftDdc5, FftDdc6, FftDdc7,
                  FftDdc8, FftDdc9, FftDdc10, FftDdc11, FftDdc12, FftDdc13, FftDdc14, FftDdc15,
                  FftAdc0, FftAdc1, FftAdc2, FftAdc3, FftTest};
@@ -51,7 +52,7 @@ namespace gr {
        * class. II_K7_310R::fft_source_f::make is the public interface for
        * creating new instances.
        */
-      static sptr make(II_K7_310R::FftSrc fft0_source, II_K7_310R::FftWindowing fft0_windowing, bool is_fft0_fasd, float fft0_fasd);
+      static sptr make(II_K7_310R::FftFmcModule fmc_module, II_K7_310R::FftSrc fft0_source, II_K7_310R::FftWindowing fft0_windowing, bool is_fft0_fasd, float fft0_fasd);
     };
 
   } // namespace II_K7_310R

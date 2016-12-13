@@ -18,7 +18,7 @@ public:
 class GRGpK7Interface
 {
 public:
-    enum LibIoSelector {GpK7Fmc250, GpK7Fmc310};
+    enum LibIoSelector {GpK7Fmc250, GpK7Fmc310}; // AKA enum FmcModule in GR block code
     GRGpK7Interface(ILoggerInterface *Logger, LibIoSelector  LibIo);
     ~GRGpK7Interface();
 
@@ -132,6 +132,7 @@ public:
         short  MaxChannels;
         float  ChOffsetFreq[8];
     };
+    void SetDucSettings(const GpDucSettings& settings);
 
     // Requires hardware:
     void  OpenDriver();

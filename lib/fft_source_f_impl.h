@@ -34,7 +34,8 @@ namespace gr {
         GRGpK7Interface*  Io;
 
     public:
-      fft_source_f_impl(II_K7_310R::FftSrc fft0_source, II_K7_310R::FftWindowing fft0_windowing, bool is_fft0_fasd, float fft0_fasd);
+      fft_source_f_impl(II_K7_310R::FftFmcModule fmc_module, II_K7_310R::FftSrc fft0_source,
+                        II_K7_310R::FftWindowing fft0_windowing, bool is_fft0_fasd, float fft0_fasd);
       ~fft_source_f_impl();
 
       // Where all the action really happens

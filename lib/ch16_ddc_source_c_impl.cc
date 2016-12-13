@@ -35,7 +35,7 @@ namespace gr {
     unsigned  ch16_ddc_source_c_impl::BlockCount = 0;
 
     ch16_ddc_source_c::sptr
-    ch16_ddc_source_c::make(short max_ch, float rf_gain, Ch16TriggerSource trigger_source,
+    ch16_ddc_source_c::make(II_K7_310R::DdcFmcModule fmc_module, short max_ch, float rf_gain, Ch16TriggerSource trigger_source,
                             const char*  ddc_filter_path, bool is_rf_tuner, float rf_center_freq,
                             float ch0_offset_freq, float ch1_offset_freq, float ch2_offset_freq, float ch3_offset_freq,
                             float ch4_offset_freq, float ch5_offset_freq, float ch6_offset_freq, float ch7_offset_freq,
@@ -69,7 +69,7 @@ namespace gr {
         float ch15_freq = is_rf_tuner ? ch15_offset_freq : ch15_tune_freq;
 
         return gnuradio::get_initial_sptr
-          (new ch16_ddc_source_c_impl(max_ch, rf_gain, trigger_source, ddc_filter_path, is_rf_tuner, rf_center_freq,
+          (new ch16_ddc_source_c_impl(fmc_module, max_ch, rf_gain, trigger_source, ddc_filter_path, is_rf_tuner, rf_center_freq,
                                       ch0_freq, ch1_freq, ch2_freq, ch3_freq, ch4_freq, ch5_freq, ch6_freq, ch7_freq,
                                       ch8_freq, ch9_freq, ch10_freq, ch11_freq, ch12_freq, ch13_freq, ch14_freq, ch15_freq,
                                       ch0_source, ch1_source, ch2_source, ch3_source, ch4_source, ch5_source, ch6_source, ch7_source,
@@ -79,7 +79,7 @@ namespace gr {
     /*
      * The private constructor
      */
-    ch16_ddc_source_c_impl::ch16_ddc_source_c_impl(short max_ch, float rf_gain, Ch16TriggerSource trigger_source,
+    ch16_ddc_source_c_impl::ch16_ddc_source_c_impl(II_K7_310R::DdcFmcModule fmc_module, short max_ch, float rf_gain, Ch16TriggerSource trigger_source,
                                                    const char* ddc_filter_path, bool is_rf_tuner, float rf_center_freq,
                                                    float ch0_freq, float ch1_freq, float ch2_freq, float ch3_freq,
                                                    float ch4_freq, float ch5_freq, float ch6_freq, float ch7_freq,
@@ -104,11 +104,11 @@ namespace gr {
               gr::io_signature::make(1, gr::io_signature::IO_INFINITE, sizeof(gr_complex))),
         BlockId(BlockCount++)
    {
-        // Ensure that LibraryIo is a singleton:
+        // Ensure that GRGpK7Interface is a singleton:
         if(!BlockId)
         {
             GR_LOG_DEBUG(d_debug_logger, "Constructor called.");
-            Io = new GRGpK7Interface(this, GRGpK7Interface::GpK7Fmc310);
+            Io = new GRGpK7Interface(this, static_cast<GRGpK7Interface::LibIoSelector>(fmc_module));
 
             const int alignment_multiple = volk_get_alignment() / sizeof(float);
             set_alignment(std::max(1, alignment_multiple));

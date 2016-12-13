@@ -5,7 +5,22 @@
   <category>[II K7 310R]</category>
   <flags>throttle</flags>
   <import>import II_K7_310R</import>
-  <make>II_K7_310R.fft_source_f($fft0_source, $fft0_windowing, $is_fft0_fasd, $fft0_fasd)</make>
+  <make>II_K7_310R.fft_source_f($fmc_module, $fft0_source, $fft0_windowing, $is_fft0_fasd, $fft0_fasd)</make>
+  <param>
+    <name>FMC Module</name>
+    <key>fmc_module</key>
+    <value>II_K7_310R.FftFmc250Module</value>
+    <type>enum</type>
+    <hide>part</hide>
+    <option>
+        <name>FMC-250</name>
+        <key>II_K7_310R.FftFmc250Module</key>
+    </option>
+    <option>
+        <name>FMC-310</name>
+        <key>II_K7_310R.FftFmc310Module</key>
+    </option>
+  </param>
   <param>
     <name>FFT[0] Source</name>
     <key>fft0_source</key>

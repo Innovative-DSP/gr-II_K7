@@ -31,16 +31,18 @@ namespace gr {
   namespace II_K7_310R {
 
     fft_source_f::sptr
-    fft_source_f::make(II_K7_310R::FftSrc fft0_source, II_K7_310R::FftWindowing fft0_windowing, bool is_fft0_fasd, float fft0_fasd)
+    fft_source_f::make(II_K7_310R::FftFmcModule fmc_module, II_K7_310R::FftSrc fft0_source,
+                       II_K7_310R::FftWindowing fft0_windowing, bool is_fft0_fasd, float fft0_fasd)
     {
       return gnuradio::get_initial_sptr
-        (new fft_source_f_impl(fft0_source, fft0_windowing, is_fft0_fasd, fft0_fasd));
+        (new fft_source_f_impl(fmc_module, fft0_source, fft0_windowing, is_fft0_fasd, fft0_fasd));
     }
 
     /*
      * The private constructor
      */
-    fft_source_f_impl::fft_source_f_impl(II_K7_310R::FftSrc fft0_source, II_K7_310R::FftWindowing fft0_windowing, bool is_fft0_fasd, float fft0_fasd)
+    fft_source_f_impl::fft_source_f_impl(II_K7_310R::FftFmcModule fmc_module, II_K7_310R::FftSrc fft0_source,
+                                         II_K7_310R::FftWindowing fft0_windowing, bool is_fft0_fasd, float fft0_fasd)
       :
 
         Settings(static_cast<unsigned short>(fft0_source), static_cast<unsigned short>(fft0_windowing),
@@ -51,7 +53,7 @@ namespace gr {
                        gr::io_signature::make(1, gr::io_signature::IO_INFINITE, sizeof(float)))
     {
         GR_LOG_DEBUG(d_debug_logger, "FFT Constructor called.");
-        Io = new GRGpK7Interface(this, GRGpK7Interface::GpK7Fmc310);
+        Io = new GRGpK7Interface(this, static_cast<GRGpK7Interface::LibIoSelector>(fmc_module));
 
         const int alignment_multiple = volk_get_alignment() / sizeof(float);
         set_alignment(std::max(1, alignment_multiple));

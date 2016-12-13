@@ -36,7 +36,7 @@ namespace gr {
         unsigned  BlockId;
 
     public:
-        ch16_ddc_source_c_impl(short max_ch, float rf_gain, Ch16TriggerSource trigger_source,
+        ch16_ddc_source_c_impl(II_K7_310R::DdcFmcModule fmc_module, short max_ch, float rf_gain, Ch16TriggerSource trigger_source,
                                const char* ddc_filter_path, bool is_rf_tuner, float rf_center_freq,
                                float ch0_freq, float ch1_freq, float ch2_freq, float ch3_freq,
                                float ch4_freq, float ch5_freq, float ch6_freq, float ch7_freq,

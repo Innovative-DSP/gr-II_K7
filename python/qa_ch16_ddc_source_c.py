@@ -33,7 +33,7 @@ class qa_ch16_ddc_source_c (gr_unittest.TestCase):
 
     def test_001_t (self):
         # set up fg
-        II_K7_310R_ch16_ddc_source_c_0 = II_K7_310R.ch16_ddc_source_c(2, 0.0, II_K7_310R.Ch16Software, '/home/user/Config/ddc/ddc_Fs250MHz_BW2MHz.ini', False, 250,
+        II_K7_310R_ch16_ddc_source_c_0 = II_K7_310R.ch16_ddc_source_c(II_K7_310R.FftFmc310Module, 2, 0.0, II_K7_310R.Ch16Software, '/home/user/Config/ddc/ddc_Fs250MHz_BW2MHz.ini', False, 250,
               -0.5, 0.5, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 70.1,
               70, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0,
               II_K7_310R.Test, II_K7_310R.Test, II_K7_310R.Adc0, II_K7_310R.Adc0, II_K7_310R.Adc0, II_K7_310R.Adc0, II_K7_310R.Adc0, II_K7_310R.Adc0, II_K7_310R.Adc0, II_K7_310R.Adc0, II_K7_310R.Adc0, II_K7_310R.Adc0, II_K7_310R.Adc0, II_K7_310R.Adc0, II_K7_310R.Adc0, II_K7_310R.Adc0)

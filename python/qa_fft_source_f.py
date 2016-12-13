@@ -33,7 +33,7 @@ class qa_fft_source_f (gr_unittest.TestCase):
 
     def test_001_t (self):
         # set up fg
-        II_K7_310R_fft_source_f_0 = II_K7_310R.fft_source_f(II_K7_310R.FftTest, II_K7_310R.Rect, False, 0.0)
+        II_K7_310R_fft_source_f_0 = II_K7_310R.fft_source_f(II_K7_310R.FftFmc310Module, II_K7_310R.FftTest, II_K7_310R.Rect, False, 0.0)
         # x = II_K7_310R.Rect
 
         self.tb.run ()
