@@ -29,7 +29,8 @@ link_directories(${Boost_LIBRARY_DIRS})
 list(APPEND II_K7_310R_sources
     ch16_ddc_source_c_impl.cc
     #ch1_ddc_source_c_impl.cc
-    fft_source_f_impl.cc )
+    fft_source_f_impl.cc
+    duc_sink_impl.cc )
 
 set(II_K7_310R_sources "${II_K7_310R_sources}" PARENT_SCOPE)
 if(NOT II_K7_310R_sources)
@@ -46,7 +47,7 @@ add_library(gnuradio-II_K7_310R SHARED ${II_K7_310R_sources})
 set(II_libs "${Innovative}/Lib/Gcc")
 set(II_config "$<$<CONFIG:DEBUG>:${II_libs}/Debug>$<$<CONFIG:RELEASE>:${II_libs}/Release>")
 set(INNOVATIVE_LIBRARIES
-    ${II_config}/libGP-K7.a              ${II_config}/libGP-K7-FMC-250.a  ${II_config}/libGPDDC.a          
+    ${II_config}/libGP-K7-FMC-310.a      ${II_config}/libGP-K7-FMC-250.a  ${II_config}/libGPDDC.a          
     ${II_config}/libAnalysis_Mb.a        ${II_config}/libApplication_Mb.a ${II_config}/libFicl_Mb.a
     ${II_config}/libFramework_Mb.a       ${II_config}/libFramework_Con.a  ${II_config}/libHardware_Mb.a
     ${II_config}/libOs_Mb.a              ${II_config}/libPci_Mb.a         ${II_config}/libPoco_Foundation_Mb.a
@@ -89,6 +90,7 @@ include_directories(${CPPUNIT_INCLUDE_DIRS} ${INNOVATIVE_INCLUDE_DIRS})
 list(APPEND test_II_K7_310R_sources
     ${CMAKE_CURRENT_SOURCE_DIR}/test_II_K7_310R.cc
     ${CMAKE_CURRENT_SOURCE_DIR}/qa_II_K7_310R.cc
+    ${CMAKE_CURRENT_SOURCE_DIR}/qa_duc_sink.cc
     ${CMAKE_CURRENT_SOURCE_DIR}/qa_fft_source_f.cc
     ${CMAKE_CURRENT_SOURCE_DIR}/qa_ch16_ddc_source_c.cc
 )

@@ -19,5 +19,6 @@
 install(FILES
     II_K7_310R_ch16_ddc_source_c.xml
     #II_K7_310R_ch1_ddc_source_c.xml
-    II_K7_310R_fft_source_f.xml DESTINATION share/gnuradio/grc/blocks
+    II_K7_310R_fft_source_f.xml
+    II_K7_310R_duc_sink.xml DESTINATION share/gnuradio/grc/blocks
 )

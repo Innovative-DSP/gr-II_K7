@@ -153,6 +153,13 @@ public:
         return LibIoDesc->Io->FftWork(noutput_items, input_items, output_items);
     }
 
+    int DucWork(int noutput_items,
+             gr_vector_const_void_star &input_items,
+             gr_vector_void_star &output_items)
+    {
+        return LibIoDesc->Io->DucWork(noutput_items, input_items, output_items);
+    }
+
     class IGRGpK7Fmc
     {
     public:
@@ -171,8 +178,11 @@ public:
                          gr_vector_const_void_star &input_items,
                          gr_vector_void_star &output_items) = 0;
         virtual int FftWork(int noutput_items,
-                 gr_vector_const_void_star &input_items,
-                 gr_vector_void_star &output_items) = 0;
+                            gr_vector_const_void_star &input_items,
+                            gr_vector_void_star &output_items) = 0;
+        virtual int DucWork(int noutput_items,
+                            gr_vector_const_void_star &input_items,
+                            gr_vector_void_star &output_items) = 0;
     };
 
 private:
@@ -189,8 +199,8 @@ private:
         bool  IsFftFlag;
     };
     LibIoDescriptor*  LibIoDesc;
-    static LibIoDescriptor  GpK7Fmc310Desc;
-    static LibIoDescriptor  GpK7Fmc250Desc;
+    static LibIoDescriptor  GpK7Fmc310Desc; // LibIoSelector::GpK7Fmc310
+    static LibIoDescriptor  GpK7Fmc250Desc; // LibIoSelector::GpK7Fmc250
 };
 
 #endif // GRGPK7FMC310_H

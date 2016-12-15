@@ -28,6 +28,7 @@
 #include "qa_II_K7_310R.h"
 #include "qa_ch16_ddc_source_c.h"
 #include "qa_fft_source_f.h"
+#include "qa_duc_sink.h"
 
 CppUnit::TestSuite *
 qa_II_K7_310R::suite()
@@ -35,6 +36,7 @@ qa_II_K7_310R::suite()
   CppUnit::TestSuite *s = new CppUnit::TestSuite("II_K7_310R");
   s->addTest(gr::II_K7_310R::qa_ch16_ddc_source_c::suite());
   s->addTest(gr::II_K7_310R::qa_fft_source_f::suite());
+  s->addTest(gr::II_K7_310R::qa_duc_sink::suite());
 
   return s;
 }

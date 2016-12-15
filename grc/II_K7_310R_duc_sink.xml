@@ -1,0 +1,105 @@
+<?xml version="1.0"?>
+<block>
+  <name>II DUC Sink</name>
+  <key>II_K7_310R_duc_sink</key>
+  <category>[II K7 310R]</category>
+  <flags>throttle</flags>
+  <import>import II_K7_310R</import>
+  <make>II_K7_310R.duc_sink($fmc_module, $max_ch, $duc_filter_path, 
+      $ch0_tune_freq, $ch1_tune_freq, $ch2_tune_freq, $ch3_tune_freq, 
+      $ch4_tune_freq, $ch5_tune_freq, $ch6_tune_freq, $ch7_tune_freq)
+  </make>
+  <param>
+    <name>FMC Module</name>
+    <key>fmc_module</key>
+    <value>II_K7_310R.FftFmc250Module</value>
+    <type>enum</type>
+    <hide>part</hide>
+    <option>
+        <name>FMC-250</name>
+        <key>II_K7_310R.FftFmc250Module</key>
+    </option>
+    <option>
+        <name>FMC-310</name>
+        <key>II_K7_310R.FftFmc310Module</key>
+    </option>
+  </param>
+  <param>
+    <name>Number of Channels</name>
+    <key>max_ch</key>
+    <value>2</value>
+    <type>int</type>
+    <hide>part</hide>
+  </param>
+  <param>
+    <name>DUC Bandwidth</name>
+    <key>duc_filter_path</key>
+    <type>file_open</type>
+  </param>
+  <param>
+    <name>Ch0 Tune Freq (MHz)</name>
+    <key>ch0_tune_freq</key>
+    <value>70.0</value>
+    <type>float</type>
+    <hide>part</hide>
+  </param>
+  <param>
+    <name>Ch1 Tune Freq (MHz)</name>
+    <key>ch1_tune_freq</key>
+    <value>70.0</value>
+    <type>float</type>
+    <hide>part</hide>
+  </param>
+  <param>
+    <name>Ch2 Tune Freq (MHz)</name>
+    <key>ch2_tune_freq</key>
+    <value>70.0</value>
+    <type>float</type>
+    <hide>part</hide>
+  </param>
+  <param>
+    <name>Ch3 Tune Freq (MHz)</name>
+    <key>ch3_tune_freq</key>
+    <value>70.0</value>
+    <type>float</type>
+    <hide>part</hide>
+  </param>
+  <param>
+    <name>Ch4 Tune Freq (MHz)</name>
+    <key>ch4_tune_freq</key>
+    <value>70.0</value>
+    <type>float</type>
+    <hide>part</hide>
+  </param>
+  <param>
+    <name>Ch5 Tune Freq (MHz)</name>
+    <key>ch5_tune_freq</key>
+    <value>70.0</value>
+    <type>float</type>
+    <hide>part</hide>
+  </param>
+  <param>
+    <name>Ch6 Tune Freq (MHz)</name>
+    <key>ch6_tune_freq</key>
+    <value>70.0</value>
+    <type>float</type>
+    <hide>part</hide>
+  </param>
+  <param>
+    <name>Ch7 Tune Freq (MHz)</name>
+    <key>ch7_tune_freq</key>
+    <value>70.0</value>
+    <type>float</type>
+    <hide>part</hide>
+  </param>
+
+  <check>$max_ch &gt;= 1</check>
+  <check>$max_ch &lt;= 8</check>
+
+  <sink>
+    <name>in</name>
+    <type>complex</type>
+    <vlen>1</vlen>
+    <nports>$max_ch</nports>
+  </sink>
+</block>
