@@ -34,7 +34,7 @@ class qa_duc_sink (gr_unittest.TestCase):
     def test_001_t (self):
         # set up fg
         II_K7_310R_duc_sink_0 = II_K7_310R.duc_sink(II_K7_310R.DucFmc250Module, 2, 
-              '/home/user/Config/ddc/ddc_Fs250MHz_BW2MHz.ini',
+              'home/user/Config/duc_500msps/duc_500msps_Fdac500MHz_Fsample1.25MHz_BW1MHz.ini',
               -0.5, 0.5, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0)
 
         self.tb.run ()

@@ -80,6 +80,7 @@ namespace gr {
         GR_LOG_DEBUG(d_debug_logger, "start() called.");
         // Requires hardware:
         Io->OpenDriver();
+        GR_LOG_DEBUG(d_debug_logger, "open() finished.");
         // Requires hardware:
         Io->Start();
         // TODO: return value?
