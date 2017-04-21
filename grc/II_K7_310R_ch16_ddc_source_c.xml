@@ -2,7 +2,7 @@
 <block>
   <name>II DDC Source</name>
   <key>II_K7_310R_ch16_ddc_source_c</key>
-  <category>[II K7 310R]</category>
+  <category>[II K7]</category>
   <flags>throttle</flags>
   <import>import II_K7_310R</import>
   <make>II_K7_310R.ch16_ddc_source_c($fmc_module, $max_ch, $rf_gain, $trigger_source, $ddc_filter_path, $is_rf_tuner, $rf_center_freq,
@@ -13,16 +13,16 @@
   <param>
     <name>FMC Module</name>
     <key>fmc_module</key>
-    <value>II_K7_310R.FftFmc250Module</value>
+    <value>II_K7_310R.DdcFmc250Module</value>
     <type>enum</type>
     <hide>part</hide>
     <option>
         <name>FMC-250</name>
-        <key>II_K7_310R.FftFmc250Module</key>
+        <key>II_K7_310R.DdcFmc250Module</key>
     </option>
     <option>
         <name>FMC-310</name>
-        <key>II_K7_310R.FftFmc310Module</key>
+        <key>II_K7_310R.DdcFmc310Module</key>
     </option>
   </param>
   <param>
@@ -738,6 +738,22 @@
 
   <check>$max_ch &gt;= 1</check>
   <check>$max_ch &lt;= 16</check>
+  <check>$fmc_module() == II_K7_310R.DdcFmc310Module or ($ch0_source &lt; II_K7_310R.Adc2) or ($ch0_source == II_K7_310R.Test)</check>
+  <check>$fmc_module() == II_K7_310R.DdcFmc310Module or ($ch1_source &lt; II_K7_310R.Adc2) or ($ch1_source == II_K7_310R.Test)</check>
+  <check>$fmc_module() == II_K7_310R.DdcFmc310Module or ($ch2_source &lt; II_K7_310R.Adc2) or ($ch2_source == II_K7_310R.Test)</check>
+  <check>$fmc_module() == II_K7_310R.DdcFmc310Module or ($ch3_source &lt; II_K7_310R.Adc2) or ($ch3_source == II_K7_310R.Test)</check>
+  <check>$fmc_module() == II_K7_310R.DdcFmc310Module or ($ch4_source &lt; II_K7_310R.Adc2) or ($ch4_source == II_K7_310R.Test)</check>
+  <check>$fmc_module() == II_K7_310R.DdcFmc310Module or ($ch5_source &lt; II_K7_310R.Adc2) or ($ch5_source == II_K7_310R.Test)</check>
+  <check>$fmc_module() == II_K7_310R.DdcFmc310Module or ($ch6_source &lt; II_K7_310R.Adc2) or ($ch6_source == II_K7_310R.Test)</check>
+  <check>$fmc_module() == II_K7_310R.DdcFmc310Module or ($ch7_source &lt; II_K7_310R.Adc2) or ($ch7_source == II_K7_310R.Test)</check>
+  <check>$fmc_module() == II_K7_310R.DdcFmc310Module or ($ch8_source &lt; II_K7_310R.Adc2) or ($ch8_source == II_K7_310R.Test)</check>
+  <check>$fmc_module() == II_K7_310R.DdcFmc310Module or ($ch9_source &lt; II_K7_310R.Adc2) or ($ch9_source == II_K7_310R.Test)</check>
+  <check>$fmc_module() == II_K7_310R.DdcFmc310Module or ($ch10_source &lt; II_K7_310R.Adc2) or ($ch10_source == II_K7_310R.Test)</check>
+  <check>$fmc_module() == II_K7_310R.DdcFmc310Module or ($ch11_source &lt; II_K7_310R.Adc2) or ($ch11_source == II_K7_310R.Test)</check>
+  <check>$fmc_module() == II_K7_310R.DdcFmc310Module or ($ch12_source &lt; II_K7_310R.Adc2) or ($ch12_source == II_K7_310R.Test)</check>
+  <check>$fmc_module() == II_K7_310R.DdcFmc310Module or ($ch13_source &lt; II_K7_310R.Adc2) or ($ch13_source == II_K7_310R.Test)</check>
+  <check>$fmc_module() == II_K7_310R.DdcFmc310Module or ($ch14_source &lt; II_K7_310R.Adc2) or ($ch14_source == II_K7_310R.Test)</check>
+  <check>$fmc_module() == II_K7_310R.DdcFmc310Module or ($ch15_source &lt; II_K7_310R.Adc2) or ($ch15_source == II_K7_310R.Test)</check>
 
   <!-- Make one 'source' node per output. Sub-nodes:
        * name (an identifier for the GUI)

@@ -2,7 +2,7 @@
 <block>
   <name>II DUC Sink</name>
   <key>II_K7_310R_duc_sink</key>
-  <category>[II K7 310R]</category>
+  <category>[II K7]</category>
   <flags>throttle</flags>
   <import>import II_K7_310R</import>
   <make>II_K7_310R.duc_sink($fmc_module, $max_ch, $duc_filter_path, 
@@ -48,49 +48,49 @@
     <key>ch1_tune_freq</key>
     <value>70.0</value>
     <type>float</type>
-    <hide>part</hide>
+    <hide>#if $max_ch() &gt; 1 then 'part' else 'all'#</hide>
   </param>
   <param>
     <name>Ch2 Tune Freq (MHz)</name>
     <key>ch2_tune_freq</key>
     <value>70.0</value>
     <type>float</type>
-    <hide>part</hide>
+    <hide>#if $max_ch() &gt; 2 then 'part' else 'all'#</hide>
   </param>
   <param>
     <name>Ch3 Tune Freq (MHz)</name>
     <key>ch3_tune_freq</key>
     <value>70.0</value>
     <type>float</type>
-    <hide>part</hide>
+    <hide>#if $max_ch() &gt; 3 then 'part' else 'all'#</hide>
   </param>
   <param>
     <name>Ch4 Tune Freq (MHz)</name>
     <key>ch4_tune_freq</key>
     <value>70.0</value>
     <type>float</type>
-    <hide>part</hide>
+    <hide>#if $max_ch() &gt; 4 then 'part' else 'all'#</hide>
   </param>
   <param>
     <name>Ch5 Tune Freq (MHz)</name>
     <key>ch5_tune_freq</key>
     <value>70.0</value>
     <type>float</type>
-    <hide>part</hide>
+    <hide>#if $max_ch() &gt; 5 then 'part' else 'all'#</hide>
   </param>
   <param>
     <name>Ch6 Tune Freq (MHz)</name>
     <key>ch6_tune_freq</key>
     <value>70.0</value>
     <type>float</type>
-    <hide>part</hide>
+    <hide>#if $max_ch() &gt; 6 then 'part' else 'all'#</hide>
   </param>
   <param>
     <name>Ch7 Tune Freq (MHz)</name>
     <key>ch7_tune_freq</key>
     <value>70.0</value>
     <type>float</type>
-    <hide>part</hide>
+    <hide>#if $max_ch() &gt; 7 then 'part' else 'all'#</hide>
   </param>
 
   <check>$max_ch &gt;= 1</check>

@@ -2,7 +2,7 @@
 <block>
   <name>II FFT Source</name>
   <key>II_K7_310R_fft_source_f</key>
-  <category>[II K7 310R]</category>
+  <category>[II K7]</category>
   <flags>throttle</flags>
   <import>import II_K7_310R</import>
   <make>II_K7_310R.fft_source_f($fmc_module, $fft0_source, $fft0_windowing, $is_fft0_fasd, $fft0_fasd)</make>
