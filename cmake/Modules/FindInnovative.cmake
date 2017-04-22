@@ -6,10 +6,10 @@
 # INNOVATIVE_LIBRARY, some of the Malibu/GP libraries to link against
 # INNOVATIVE_FOUND, If false, do not try to use Malibu/GP.
 
-set(Innovative /usr/Innovative)
+set(Innovative ${CMAKE_BINARY_DIR}/../Innovative)
 
 FIND_LIBRARY(INNOVATIVE_LIBRARY
-    libGP-K7.a libGP-K7-FMC-250.a libGPDDC
+    libGP-K7.a libGP-K7-FMC-250.a libGPDDC.a
     HINTS
     ${Innovative}/Lib/Gcc/Release
 )
