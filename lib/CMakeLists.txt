@@ -47,11 +47,12 @@ add_library(gnuradio-II_K7_310R SHARED ${II_K7_310R_sources})
 set(II_libs "${Innovative}/Lib/Gcc")
 set(II_config "$<$<CONFIG:DEBUG>:${II_libs}/Debug>$<$<CONFIG:RELEASE>:${II_libs}/Release>$<$<CONFIG:RELWITHDEBINFO>:${II_libs}/Release>")
 set(INNOVATIVE_LIBRARIES
-    ${II_config}/libGP-K7-FMC-310.a      ${II_config}/libGP-K7-FMC-250.a  ${II_config}/libGPDDC.a          
-    ${II_config}/libAnalysis_Mb.a        ${II_config}/libApplication_Mb.a ${II_config}/libFicl_Mb.a
-    ${II_config}/libFramework_Mb.a       ${II_config}/libFramework_Con.a  ${II_config}/libHardware_Mb.a
-    ${II_config}/libOs_Mb.a              ${II_config}/libPci_Mb.a         ${II_config}/libPoco_Foundation_Mb.a
-    ${II_config}/libPoco_Net_Mb.a        ${II_config}/libUtility_Mb.a     ${II_config}/libVpx_Mb.a
+    ${II_config}/libGP-K7-FMC-310.a      ${II_config}/libGP-K7-FMC-250.a  ${II_config}/libGPDDC.a
+    ${II_config}/libGRGpK7Interface.a    ${II_config}/libAnalysis_Mb.a    ${II_config}/libApplication_Mb.a
+    ${II_config}/libFicl_Mb.a            ${II_config}/libFramework_Mb.a   ${II_config}/libFramework_Con.a
+    ${II_config}/libHardware_Mb.a        ${II_config}/libOs_Mb.a          ${II_config}/libPci_Mb.a
+    ${II_config}/libPoco_Foundation_Mb.a ${II_config}/libPoco_Net_Mb.a    ${II_config}/libUtility_Mb.a
+    ${II_config}/libVpx_Mb.a
 )
 set(IPP_LIBRARIES
     ${II_libs}/libippac_l-7.0.a    ${II_libs}/libippcc_l-7.0.a    ${II_libs}/libippch_l-7.0.a

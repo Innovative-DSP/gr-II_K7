@@ -9,7 +9,7 @@
 set(Innovative ${CMAKE_BINARY_DIR}/../Innovative)
 
 FIND_LIBRARY(INNOVATIVE_LIBRARY
-    libGP-K7.a libGP-K7-FMC-250.a libGPDDC.a
+    libGRGpK7Interface.a libGPDDC.a
     HINTS
     ${Innovative}/Lib/Gcc/Release
 )
