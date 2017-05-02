@@ -2,7 +2,7 @@
 #ifndef GRGPK7INTERFACE_H
 #define GRGPK7INTERFACE_H
 
-#include <II_K7_310R/api.h>
+#include <II_K7/api.h>
 #include <gnuradio/sync_block.h>
 #include <boost/shared_ptr.hpp>
 

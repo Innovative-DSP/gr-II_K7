@@ -27,10 +27,10 @@
 #include "duc_sink_impl.h"
 
 namespace gr {
-  namespace II_K7_310R {
+  namespace II_K7 {
 
     duc_sink::sptr
-    duc_sink::make(II_K7_310R::DucFmcModule fmc_module, short max_ch, const char*  duc_filter_path,
+    duc_sink::make(II_K7::DucFmcModule fmc_module, short max_ch, const char*  duc_filter_path,
                    float ch0_tune_freq, float ch1_tune_freq, float ch2_tune_freq, float ch3_tune_freq,
                    float ch4_tune_freq, float ch5_tune_freq, float ch6_tune_freq, float ch7_tune_freq)
     {
@@ -43,7 +43,7 @@ namespace gr {
     /*
      * The private constructor
      */
-    duc_sink_impl::duc_sink_impl(II_K7_310R::DucFmcModule fmc_module, short max_ch, const char*  duc_filter_path,
+    duc_sink_impl::duc_sink_impl(II_K7::DucFmcModule fmc_module, short max_ch, const char*  duc_filter_path,
                                  float ch0_tune_freq, float ch1_tune_freq, float ch2_tune_freq, float ch3_tune_freq,
                                  float ch4_tune_freq, float ch5_tune_freq, float ch6_tune_freq, float ch7_tune_freq)
       :
@@ -99,6 +99,6 @@ namespace gr {
     {
         return Io->Stop();
     }
-  } /* namespace II_K7_310R */
+  } /* namespace II_K7 */
 } /* namespace gr */
 

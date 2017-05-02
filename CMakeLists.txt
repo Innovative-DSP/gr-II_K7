@@ -21,7 +21,7 @@
 # Project setup
 ########################################################################
 cmake_minimum_required(VERSION 2.6)
-project(gr-II_K7_310R CXX C)
+project(gr-II_K7 CXX C)
 enable_testing()
 
 #select the release build type by default to get optimization flags
@@ -60,7 +60,7 @@ set(Boost_ADDITIONAL_VERSIONS
 find_package(Boost "1.35" COMPONENTS filesystem system)
 
 if(NOT Boost_FOUND)
-    message(FATAL_ERROR "Boost required to compile II_K7_310R")
+    message(FATAL_ERROR "Boost required to compile II_K7")
 endif()
 
 ########################################################################
@@ -69,7 +69,7 @@ endif()
 include(GrPlatform) #define LIB_SUFFIX
 set(GR_RUNTIME_DIR      bin)
 set(GR_LIBRARY_DIR      lib${LIB_SUFFIX})
-set(GR_INCLUDE_DIR      include/II_K7_310R)
+set(GR_INCLUDE_DIR      include/II_K7)
 set(GR_DATA_DIR         share)
 set(GR_PKG_DATA_DIR     ${GR_DATA_DIR}/${CMAKE_PROJECT_NAME})
 set(GR_DOC_DIR          ${GR_DATA_DIR}/doc)
@@ -114,7 +114,7 @@ set(GR_REQUIRED_COMPONENTS RUNTIME)
 find_package(Gnuradio "3.7.2" REQUIRED)
 
 if(NOT CPPUNIT_FOUND)
-    message(FATAL_ERROR "CppUnit required to compile II_K7_310R")
+    message(FATAL_ERROR "CppUnit required to compile II_K7")
 endif()
 
 ########################################################################
@@ -146,8 +146,8 @@ link_directories(
 )
 
 # Set component parameters
-set(GR_II_K7_310R_INCLUDE_DIRS ${CMAKE_CURRENT_SOURCE_DIR}/include CACHE INTERNAL "" FORCE)
-set(GR_II_K7_310R_SWIG_INCLUDE_DIRS ${CMAKE_CURRENT_SOURCE_DIR}/swig CACHE INTERNAL "" FORCE)
+set(GR_II_K7_INCLUDE_DIRS ${CMAKE_CURRENT_SOURCE_DIR}/include CACHE INTERNAL "" FORCE)
+set(GR_II_K7_SWIG_INCLUDE_DIRS ${CMAKE_CURRENT_SOURCE_DIR}/swig CACHE INTERNAL "" FORCE)
 
 ########################################################################
 # Create uninstall target
@@ -164,7 +164,7 @@ add_custom_target(uninstall
 ########################################################################
 # Add subdirectories
 ########################################################################
-add_subdirectory(include/II_K7_310R)
+add_subdirectory(include/II_K7)
 add_subdirectory(lib)
 add_subdirectory(swig)
 add_subdirectory(python)
@@ -179,6 +179,6 @@ if(NOT CMAKE_MODULES_DIR)
   set(CMAKE_MODULES_DIR lib${LIB_SUFFIX}/cmake)
 endif(NOT CMAKE_MODULES_DIR)
 
-install(FILES cmake/Modules/II_K7_310RConfig.cmake
-    DESTINATION ${CMAKE_MODULES_DIR}/II_K7_310R
+install(FILES cmake/Modules/II_K7Config.cmake
+    DESTINATION ${CMAKE_MODULES_DIR}/II_K7
 )

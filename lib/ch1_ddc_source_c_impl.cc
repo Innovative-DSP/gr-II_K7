@@ -28,7 +28,7 @@
 #include <Ipp/ipps.h>
 
 namespace gr {
-  namespace II_K7_310R {
+  namespace II_K7 {
 
     unsigned  ch1_ddc_source_c_impl::BlockCount = 0;
 
@@ -203,6 +203,6 @@ namespace gr {
         return true;
     }
 
-  } /* namespace II_K7_310R */
+  } /* namespace II_K7 */
 } /* namespace gr */
 

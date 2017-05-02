@@ -25,5 +25,5 @@ install(FILES
     #ch1_ddc_source_c.h 
     ch16_ddc_source_c.h
     fft_source_f.h
-    duc_sink.h DESTINATION include/II_K7_310R
+    duc_sink.h DESTINATION include/II_K7
 )

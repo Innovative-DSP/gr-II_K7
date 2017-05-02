@@ -26,20 +26,20 @@ find_package(Innovative)
 
 include_directories(${Boost_INCLUDE_DIR})
 link_directories(${Boost_LIBRARY_DIRS})
-list(APPEND II_K7_310R_sources
+list(APPEND II_K7_sources
     ch16_ddc_source_c_impl.cc
     #ch1_ddc_source_c_impl.cc
     fft_source_f_impl.cc
     duc_sink_impl.cc )
 
-set(II_K7_310R_sources "${II_K7_310R_sources}" PARENT_SCOPE)
-if(NOT II_K7_310R_sources)
+set(II_K7_sources "${II_K7_sources}" PARENT_SCOPE)
+if(NOT II_K7_sources)
 	MESSAGE(STATUS "No C++ sources... skipping lib/")
 	return()
-endif(NOT II_K7_310R_sources)
+endif(NOT II_K7_sources)
 
-add_library(gnuradio-II_K7_310R SHARED ${II_K7_310R_sources})
-#target_include_directories(gnuradio-II_K7_310R PUBLIC
+add_library(gnuradio-II_K7 SHARED ${II_K7_sources})
+#target_include_directories(gnuradio-II_K7 PUBLIC
 #    ${INNOVATIVE_LIBRARY_IO_INCLUDE_DIR} ${INNOVATIVE_GP_LIB_INCLUDE_DIR}
 #    ${INNOVATIVE_GP_LIB_GUI_INCLUDE_DIR} ${INNOVATIVE_MALIBU_INCLUDE_DIR}
 #    ${INNOVATIVE_MALIBU_POCO_INCLUDE_DIR} ${INNOVATIVE_COMMON_INCLUDE_DIR}
@@ -61,14 +61,14 @@ set(IPP_LIBRARIES
     ${II_libs}/libippm_l-7.0.a     ${II_libs}/libippr_l-7.0.a     ${II_libs}/libipps_l-7.0.a
     ${II_libs}/libippsc_l-7.0.a    ${II_libs}/libippvc_l-7.0.a    ${II_libs}/libippvm_l-7.0.a
 )
-target_link_libraries(gnuradio-II_K7_310R PRIVATE ${Boost_LIBRARIES} ${GNURADIO_ALL_LIBRARIES} -Wl,--whole-archive -Wl,--start-group  ${INNOVATIVE_LIBRARIES} -Wl,--end-group -Wl,--no-whole-archive PUBLIC ${IPP_LIBRARIES} /usr/lib/x86_64-linux-gnu/libdl.so /usr/lib/libwdapi.so)
-set_target_properties(gnuradio-II_K7_310R PROPERTIES DEFINE_SYMBOL "gnuradio_II_K7_310R_EXPORTS")
-target_compile_definitions(gnuradio-II_K7_310R PUBLIC Foundation_EXPORTS DRC GCC LINUX _MT)
-# set_target_properties(gnuradio-II_K7_310R PROPERTIES LINK_INTERFACE_MULTIPLICITY 15)
-# set_target_properties(gnuradio-II_K7_310R PROPERTIES LINK_FLAGS "-Wl,-ldl")
+target_link_libraries(gnuradio-II_K7 PRIVATE ${Boost_LIBRARIES} ${GNURADIO_ALL_LIBRARIES} -Wl,--whole-archive -Wl,--start-group  ${INNOVATIVE_LIBRARIES} -Wl,--end-group -Wl,--no-whole-archive PUBLIC ${IPP_LIBRARIES} /usr/lib/x86_64-linux-gnu/libdl.so /usr/lib/libwdapi.so)
+set_target_properties(gnuradio-II_K7 PROPERTIES DEFINE_SYMBOL "gnuradio_II_K7_EXPORTS")
+target_compile_definitions(gnuradio-II_K7 PUBLIC Foundation_EXPORTS DRC GCC LINUX _MT)
+# set_target_properties(gnuradio-II_K7 PROPERTIES LINK_INTERFACE_MULTIPLICITY 15)
+# set_target_properties(gnuradio-II_K7 PROPERTIES LINK_FLAGS "-Wl,-ldl")
 
 if(APPLE)
-    set_target_properties(gnuradio-II_K7_310R PROPERTIES
+    set_target_properties(gnuradio-II_K7 PROPERTIES
         INSTALL_NAME_DIR "${CMAKE_INSTALL_PREFIX}/lib"
     )
 endif(APPLE)
@@ -76,7 +76,7 @@ endif(APPLE)
 ########################################################################
 # Install built library files
 ########################################################################
-install(TARGETS gnuradio-II_K7_310R
+install(TARGETS gnuradio-II_K7
     LIBRARY DESTINATION lib${LIB_SUFFIX} # .so/.dylib file
     ARCHIVE DESTINATION lib${LIB_SUFFIX} # .lib file
     RUNTIME DESTINATION bin              # .dll file
@@ -88,22 +88,22 @@ install(TARGETS gnuradio-II_K7_310R
 include(GrTest)
 
 include_directories(${CPPUNIT_INCLUDE_DIRS} ${INNOVATIVE_INCLUDE_DIRS})
-list(APPEND test_II_K7_310R_sources
-    ${CMAKE_CURRENT_SOURCE_DIR}/test_II_K7_310R.cc
-    ${CMAKE_CURRENT_SOURCE_DIR}/qa_II_K7_310R.cc
+list(APPEND test_II_K7_sources
+    ${CMAKE_CURRENT_SOURCE_DIR}/test_II_K7.cc
+    ${CMAKE_CURRENT_SOURCE_DIR}/qa_II_K7.cc
     ${CMAKE_CURRENT_SOURCE_DIR}/qa_duc_sink.cc
     ${CMAKE_CURRENT_SOURCE_DIR}/qa_fft_source_f.cc
     ${CMAKE_CURRENT_SOURCE_DIR}/qa_ch16_ddc_source_c.cc
 )
 
-add_executable(test-II_K7_310R ${test_II_K7_310R_sources})
+add_executable(test-II_K7 ${test_II_K7_sources})
 
 target_link_libraries(
-  test-II_K7_310R
+  test-II_K7
   ${GNURADIO_RUNTIME_LIBRARIES}
   ${Boost_LIBRARIES}
   ${CPPUNIT_LIBRARIES}
-  gnuradio-II_K7_310R
+  gnuradio-II_K7
 )
 
-GR_ADD_TEST(test_II_K7_310R test-II_K7_310R)
+GR_ADD_TEST(test_II_K7 test-II_K7)

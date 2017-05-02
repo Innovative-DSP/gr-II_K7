@@ -1,11 +1,11 @@
 <?xml version="1.0"?>
 <block>
   <name>II DDC Source</name>
-  <key>II_K7_310R_ch16_ddc_source_c</key>
+  <key>II_K7_ch16_ddc_source_c</key>
   <category>[II K7]</category>
   <flags>throttle</flags>
-  <import>import II_K7_310R</import>
-  <make>II_K7_310R.ch16_ddc_source_c($fmc_module, $max_ch, $rf_gain, $trigger_source, $ddc_filter_path, $is_rf_tuner, $rf_center_freq,
+  <import>import II_K7</import>
+  <make>II_K7.ch16_ddc_source_c($fmc_module, $max_ch, $rf_gain, $trigger_source, $ddc_filter_path, $is_rf_tuner, $rf_center_freq,
       $ch0_offset_freq, $ch1_offset_freq, $ch2_offset_freq, $ch3_offset_freq, $ch4_offset_freq, $ch5_offset_freq, $ch6_offset_freq, $ch7_offset_freq, $ch8_offset_freq, $ch9_offset_freq, $ch10_offset_freq, $ch11_offset_freq, $ch12_offset_freq, $ch13_offset_freq, $ch14_offset_freq, $ch15_offset_freq, $ch0_tune_freq,
       $ch1_tune_freq, $ch2_tune_freq, $ch3_tune_freq, $ch4_tune_freq, $ch5_tune_freq, $ch6_tune_freq, $ch7_tune_freq, $ch8_tune_freq, $ch9_tune_freq, $ch10_tune_freq, $ch11_tune_freq, $ch12_tune_freq, $ch13_tune_freq, $ch14_tune_freq, $ch15_tune_freq,
       $ch0_source, $ch1_source, $ch2_source, $ch3_source, $ch4_source, $ch5_source, $ch6_source, $ch7_source, $ch8_source, $ch9_source, $ch10_source, $ch11_source, $ch12_source, $ch13_source, $ch14_source, $ch15_source)
@@ -13,16 +13,16 @@
   <param>
     <name>FMC Module</name>
     <key>fmc_module</key>
-    <value>II_K7_310R.DdcFmc250Module</value>
+    <value>II_K7.DdcFmc250Module</value>
     <type>enum</type>
     <hide>part</hide>
     <option>
         <name>FMC-250</name>
-        <key>II_K7_310R.DdcFmc250Module</key>
+        <key>II_K7.DdcFmc250Module</key>
     </option>
     <option>
         <name>FMC-310</name>
-        <key>II_K7_310R.DdcFmc310Module</key>
+        <key>II_K7.DdcFmc310Module</key>
     </option>
   </param>
   <param>
@@ -35,15 +35,15 @@
   <param>
     <name>Trigger Source</name>
     <key>trigger_source</key>
-    <value>II_K7_310R.Ch16Software</value>
+    <value>II_K7.Ch16Software</value>
     <type>enum</type>
     <option>
         <name>Software</name>
-        <key>II_K7_310R.Ch16Software</key>
+        <key>II_K7.Ch16Software</key>
     </option>
     <option>
         <name>External</name>
-        <key>II_K7_310R.Ch16External</key>
+        <key>II_K7.Ch16External</key>
     </option>
   </param>
   <param>
@@ -82,28 +82,28 @@
   <param>
     <name>Ch0 Source</name>
     <key>ch0_source</key>
-    <value>II_K7_310R.Adc0</value>
+    <value>II_K7.Adc0</value>
     <type>enum</type>
     <hide>part</hide>
     <option>
         <name>Adc[0]</name>
-        <key>II_K7_310R.Adc0</key>
+        <key>II_K7.Adc0</key>
     </option>
     <option>
         <name>Adc[1]</name>
-        <key>II_K7_310R.Adc1</key>
+        <key>II_K7.Adc1</key>
     </option>
     <option>
         <name>Adc[2]</name>
-        <key>II_K7_310R.Adc2</key>
+        <key>II_K7.Adc2</key>
     </option>
     <option>
         <name>Adc[3]</name>
-        <key>II_K7_310R.Adc3</key>
+        <key>II_K7.Adc3</key>
     </option>
     <option>
         <name>Test</name>
-        <key>II_K7_310R.Test</key>
+        <key>II_K7.Test</key>
     </option>
   </param>
   <param>
@@ -123,28 +123,28 @@
   <param>
     <name>Ch1 Source</name>
     <key>ch1_source</key>
-    <value>II_K7_310R.Adc0</value>
+    <value>II_K7.Adc0</value>
     <type>enum</type>
     <hide>#if $max_ch() &gt; 1 then 'part' else 'all'#</hide>
     <option>
         <name>Adc[0]</name>
-        <key>II_K7_310R.Adc0</key>
+        <key>II_K7.Adc0</key>
     </option>
     <option>
         <name>Adc[1]</name>
-        <key>II_K7_310R.Adc1</key>
+        <key>II_K7.Adc1</key>
     </option>
     <option>
         <name>Adc[2]</name>
-        <key>II_K7_310R.Adc2</key>
+        <key>II_K7.Adc2</key>
     </option>
     <option>
         <name>Adc[3]</name>
-        <key>II_K7_310R.Adc3</key>
+        <key>II_K7.Adc3</key>
     </option>
     <option>
         <name>Test</name>
-        <key>II_K7_310R.Test</key>
+        <key>II_K7.Test</key>
     </option>
   </param>
   <param>
@@ -164,28 +164,28 @@
   <param>
     <name>Ch2 Source</name>
     <key>ch2_source</key>
-    <value>II_K7_310R.Adc0</value>
+    <value>II_K7.Adc0</value>
     <type>enum</type>
     <hide>#if $max_ch() &gt; 2 then 'part' else 'all'#</hide>
     <option>
         <name>Adc[0]</name>
-        <key>II_K7_310R.Adc0</key>
+        <key>II_K7.Adc0</key>
     </option>
     <option>
         <name>Adc[1]</name>
-        <key>II_K7_310R.Adc1</key>
+        <key>II_K7.Adc1</key>
     </option>
     <option>
         <name>Adc[2]</name>
-        <key>II_K7_310R.Adc2</key>
+        <key>II_K7.Adc2</key>
     </option>
     <option>
         <name>Adc[3]</name>
-        <key>II_K7_310R.Adc3</key>
+        <key>II_K7.Adc3</key>
     </option>
     <option>
         <name>Test</name>
-        <key>II_K7_310R.Test</key>
+        <key>II_K7.Test</key>
     </option>
   </param>
   <param>
@@ -205,28 +205,28 @@
   <param>
     <name>Ch3 Source</name>
     <key>ch3_source</key>
-    <value>II_K7_310R.Adc0</value>
+    <value>II_K7.Adc0</value>
     <type>enum</type>
     <hide>#if $max_ch() &gt; 3 then 'part' else 'all'#</hide>
     <option>
         <name>Adc[0]</name>
-        <key>II_K7_310R.Adc0</key>
+        <key>II_K7.Adc0</key>
     </option>
     <option>
         <name>Adc[1]</name>
-        <key>II_K7_310R.Adc1</key>
+        <key>II_K7.Adc1</key>
     </option>
     <option>
         <name>Adc[2]</name>
-        <key>II_K7_310R.Adc2</key>
+        <key>II_K7.Adc2</key>
     </option>
     <option>
         <name>Adc[3]</name>
-        <key>II_K7_310R.Adc3</key>
+        <key>II_K7.Adc3</key>
     </option>
     <option>
         <name>Test</name>
-        <key>II_K7_310R.Test</key>
+        <key>II_K7.Test</key>
     </option>
   </param>
   <param>
@@ -246,28 +246,28 @@
   <param>
     <name>Ch4 Source</name>
     <key>ch4_source</key>
-    <value>II_K7_310R.Adc0</value>
+    <value>II_K7.Adc0</value>
     <type>enum</type>
     <hide>#if $max_ch() &gt; 4 then 'part' else 'all'#</hide>
     <option>
         <name>Adc[0]</name>
-        <key>II_K7_310R.Adc0</key>
+        <key>II_K7.Adc0</key>
     </option>
     <option>
         <name>Adc[1]</name>
-        <key>II_K7_310R.Adc1</key>
+        <key>II_K7.Adc1</key>
     </option>
     <option>
         <name>Adc[2]</name>
-        <key>II_K7_310R.Adc2</key>
+        <key>II_K7.Adc2</key>
     </option>
     <option>
         <name>Adc[3]</name>
-        <key>II_K7_310R.Adc3</key>
+        <key>II_K7.Adc3</key>
     </option>
     <option>
         <name>Test</name>
-        <key>II_K7_310R.Test</key>
+        <key>II_K7.Test</key>
     </option>
   </param>
   <param>
@@ -287,28 +287,28 @@
   <param>
     <name>Ch5 Source</name>
     <key>ch5_source</key>
-    <value>II_K7_310R.Adc0</value>
+    <value>II_K7.Adc0</value>
     <type>enum</type>
     <hide>#if $max_ch() &gt; 5 then 'part' else 'all'#</hide>
     <option>
         <name>Adc[0]</name>
-        <key>II_K7_310R.Adc0</key>
+        <key>II_K7.Adc0</key>
     </option>
     <option>
         <name>Adc[1]</name>
-        <key>II_K7_310R.Adc1</key>
+        <key>II_K7.Adc1</key>
     </option>
     <option>
         <name>Adc[2]</name>
-        <key>II_K7_310R.Adc2</key>
+        <key>II_K7.Adc2</key>
     </option>
     <option>
         <name>Adc[3]</name>
-        <key>II_K7_310R.Adc3</key>
+        <key>II_K7.Adc3</key>
     </option>
     <option>
         <name>Test</name>
-        <key>II_K7_310R.Test</key>
+        <key>II_K7.Test</key>
     </option>
   </param>
   <param>
@@ -328,28 +328,28 @@
   <param>
     <name>Ch6 Source</name>
     <key>ch6_source</key>
-    <value>II_K7_310R.Adc0</value>
+    <value>II_K7.Adc0</value>
     <type>enum</type>
     <hide>#if $max_ch() &gt; 6 then 'part' else 'all'#</hide>
     <option>
         <name>Adc[0]</name>
-        <key>II_K7_310R.Adc0</key>
+        <key>II_K7.Adc0</key>
     </option>
     <option>
         <name>Adc[1]</name>
-        <key>II_K7_310R.Adc1</key>
+        <key>II_K7.Adc1</key>
     </option>
     <option>
         <name>Adc[2]</name>
-        <key>II_K7_310R.Adc2</key>
+        <key>II_K7.Adc2</key>
     </option>
     <option>
         <name>Adc[3]</name>
-        <key>II_K7_310R.Adc3</key>
+        <key>II_K7.Adc3</key>
     </option>
     <option>
         <name>Test</name>
-        <key>II_K7_310R.Test</key>
+        <key>II_K7.Test</key>
     </option>
   </param>
   <param>
@@ -369,28 +369,28 @@
   <param>
     <name>Ch7 Source</name>
     <key>ch7_source</key>
-    <value>II_K7_310R.Adc0</value>
+    <value>II_K7.Adc0</value>
     <type>enum</type>
     <hide>#if $max_ch() &gt; 7 then 'part' else 'all'#</hide>
     <option>
         <name>Adc[0]</name>
-        <key>II_K7_310R.Adc0</key>
+        <key>II_K7.Adc0</key>
     </option>
     <option>
         <name>Adc[1]</name>
-        <key>II_K7_310R.Adc1</key>
+        <key>II_K7.Adc1</key>
     </option>
     <option>
         <name>Adc[2]</name>
-        <key>II_K7_310R.Adc2</key>
+        <key>II_K7.Adc2</key>
     </option>
     <option>
         <name>Adc[3]</name>
-        <key>II_K7_310R.Adc3</key>
+        <key>II_K7.Adc3</key>
     </option>
     <option>
         <name>Test</name>
-        <key>II_K7_310R.Test</key>
+        <key>II_K7.Test</key>
     </option>
   </param>
   <param>
@@ -410,28 +410,28 @@
   <param>
     <name>Ch8 Source</name>
     <key>ch8_source</key>
-    <value>II_K7_310R.Adc0</value>
+    <value>II_K7.Adc0</value>
     <type>enum</type>
     <hide>#if $max_ch() &gt; 8 then 'part' else 'all'#</hide>
     <option>
         <name>Adc[0]</name>
-        <key>II_K7_310R.Adc0</key>
+        <key>II_K7.Adc0</key>
     </option>
     <option>
         <name>Adc[1]</name>
-        <key>II_K7_310R.Adc1</key>
+        <key>II_K7.Adc1</key>
     </option>
     <option>
         <name>Adc[2]</name>
-        <key>II_K7_310R.Adc2</key>
+        <key>II_K7.Adc2</key>
     </option>
     <option>
         <name>Adc[3]</name>
-        <key>II_K7_310R.Adc3</key>
+        <key>II_K7.Adc3</key>
     </option>
     <option>
         <name>Test</name>
-        <key>II_K7_310R.Test</key>
+        <key>II_K7.Test</key>
     </option>
   </param>
   <param>
@@ -451,28 +451,28 @@
   <param>
     <name>Ch9 Source</name>
     <key>ch9_source</key>
-    <value>II_K7_310R.Adc0</value>
+    <value>II_K7.Adc0</value>
     <type>enum</type>
     <hide>#if $max_ch() &gt; 9 then 'part' else 'all'#</hide>
     <option>
         <name>Adc[0]</name>
-        <key>II_K7_310R.Adc0</key>
+        <key>II_K7.Adc0</key>
     </option>
     <option>
         <name>Adc[1]</name>
-        <key>II_K7_310R.Adc1</key>
+        <key>II_K7.Adc1</key>
     </option>
     <option>
         <name>Adc[2]</name>
-        <key>II_K7_310R.Adc2</key>
+        <key>II_K7.Adc2</key>
     </option>
     <option>
         <name>Adc[3]</name>
-        <key>II_K7_310R.Adc3</key>
+        <key>II_K7.Adc3</key>
     </option>
     <option>
         <name>Test</name>
-        <key>II_K7_310R.Test</key>
+        <key>II_K7.Test</key>
     </option>
   </param>
   <param>
@@ -492,28 +492,28 @@
   <param>
     <name>Ch10 Source</name>
     <key>ch10_source</key>
-    <value>II_K7_310R.Adc0</value>
+    <value>II_K7.Adc0</value>
     <type>enum</type>
     <hide>#if $max_ch() &gt; 10 then 'part' else 'all'#</hide>
     <option>
         <name>Adc[0]</name>
-        <key>II_K7_310R.Adc0</key>
+        <key>II_K7.Adc0</key>
     </option>
     <option>
         <name>Adc[1]</name>
-        <key>II_K7_310R.Adc1</key>
+        <key>II_K7.Adc1</key>
     </option>
     <option>
         <name>Adc[2]</name>
-        <key>II_K7_310R.Adc2</key>
+        <key>II_K7.Adc2</key>
     </option>
     <option>
         <name>Adc[3]</name>
-        <key>II_K7_310R.Adc3</key>
+        <key>II_K7.Adc3</key>
     </option>
     <option>
         <name>Test</name>
-        <key>II_K7_310R.Test</key>
+        <key>II_K7.Test</key>
     </option>
   </param>
   <param>
@@ -533,28 +533,28 @@
   <param>
     <name>Ch11 Source</name>
     <key>ch11_source</key>
-    <value>II_K7_310R.Adc0</value>
+    <value>II_K7.Adc0</value>
     <type>enum</type>
     <hide>#if $max_ch() &gt; 11 then 'part' else 'all'#</hide>
     <option>
         <name>Adc[0]</name>
-        <key>II_K7_310R.Adc0</key>
+        <key>II_K7.Adc0</key>
     </option>
     <option>
         <name>Adc[1]</name>
-        <key>II_K7_310R.Adc1</key>
+        <key>II_K7.Adc1</key>
     </option>
     <option>
         <name>Adc[2]</name>
-        <key>II_K7_310R.Adc2</key>
+        <key>II_K7.Adc2</key>
     </option>
     <option>
         <name>Adc[3]</name>
-        <key>II_K7_310R.Adc3</key>
+        <key>II_K7.Adc3</key>
     </option>
     <option>
         <name>Test</name>
-        <key>II_K7_310R.Test</key>
+        <key>II_K7.Test</key>
     </option>
   </param>
   <param>
@@ -574,28 +574,28 @@
   <param>
     <name>Ch12 Source</name>
     <key>ch12_source</key>
-    <value>II_K7_310R.Adc0</value>
+    <value>II_K7.Adc0</value>
     <type>enum</type>
     <hide>#if $max_ch() &gt; 12 then 'part' else 'all'#</hide>
     <option>
         <name>Adc[0]</name>
-        <key>II_K7_310R.Adc0</key>
+        <key>II_K7.Adc0</key>
     </option>
     <option>
         <name>Adc[1]</name>
-        <key>II_K7_310R.Adc1</key>
+        <key>II_K7.Adc1</key>
     </option>
     <option>
         <name>Adc[2]</name>
-        <key>II_K7_310R.Adc2</key>
+        <key>II_K7.Adc2</key>
     </option>
     <option>
         <name>Adc[3]</name>
-        <key>II_K7_310R.Adc3</key>
+        <key>II_K7.Adc3</key>
     </option>
     <option>
         <name>Test</name>
-        <key>II_K7_310R.Test</key>
+        <key>II_K7.Test</key>
     </option>
   </param>
   <param>
@@ -615,28 +615,28 @@
   <param>
     <name>Ch13 Source</name>
     <key>ch13_source</key>
-    <value>II_K7_310R.Adc0</value>
+    <value>II_K7.Adc0</value>
     <type>enum</type>
     <hide>#if $max_ch() &gt; 13 then 'part' else 'all'#</hide>
     <option>
         <name>Adc[0]</name>
-        <key>II_K7_310R.Adc0</key>
+        <key>II_K7.Adc0</key>
     </option>
     <option>
         <name>Adc[1]</name>
-        <key>II_K7_310R.Adc1</key>
+        <key>II_K7.Adc1</key>
     </option>
     <option>
         <name>Adc[2]</name>
-        <key>II_K7_310R.Adc2</key>
+        <key>II_K7.Adc2</key>
     </option>
     <option>
         <name>Adc[3]</name>
-        <key>II_K7_310R.Adc3</key>
+        <key>II_K7.Adc3</key>
     </option>
     <option>
         <name>Test</name>
-        <key>II_K7_310R.Test</key>
+        <key>II_K7.Test</key>
     </option>
   </param>
   <param>
@@ -656,28 +656,28 @@
   <param>
     <name>Ch14 Source</name>
     <key>ch14_source</key>
-    <value>II_K7_310R.Adc0</value>
+    <value>II_K7.Adc0</value>
     <type>enum</type>
     <hide>#if $max_ch() &gt; 14 then 'part' else 'all'#</hide>
     <option>
         <name>Adc[0]</name>
-        <key>II_K7_310R.Adc0</key>
+        <key>II_K7.Adc0</key>
     </option>
     <option>
         <name>Adc[1]</name>
-        <key>II_K7_310R.Adc1</key>
+        <key>II_K7.Adc1</key>
     </option>
     <option>
         <name>Adc[2]</name>
-        <key>II_K7_310R.Adc2</key>
+        <key>II_K7.Adc2</key>
     </option>
     <option>
         <name>Adc[3]</name>
-        <key>II_K7_310R.Adc3</key>
+        <key>II_K7.Adc3</key>
     </option>
     <option>
         <name>Test</name>
-        <key>II_K7_310R.Test</key>
+        <key>II_K7.Test</key>
     </option>
   </param>
   <param>
@@ -697,28 +697,28 @@
   <param>
     <name>Ch15 Source</name>
     <key>ch15_source</key>
-    <value>II_K7_310R.Adc0</value>
+    <value>II_K7.Adc0</value>
     <type>enum</type>
     <hide>#if $max_ch() &gt; 15 then 'part' else 'all'#</hide>
     <option>
         <name>Adc[0]</name>
-        <key>II_K7_310R.Adc0</key>
+        <key>II_K7.Adc0</key>
     </option>
     <option>
         <name>Adc[1]</name>
-        <key>II_K7_310R.Adc1</key>
+        <key>II_K7.Adc1</key>
     </option>
     <option>
         <name>Adc[2]</name>
-        <key>II_K7_310R.Adc2</key>
+        <key>II_K7.Adc2</key>
     </option>
     <option>
         <name>Adc[3]</name>
-        <key>II_K7_310R.Adc3</key>
+        <key>II_K7.Adc3</key>
     </option>
     <option>
         <name>Test</name>
-        <key>II_K7_310R.Test</key>
+        <key>II_K7.Test</key>
     </option>
   </param>
   <param>
@@ -738,22 +738,22 @@
 
   <check>$max_ch &gt;= 1</check>
   <check>$max_ch &lt;= 16</check>
-  <check>$fmc_module() == II_K7_310R.DdcFmc310Module or ($ch0_source &lt; II_K7_310R.Adc2) or ($ch0_source == II_K7_310R.Test)</check>
-  <check>$fmc_module() == II_K7_310R.DdcFmc310Module or ($ch1_source &lt; II_K7_310R.Adc2) or ($ch1_source == II_K7_310R.Test)</check>
-  <check>$fmc_module() == II_K7_310R.DdcFmc310Module or ($ch2_source &lt; II_K7_310R.Adc2) or ($ch2_source == II_K7_310R.Test)</check>
-  <check>$fmc_module() == II_K7_310R.DdcFmc310Module or ($ch3_source &lt; II_K7_310R.Adc2) or ($ch3_source == II_K7_310R.Test)</check>
-  <check>$fmc_module() == II_K7_310R.DdcFmc310Module or ($ch4_source &lt; II_K7_310R.Adc2) or ($ch4_source == II_K7_310R.Test)</check>
-  <check>$fmc_module() == II_K7_310R.DdcFmc310Module or ($ch5_source &lt; II_K7_310R.Adc2) or ($ch5_source == II_K7_310R.Test)</check>
-  <check>$fmc_module() == II_K7_310R.DdcFmc310Module or ($ch6_source &lt; II_K7_310R.Adc2) or ($ch6_source == II_K7_310R.Test)</check>
-  <check>$fmc_module() == II_K7_310R.DdcFmc310Module or ($ch7_source &lt; II_K7_310R.Adc2) or ($ch7_source == II_K7_310R.Test)</check>
-  <check>$fmc_module() == II_K7_310R.DdcFmc310Module or ($ch8_source &lt; II_K7_310R.Adc2) or ($ch8_source == II_K7_310R.Test)</check>
-  <check>$fmc_module() == II_K7_310R.DdcFmc310Module or ($ch9_source &lt; II_K7_310R.Adc2) or ($ch9_source == II_K7_310R.Test)</check>
-  <check>$fmc_module() == II_K7_310R.DdcFmc310Module or ($ch10_source &lt; II_K7_310R.Adc2) or ($ch10_source == II_K7_310R.Test)</check>
-  <check>$fmc_module() == II_K7_310R.DdcFmc310Module or ($ch11_source &lt; II_K7_310R.Adc2) or ($ch11_source == II_K7_310R.Test)</check>
-  <check>$fmc_module() == II_K7_310R.DdcFmc310Module or ($ch12_source &lt; II_K7_310R.Adc2) or ($ch12_source == II_K7_310R.Test)</check>
-  <check>$fmc_module() == II_K7_310R.DdcFmc310Module or ($ch13_source &lt; II_K7_310R.Adc2) or ($ch13_source == II_K7_310R.Test)</check>
-  <check>$fmc_module() == II_K7_310R.DdcFmc310Module or ($ch14_source &lt; II_K7_310R.Adc2) or ($ch14_source == II_K7_310R.Test)</check>
-  <check>$fmc_module() == II_K7_310R.DdcFmc310Module or ($ch15_source &lt; II_K7_310R.Adc2) or ($ch15_source == II_K7_310R.Test)</check>
+  <check>$fmc_module() == II_K7.DdcFmc310Module or ($ch0_source &lt; II_K7.Adc2) or ($ch0_source == II_K7.Test)</check>
+  <check>$fmc_module() == II_K7.DdcFmc310Module or ($ch1_source &lt; II_K7.Adc2) or ($ch1_source == II_K7.Test)</check>
+  <check>$fmc_module() == II_K7.DdcFmc310Module or ($ch2_source &lt; II_K7.Adc2) or ($ch2_source == II_K7.Test)</check>
+  <check>$fmc_module() == II_K7.DdcFmc310Module or ($ch3_source &lt; II_K7.Adc2) or ($ch3_source == II_K7.Test)</check>
+  <check>$fmc_module() == II_K7.DdcFmc310Module or ($ch4_source &lt; II_K7.Adc2) or ($ch4_source == II_K7.Test)</check>
+  <check>$fmc_module() == II_K7.DdcFmc310Module or ($ch5_source &lt; II_K7.Adc2) or ($ch5_source == II_K7.Test)</check>
+  <check>$fmc_module() == II_K7.DdcFmc310Module or ($ch6_source &lt; II_K7.Adc2) or ($ch6_source == II_K7.Test)</check>
+  <check>$fmc_module() == II_K7.DdcFmc310Module or ($ch7_source &lt; II_K7.Adc2) or ($ch7_source == II_K7.Test)</check>
+  <check>$fmc_module() == II_K7.DdcFmc310Module or ($ch8_source &lt; II_K7.Adc2) or ($ch8_source == II_K7.Test)</check>
+  <check>$fmc_module() == II_K7.DdcFmc310Module or ($ch9_source &lt; II_K7.Adc2) or ($ch9_source == II_K7.Test)</check>
+  <check>$fmc_module() == II_K7.DdcFmc310Module or ($ch10_source &lt; II_K7.Adc2) or ($ch10_source == II_K7.Test)</check>
+  <check>$fmc_module() == II_K7.DdcFmc310Module or ($ch11_source &lt; II_K7.Adc2) or ($ch11_source == II_K7.Test)</check>
+  <check>$fmc_module() == II_K7.DdcFmc310Module or ($ch12_source &lt; II_K7.Adc2) or ($ch12_source == II_K7.Test)</check>
+  <check>$fmc_module() == II_K7.DdcFmc310Module or ($ch13_source &lt; II_K7.Adc2) or ($ch13_source == II_K7.Test)</check>
+  <check>$fmc_module() == II_K7.DdcFmc310Module or ($ch14_source &lt; II_K7.Adc2) or ($ch14_source == II_K7.Test)</check>
+  <check>$fmc_module() == II_K7.DdcFmc310Module or ($ch15_source &lt; II_K7.Adc2) or ($ch15_source == II_K7.Test)</check>
 
   <!-- Make one 'source' node per output. Sub-nodes:
        * name (an identifier for the GUI)

@@ -21,7 +21,7 @@
 
 from gnuradio import gr, gr_unittest
 from gnuradio import blocks
-import II_K7_310R_swig as II_K7_310R
+import II_K7_swig as II_K7
 
 class qa_fft_source_f (gr_unittest.TestCase):
 
@@ -33,8 +33,8 @@ class qa_fft_source_f (gr_unittest.TestCase):
 
     def test_001_t (self):
         # set up fg
-        II_K7_310R_fft_source_f_0 = II_K7_310R.fft_source_f(II_K7_310R.FftFmc310Module, II_K7_310R.FftTest, II_K7_310R.Rect, False, 0.0)
-        # x = II_K7_310R.Rect
+        II_K7_fft_source_f_0 = II_K7.fft_source_f(II_K7.FftFmc310Module, II_K7.FftTest, II_K7.Rect, False, 0.0)
+        # x = II_K7.Rect
 
         self.tb.run ()
         # check data

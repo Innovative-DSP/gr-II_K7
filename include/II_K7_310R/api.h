@@ -19,15 +19,15 @@
  * Boston, MA 02110-1301, USA.
  */
 
-#ifndef INCLUDED_II_K7_310R_API_H
-#define INCLUDED_II_K7_310R_API_H
+#ifndef INCLUDED_II_K7_API_H
+#define INCLUDED_II_K7_API_H
 
 #include <gnuradio/attributes.h>
 
-#ifdef gnuradio_II_K7_310R_EXPORTS
-#  define II_K7_310R_API __GR_ATTR_EXPORT
+#ifdef gnuradio_II_K7_EXPORTS
+#  define II_K7_API __GR_ATTR_EXPORT
 #else
-#  define II_K7_310R_API __GR_ATTR_IMPORT
+#  define II_K7_API __GR_ATTR_IMPORT
 #endif
 
-#endif /* INCLUDED_II_K7_310R_API_H */
+#endif /* INCLUDED_II_K7_API_H */

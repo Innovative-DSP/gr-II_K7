@@ -28,7 +28,7 @@
 #include <cppunit/XmlOutputter.h>
 
 #include <gnuradio/unittests.h>
-#include "qa_II_K7_310R.h"
+#include "qa_II_K7.h"
 #include <iostream>
 #include <fstream>
 
@@ -36,10 +36,10 @@ int
 main (int argc, char **argv)
 {
   CppUnit::TextTestRunner runner;
-  std::ofstream xmlfile(get_unittest_path("II_K7_310R.xml").c_str());
+  std::ofstream xmlfile(get_unittest_path("II_K7.xml").c_str());
   CppUnit::XmlOutputter *xmlout = new CppUnit::XmlOutputter(&runner.result(), xmlfile);
 
-  runner.addTest(qa_II_K7_310R::suite());
+  runner.addTest(qa_II_K7::suite());
   runner.setOutputter(xmlout);
 
   bool was_successful = runner.run("", false);

@@ -21,7 +21,7 @@
 
 from gnuradio import gr, gr_unittest
 from gnuradio import blocks
-import II_K7_310R_swig as II_K7_310R
+import II_K7_swig as II_K7
 
 class qa_ch1_ddc_source_c (gr_unittest.TestCase):
 

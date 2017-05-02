@@ -18,14 +18,14 @@
  * Boston, MA 02110-1301, USA.
  */
 
-#ifndef INCLUDED_II_K7_310R_FFT_SOURCE_F_IMPL_H
-#define INCLUDED_II_K7_310R_FFT_SOURCE_F_IMPL_H
+#ifndef INCLUDED_II_K7_FFT_SOURCE_F_IMPL_H
+#define INCLUDED_II_K7_FFT_SOURCE_F_IMPL_H
 
-#include <II_K7_310R/fft_source_f.h>
+#include <II_K7/fft_source_f.h>
 #include <GRGpK7Interface.h>
 
 namespace gr {
-  namespace II_K7_310R {
+  namespace II_K7 {
 
     class fft_source_f_impl : public fft_source_f, ILoggerInterface
     {
@@ -34,8 +34,8 @@ namespace gr {
         GRGpK7Interface*  Io;
 
     public:
-      fft_source_f_impl(II_K7_310R::FftFmcModule fmc_module, II_K7_310R::FftSrc fft0_source,
-                        II_K7_310R::FftWindowing fft0_windowing, bool is_fft0_fasd, float fft0_fasd);
+      fft_source_f_impl(II_K7::FftFmcModule fmc_module, II_K7::FftSrc fft0_source,
+                        II_K7::FftWindowing fft0_windowing, bool is_fft0_fasd, float fft0_fasd);
       ~fft_source_f_impl();
 
       // Where all the action really happens
@@ -52,8 +52,8 @@ namespace gr {
       { GR_LOG_NOTICE(d_debug_logger, a_string); }  // Other logging levels are possible.
     };
 
-  } // namespace II_K7_310R
+  } // namespace II_K7
 } // namespace gr
 
-#endif /* INCLUDED_II_K7_310R_FFT_SOURCE_F_IMPL_H */
+#endif /* INCLUDED_II_K7_FFT_SOURCE_F_IMPL_H */
 

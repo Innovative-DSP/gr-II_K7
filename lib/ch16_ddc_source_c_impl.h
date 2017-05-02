@@ -18,14 +18,14 @@
  * Boston, MA 02110-1301, USA.
  */
 
-#ifndef INCLUDED_II_K7_310R_CH16_DDC_SOURCE_C_IMPL_H
-#define INCLUDED_II_K7_310R_CH16_DDC_SOURCE_C_IMPL_H
+#ifndef INCLUDED_II_K7_CH16_DDC_SOURCE_C_IMPL_H
+#define INCLUDED_II_K7_CH16_DDC_SOURCE_C_IMPL_H
 
-#include <II_K7_310R/ch16_ddc_source_c.h>
+#include <II_K7/ch16_ddc_source_c.h>
 #include <GRGpK7Interface.h>
 
 namespace gr {
-  namespace II_K7_310R {
+  namespace II_K7 {
 
     class ch16_ddc_source_c_impl : public ch16_ddc_source_c, ILoggerInterface
     {
@@ -36,7 +36,7 @@ namespace gr {
         unsigned  BlockId;
 
     public:
-        ch16_ddc_source_c_impl(II_K7_310R::DdcFmcModule fmc_module, short max_ch, float rf_gain, Ch16TriggerSource trigger_source,
+        ch16_ddc_source_c_impl(II_K7::DdcFmcModule fmc_module, short max_ch, float rf_gain, Ch16TriggerSource trigger_source,
                                const char* ddc_filter_path, bool is_rf_tuner, float rf_center_freq,
                                float ch0_freq, float ch1_freq, float ch2_freq, float ch3_freq,
                                float ch4_freq, float ch5_freq, float ch6_freq, float ch7_freq,
@@ -62,8 +62,8 @@ namespace gr {
         { GR_LOG_NOTICE(d_debug_logger, a_string); }  // Other logging levels are possible.
      };
 
-  } // namespace II_K7_310R
+  } // namespace II_K7
 } // namespace gr
 
-#endif /* INCLUDED_II_K7_310R_CH16_DDC_SOURCE_C_IMPL_H */
+#endif /* INCLUDED_II_K7_CH16_DDC_SOURCE_C_IMPL_H */
 

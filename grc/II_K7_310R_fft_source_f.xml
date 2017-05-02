@@ -1,154 +1,154 @@
 <?xml version="1.0"?>
 <block>
   <name>II FFT Source</name>
-  <key>II_K7_310R_fft_source_f</key>
+  <key>II_K7_fft_source_f</key>
   <category>[II K7]</category>
   <flags>throttle</flags>
-  <import>import II_K7_310R</import>
-  <make>II_K7_310R.fft_source_f($fmc_module, $fft0_source, $fft0_windowing, $is_fft0_fasd, $fft0_fasd)</make>
+  <import>import II_K7</import>
+  <make>II_K7.fft_source_f($fmc_module, $fft0_source, $fft0_windowing, $is_fft0_fasd, $fft0_fasd)</make>
   <param>
     <name>FMC Module</name>
     <key>fmc_module</key>
-    <value>II_K7_310R.FftFmc250Module</value>
+    <value>II_K7.FftFmc250Module</value>
     <type>enum</type>
     <hide>part</hide>
     <option>
         <name>FMC-250</name>
-        <key>II_K7_310R.FftFmc250Module</key>
+        <key>II_K7.FftFmc250Module</key>
     </option>
     <option>
         <name>FMC-310</name>
-        <key>II_K7_310R.FftFmc310Module</key>
+        <key>II_K7.FftFmc310Module</key>
     </option>
   </param>
   <param>
     <name>FFT[0] Source</name>
     <key>fft0_source</key>
-    <value>II_K7_310R.FftDdc0</value>
+    <value>II_K7.FftDdc0</value>
     <type>enum</type>
     <hide>part</hide>
     <option>
         <name>DDC[1]</name>
-        <key>II_K7_310R.FftDdc1</key>
+        <key>II_K7.FftDdc1</key>
     </option>
     <option>
         <name>DDC[0]</name>
-        <key>II_K7_310R.FftDdc0</key>
+        <key>II_K7.FftDdc0</key>
     </option>
     <option>
         <name>DDC[2]</name>
-        <key>II_K7_310R.FftDdc2</key>
+        <key>II_K7.FftDdc2</key>
     </option>
     <option>
         <name>DDC[3]</name>
-        <key>II_K7_310R.FftDdc3</key>
+        <key>II_K7.FftDdc3</key>
     </option>
     <option>
         <name>DDC[4]</name>
-        <key>II_K7_310R.FftDdc4</key>
+        <key>II_K7.FftDdc4</key>
     </option>
     <option>
         <name>DDC[5]</name>
-        <key>II_K7_310R.FftDdc5</key>
+        <key>II_K7.FftDdc5</key>
     </option>
     <option>
         <name>DDC[6]</name>
-        <key>II_K7_310R.FftDdc6</key>
+        <key>II_K7.FftDdc6</key>
     </option>
     <option>
         <name>DDC[7]</name>
-        <key>II_K7_310R.FftDdc7</key>
+        <key>II_K7.FftDdc7</key>
     </option>
     <option>
         <name>DDC[8]</name>
-        <key>II_K7_310R.FftDdc8</key>
+        <key>II_K7.FftDdc8</key>
     </option>
     <option>
         <name>DDC[9]</name>
-        <key>II_K7_310R.FftDdc9</key>
+        <key>II_K7.FftDdc9</key>
     </option>
     <option>
         <name>DDC[10]</name>
-        <key>II_K7_310R.FftDdc10</key>
+        <key>II_K7.FftDdc10</key>
     </option>
     <option>
         <name>DDC[11]</name>
-        <key>II_K7_310R.FftDdc11</key>
+        <key>II_K7.FftDdc11</key>
     </option>
     <option>
         <name>DDC[12]</name>
-        <key>II_K7_310R.FftDdc12</key>
+        <key>II_K7.FftDdc12</key>
     </option>
     <option>
         <name>DDC[13]</name>
-        <key>II_K7_310R.FftDdc13</key>
+        <key>II_K7.FftDdc13</key>
     </option>
     <option>
         <name>DDC[14]</name>
-        <key>II_K7_310R.FftDdc14</key>
+        <key>II_K7.FftDdc14</key>
     </option>
     <option>
         <name>DDC[15]</name>
-        <key>II_K7_310R.FftDdc15</key>
+        <key>II_K7.FftDdc15</key>
     </option>
     <option>
         <name>Adc[0]</name>
-        <key>II_K7_310R.FftAdc0</key>
+        <key>II_K7.FftAdc0</key>
     </option>
     <option>
         <name>Adc[1]</name>
-        <key>II_K7_310R.FftAdc1</key>
+        <key>II_K7.FftAdc1</key>
     </option>
     <option>
         <name>Adc[2]</name>
-        <key>II_K7_310R.FftAdc2</key>
+        <key>II_K7.FftAdc2</key>
     </option>
     <option>
         <name>Adc[3]</name>
-        <key>II_K7_310R.FftAdc3</key>
+        <key>II_K7.FftAdc3</key>
     </option>
     <option>
         <name>Test</name>
-        <key>II_K7_310R.FftTest</key>
+        <key>II_K7.FftTest</key>
     </option>
   </param>
   <param>
     <name>FFT[0] Windowing</name>
     <key>fft0_windowing</key>
-    <value>II_K7_310R.Rect</value>
+    <value>II_K7.Rect</value>
     <type>enum</type>
     <hide>part</hide>
     <option>
         <name>Rect</name>
-        <key>II_K7_310R.Rect</key>
+        <key>II_K7.Rect</key>
     </option>
     <option>
         <name>Hann</name>
-        <key>II_K7_310R.Hann</key>
+        <key>II_K7.Hann</key>
     </option>
     <option>
         <name>Cheby</name>
-        <key>II_K7_310R.Cheby</key>
+        <key>II_K7.Cheby</key>
     </option>
     <option>
         <name>Taylor</name>
-        <key>II_K7_310R.Taylor</key>
+        <key>II_K7.Taylor</key>
     </option>
     <option>
         <name>Blackman</name>
-        <key>II_K7_310R.Blackman</key>
+        <key>II_K7.Blackman</key>
     </option>
     <option>
         <name>Hamming</name>
-        <key>II_K7_310R.Hamming</key>
+        <key>II_K7.Hamming</key>
     </option>
     <option>
         <name>Gauss</name>
-        <key>II_K7_310R.Gauss</key>
+        <key>II_K7.Gauss</key>
     </option>
     <option>
         <name>Flattop</name>
-        <key>II_K7_310R.Flattop</key>
+        <key>II_K7.Flattop</key>
     </option>
   </param>
   <param>

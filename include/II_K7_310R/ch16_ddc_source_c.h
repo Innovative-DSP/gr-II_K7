@@ -19,14 +19,14 @@
  */
 
 
-#ifndef INCLUDED_II_K7_310R_CH16_DDC_SOURCE_C_H
-#define INCLUDED_II_K7_310R_CH16_DDC_SOURCE_C_H
+#ifndef INCLUDED_II_K7_CH16_DDC_SOURCE_C_H
+#define INCLUDED_II_K7_CH16_DDC_SOURCE_C_H
 
-#include <II_K7_310R/api.h>
+#include <II_K7/api.h>
 #include <gnuradio/sync_block.h>
 
 namespace gr {
-  namespace II_K7_310R {
+  namespace II_K7 {
 
     enum DdcFmcModule {DdcFmc250Module, DdcFmc310Module}; // AKA LibIoSelector in GRGpK7Interface
     enum Ch16TriggerSource {Ch16Software, Ch16External};
@@ -34,23 +34,23 @@ namespace gr {
 
     /*!
      * \brief source of DDC data
-     * \ingroup II_K7_310R
+     * \ingroup II_K7
      *
      */
-    class II_K7_310R_API ch16_ddc_source_c : virtual public gr::sync_block
+    class II_K7_API ch16_ddc_source_c : virtual public gr::sync_block
     {
      public:
       typedef boost::shared_ptr<ch16_ddc_source_c> sptr;
 
       /*!
-       * \brief Return a shared_ptr to a new instance of II_K7_310R::ch16_ddc_source_c.
+       * \brief Return a shared_ptr to a new instance of II_K7::ch16_ddc_source_c.
        *
-       * To avoid accidental use of raw pointers, II_K7_310R::ch16_ddc_source_c's
+       * To avoid accidental use of raw pointers, II_K7::ch16_ddc_source_c's
        * constructor is in a private implementation
-       * class. II_K7_310R::ch16_ddc_source_c::make is the public interface for
+       * class. II_K7::ch16_ddc_source_c::make is the public interface for
        * creating new instances.
        */
-        static sptr make(II_K7_310R::DdcFmcModule fmc_module, short max_ch, float rf_gain, II_K7_310R::Ch16TriggerSource trigger_source,
+        static sptr make(II_K7::DdcFmcModule fmc_module, short max_ch, float rf_gain, II_K7::Ch16TriggerSource trigger_source,
                          const char*  ddc_filter_path, bool is_rf_tuner, float rf_center_freq,
                          float ch0_offset_freq, float ch1_offset_freq, float ch2_offset_freq, float ch3_offset_freq,
                          float ch4_offset_freq, float ch5_offset_freq, float ch6_offset_freq, float ch7_offset_freq,
@@ -66,8 +66,8 @@ namespace gr {
                          Ch16Source ch12_source, Ch16Source ch13_source, Ch16Source ch14_source, Ch16Source ch15_source);
     };
 
-  } // namespace II_K7_310R
+  } // namespace II_K7
 } // namespace gr
 
-#endif /* INCLUDED_II_K7_310R_CH16_DDC_SOURCE_C_H */
+#endif /* INCLUDED_II_K7_CH16_DDC_SOURCE_C_H */
 

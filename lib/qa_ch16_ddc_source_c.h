@@ -26,7 +26,7 @@
 #include <cppunit/TestCase.h>
 
 namespace gr {
-  namespace II_K7_310R {
+  namespace II_K7 {
 
     class qa_ch16_ddc_source_c : public CppUnit::TestCase
     {
@@ -39,7 +39,7 @@ namespace gr {
       void t1();
     };
 
-  } /* namespace II_K7_310R */
+  } /* namespace II_K7 */
 } /* namespace gr */
 
 #endif /* _QA_CH16_DDC_SOURCE_C_H_ */

@@ -22,10 +22,10 @@
 #include <gnuradio/attributes.h>
 #include <cppunit/TestAssert.h>
 #include "qa_ch16_ddc_source_c.h"
-#include <II_K7_310R/ch16_ddc_source_c.h>
+#include <II_K7/ch16_ddc_source_c.h>
 
 namespace gr {
-  namespace II_K7_310R {
+  namespace II_K7 {
 
     void
     qa_ch16_ddc_source_c::t1()
@@ -33,6 +33,6 @@ namespace gr {
       // TODO: Put test here
     }
 
-  } /* namespace II_K7_310R */
+  } /* namespace II_K7 */
 } /* namespace gr */
 

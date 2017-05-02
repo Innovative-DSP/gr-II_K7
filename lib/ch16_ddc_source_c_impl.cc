@@ -30,12 +30,12 @@
 // #include <boost/thread/thread.hpp>
 
 namespace gr {
-  namespace II_K7_310R {
+  namespace II_K7 {
 
     unsigned  ch16_ddc_source_c_impl::BlockCount = 0;
 
     ch16_ddc_source_c::sptr
-    ch16_ddc_source_c::make(II_K7_310R::DdcFmcModule fmc_module, short max_ch, float rf_gain, Ch16TriggerSource trigger_source,
+    ch16_ddc_source_c::make(II_K7::DdcFmcModule fmc_module, short max_ch, float rf_gain, Ch16TriggerSource trigger_source,
                             const char*  ddc_filter_path, bool is_rf_tuner, float rf_center_freq,
                             float ch0_offset_freq, float ch1_offset_freq, float ch2_offset_freq, float ch3_offset_freq,
                             float ch4_offset_freq, float ch5_offset_freq, float ch6_offset_freq, float ch7_offset_freq,
@@ -79,7 +79,7 @@ namespace gr {
     /*
      * The private constructor
      */
-    ch16_ddc_source_c_impl::ch16_ddc_source_c_impl(II_K7_310R::DdcFmcModule fmc_module, short max_ch, float rf_gain, Ch16TriggerSource trigger_source,
+    ch16_ddc_source_c_impl::ch16_ddc_source_c_impl(II_K7::DdcFmcModule fmc_module, short max_ch, float rf_gain, Ch16TriggerSource trigger_source,
                                                    const char* ddc_filter_path, bool is_rf_tuner, float rf_center_freq,
                                                    float ch0_freq, float ch1_freq, float ch2_freq, float ch3_freq,
                                                    float ch4_freq, float ch5_freq, float ch6_freq, float ch7_freq,
@@ -167,6 +167,6 @@ namespace gr {
         return true;
     }
 
-  } /* namespace II_K7_310R */
+  } /* namespace II_K7 */
 } /* namespace gr */
 

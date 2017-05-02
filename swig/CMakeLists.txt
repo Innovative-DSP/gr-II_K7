@@ -20,10 +20,10 @@
 ########################################################################
 # Check if there is C++ code at all
 ########################################################################
-if(NOT II_K7_310R_sources)
+if(NOT II_K7_sources)
 	MESSAGE(STATUS "No C++ sources... skipping swig/")
 	return()
-endif(NOT II_K7_310R_sources)
+endif(NOT II_K7_sources)
 
 ########################################################################
 # Include swig generation macros
@@ -43,23 +43,23 @@ foreach(incdir ${GNURADIO_RUNTIME_INCLUDE_DIRS})
     list(APPEND GR_SWIG_INCLUDE_DIRS ${incdir}/gnuradio/swig)
 endforeach(incdir)
 
-set(GR_SWIG_LIBRARIES gnuradio-II_K7_310R)
-set(GR_SWIG_DOC_FILE ${CMAKE_CURRENT_BINARY_DIR}/II_K7_310R_swig_doc.i)
+set(GR_SWIG_LIBRARIES gnuradio-II_K7)
+set(GR_SWIG_DOC_FILE ${CMAKE_CURRENT_BINARY_DIR}/II_K7_swig_doc.i)
 set(GR_SWIG_DOC_DIRS ${CMAKE_CURRENT_SOURCE_DIR}/../include)
 
-GR_SWIG_MAKE(II_K7_310R_swig II_K7_310R_swig.i)
+GR_SWIG_MAKE(II_K7_swig II_K7_swig.i)
 
 ########################################################################
 # Install the build swig module
 ########################################################################
-GR_SWIG_INSTALL(TARGETS II_K7_310R_swig DESTINATION ${GR_PYTHON_DIR}/II_K7_310R)
+GR_SWIG_INSTALL(TARGETS II_K7_swig DESTINATION ${GR_PYTHON_DIR}/II_K7)
 
 ########################################################################
 # Install swig .i files for development
 ########################################################################
 install(
     FILES
-    II_K7_310R_swig.i
-    ${CMAKE_CURRENT_BINARY_DIR}/II_K7_310R_swig_doc.i
-    DESTINATION ${GR_INCLUDE_DIR}/II_K7_310R/swig
+    II_K7_swig.i
+    ${CMAKE_CURRENT_BINARY_DIR}/II_K7_swig_doc.i
+    DESTINATION ${GR_INCLUDE_DIR}/II_K7/swig
 )

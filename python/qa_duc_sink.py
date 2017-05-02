@@ -21,7 +21,7 @@
 
 from gnuradio import gr, gr_unittest
 from gnuradio import blocks
-import II_K7_310R_swig as II_K7_310R
+import II_K7_swig as II_K7
 
 class qa_duc_sink (gr_unittest.TestCase):
 
@@ -33,7 +33,7 @@ class qa_duc_sink (gr_unittest.TestCase):
 
     def test_001_t (self):
         # set up fg
-        II_K7_310R_duc_sink_0 = II_K7_310R.duc_sink(II_K7_310R.DucFmc250Module, 2, 
+        II_K7_duc_sink_0 = II_K7.duc_sink(II_K7.DucFmc250Module, 2, 
               'home/user/Config/duc_500msps/duc_500msps_Fdac500MHz_Fsample1.25MHz_BW1MHz.ini',
               -0.5, 0.5, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0)
 

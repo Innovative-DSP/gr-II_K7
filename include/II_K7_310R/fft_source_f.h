@@ -19,14 +19,14 @@
  */
 
 
-#ifndef INCLUDED_II_K7_310R_FFT_SOURCE_F_H
-#define INCLUDED_II_K7_310R_FFT_SOURCE_F_H
+#ifndef INCLUDED_II_K7_FFT_SOURCE_F_H
+#define INCLUDED_II_K7_FFT_SOURCE_F_H
 
-#include <II_K7_310R/api.h>
+#include <II_K7/api.h>
 #include <gnuradio/sync_block.h>
 
 namespace gr {
-  namespace II_K7_310R {
+  namespace II_K7 {
 
     enum FftFmcModule {FftFmc250Module, FftFmc310Module}; // AKA LibIoSelector in GRGpK7Interface
     enum FftSrc {FftDdc0, FftDdc1, FftDdc2, FftDdc3, FftDdc4, FftDdc5, FftDdc6, FftDdc7,
@@ -36,27 +36,27 @@ namespace gr {
 
     /*!
      * \brief source of FFT data
-     * \ingroup II_K7_310R
+     * \ingroup II_K7
      *
      */
-    class II_K7_310R_API fft_source_f : virtual public gr::sync_block
+    class II_K7_API fft_source_f : virtual public gr::sync_block
     {
      public:
       typedef boost::shared_ptr<fft_source_f> sptr;
 
       /*!
-       * \brief Return a shared_ptr to a new instance of II_K7_310R::fft_source_f.
+       * \brief Return a shared_ptr to a new instance of II_K7::fft_source_f.
        *
-       * To avoid accidental use of raw pointers, II_K7_310R::fft_source_f's
+       * To avoid accidental use of raw pointers, II_K7::fft_source_f's
        * constructor is in a private implementation
-       * class. II_K7_310R::fft_source_f::make is the public interface for
+       * class. II_K7::fft_source_f::make is the public interface for
        * creating new instances.
        */
-      static sptr make(II_K7_310R::FftFmcModule fmc_module, II_K7_310R::FftSrc fft0_source, II_K7_310R::FftWindowing fft0_windowing, bool is_fft0_fasd, float fft0_fasd);
+      static sptr make(II_K7::FftFmcModule fmc_module, II_K7::FftSrc fft0_source, II_K7::FftWindowing fft0_windowing, bool is_fft0_fasd, float fft0_fasd);
     };
 
-  } // namespace II_K7_310R
+  } // namespace II_K7
 } // namespace gr
 
-#endif /* INCLUDED_II_K7_310R_FFT_SOURCE_F_H */
+#endif /* INCLUDED_II_K7_FFT_SOURCE_F_H */
 

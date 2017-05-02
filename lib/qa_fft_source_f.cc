@@ -22,10 +22,10 @@
 #include <gnuradio/attributes.h>
 #include <cppunit/TestAssert.h>
 #include "qa_fft_source_f.h"
-#include <II_K7_310R/fft_source_f.h>
+#include <II_K7/fft_source_f.h>
 
 namespace gr {
-  namespace II_K7_310R {
+  namespace II_K7 {
 
     void
     qa_fft_source_f::t1()
@@ -33,6 +33,6 @@ namespace gr {
       // Put test here
     }
 
-  } /* namespace II_K7_310R */
+  } /* namespace II_K7 */
 } /* namespace gr */
 

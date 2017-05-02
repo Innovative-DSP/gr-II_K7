@@ -28,11 +28,11 @@
 #include "fft_source_f_impl.h"
 
 namespace gr {
-  namespace II_K7_310R {
+  namespace II_K7 {
 
     fft_source_f::sptr
-    fft_source_f::make(II_K7_310R::FftFmcModule fmc_module, II_K7_310R::FftSrc fft0_source,
-                       II_K7_310R::FftWindowing fft0_windowing, bool is_fft0_fasd, float fft0_fasd)
+    fft_source_f::make(II_K7::FftFmcModule fmc_module, II_K7::FftSrc fft0_source,
+                       II_K7::FftWindowing fft0_windowing, bool is_fft0_fasd, float fft0_fasd)
     {
       return gnuradio::get_initial_sptr
         (new fft_source_f_impl(fmc_module, fft0_source, fft0_windowing, is_fft0_fasd, fft0_fasd));
@@ -41,8 +41,8 @@ namespace gr {
     /*
      * The private constructor
      */
-    fft_source_f_impl::fft_source_f_impl(II_K7_310R::FftFmcModule fmc_module, II_K7_310R::FftSrc fft0_source,
-                                         II_K7_310R::FftWindowing fft0_windowing, bool is_fft0_fasd, float fft0_fasd)
+    fft_source_f_impl::fft_source_f_impl(II_K7::FftFmcModule fmc_module, II_K7::FftSrc fft0_source,
+                                         II_K7::FftWindowing fft0_windowing, bool is_fft0_fasd, float fft0_fasd)
       :
 
         Settings(static_cast<unsigned short>(fft0_source), static_cast<unsigned short>(fft0_windowing),
@@ -109,6 +109,6 @@ namespace gr {
         return Io->Stop();
     }
 
-  } /* namespace II_K7_310R */
+  } /* namespace II_K7 */
 } /* namespace gr */
 

@@ -18,14 +18,14 @@
  * Boston, MA 02110-1301, USA.
  */
 
-#ifndef INCLUDED_II_K7_310R_DUC_SINK_IMPL_H
-#define INCLUDED_II_K7_310R_DUC_SINK_IMPL_H
+#ifndef INCLUDED_II_K7_DUC_SINK_IMPL_H
+#define INCLUDED_II_K7_DUC_SINK_IMPL_H
 
-#include <II_K7_310R/duc_sink.h>
+#include <II_K7/duc_sink.h>
 #include <GRGpK7Interface.h>
 
 namespace gr {
-  namespace II_K7_310R {
+  namespace II_K7 {
 
     class duc_sink_impl : public duc_sink, ILoggerInterface
     {
@@ -34,7 +34,7 @@ namespace gr {
         GRGpK7Interface*  Io;
 
     public:
-        duc_sink_impl(II_K7_310R::DucFmcModule fmc_module, short max_ch, const char*  duc_filter_path,
+        duc_sink_impl(II_K7::DucFmcModule fmc_module, short max_ch, const char*  duc_filter_path,
                       float ch0_offset_freq, float ch1_offset_freq, float ch2_offset_freq, float ch3_offset_freq,
                       float ch4_offset_freq, float ch5_offset_freq, float ch6_offset_freq, float ch7_offset_freq);
         ~duc_sink_impl();
@@ -53,8 +53,8 @@ namespace gr {
         { GR_LOG_NOTICE(d_debug_logger, a_string); }  // Other logging levels are possible.
     };
 
-  } // namespace II_K7_310R
+  } // namespace II_K7
 } // namespace gr
 
-#endif /* INCLUDED_II_K7_310R_DUC_SINK_IMPL_H */
+#endif /* INCLUDED_II_K7_DUC_SINK_IMPL_H */
 

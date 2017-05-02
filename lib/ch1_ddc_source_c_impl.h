@@ -18,17 +18,17 @@
  * Boston, MA 02110-1301, USA.
  */
 
-#ifndef INCLUDED_II_K7_310R_CH1_DDC_SOURCE_C_IMPL_H
-#define INCLUDED_II_K7_310R_CH1_DDC_SOURCE_C_IMPL_H
+#ifndef INCLUDED_II_K7_CH1_DDC_SOURCE_C_IMPL_H
+#define INCLUDED_II_K7_CH1_DDC_SOURCE_C_IMPL_H
 
-#include <II_K7_310R/ch1_ddc_source_c.h>
+#include <II_K7/ch1_ddc_source_c.h>
 #include <LibraryIo.h>
 #include <BufferDatagrams_Mb.h>
 #include <ThreadSafeQueue_Mb.h>
 #include <Event_Mb.h>
 
 namespace gr {
-  namespace II_K7_310R {
+  namespace II_K7 {
 
     class ch1_ddc_source_c_impl : public ch1_ddc_source_c, IManager_GUIInterface
     {
@@ -83,8 +83,8 @@ namespace gr {
       unsigned long TxByteCount;
     };
 
-  } // namespace II_K7_310R
+  } // namespace II_K7
 } // namespace gr
 
-#endif /* INCLUDED_II_K7_310R_CH1_DDC_SOURCE_C_IMPL_H */
+#endif /* INCLUDED_II_K7_CH1_DDC_SOURCE_C_IMPL_H */
 

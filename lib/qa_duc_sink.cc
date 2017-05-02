@@ -22,10 +22,10 @@
 #include <gnuradio/attributes.h>
 #include <cppunit/TestAssert.h>
 #include "qa_duc_sink.h"
-#include <II_K7_310R/duc_sink.h>
+#include <II_K7/duc_sink.h>
 
 namespace gr {
-  namespace II_K7_310R {
+  namespace II_K7 {
 
     void
     qa_duc_sink::t1()
@@ -33,6 +33,6 @@ namespace gr {
       // Put test here
     }
 
-  } /* namespace II_K7_310R */
+  } /* namespace II_K7 */
 } /* namespace gr */
 

@@ -19,14 +19,14 @@
 # The presence of this file turns this directory into a Python package
 
 '''
-This is the GNU Radio II_K7_310R module. Place your Python package
+This is the GNU Radio II_K7 module. Place your Python package
 description here (python/__init__.py).
 '''
 
-# import swig generated symbols into the II_K7_310R namespace
+# import swig generated symbols into the II_K7 namespace
 try:
 	# this might fail if the module is python-only
-	from II_K7_310R_swig import *
+	from II_K7_swig import *
 except ImportError:
 	pass
 
