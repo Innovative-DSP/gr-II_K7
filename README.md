@@ -38,6 +38,9 @@ mkdir GRinstall/
 # Install gnuradio and dependencies (substituting user name):
 pybombs prefix init /home/[user]/GRinstall/ -a default -R gnuradio-default
 
+# Obtain read-access to a needed WinDriver library:
+sudo chmod o+r /usr/Innovative/WinDriver/lib/libwdapi*.so
+
 # Copy the recipe for the II K7 OOT blocks (provided) to a location where 
 # pybombs can find it, e.g., the ~/GRinstall/.pybombs/recipes/ directory:
 cp gr-II_K7.lwr ~/GRinstall/.pybombs/recipes/
