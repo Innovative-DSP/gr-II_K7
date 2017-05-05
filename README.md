@@ -39,8 +39,8 @@ mkdir GRinstall/
 pybombs prefix init /home/[user]/GRinstall/ -a default -R gnuradio-default
 
 # Copy the recipe for the II K7 OOT blocks (provided) to a location where 
-# pybombs can find it, e.g., the ~/.pybombs/recipes/ directory:
-cp gr-II_K7.lwr ~/.pybombs/recipes/
+# pybombs can find it, e.g., the ~/GRinstall/.pybombs/recipes/ directory:
+cp gr-II_K7.lwr ~/GRinstall/.pybombs/recipes/
 
 # Install OOT modules:
 pybombs install gr-II_K7
